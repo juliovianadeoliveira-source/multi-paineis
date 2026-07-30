@@ -1,232 +1,535 @@
-// ================================
-// CENTRAL DE PAINÉIS
+// ==========================================
+// CENTRAL DE PAINÉIS PREMIUM
 // script.js
-// ================================
+// ==========================================
 
-// Pesquisa
-const search = document.getElementById("search");
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
 const cards = document.querySelectorAll(".card");
 
-search.addEventListener("keyup", function () {
+const busca = document.getElementById("pesquisa");
 
-    let valor = this.value.toLowerCase();
+const contador = document.getElementById("total");
 
-    cards.forEach(card => {
 
-        let nome = card.querySelector("h2").textContent.toLowerCase();
 
-        if (nome.indexOf(valor) > -1) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
+// ===============================
+// CONTADOR DINÂMICO
+// ===============================
 
-    });
+function atualizarContador(){
 
-    atualizarContadores();
+let visiveis=0;
 
-});
 
-//===============================
-// CONTADORES
-//===============================
+cards.forEach(card=>{
 
-function atualizarContadores(){
+if(card.style.display !== "none"){
 
-    let total = 0;
-    let online = 0;
-    let offline = 0;
-
-    cards.forEach(card=>{
-
-        if(card.style.display!="none"){
-
-            total++;
-
-            let status = card.querySelector(".status").textContent.toLowerCase();
-
-            if(status.includes("online") || status.includes("cs tv")){
-                online++;
-            }else{
-                offline++;
-            }
-
-        }
-
-    });
-
-    document.getElementById("total").innerHTML=total;
-    document.getElementById("online").innerHTML=online;
-    document.getElementById("offline").innerHTML=offline;
+visiveis++;
 
 }
 
-atualizarContadores();
+});
 
 
-//===============================
-// ANIMAÇÃO DOS CARDS
-//===============================
+if(contador){
 
-window.addEventListener("load",()=>{
+contador.innerHTML=visiveis;
 
-    cards.forEach((card,index)=>{
+}
 
-        card.style.opacity="0";
-        card.style.transform="translateY(60px)";
 
-        setTimeout(()=>{
+}
 
-            card.style.transition="0.6s";
-            card.style.opacity="1";
-            card.style.transform="translateY(0px)";
 
-        },index*80);
+atualizarContador();
 
-    });
+
+
+
+// ===============================
+// PESQUISA INTELIGENTE
+// ===============================
+
+
+if(busca){
+
+busca.addEventListener("input",()=>{
+
+
+let texto=busca.value.toLowerCase();
+
+
+
+cards.forEach(card=>{
+
+
+let nome=
+card.querySelector("h3")
+.textContent
+.toLowerCase();
+
+
+
+if(nome.includes(texto)){
+
+
+card.style.display="block";
+
+
+}else{
+
+
+card.style.display="none";
+
+
+}
+
+
 
 });
 
 
-//===============================
-// PARTÍCULAS
-//===============================
+atualizarContador();
 
-particlesJS("particles-js", {
-
-    particles: {
-
-        number: {
-            value: 90
-        },
-
-        color: {
-            value: "#3b82f6"
-        },
-
-        shape: {
-            type: "circle"
-        },
-
-        opacity: {
-            value: 0.4
-        },
-
-        size: {
-            value: 3
-        },
-
-        move: {
-            enable: true,
-            speed: 1.5
-        },
-
-        line_linked:{
-            enable:true,
-            distance:150,
-            color:"#3b82f6",
-            opacity:0.2
-        }
-
-    }
 
 });
 
 
-//===============================
-// BOTÃO VOLTAR AO TOPO
-//===============================
+}
 
-const topo=document.createElement("button");
 
-topo.innerHTML="⬆";
 
-topo.id="topo";
 
-document.body.appendChild(topo);
+// ===============================
+// ENTRADA ANIMADA DOS CARDS
+// ===============================
 
-window.addEventListener("scroll",()=>{
 
-    if(window.scrollY>400){
+cards.forEach((card,index)=>{
 
-        topo.classList.add("show");
 
-    }else{
+card.style.opacity="0";
 
-        topo.classList.remove("show");
+card.style.transform=
+"translateY(50px)";
 
-    }
+
+setTimeout(()=>{
+
+
+card.style.transition=
+"all .6s ease";
+
+
+card.style.opacity="1";
+
+
+card.style.transform=
+"translateY(0)";
+
+
+},index*70);
+
+
 
 });
 
-topo.onclick=()=>{
 
-    window.scrollTo({
 
-        top:0,
 
-        behavior:"smooth"
 
-    });
+// ===============================
+// EFEITO 3D PREMIUM
+// ===============================
+
+
+cards.forEach(card=>{
+
+
+card.addEventListener("mousemove",(e)=>{
+
+
+let rect=
+card.getBoundingClientRect();
+
+
+
+let x=
+e.clientX-rect.left;
+
+
+let y=
+e.clientY-rect.top;
+
+
+
+let centerX=
+rect.width/2;
+
+
+let centerY=
+rect.height/2;
+
+
+
+let rotateX=
+(y-centerY)/15;
+
+
+let rotateY=
+(centerX-x)/15;
+
+
+
+card.style.transform=
+`
+perspective(900px)
+rotateX(${rotateX}deg)
+rotateY(${rotateY}deg)
+translateY(-10px)
+`;
+
+
+
+});
+
+
+
+
+card.addEventListener("mouseleave",()=>{
+
+
+card.style.transform="";
+
+
+});
+
+
+
+});
+
+
+
+
+
+
+// ===============================
+// HISTÓRICO DE ACESSOS
+// ===============================
+
+
+const botoes=
+document.querySelectorAll(".card a");
+
+
+
+botoes.forEach(botao=>{
+
+
+botao.addEventListener("click",()=>{
+
+
+let card=
+botao.closest(".card");
+
+
+let nome=
+card.querySelector("h3").textContent;
+
+
+
+let historico=
+JSON.parse(
+localStorage.getItem("historico")
+) || [];
+
+
+
+historico.unshift({
+
+nome:nome,
+
+data:new Date()
+.toLocaleString("pt-BR")
+
+});
+
+
+
+historico=
+historico.slice(0,10);
+
+
+
+localStorage.setItem(
+"historico",
+JSON.stringify(historico)
+);
+
+
+
+});
+
+
+
+});
+
+
+
+
+
+
+// ===============================
+// IMAGENS DAS LOGOS
+// ===============================
+
+
+document.querySelectorAll(".logo img")
+.forEach(img=>{
+
+
+img.loading="lazy";
+
+
+
+img.onerror=function(){
+
+
+this.style.display="none";
+
+
+let fallback=
+this.nextElementSibling;
+
+
+
+if(fallback){
+
+fallback.style.display="flex";
+
+}
+
+
 
 };
 
 
-//===============================
-// EFEITO NOS CARDS
-//===============================
+});
 
-cards.forEach(card=>{
 
-    card.addEventListener("mousemove",(e)=>{
 
-        const rect=card.getBoundingClientRect();
 
-        const x=e.clientX-rect.left;
 
-        const y=e.clientY-rect.top;
 
-        card.style.background=
-        `radial-gradient(circle at ${x}px ${y}px,
-        rgba(59,130,246,.35),
-        rgba(255,255,255,.06))`;
+// ===============================
+// BOTÃO TOPO
+// ===============================
 
-    });
 
-    card.addEventListener("mouseleave",()=>{
+const topo=
+document.createElement("button");
 
-        card.style.background="";
 
-    });
+topo.id="topo";
+
+topo.innerHTML="⬆";
+
+document.body.appendChild(topo);
+
+
+
+window.addEventListener("scroll",()=>{
+
+
+if(window.scrollY>500){
+
+
+topo.classList.add("show");
+
+
+}else{
+
+
+topo.classList.remove("show");
+
+
+}
+
 
 });
 
 
-//===============================
+
+topo.onclick=()=>{
+
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+
+};
+
+
+
+
+
+
+// ===============================
 // RELÓGIO
-//===============================
+// ===============================
 
-function relogio(){
 
-    let agora=new Date();
+function atualizarHora(){
 
-    let hora=agora.toLocaleTimeString("pt-BR");
 
-    let r=document.getElementById("relogio");
+let elemento=
+document.getElementById("relogio");
 
-    if(r){
 
-        r.innerHTML=hora;
 
-    }
+if(elemento){
+
+
+elemento.innerHTML=
+new Date()
+.toLocaleTimeString("pt-BR");
+
 
 }
 
-setInterval(relogio,1000);
+
+}
 
 
-//===============================
-// MENSAGEM
-//===============================
+setInterval(atualizarHora,1000);
 
-console.log("Central de Painéis carregada com sucesso.");
+
+
+
+
+
+// ===============================
+// PARTÍCULAS
+// ===============================
+
+
+if(typeof particlesJS !== "undefined"){
+
+
+
+particlesJS("particles-js",{
+
+
+particles:{
+
+
+number:{
+
+value:80
+
+},
+
+
+color:{
+
+value:"#00eaff"
+
+},
+
+
+shape:{
+
+type:"circle"
+
+},
+
+
+opacity:{
+
+value:.35
+
+},
+
+
+size:{
+
+value:3
+
+},
+
+
+move:{
+
+enable:true,
+
+speed:1.2
+
+},
+
+
+line_linked:{
+
+enable:true,
+
+distance:140,
+
+color:"#00eaff",
+
+opacity:.2
+
+}
+
+
+
+},
+
+
+interactivity:{
+
+
+events:{
+
+
+onhover:{
+
+
+enable:true,
+
+mode:"repulse"
+
+}
+
+
+}
+
+
+
+}
+
+
+
+});
+
+
+
+}
+
+
+
+
+console.log(
+"🚀 Central de Painéis Premium carregada"
+);
+
+
+
+});

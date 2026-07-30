@@ -1,149 +1,393 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central de Painéis</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Central de Painéis Premium</title>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-<div id="particles-js"></div>
+
+<div class="background"></div>
+
 
 <header>
 
-    <div class="logo">
-        <img src="img/logo.png" alt="">
-        <h1>Central de Painéis</h1>
-    </div>
+<div class="container">
 
-    <p>Escolha o painel que deseja acessar</p>
+<h1>
+🚀 Central de Painéis
+</h1>
 
-    <div class="search">
-        <input type="text" id="search" placeholder="Pesquisar painel...">
-        <i class="fa fa-search"></i>
-    </div>
 
-    <div class="contador">
+<input 
+id="pesquisa"
+placeholder="🔍 Pesquisar painel..."
+>
 
-        <div class="box">
-            <span id="total">31</span>
-            <small>Painéis</small>
-        </div>
 
-        <div class="box online">
-            <span id="online">31</span>
-            <small>Online</small>
-        </div>
-
-        <div class="box offline">
-            <span id="offline">0</span>
-            <small>Offline</small>
-        </div>
-
-    </div>
+</div>
 
 </header>
 
-<section class="cards" id="cards">
 
-    <div class="card">
-        <img src="img/paineis/topztv.png">
-        <h2>TOPZ TV</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://topztv.sigma.vin/#/sign-in" target="_blank">Acessar</a>
-    </div>
 
-    <div class="card">
-        <img src="img/paineis/prodtv.png">
-        <h2>PROD TV</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://prodtv.sigma.st/#/sign-in" target="_blank">Acessar</a>
-    </div>
+<section class="info">
 
-    <div class="card">
-        <img src="img/paineis/blackbr.png">
-        <h2>BLACK BR</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://painelblackbr.com/#/sign-in" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/fenix.png">
-        <h2>FENIX STREAMING</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://fenixstreaming.sigma.vin/#/sign-in" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/onix.png">
-        <h2>ONIX PLAY</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://onixplay.top/#/sign-in" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/play.png">
-        <h2>SERVIDOR PLAY</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://servidorplay.sigmab.pro/#/sign-in?redirect=/customers" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/a2play.png">
-        <h2>A2 PLAY</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://a2play.sigmab.pro/#/sign-in?timeOut=true" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/vip.png">
-        <h2>VIP SIGMA</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://vip.sigma.vin/#/sign-in" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/one.png">
-        <h2>ONE SERVER</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://one.srvi.top/" target="_blank">Acessar</a>
-    </div>
-
-    <div class="card">
-        <img src="img/paineis/etplayer.png">
-        <h2>ET PLAYER</h2>
-        <span class="status online">ONLINE</span>
-        <a href="https://etplayer.smartsignus.com/auth/login.php" target="_blank">Acessar</a>
-    </div>
-
-    <!-- Continue adicionando os demais painéis da mesma forma -->
-
-    <div class="card destaque">
-        <img src="img/paineis/w3br.png">
-        <h2>PAINEL W3BR TOP</h2>
-        <span class="status online">CS TV</span>
-        <a href="https://painelw3brtop.sytes.net/" target="_blank">Entrar</a>
-    </div>
+<h2>
+<span id="total"></span>
+Painéis Disponíveis
+</h2>
 
 </section>
 
-<footer>
 
-    © 2026 Central de Painéis
 
-</footer>
+<main>
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<div id="painels" class="grid"></div>
 
-<script src="script.js"></script>
+</main>
+
+
+
+
+<script>
+
+
+const paineis = [
+
+
+{
+nome:"TopZ TV",
+logo:"logos/topztv.png",
+url:"https://topztv.sigma.vin/#/sign-in"
+},
+
+
+{
+nome:"Prod TV",
+logo:"logos/prodtv.png",
+url:"https://prodtv.sigma.st/#/sign-in"
+},
+
+
+{
+nome:"Painel Black BR",
+logo:"logos/blackbr.png",
+url:"https://painelblackbr.com/#/sign-in"
+},
+
+
+{
+nome:"Fenix Streaming",
+logo:"logos/fenix.png",
+url:"https://fenixstreaming.sigma.vin/#/sign-in"
+},
+
+
+{
+nome:"Onix Play",
+logo:"logos/onix.png",
+url:"https://onixplay.top/#/sign-in"
+},
+
+
+{
+nome:"Servidor Play",
+logo:"logos/servidor.png",
+url:"https://servidorplay.sigmab.pro/#/sign-in"
+},
+
+
+{
+nome:"A2 Play",
+logo:"logos/a2.png",
+url:"https://a2play.sigmab.pro/#/sign-in"
+},
+
+
+{
+nome:"VIP Sigma",
+logo:"logos/vip.png",
+url:"https://vip.sigma.vin/#/sign-in"
+},
+
+
+{
+nome:"One",
+logo:"logos/one.png",
+url:"https://one.srvi.top/"
+},
+
+
+{
+nome:"ET Player",
+logo:"logos/etplayer.png",
+url:"https://etplayer.smartsignus.com/auth/login.php"
+},
+
+
+{
+nome:"Super STV",
+logo:"logos/superstv.png",
+url:"https://superstv.sigma.vin/#/sign-in"
+},
+
+
+{
+nome:"Lunna BR",
+logo:"logos/lunna.png",
+url:"https://lunnabr.site/#/sign-in"
+},
+
+
+{
+nome:"FS Play",
+logo:"logos/fsplay.png",
+url:"https://fsplay.fpanel.top/"
+},
+
+
+{
+nome:"Pro Black",
+logo:"logos/problack.png",
+url:"https://problack.sigma.st/#/sign-in"
+},
+
+
+{
+nome:"Play Max",
+logo:"logos/playmax.png",
+url:"https://playmax.sigmab.pro/#/sign-in"
+},
+
+
+{
+nome:"Conect Play",
+logo:"logos/conect.png",
+url:"https://conectplay.sigma.vin/#/sign-in"
+},
+
+
+{
+nome:"CineHub BR",
+logo:"logos/cinehub.png",
+url:"https://cinehub-br.sigma.st/#/sign-in"
+},
+
+
+{
+nome:"Prime Lux",
+logo:"logos/primelux.png",
+url:"https://primelux.sigma.st/"
+},
+
+
+{
+nome:"Sport Play",
+logo:"logos/sportplay.png",
+url:"https://sportplay.sigma.vin/"
+},
+
+
+{
+nome:"Kronos Server",
+logo:"logos/kronos.png",
+url:"https://kronosserver.ryzen.fun/login"
+},
+
+
+{
+nome:"Premium Server",
+logo:"logos/premium.png",
+url:"https://premiumserver.sigma.vin/"
+},
+
+
+{
+nome:"Alpha Master",
+logo:"logos/alpha.png",
+url:"https://alphamaster.sigma.st/"
+},
+
+
+{
+nome:"Entre",
+logo:"logos/entre.png",
+url:"https://entre.p2vip.xyz/"
+},
+
+
+{
+nome:"Painel CineHub",
+logo:"logos/painelcinehub.png",
+url:"https://painelcinehub.top/"
+},
+
+
+{
+nome:"Fox Play",
+logo:"logos/fox.png",
+url:"https://foxplay.sigma.vin/"
+},
+
+
+{
+nome:"All Box",
+logo:"logos/allbox.png",
+url:"https://allboxpaineladm.blog/"
+},
+
+
+{
+nome:"Odin Super",
+logo:"logos/odin.png",
+url:"https://odinsuper1x00.top/"
+},
+
+
+{
+nome:"Vizion Net",
+logo:"logos/vizion.png",
+url:"https://vizion-net.sigmab.pro/"
+},
+
+
+{
+nome:"P2 Live",
+logo:"logos/p2live.png",
+url:"https://p2live.sigmab.pro/"
+},
+
+
+{
+nome:"Cineflix",
+logo:"logos/cineflix.png",
+url:"https://cineflix.3xt.fun/"
+},
+
+
+{
+nome:"Lider IPTV",
+logo:"logos/lider.png",
+url:"https://lideriptv.sigma.st/"
+},
+
+
+{
+nome:"Painel W3 BR",
+logo:"logos/w3br.png",
+url:"https://painelw3brtop.sytes.net/"
+}
+
+
+];
+
+
+
+const area=document.getElementById("painels");
+
+const total=document.getElementById("total");
+
+
+function mostrar(lista){
+
+
+area.innerHTML="";
+
+
+total.textContent=lista.length;
+
+
+
+lista.forEach(p=>{
+
+
+let inicial=p.nome.charAt(0);
+
+
+
+let card=document.createElement("div");
+
+
+card.className="card";
+
+
+card.innerHTML=`
+
+<div class="logo">
+
+<img 
+src="${p.logo}"
+onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+>
+
+<span>${inicial}</span>
+
+</div>
+
+
+<h3>${p.nome}</h3>
+
+
+<a href="${p.url}" target="_blank">
+
+Abrir Painel
+
+</a>
+
+
+`;
+
+
+area.appendChild(card);
+
+
+});
+
+
+}
+
+
+
+mostrar(paineis);
+
+
+
+document
+.getElementById("pesquisa")
+.addEventListener("input",function(){
+
+
+let valor=this.value.toLowerCase();
+
+
+mostrar(
+
+paineis.filter(p=>
+
+p.nome.toLowerCase()
+.includes(valor)
+
+)
+
+);
+
+
+});
+
+
+
+</script>
+
 
 </body>
 </html>

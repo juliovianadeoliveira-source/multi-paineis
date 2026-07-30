@@ -1,30 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Central de Painéis Premium</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="background"></div>
+
+
 <header>
 
 <div class="container">
 
-<h1>🚀 Central de Painéis</h1>
+<h1>
+🚀 Central de Painéis
+</h1>
 
-<div class="topbar">
+<!-- Menu de Alternância de Abas -->
+<div class="abas-navegacao" style="margin: 15px 0; display: flex; gap: 10px; justify-content: center;">
+<button onclick="mudarAba('oficiais')" id="btn-oficiais" class="aba-btn ativo" style="padding: 8px 16px; cursor: pointer;">Painéis Oficiais</button>
+<button onclick="mudarAba('testes')" id="btn-testes" class="aba-btn" style="padding: 8px 16px; cursor: pointer;">Painéis de Teste</button>
+</div>
 
-<input
+
+<input 
 id="pesquisa"
 placeholder="🔍 Pesquisar painel..."
 >
 
-<div class="menu">
-
-<button class="aba ativa" id="btnPaineis">
-Painéis
-</button>
-
-<button class="aba" id="btnTeste">
-Painéis Teste
-</button>
-
-</div>
-
-</div>
 
 </div>
 
 </header>
+
+
+
+<section class="info">
+
+<h2>
+<span id="total"></span>
+<span id="titulo-Secao">Painéis Disponíveis</span>
+</h2>
+
+</section>
+
+
+
+<main>
+
+<div id="painels" class="grid"></div>
+
+</main>
+
+
+
+
+<script>
+
+const paineisOficiais = [
+{
+nome:"TopZ TV",
+logo:"logos/topztv.png",
+url:"https://topztv.sigma.vin/#/sign-in"
+},
+{
+nome:"Prod TV",
+logo:"logos/prodtv.png",
+url:"https://prodtv.sigma.st/#/sign-in"
+},
+{
+nome:"Painel Black BR",
+logo:"logos/blackbr.png",
+url:"https://painelblackbr.com/#/sign-in"
+},
+{
+nome:"Fenix Streaming",
+logo:"logos/fenix.png",
+url:"https://fenixstreaming.sigma.vin/#/sign-in"
+},
+{
+nome:"Onix Play",
+logo:"logos/onix.png",
+url:"https://onixplay.top/#/sign-in"
+},
+{
+nome:"Servidor Play",
+logo:"logos/servidor.png",
+url:"https://servidorplay.sigmab.pro/#/sign-in"
+},
+{
+nome:"A2 Play",
+logo:"logos/a2.png",
+url:"https://a2play.sigmab.pro/#/sign-in"
+},
+{
+nome:"VIP Sigma",
+logo:"logos/vip.png",
+url:"https://vip.sigma.vin/#/sign-in"
+},
+{
+nome:"One",
+logo:"logos/one.png",
+url:"https://one.srvi.top/"
+},
+{
+nome:"ET Player",
+logo:"logos/etplayer.png",
+url:"https://etplayer.smartsignus.com/auth/login.php"
+},
+{
+nome:"Super STV",
+logo:"logos/superstv.png",
+url:"https://superstv.sigma.vin/#/sign-in"
+},
+{
+nome:"Lunna BR",
+logo:"logos/lunna.png",
+url:"https://lunnabr.site/#/sign-in"
+},
+{
+nome:"FS Play",
+logo:"logos/fsplay.png",
+url:"https://fsplay.fpanel.top/"
+},
+{
+nome:"Pro Black",
+logo:"logos/problack.png",
+url:"https://problack.sigma.st/#/sign-in"
+},
+{
+nome:"Play Max",
+logo:"logos/playmax.png",
+url:"https://playmax.sigmab.pro/#/sign-in"
+},
+{
+nome:"Conect Play",
+logo:"logos/conect.png",
+url:"https://conectplay.sigma.vin/#/sign-in"
+},
+{
+nome:"CineHub BR",
+logo:"logos/cinehub.png",
+url:"https://cinehub-br.sigma.st/#/sign-in"
+},
+{
+nome:"Prime Lux",
+logo:"logos/primelux.png",
+url:"https://primelux.sigma.st/"
+},
+{
+nome:"Sport Play",
+logo:"logos/sportplay.png",
+url:"https://sportplay.sigma.vin/"
+},
+{
+nome:"Kronos Server",
+logo:"logos/kronos.png",
+url:"https://kronosserver.ryzen.fun/login"
+},
+{
+nome:"Premium Server",
+logo:"logos/premium.png",
+url:"https://premiumserver.sigma.vin/"
+},
+{
+nome:"Alpha Master",
+logo:"logos/alpha.png",
+url:"https://alphamaster.sigma.st/"
+},
+{
+nome:"Entre",
+logo:"logos/entre.png",
+url:"https://entre.p2vip.xyz/"
+},
+{
+nome:"Painel CineHub",
+logo:"logos/painelcinehub.png",
+url:"https://painelcinehub.top/"
+},
+{
+nome:"Fox Play",
+logo:"logos/fox.png",
+url:"https://foxplay.sigma.vin/"
+},
+{
+nome:"All Box",
+logo:"logos/allbox.png",
+url:"https://allboxpaineladm.blog/"
+},
+{
+nome:"Odin Super",
+logo:"logos/odin.png",
+url:"https://odinsuper1x00.top/"
+},
+{
+nome:"Vizion Net",
+logo:"logos/vizion.png",
+url:"https://vizion-net.sigmab.pro/"
+},
+{
+nome:"P2 Live",
+logo:"logos/p2live.png",
+url:"https://p2live.sigmab.pro/"
+},
+{
+nome:"Cineflix",
+logo:"logos/cineflix.png",
+url:"https://cineflix.3xt.fun/"
+},
+{
+nome:"Lider IPTV",
+logo:"logos/lider.png",
+url:"https://lideriptv.sigma.st/"
+},
+{
+nome:"Painel W3 BR",
+logo:"logos/w3br.png",
+url:"https://painelw3brtop.sytes.net/"
+}
+];
+
+// Lista de painéis de teste (reutilizando a mesma base com links ou rotas de teste)
+const paineisTestes = paineisOficiais.map(p => ({
+...p,
+urlTeste: p.url // Ajuste o link de teste se houver um específico por painel
+}));
+
+let abaAtual = 'oficiais';
+const area = document.getElementById("painels");
+const total = document.getElementById("total");
+const tituloSecao = document.getElementById("titulo-Secao");
+
+function mostrar(lista){
+area.innerHTML="";
+total.textContent=lista.length;
+
+lista.forEach(p=>{
+let inicial=p.nome.charAt(0);
+let card=document.createElement("div");
+card.className="card";
+
+if(abaAtual === 'oficiais'){
+card.innerHTML=`
+<div class="logo">
+<img src="${p.logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>${inicial}</span>
+</div>
+<h3>${p.nome}</h3>
+<a href="${p.url}" target="_blank">Abrir Painel</a>
+`;
+} else {
+card.innerHTML=`
+<div class="logo">
+<img src="${p.logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>${inicial}</span>
+</div>
+<h3>${p.nome}</h3>
+<a href="${p.url}" target="_blank" style="background-color: #28a745;">Gerar painel teste com 1 crédito</a>
+`;
+}
+
+area.appendChild(card);
+});
+}
+
+function mudarAba(tipo){
+abaAtual = tipo;
+let pesquisaEl = document.getElementById("pesquisa");
+pesquisaEl.value = "";
+
+document.getElementById('btn-oficiais').style.opacity = tipo === 'oficiais' ? '1' : '0.6';
+document.getElementById('btn-testes').style.opacity = tipo === 'testes' ? '1' : '0.6';
+
+if(tipo === 'oficiais'){
+tituloSecao.textContent = "Painéis Disponíveis";
+mostrar(paineisOficiais);
+} else {
+tituloSecao.textContent = "Painéis de Teste Disponíveis";
+mostrar(paineisTestes);
+}
+}
+
+// Inicializa na aba oficial
+mostrar(paineisOficiais);
+
+document.getElementById("pesquisa").addEventListener("input",function(){
+let valor=this.value.toLowerCase();
+let base = abaAtual === 'oficiais' ? paineisOficiais : paineisTestes;
+mostrar(base.filter(p=>p.nome.toLowerCase().includes(valor)));
+});
+
+</script>
+
+</body>
+</html>

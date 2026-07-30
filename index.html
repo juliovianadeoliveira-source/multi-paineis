@@ -1,165 +1,306 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Revenda e Aplicativos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-        }
-        .alert-promo {
-            background-color: #ff4444;
-            color: white;
-            text-align: center;
-            padding: 12px;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-        h2, h3 {
-            color: #ffcc00;
-            text-align: center;
-        }
-        .box {
-            background: #2a2a2a;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            border-left: 5px solid #ffcc00;
-        }
-        .btn-whatsapp {
-            display: block;
-            background-color: #25d366;
-            color: white;
-            text-align: center;
-            padding: 12px;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-        .btn-whatsapp:hover {
-            background-color: #20ba5a;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 8px 0;
-            border-bottom: 1px solid #333;
-        }
-        .apps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .app-card {
-            background: #333;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .warning-text {
-            color: #ff4444;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 15px;
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Central de Painéis Premium</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+
+
+<div class="background"></div>
+
+
+<header>
 
 <div class="container">
 
-    <!-- ALERTA DE PROMOÇÃO -->
-    <div class="alert-promo">
-        ⚠️ PROMOÇÃO VÁLIDA SOMENTE HOJE E APENAS 2 VAGAS ⚠️
-    </div>
+<h1>
+🚀 Central de Painéis
+</h1>
 
-    <!-- PAINÉIS PRINCIPAIS -->
-    <div class="box">
-        🔥 <strong>PAINEL ADM ILIMITADO ♾️</strong> - R$ 180 MENSAL<br>
-        <small>🔰 Parceria XCloud TV e outros apps</small>
-    </div>
+<!-- Menu de Alternância de Abas -->
+<div class="abas-navegacao" style="margin: 15px 0; display: flex; gap: 10px; justify-content: center;">
+<button onclick="mudarAba('oficiais')" id="btn-oficiais" class="aba-btn ativo" style="padding: 8px 16px; cursor: pointer;">Painéis Oficiais</button>
+<button onclick="mudarAba('testes')" id="btn-testes" class="aba-btn" style="padding: 8px 16px; cursor: pointer;">Painéis de Teste</button>
+</div>
 
-    <div class="box">
-        🔥 <strong>PAINEL ILIMITADO ♾️</strong> - R$ 150 MENSAL<br>
-        <small>🔰 Parceria XCloud TV e outros apps</small>
-    </div>
 
-    <!-- PLANOS MENSALISTA / CRÉDITOS -->
-    <h3>🏆 PLANOS MENSALISTA & CRÉDITOS</h3>
-    <ul>
-        <li>🎟️ 500 Créditos: <strong>R$ 50,00</strong></li>
-        <li>🎟️ 1 Mil Créditos: <strong>R$ 100,00</strong></li>
-        <li>🎟️ 3 Mil Créditos: <strong>R$ 150,00</strong></li>
-        <li>🎟️ 5 Mil Créditos: <strong>R$ 170,00</strong></li>
-    </ul>
+<input 
+id="pesquisa"
+placeholder="🔍 Pesquisar painel..."
+>
 
-    <!-- BÔNUS E FRANQUIAS -->
-    <div class="box" style="border-left-color: #00ffcc;">
-        ⚠️ <strong>ATENÇÃO:</strong> QUALQUER PLANO VC GANHA UM PAINEL IBO ULTRA REVENDA QUE ABRE REVENDA COM 10 MIL CRÉDITOS!<br><br>
-        ✅ ABRIMOS FRANQUIAS (Consultar valor no PV)
-    </div>
-
-    <!-- ABA: APLICATIVOS PARCEIROS -->
-    <h3>🚀 APLICATIVOS PARCEIROS</h3>
-    <div class="box" style="text-align: center; background: #252525;">
-        <p>💰 <strong>Valores para Aplicativos Parceiros:</strong></p>
-        <p>Mensalista: <strong>R$ 200,00</strong> | Painel ADM: <strong>R$ 350,00</strong></p>
-    </div>
-
-    <p style="text-align: center; color: #ffcc00; font-weight: bold;">Aplicativos Disponíveis:</p>
-    
-    <div class="apps-grid">
-        <div class="app-card">ASSIST+</div>
-        <div class="app-card">PLAYSIM</div>
-        <div class="app-card">MAGIC PLAYER</div>
-        <div class="app-card">VIZZION PLAY</div>
-        <div class="app-card">BOX PLAYER</div>
-    </div>
-
-    <div style="margin-top: 15px; background: #2a2a2a; padding: 10px; border-radius: 5px; text-align: center;">
-        🎖️ <strong>App Parceiro na PlayStore e Fire Stick Amazon</strong><br>
-        Pesquise por: <span style="color: #00ffcc;">JJ PLAYER</span>
-    </div>
-
-    <ul style="margin-top: 15px; text-align: center;">
-        📺 <strong>DUO TV</strong><br>
-        📺 <strong>MULT BOX</strong><br>
-        📺 <strong>SYNC21 PLAYER</strong><br>
-        📺 <strong>UP PLAY</strong><br>
-        📺 <strong>MAX21</strong>
-    </ul>
-
-    <!-- BOTÃO WHATSAPP E AVISOS FINAIS -->
-    <a href="https://wa.me/5521975305383?text=Ol%C3%A1%2C%20tenho%20interesse%20nos%20painéis%20e%20aplicativos!" class="btn-whatsapp" target="_blank">
-        🪀 CHAME NO WHATSAPP: (21) 97530-5383
-    </a>
-
-    <div class="warning-text">
-        ⚠️ CHAMAR NO PV SOMENTE QUEM TIVER REAL INTERESSE<br>
-        ⚠️ SE CHAMAR SÓ PRA SABER NOME DE SERVIDOR SERÁ BLOQUEADO!
-    </div>
 
 </div>
+
+</header>
+
+
+
+<section class="info">
+
+<h2>
+<span id="total"></span>
+<span id="titulo-Secao">Painéis Disponíveis</span>
+</h2>
+
+</section>
+
+
+
+<main>
+
+<div id="painels" class="grid"></div>
+
+</main>
+
+
+
+
+<script>
+
+const paineisOficiais = [
+{
+nome:"TopZ TV",
+logo:"logos/topztv.png",
+url:"https://topztv.sigma.vin/#/sign-in"
+},
+{
+nome:"Prod TV",
+logo:"logos/prodtv.png",
+url:"https://prodtv.sigma.st/#/sign-in"
+},
+{
+nome:"Painel Black BR",
+logo:"logos/blackbr.png",
+url:"https://painelblackbr.com/#/sign-in"
+},
+{
+nome:"Fenix Streaming",
+logo:"logos/fenix.png",
+url:"https://fenixstreaming.sigma.vin/#/sign-in"
+},
+{
+nome:"Onix Play",
+logo:"logos/onix.png",
+url:"https://onixplay.top/#/sign-in"
+},
+{
+nome:"Servidor Play",
+logo:"logos/servidor.png",
+url:"https://servidorplay.sigmab.pro/#/sign-in"
+},
+{
+nome:"A2 Play",
+logo:"logos/a2.png",
+url:"https://a2play.sigmab.pro/#/sign-in"
+},
+{
+nome:"VIP Sigma",
+logo:"logos/vip.png",
+url:"https://vip.sigma.vin/#/sign-in"
+},
+{
+nome:"One",
+logo:"logos/one.png",
+url:"https://one.srvi.top/"
+},
+{
+nome:"ET Player",
+logo:"logos/etplayer.png",
+url:"https://etplayer.smartsignus.com/auth/login.php"
+},
+{
+nome:"Super STV",
+logo:"logos/superstv.png",
+url:"https://superstv.sigma.vin/#/sign-in"
+},
+{
+nome:"Lunna BR",
+logo:"logos/lunna.png",
+url:"https://lunnabr.site/#/sign-in"
+},
+{
+nome:"FS Play",
+logo:"logos/fsplay.png",
+url:"https://fsplay.fpanel.top/"
+},
+{
+nome:"Pro Black",
+logo:"logos/problack.png",
+url:"https://problack.sigma.st/#/sign-in"
+},
+{
+nome:"Play Max",
+logo:"logos/playmax.png",
+url:"https://playmax.sigmab.pro/#/sign-in"
+},
+{
+nome:"Conect Play",
+logo:"logos/conect.png",
+url:"https://conectplay.sigma.vin/#/sign-in"
+},
+{
+nome:"CineHub BR",
+logo:"logos/cinehub.png",
+url:"https://cinehub-br.sigma.st/#/sign-in"
+},
+{
+nome:"Prime Lux",
+logo:"logos/primelux.png",
+url:"https://primelux.sigma.st/"
+},
+{
+nome:"Sport Play",
+logo:"logos/sportplay.png",
+url:"https://sportplay.sigma.vin/"
+},
+{
+nome:"Kronos Server",
+logo:"logos/kronos.png",
+url:"https://kronosserver.ryzen.fun/login"
+},
+{
+nome:"Premium Server",
+logo:"logos/premium.png",
+url:"https://premiumserver.sigma.vin/"
+},
+{
+nome:"Alpha Master",
+logo:"logos/alpha.png",
+url:"https://alphamaster.sigma.st/"
+},
+{
+nome:"Entre",
+logo:"logos/entre.png",
+url:"https://entre.p2vip.xyz/"
+},
+{
+nome:"Painel CineHub",
+logo:"logos/painelcinehub.png",
+url:"https://painelcinehub.top/"
+},
+{
+nome:"Fox Play",
+logo:"logos/fox.png",
+url:"https://foxplay.sigma.vin/"
+},
+{
+nome:"All Box",
+logo:"logos/allbox.png",
+url:"https://allboxpaineladm.blog/"
+},
+{
+nome:"Odin Super",
+logo:"logos/odin.png",
+url:"https://odinsuper1x00.top/"
+},
+{
+nome:"Vizion Net",
+logo:"logos/vizion.png",
+url:"https://vizion-net.sigmab.pro/"
+},
+{
+nome:"P2 Live",
+logo:"logos/p2live.png",
+url:"https://p2live.sigmab.pro/"
+},
+{
+nome:"Cineflix",
+logo:"logos/cineflix.png",
+url:"https://cineflix.3xt.fun/"
+},
+{
+nome:"Lider IPTV",
+logo:"logos/lider.png",
+url:"https://lideriptv.sigma.st/"
+},
+{
+nome:"Painel W3 BR",
+logo:"logos/w3br.png",
+url:"https://painelw3brtop.sytes.net/"
+}
+];
+
+// Lista de painéis de teste (reutilizando a mesma base com links ou rotas de teste)
+const paineisTestes = paineisOficiais.map(p => ({
+...p,
+urlTeste: p.url // Ajuste o link de teste se houver um específico por painel
+}));
+
+let abaAtual = 'oficiais';
+const area = document.getElementById("painels");
+const total = document.getElementById("total");
+const tituloSecao = document.getElementById("titulo-Secao");
+
+function mostrar(lista){
+area.innerHTML="";
+total.textContent=lista.length;
+
+lista.forEach(p=>{
+let inicial=p.nome.charAt(0);
+let card=document.createElement("div");
+card.className="card";
+
+if(abaAtual === 'oficiais'){
+card.innerHTML=`
+<div class="logo">
+<img src="${p.logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>${inicial}</span>
+</div>
+<h3>${p.nome}</h3>
+<a href="${p.url}" target="_blank">Abrir Painel</a>
+`;
+} else {
+card.innerHTML=`
+<div class="logo">
+<img src="${p.logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>${inicial}</span>
+</div>
+<h3>${p.nome}</h3>
+<a href="${p.url}" target="_blank" style="background-color: #28a745;">Gerar painel teste com 1 crédito</a>
+`;
+}
+
+area.appendChild(card);
+});
+}
+
+function mudarAba(tipo){
+abaAtual = tipo;
+let pesquisaEl = document.getElementById("pesquisa");
+pesquisaEl.value = "";
+
+document.getElementById('btn-oficiais').style.opacity = tipo === 'oficiais' ? '1' : '0.6';
+document.getElementById('btn-testes').style.opacity = tipo === 'testes' ? '1' : '0.6';
+
+if(tipo === 'oficiais'){
+tituloSecao.textContent = "Painéis Disponíveis";
+mostrar(paineisOficiais);
+} else {
+tituloSecao.textContent = "Painéis de Teste Disponíveis";
+mostrar(paineisTestes);
+}
+}
+
+// Inicializa na aba oficial
+mostrar(paineisOficiais);
+
+document.getElementById("pesquisa").addEventListener("input",function(){
+let valor=this.value.toLowerCase();
+let base = abaAtual === 'oficiais' ? paineisOficiais : paineisTestes;
+mostrar(base.filter(p=>p.nome.toLowerCase().includes(valor)));
+});
+
+</script>
 
 </body>
 </html>

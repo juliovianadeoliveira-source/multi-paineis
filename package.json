@@ -1,0 +1,16 @@
+{
+  "name": "multi-paineis",
+  "version": "1.0.0",
+  "description": "Painel de gestão de múltiplos acessos e revendas",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "keywords": [
+    "painel",
+    "gestao",
+    "revenda"
+  ],
+  "author": "Julao",
+  "license": "MIT"
+}

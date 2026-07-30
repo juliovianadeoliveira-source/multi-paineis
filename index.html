@@ -1,393 +1,195 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Central de Painéis Premium</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-
-<body>
-
-
-<div class="background"></div>
-
-
-<header>
-
-<div class="container">
-
-<h1>
-🚀 Central de Painéis
-</h1>
-
-
-<input 
-id="pesquisa"
-placeholder="🔍 Pesquisar painel..."
->
-
-
-</div>
-
-</header>
-
-
-
-<section class="info">
-
-<h2>
-<span id="total"></span>
-Painéis Disponíveis
-</h2>
-
-</section>
-
-
-
-<main>
-
-<div id="painels" class="grid"></div>
-
-</main>
-
-
-
-
-<script>
-
-
 const paineis = [
-
 
 {
 nome:"TopZ TV",
-logo:"logos/topztv.png",
+logo:"https://topztv.sigma.vin/api/settings/logo/zKA7xQNM?v=c6409f64",
 url:"https://topztv.sigma.vin/#/sign-in"
 },
 
-
 {
 nome:"Prod TV",
-logo:"logos/prodtv.png",
+logo:"https://prodtv.sigma.st/api/settings/logo/q9DozyGw?v=8774d36a",
 url:"https://prodtv.sigma.st/#/sign-in"
 },
 
-
 {
 nome:"Painel Black BR",
-logo:"logos/blackbr.png",
+logo:"https://painelblackbr.com/api/settings/logo/8YEb8L97?v=478e93c0",
 url:"https://painelblackbr.com/#/sign-in"
 },
 
-
 {
 nome:"Fenix Streaming",
-logo:"logos/fenix.png",
+logo:"https://fenixstreaming.sigma.vin/api/settings/logo/kv3xYPMg?v=8d7d4037",
 url:"https://fenixstreaming.sigma.vin/#/sign-in"
 },
 
-
 {
 nome:"Onix Play",
-logo:"logos/onix.png",
+logo:"https://onixplay.top/favicon.ico",
 url:"https://onixplay.top/#/sign-in"
 },
 
-
 {
 nome:"Servidor Play",
-logo:"logos/servidor.png",
-url:"https://servidorplay.sigmab.pro/#/sign-in"
+logo:"https://servidorplay.sigmab.pro/api/settings/logo/A7zyn1kW?v=bd525071",
+url:"https://servidorplay.sigmab.pro/#/sign-in?redirect=/customers"
 },
-
 
 {
 nome:"A2 Play",
-logo:"logos/a2.png",
-url:"https://a2play.sigmab.pro/#/sign-in"
+logo:"https://a2play.sigmab.pro/api/settings/logo/2ErOkr5e?v=d324a012",
+url:"https://a2play.sigmab.pro/#/sign-in?timeOut=true"
 },
-
 
 {
 nome:"VIP Sigma",
-logo:"logos/vip.png",
+logo:"https://vip.sigma.vin/api/settings/logo/PzNz4rQx?v=376efd96",
 url:"https://vip.sigma.vin/#/sign-in"
 },
 
-
 {
 nome:"One",
-logo:"logos/one.png",
+logo:"https://i.supaimg.com/1d605871-6cdf-44e3-b893-b928780a556b.png",
 url:"https://one.srvi.top/"
 },
 
-
 {
 nome:"ET Player",
-logo:"logos/etplayer.png",
+logo:"https://etplayer.smartsignus.com/uploads/logo_login_tenant_27_1778303859.png",
 url:"https://etplayer.smartsignus.com/auth/login.php"
 },
 
-
 {
 nome:"Super STV",
-logo:"logos/superstv.png",
+logo:"https://superstv.sigma.vin/api/settings/logo/bDlLnqOP?v=3fd8f42b",
 url:"https://superstv.sigma.vin/#/sign-in"
 },
 
-
 {
 nome:"Lunna BR",
-logo:"logos/lunna.png",
+logo:"https://lunnabr.site/api/settings/logo/8NLmMLMB?v=91ddbdf6",
 url:"https://lunnabr.site/#/sign-in"
 },
 
-
 {
 nome:"FS Play",
-logo:"logos/fsplay.png",
+logo:"https://i.postimg.cc/m2B7PkmV/logo-original.png",
 url:"https://fsplay.fpanel.top/"
 },
 
-
 {
 nome:"Pro Black",
-logo:"logos/problack.png",
-url:"https://problack.sigma.st/#/sign-in"
+logo:"https://problack.sigma.st/api/settings/logo/g4ydkKbW?v=e9521a83",
+url:"https://problack.sigma.st/#/sign-in?redirect=/dashboard"
 },
-
 
 {
 nome:"Play Max",
-logo:"logos/playmax.png",
+logo:"https://playmax.sigmab.pro/api/settings/logo/DOLoygWV?v=e390fe32",
 url:"https://playmax.sigmab.pro/#/sign-in"
 },
 
-
 {
 nome:"Conect Play",
-logo:"logos/conect.png",
+logo:"https://conectplay.sigma.vin/api/settings/logo/DVM5eM6g?v=9b65443b",
 url:"https://conectplay.sigma.vin/#/sign-in"
 },
 
-
 {
 nome:"CineHub BR",
-logo:"logos/cinehub.png",
-url:"https://cinehub-br.sigma.st/#/sign-in"
+logo:"https://cinehub-br.sigma.st/api/settings/logo/Om2eJ5p6?v=25856ffc",
+url:"https://cinehub-br.sigma.st/#/sign-in?redirect=/dashboard?showNotice=1"
 },
-
 
 {
 nome:"Prime Lux",
-logo:"logos/primelux.png",
-url:"https://primelux.sigma.st/"
+logo:"https://primelux.sigma.st/api/settings/logo/MB61Bd5G?v=fec61295",
+url:"https://primelux.sigma.st/#/dashboard"
 },
-
 
 {
 nome:"Sport Play",
-logo:"logos/sportplay.png",
-url:"https://sportplay.sigma.vin/"
+logo:"https://sportplay.sigma.vin/api/settings/logo/EpLOb6VQ?v=f797ae7b",
+url:"https://sportplay.sigma.vin/#/sign-in"
 },
-
 
 {
 nome:"Kronos Server",
-logo:"logos/kronos.png",
+logo:"",
 url:"https://kronosserver.ryzen.fun/login"
 },
 
-
 {
 nome:"Premium Server",
-logo:"logos/premium.png",
-url:"https://premiumserver.sigma.vin/"
+logo:"https://premiumserver.sigma.vin/api/settings/logo/NP5bGYVa?v=f058b7b3",
+url:"https://premiumserver.sigma.vin/#/dashboard"
 },
-
 
 {
 nome:"Alpha Master",
-logo:"logos/alpha.png",
-url:"https://alphamaster.sigma.st/"
+logo:"https://alphamaster.sigma.st/api/settings/logo/ygGAvMXY?v=d49b5299",
+url:"https://alphamaster.sigma.st/#/sign-in"
 },
-
 
 {
 nome:"Entre",
-logo:"logos/entre.png",
-url:"https://entre.p2vip.xyz/"
+logo:"https://entre.p2vip.xyz/api/settings/logo/lXjpZLeY?v=04b48c72",
+url:"https://entre.p2vip.xyz/#/sign-in"
 },
-
 
 {
 nome:"Painel CineHub",
-logo:"logos/painelcinehub.png",
-url:"https://painelcinehub.top/"
+logo:"https://painelcinehub.top/api/settings/logo/9pVEJGZN?v=74d71843",
+url:"https://painelcinehub.top/#/sign-in"
 },
-
 
 {
 nome:"Fox Play",
-logo:"logos/fox.png",
-url:"https://foxplay.sigma.vin/"
+logo:"",
+url:"https://foxplay.sigma.vin/#/sign-in"
 },
-
 
 {
 nome:"All Box",
-logo:"logos/allbox.png",
-url:"https://allboxpaineladm.blog/"
+logo:"https://allboxpaineladm.blog/api/settings/logo/PLQganEg?v=d788e2ae",
+url:"https://allboxpaineladm.blog/#/sign-in?redirect=/dashboard"
 },
-
 
 {
 nome:"Odin Super",
-logo:"logos/odin.png",
-url:"https://odinsuper1x00.top/"
+logo:"https://odinsuper1x00.top/api/settings/logo/9JEAD24b?v=2292681f",
+url:"https://odinsuper1x00.top/#/dashboard"
 },
-
 
 {
 nome:"Vizion Net",
-logo:"logos/vizion.png",
-url:"https://vizion-net.sigmab.pro/"
+logo:"https://vizion-net.sigmab.pro/api/settings/logo/2kNvZNMV?v=230ba850",
+url:"https://vizion-net.sigmab.pro/#/sign-in"
 },
-
 
 {
 nome:"P2 Live",
-logo:"logos/p2live.png",
-url:"https://p2live.sigmab.pro/"
+logo:"https://p2live.sigmab.pro/api/settings/logo/5jDBvDpB?v=495cf937",
+url:"https://p2live.sigmab.pro/#/sign-in?redirect=/dashboard"
 },
-
 
 {
 nome:"Cineflix",
-logo:"logos/cineflix.png",
-url:"https://cineflix.3xt.fun/"
+logo:"https://cineflix.3xt.fun/api/settings/logo/lGoWqxe5?v=2cc81225",
+url:"https://cineflix.3xt.fun/#/sign-in?redirect=/dashboard"
 },
-
 
 {
 nome:"Lider IPTV",
-logo:"logos/lider.png",
-url:"https://lideriptv.sigma.st/"
+logo:"https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d",
+url:"https://lideriptv.sigma.st/#/sign-in"
 },
-
 
 {
 nome:"Painel W3 BR",
-logo:"logos/w3br.png",
+logo:"",
 url:"https://painelw3brtop.sytes.net/"
 }
 
-
 ];
-
-
-
-const area=document.getElementById("painels");
-
-const total=document.getElementById("total");
-
-
-function mostrar(lista){
-
-
-area.innerHTML="";
-
-
-total.textContent=lista.length;
-
-
-
-lista.forEach(p=>{
-
-
-let inicial=p.nome.charAt(0);
-
-
-
-let card=document.createElement("div");
-
-
-card.className="card";
-
-
-card.innerHTML=`
-
-<div class="logo">
-
-<img 
-src="${p.logo}"
-onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
->
-
-<span>${inicial}</span>
-
-</div>
-
-
-<h3>${p.nome}</h3>
-
-
-<a href="${p.url}" target="_blank">
-
-Abrir Painel
-
-</a>
-
-
-`;
-
-
-area.appendChild(card);
-
-
-});
-
-
-}
-
-
-
-mostrar(paineis);
-
-
-
-document
-.getElementById("pesquisa")
-.addEventListener("input",function(){
-
-
-let valor=this.value.toLowerCase();
-
-
-mostrar(
-
-paineis.filter(p=>
-
-p.nome.toLowerCase()
-.includes(valor)
-
-)
-
-);
-
-
-});
-
-
-
-</script>
-
-
-</body>
-</html>

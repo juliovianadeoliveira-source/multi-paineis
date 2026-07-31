@@ -32,6 +32,7 @@
   <button onclick="mudarAba('testes')" id="btn-testes" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Painéis de Teste</button>
   <button onclick="mudarAba('parceiros')" id="btn-parceiros" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Apps Parceiros</button>
   <button onclick="mudarAba('revenda')" id="btn-revenda" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Planos Revenda</button>
+  <button onclick="mudarAba('ativacoes')" id="btn-ativacoes" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Ativações de Aplicativos</button>
 </div>
 
 
@@ -60,7 +61,7 @@ placeholder="🔍 Pesquisar painel ou app..."
 
 <main>
 
-<!-- Área para Renderização das Grids (Painéis e Apps) -->
+<!-- Área para Renderização das Grids (Painéis, Apps e Ativações) -->
 <div id="painels" class="grid"></div>
 
 <!-- Área Exclusiva para a Aba 'Planos Revenda' -->
@@ -311,27 +312,18 @@ urlTeste: p.url
 
 // Lista de Aplicativos Parceiros
 const appsParceiros = [
-  // App Próprio
   { nome: "MAX PLAYER (App Próprio)", logo: "logos/maxplayer.png", sis: "Android / Fire Stick", downloader: "1890184", url: "http://aftv.news/1890184" },
-
-  // Apps Android com Login / Links
   { nome: "UNITV (Android)", logo: "logos/unitv.png", sis: "Android", downloader: "8090976", url: "http://aftv.news/8090976", user: "369496943", pass: "811852429" },
   { nome: "UNI REVENDA", logo: "logos/unirevenda.png", sis: "Android / Painel", ntdown: "2116714", user: "369496943", pass: "811852429" },
   { nome: "GPC PRO", logo: "logos/gpcpro.png", sis: "Android / Painel", ntdown: "2116714", user: "369496943", pass: "811852429" },
-
-  // Outros Apps Android
   { nome: "HOME PLAYER XTREAM", logo: "logos/homeplayerxtream.png", sis: "Android", ntdown: "63334", downloader: "6245886", url: "http://aftv.news/6245886" },
   { nome: "APP ZINK", logo: "logos/zink.png", sis: "Android", ntdown: "68618", downloader: "1650495", url: "http://aftv.news/1650495" },
   { nome: "HOME PLAYER", logo: "logos/homeplayer.png", sis: "Android", ntdown: "28558", downloader: "8845054", url: "http://aftv.news/8845054" },
   { nome: "TOP TV", logo: "logos/toptv.png", sis: "Android", ntdown: "4710019", downloader: "4710019", url: "http://aftv.news/4710019" },
-
-  // Provedores e Parceiros
   { nome: "LAZER PLAY", logo: "logos/lazerplay.png", sis: "Provedor / Multiplataforma" },
   { nome: "FUN PLAY", logo: "logos/funplay.png", sis: "Provedor / Multiplataforma" },
   { nome: "SMARTCPP", logo: "logos/smartcpp.png", sis: "Provedor / Multiplataforma" },
   { nome: "BLASSED PLAYER", logo: "logos/blassed.png", sis: "Smart TV / Android" },
-
-  // Apps Originais Mantidos sem Duplicação
   { nome: "ASSIST+ OFICIAL", logo: "logos/assistplus.png", sis: "LG, Roku, Android, Fire Stick" },
   { nome: "PLAYSIM", logo: "logos/playsim.png", sis: "LG, Roku, Samsung, Android" },
   { nome: "MAGIC PLAYER", logo: "logos/magicplayer.png", sis: "Roku" },
@@ -352,6 +344,16 @@ const appsParceiros = [
   { nome: "POWER PLAY", logo: "logos/powerplay.png", sis: "Roku, LG, Samsung, Android" },
   { nome: "EPIC PLAY", logo: "logos/epicplay.png", sis: "Roku, LG, Samsung, Android" },
   { nome: "SUPER PLAY", logo: "logos/superplay.png", sis: "LG, Roku, Samsung, Android" }
+];
+
+// Lista da nova aba: Ativações de Aplicativos
+const ativacoesApps = [
+  { 
+    nome: "Painel de Ativação de Apps", 
+    logo: "logos/ativacao.png", 
+    sis: "Ative licenças e aplicativos rapidamente", 
+    url: "https://ativacaodeaplicativos.com/?ref=cmn36pjfx0i8on7yr3ouq2dck" 
+  }
 ];
 
 let abaAtual = 'oficiais';
@@ -411,6 +413,16 @@ ${infoDownload}
   ${p.url ? '🔗 Baixar App' : 'Consultar no PV'}
 </a>
 `;
+} else if(abaAtual === 'ativacoes') {
+card.innerHTML=`
+<div class="logo">
+<img src="${p.logo}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+<span>⚡</span>
+</div>
+<h3>${p.nome}</h3>
+<p style="font-size: 0.85em; opacity: 0.8; margin: 5px 0 10px;">📲 ${p.sis}</p>
+<a href="${p.url}" target="_blank" style="background-color: #ff9f43; font-weight: bold;">Acessar Sistema de Ativação</a>
+`;
 }
 
 area.appendChild(card);
@@ -426,6 +438,7 @@ document.getElementById('btn-oficiais').style.opacity = tipo === 'oficiais' ? '1
 document.getElementById('btn-testes').style.opacity = tipo === 'testes' ? '1' : '0.6';
 document.getElementById('btn-parceiros').style.opacity = tipo === 'parceiros' ? '1' : '0.6';
 document.getElementById('btn-revenda').style.opacity = tipo === 'revenda' ? '1' : '0.6';
+document.getElementById('btn-ativacoes').style.opacity = tipo === 'ativacoes' ? '1' : '0.6';
 
 if(tipo === 'revenda') {
   area.style.display = "none";
@@ -447,6 +460,9 @@ if(tipo === 'revenda') {
   } else if(tipo === 'parceiros') {
     tituloSecao.textContent = "Apps Parceiros Disponíveis";
     mostrar(appsParceiros);
+  } else if(tipo === 'ativacoes') {
+    tituloSecao.textContent = "Ativações de Aplicativos";
+    mostrar(ativacoesApps);
   }
 }
 }
@@ -460,6 +476,7 @@ let base;
 if(abaAtual === 'oficiais') base = paineisOficiais;
 else if(abaAtual === 'testes') base = paineisTestes;
 else if(abaAtual === 'parceiros') base = appsParceiros;
+else if(abaAtual === 'ativacoes') base = ativacoesApps;
 
 if(base) mostrar(base.filter(p=>p.nome.toLowerCase().includes(valor)));
 });

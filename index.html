@@ -180,6 +180,7 @@
 
   .col-6 { flex: 1 1 calc(50% - 15px); min-width: 240px; }
   .col-4 { flex: 1 1 calc(33.33% - 15px); min-width: 180px; }
+  .col-12 { flex: 1 1 100%; }
 
   .form-group label {
     display: block;
@@ -250,16 +251,37 @@
   .w3br-table td {
     padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
   }
 
   .badge-status {
-    background: #28a745;
-    color: #fff;
-    padding: 3px 8px;
+    padding: 4px 8px;
     border-radius: 4px;
     font-size: 11px;
     font-weight: bold;
+    display: inline-block;
   }
+  .badge-ativo { background: #28a745; color: #fff; }
+  .badge-bloqueado { background: #dc3545; color: #fff; }
+
+  .btn-action {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .btn-acessar { background: #17a2b8; }
+  .btn-editar { background: #ffc107; color: #000; }
+  .btn-bloquear { background: #6c757d; }
+  .btn-excluir { background: #dc3545; }
+  .actions-cell { display: flex; gap: 5px; flex-wrap: wrap; }
 </style>
 
 </head>
@@ -303,7 +325,6 @@
     <button onclick="mudarAba('parceiros')" id="btn-parceiros" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Apps Parceiros</button>
     <button onclick="mudarAba('revenda')" id="btn-revenda" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Planos Revenda</button>
     <button onclick="mudarAba('ativacoes')" id="btn-ativacoes" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Ativações de Aplicativos</button>
-    <!-- NOVA ABA DE CRIAR REVENDA -->
     <button onclick="mudarAba('criar-revenda')" id="btn-criar-revenda" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6; background-color: #17a2b8; color: #fff; font-weight: bold; border-radius: 5px;">➕ Criar Revenda</button>
   </div>
 
@@ -328,7 +349,6 @@
   <!-- Área Exclusiva para a Aba 'Planos Revenda' -->
   <div id="secao-revenda" style="display: none; max-width: 900px; margin: 0 auto; padding: 10px;">
     
-    <!-- Destaques Principais de Revenda -->
     <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 25px;">
       
       <div style="background: rgba(255,255,255,0.05); border: 2px solid #28a745; border-radius: 12px; padding: 20px; text-align: center; flex: 1; min-width: 250px;">
@@ -351,7 +371,6 @@
 
     </div>
 
-    <!-- Planos Mensalistas de Créditos -->
     <h2 style="text-align: center; margin-bottom: 15px;">🏆 PLANOS MENSALISTAS DE CRÉDITOS</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 25px;">
       
@@ -377,7 +396,6 @@
 
     </div>
 
-    <!-- Quadro de Alerta / Bônus -->
     <div style="background: rgba(255, 71, 87, 0.15); border: 2px dashed #ff4757; border-radius: 10px; padding: 18px; text-align: center; margin-bottom: 20px;">
       <h3 style="margin: 0 0 8px 0; color: #ff4757;">🎁 BÔNUS EXCLUSIVO</h3>
       <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: #ffdd59;">
@@ -385,7 +403,6 @@
       </p>
     </div>
 
-    <!-- Botão de Ação -->
     <div style="text-align: center; margin-top: 25px;">
       <p style="font-size: 0.95em; opacity: 0.8; margin-bottom: 12px; font-weight: bold;">⚠️ CHAMAR NO PV SOMENTE QUEM TIVER REAL INTERESSE</p>
       <a href="https://wa.me/" target="_blank" style="display: inline-block; background: #25D366; color: #fff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em;">
@@ -403,7 +420,7 @@
       <div class="w3br-card-stat">
         <div class="stat-icon-bg icon-orange">👤</div>
         <div class="stat-info">
-          <h2 id="w3br-ativos">136</h2>
+          <h2 id="w3br-ativos">0</h2>
           <span>ATIVOS</span>
         </div>
       </div>
@@ -411,7 +428,7 @@
       <div class="w3br-card-stat">
         <div class="stat-icon-bg icon-red">📡</div>
         <div class="stat-info">
-          <h2 id="w3br-esgotados">1</h2>
+          <h2 id="w3br-esgotados">0</h2>
           <span>ESGOTADO</span>
         </div>
       </div>
@@ -419,7 +436,7 @@
       <div class="w3br-card-stat">
         <div class="stat-icon-bg icon-darkred">👥</div>
         <div class="stat-info">
-          <h2 id="w3br-bloqueados">2</h2>
+          <h2 id="w3br-bloqueados">0</h2>
           <span>BLOQUEADOS</span>
         </div>
       </div>
@@ -469,6 +486,14 @@
             </div>
           </div>
 
+          <!-- NOVO CAMPO: LINK DO PAINEL DO REVENDEDOR -->
+          <div class="form-row">
+            <div class="form-group col-12">
+              <label>🔗 Link / URL do Painel da Revenda:</label>
+              <input type="url" id="revenda-link" placeholder="Ex: https://painelw3brtop.sytes.net" required>
+            </div>
+          </div>
+
           <div class="form-row">
             <div class="form-group col-4">
               <label>Qtd. de Créditos Inicial:</label>
@@ -487,7 +512,7 @@
           </div>
 
           <div class="w3br-form-actions">
-            <button type="submit" class="btn-w3br-primary">💾 Salvar Cadastrado</button>
+            <button type="submit" class="btn-w3br-primary">💾 Salvar Cadastro</button>
             <button type="reset" class="btn-w3br-danger">❌ Limpar Form</button>
           </div>
         </form>
@@ -514,7 +539,7 @@
               </tr>
             </thead>
             <tbody id="tabela-revendedores-body">
-              <!-- Renderizado via Javascript -->
+              <!-- Renderizado via JavaScript -->
             </tbody>
           </table>
         </div>
@@ -534,11 +559,10 @@
 // SISTEMA DE AUTENTICAÇÃO DE LOGIN
 // =====================================
 const credenciaisValidas = {
-  usuario: "admin", // Altere aqui o usuário desejado
-  senha: "12345"    // Altere aqui a senha desejada
+  usuario: "admin", 
+  senha: "12345"    
 };
 
-// Verifica se o usuário já fez login anteriormente
 if (localStorage.getItem("logado_painel") === "true") {
   liberarAcesso();
 }
@@ -566,7 +590,6 @@ function sair() {
   location.reload();
 }
 
-// Permite acionar a tecla ENTER no input da senha para logar
 document.getElementById("login-senha").addEventListener("keyup", function(event) {
   if (event.key === "Enter") {
     autenticar();
@@ -802,8 +825,8 @@ if(base) mostrar(base.filter(p=>p.nome.toLowerCase().includes(valor)));
 // LÓGICA DA ABA "CRIAR REVENDA" (W3BR)
 // =====================================
 let listaRevendedores = JSON.parse(localStorage.getItem("w3br_revendedores")) || [
-  { id: 1, nome: "Julio Silva", grupo: "Revendedor", usuario: "julio2026", creditos: 50, status: "Ativo" },
-  { id: 2, nome: "Marcos TV", grupo: "Revendedor", usuario: "marcostv", creditos: 15, status: "Ativo" }
+  { id: 1, nome: "Julio Silva", grupo: "Revendedor", usuario: "julio2026", creditos: 50, status: "Ativo", url: "https://painelw3brtop.sytes.net" },
+  { id: 2, nome: "Marcos TV", grupo: "Revendedor", usuario: "marcostv", creditos: 15, status: "Ativo", url: "https://painelw3brtop.sytes.net" }
 ];
 
 function renderizarTabelaRevendas() {
@@ -811,7 +834,15 @@ function renderizarTabelaRevendas() {
   if (!tbody) return;
 
   tbody.innerHTML = "";
+  let qtdAtivos = 0;
+  let qtdBloqueados = 0;
+
   listaRevendedores.forEach((rev) => {
+    if (rev.status === "Ativo") qtdAtivos++;
+    if (rev.status === "Bloqueado") qtdBloqueados++;
+
+    let badgeClass = rev.status === "Ativo" ? "badge-ativo" : "badge-bloqueado";
+
     let tr = document.createElement("tr");
     tr.innerHTML = `
       <td>#${rev.id}</td>
@@ -819,27 +850,39 @@ function renderizarTabelaRevendas() {
       <td>${rev.grupo}</td>
       <td><code>${rev.usuario}</code></td>
       <td><b style="color:#17a2b8;">${rev.creditos}</b> crd</td>
-      <td><span class="badge-status">${rev.status}</span></td>
+      <td><span class="badge-status ${badgeClass}">${rev.status}</span></td>
       <td>
-        <button onclick="excluirRevenda(${rev.id})" style="background:#dc3545; color:#fff; border:none; padding:4px 8px; border-radius:4px; cursor:pointer;">🗑️ Excluir</button>
+        <div class="actions-cell">
+          <a href="${rev.url}" target="_blank" class="btn-action btn-acessar" title="Abrir Painel">🔗 Acessar</a>
+          <button onclick="editarCreditos(${rev.id})" class="btn-action btn-editar" title="Editar Créditos">✏️ Créditos</button>
+          <button onclick="alternarStatus(${rev.id})" class="btn-action btn-bloquear" title="Bloquear / Ativar">
+            ${rev.status === "Ativo" ? "🚫 Bloquear" : "🟢 Ativar"}
+          </button>
+          <button onclick="excluirRevenda(${rev.id})" class="btn-action btn-excluir" title="Excluir">🗑️ Excluir</button>
+        </div>
       </td>
     `;
     tbody.appendChild(tr);
   });
 
+  // Atualização dos Contadores
   const elemAtivos = document.getElementById("w3br-ativos");
-  if (elemAtivos) elemAtivos.textContent = 136 + listaRevendedores.length;
+  const elemBloqueados = document.getElementById("w3br-bloqueados");
+  
+  if (elemAtivos) elemAtivos.textContent = 136 + qtdAtivos;
+  if (elemBloqueados) elemBloqueados.textContent = 2 + qtdBloqueados;
 }
 
 function salvarNovaRevenda(event) {
   event.preventDefault();
 
   const novo = {
-    id: listaRevendedores.length + 1,
+    id: listaRevendedores.length ? Math.max(...listaRevendedores.map(r => r.id)) + 1 : 1,
     nome: document.getElementById("revenda-nome").value,
     grupo: document.getElementById("revenda-grupo").value,
     usuario: document.getElementById("revenda-usuario").value,
     creditos: parseInt(document.getElementById("revenda-creditos").value) || 0,
+    url: document.getElementById("revenda-link").value.trim(),
     status: "Ativo"
   };
 
@@ -849,6 +892,27 @@ function salvarNovaRevenda(event) {
   renderizarTabelaRevendas();
   document.getElementById("form-criar-revenda").reset();
   alert("🚀 Novo revendedor/cliente cadastrado com sucesso!");
+}
+
+function alternarStatus(id) {
+  const rev = listaRevendedores.find(r => r.id === id);
+  if (rev) {
+    rev.status = rev.status === "Ativo" ? "Bloqueado" : "Ativo";
+    localStorage.setItem("w3br_revendedores", JSON.stringify(listaRevendedores));
+    renderizarTabelaRevendas();
+  }
+}
+
+function editarCreditos(id) {
+  const rev = listaRevendedores.find(r => r.id === id);
+  if (rev) {
+    const novosCreditos = prompt(`Digite a nova quantidade de créditos para ${rev.nome}:`, rev.creditos);
+    if (novosCreditos !== null && !isNaN(novosCreditos)) {
+      rev.creditos = parseInt(novosCreditos);
+      localStorage.setItem("w3br_revendedores", JSON.stringify(listaRevendedores));
+      renderizarTabelaRevendas();
+    }
+  }
 }
 
 function excluirRevenda(id) {

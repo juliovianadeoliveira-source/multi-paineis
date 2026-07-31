@@ -88,6 +88,178 @@
   #conteudo-sistema {
     display: none; /* Oculta o sistema até autenticar */
   }
+
+  /* ==========================================
+     ESTILOS DO MÓDULO W3BR (CRIAR REVENDA)
+     ========================================== */
+  .w3br-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+
+  .w3br-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .w3br-card-stat {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .stat-icon-bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .icon-orange { background: rgba(230, 81, 0, 0.2); color: #ff9800; }
+  .icon-red { background: rgba(183, 28, 28, 0.2); color: #ff5252; }
+  .icon-darkred { background: rgba(136, 14, 79, 0.2); color: #ff4081; }
+  .icon-blue { background: rgba(0, 96, 100, 0.2); color: #00e5ff; }
+
+  .stat-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .stat-info span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #aaa;
+    letter-spacing: 0.5px;
+  }
+
+  .w3br-content-box {
+    background: rgba(20, 20, 25, 0.85);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    overflow: hidden;
+  }
+
+  .w3br-box-header {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .w3br-box-header h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .w3br-box-body {
+    padding: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .col-6 { flex: 1 1 calc(50% - 15px); min-width: 240px; }
+  .col-4 { flex: 1 1 calc(33.33% - 15px); min-width: 180px; }
+
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 5px;
+  }
+
+  .form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .form-group input:focus, .form-group select:focus {
+    border-color: #17a2b8;
+    outline: none;
+  }
+
+  .w3br-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .btn-w3br-primary {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn-w3br-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .table-responsive { overflow-x: auto; }
+  .w3br-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .w3br-table th {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #aaa;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .w3br-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .badge-status {
+    background: #28a745;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+  }
 </style>
 
 </head>
@@ -131,6 +303,8 @@
     <button onclick="mudarAba('parceiros')" id="btn-parceiros" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Apps Parceiros</button>
     <button onclick="mudarAba('revenda')" id="btn-revenda" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Planos Revenda</button>
     <button onclick="mudarAba('ativacoes')" id="btn-ativacoes" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6;">Ativações de Aplicativos</button>
+    <!-- NOVA ABA DE CRIAR REVENDA -->
+    <button onclick="mudarAba('criar-revenda')" id="btn-criar-revenda" class="aba-btn" style="padding: 8px 16px; cursor: pointer; opacity: 0.6; background-color: #17a2b8; color: #fff; font-weight: bold; border-radius: 5px;">➕ Criar Revenda</button>
   </div>
 
   <input id="pesquisa" placeholder="🔍 Pesquisar painel ou app...">
@@ -217,6 +391,134 @@
       <a href="https://wa.me/" target="_blank" style="display: inline-block; background: #25D366; color: #fff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em;">
         💬 Adquirir Plano no WhatsApp
       </a>
+    </div>
+
+  </div>
+
+  <!-- ÁREA EXCLUSIVA DE "CRIAR REVENDA" (ESTILO PAINEL W3BR) -->
+  <div id="secao-criar-revenda" class="w3br-container" style="display: none;">
+
+    <!-- CARDS DE STATS NO TOPO -->
+    <div class="w3br-stats-grid">
+      <div class="w3br-card-stat">
+        <div class="stat-icon-bg icon-orange">👤</div>
+        <div class="stat-info">
+          <h2 id="w3br-ativos">136</h2>
+          <span>ATIVOS</span>
+        </div>
+      </div>
+
+      <div class="w3br-card-stat">
+        <div class="stat-icon-bg icon-red">📡</div>
+        <div class="stat-info">
+          <h2 id="w3br-esgotados">1</h2>
+          <span>ESGOTADO</span>
+        </div>
+      </div>
+
+      <div class="w3br-card-stat">
+        <div class="stat-icon-bg icon-darkred">👥</div>
+        <div class="stat-info">
+          <h2 id="w3br-bloqueados">2</h2>
+          <span>BLOQUEADOS</span>
+        </div>
+      </div>
+
+      <div class="w3br-card-stat">
+        <div class="stat-icon-bg icon-blue">⏱️</div>
+        <div class="stat-info">
+          <h2 id="w3br-testes">1</h2>
+          <span>TESTE ATIVO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMULÁRIO DE CADASTRO DA REVENDA -->
+    <div class="w3br-content-box">
+      <div class="w3br-box-header">
+        <h3>➕ Cadastrar Novo Revendedor / Cliente</h3>
+      </div>
+      
+      <div class="w3br-box-body">
+        <form id="form-criar-revenda" onsubmit="salvarNovaRevenda(event)">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label>Nome do Cliente / Revenda:</label>
+              <input type="text" id="revenda-nome" placeholder="Ex: Julio Silva" required>
+            </div>
+
+            <div class="form-group col-6">
+              <label>Tipo de Conta (Grupo):</label>
+              <select id="revenda-grupo" required>
+                <option value="Revendedor"> Revendedor</option>
+                <option value="Usuário Final"> Usuário Final</option>
+                <option value="Administrador"> Administrador</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-6">
+              <label>Usuário (Login):</label>
+              <input type="text" id="revenda-usuario" placeholder="Ex: julio2026" required>
+            </div>
+
+            <div class="form-group col-6">
+              <label>Senha de Acesso:</label>
+              <input type="text" id="revenda-senha" placeholder="Ex: 123456" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-4">
+              <label>Qtd. de Créditos Inicial:</label>
+              <input type="number" id="revenda-creditos" value="10" min="0" required>
+            </div>
+
+            <div class="form-group col-4">
+              <label>Vencimento (Dias):</label>
+              <input type="number" id="revenda-dias" value="30" required>
+            </div>
+
+            <div class="form-group col-4">
+              <label>WhatsApp / Contato:</label>
+              <input type="text" id="revenda-whatsapp" placeholder="(11) 99999-9999">
+            </div>
+          </div>
+
+          <div class="w3br-form-actions">
+            <button type="submit" class="btn-w3br-primary">💾 Salvar Cadastrado</button>
+            <button type="reset" class="btn-w3br-danger">❌ Limpar Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- TABELA DE REVENDEDORES CADASTRADOS -->
+    <div class="w3br-content-box" style="margin-top: 25px;">
+      <div class="w3br-box-header">
+        <h3>📋 Revendedores e Clientes Cadastrados</h3>
+      </div>
+      <div class="w3br-box-body">
+        <div class="table-responsive">
+          <table class="w3br-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>GRUPO</th>
+                <th>LOGIN</th>
+                <th>CRÉDITOS</th>
+                <th>STATUS</th>
+                <th>AÇÕES</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-revendedores-body">
+              <!-- Renderizado via Javascript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -365,6 +667,7 @@ const area = document.getElementById("painels");
 const total = document.getElementById("total");
 const tituloSecao = document.getElementById("titulo-Secao");
 const secaoRevenda = document.getElementById("secao-revenda");
+const secaoCriarRevenda = document.getElementById("secao-criar-revenda");
 const inputPesquisa = document.getElementById("pesquisa");
 
 function mostrar(lista){
@@ -442,16 +745,27 @@ document.getElementById('btn-testes').style.opacity = tipo === 'testes' ? '1' : 
 document.getElementById('btn-parceiros').style.opacity = tipo === 'parceiros' ? '1' : '0.6';
 document.getElementById('btn-revenda').style.opacity = tipo === 'revenda' ? '1' : '0.6';
 document.getElementById('btn-ativacoes').style.opacity = tipo === 'ativacoes' ? '1' : '0.6';
+document.getElementById('btn-criar-revenda').style.opacity = tipo === 'criar-revenda' ? '1' : '0.6';
 
 if(tipo === 'revenda') {
   area.style.display = "none";
   secaoRevenda.style.display = "block";
+  secaoCriarRevenda.style.display = "none";
   inputPesquisa.style.display = "none"; 
   tituloSecao.textContent = "Tabela de Preços e Créditos";
   total.textContent = "";
+} else if(tipo === 'criar-revenda') {
+  area.style.display = "none";
+  secaoRevenda.style.display = "none";
+  secaoCriarRevenda.style.display = "block";
+  inputPesquisa.style.display = "none";
+  tituloSecao.textContent = "Gerenciador de Revendedores W3BR";
+  total.textContent = "";
+  renderizarTabelaRevendas();
 } else {
   area.style.display = "grid";
   secaoRevenda.style.display = "none";
+  secaoCriarRevenda.style.display = "none";
   inputPesquisa.style.display = "inline-block";
 
   if(tipo === 'oficiais'){
@@ -483,6 +797,67 @@ else if(abaAtual === 'ativacoes') base = ativacoesApps;
 
 if(base) mostrar(base.filter(p=>p.nome.toLowerCase().includes(valor)));
 });
+
+// =====================================
+// LÓGICA DA ABA "CRIAR REVENDA" (W3BR)
+// =====================================
+let listaRevendedores = JSON.parse(localStorage.getItem("w3br_revendedores")) || [
+  { id: 1, nome: "Julio Silva", grupo: "Revendedor", usuario: "julio2026", creditos: 50, status: "Ativo" },
+  { id: 2, nome: "Marcos TV", grupo: "Revendedor", usuario: "marcostv", creditos: 15, status: "Ativo" }
+];
+
+function renderizarTabelaRevendas() {
+  const tbody = document.getElementById("tabela-revendedores-body");
+  if (!tbody) return;
+
+  tbody.innerHTML = "";
+  listaRevendedores.forEach((rev) => {
+    let tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>#${rev.id}</td>
+      <td><b>${rev.nome}</b></td>
+      <td>${rev.grupo}</td>
+      <td><code>${rev.usuario}</code></td>
+      <td><b style="color:#17a2b8;">${rev.creditos}</b> crd</td>
+      <td><span class="badge-status">${rev.status}</span></td>
+      <td>
+        <button onclick="excluirRevenda(${rev.id})" style="background:#dc3545; color:#fff; border:none; padding:4px 8px; border-radius:4px; cursor:pointer;">🗑️ Excluir</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  const elemAtivos = document.getElementById("w3br-ativos");
+  if (elemAtivos) elemAtivos.textContent = 136 + listaRevendedores.length;
+}
+
+function salvarNovaRevenda(event) {
+  event.preventDefault();
+
+  const novo = {
+    id: listaRevendedores.length + 1,
+    nome: document.getElementById("revenda-nome").value,
+    grupo: document.getElementById("revenda-grupo").value,
+    usuario: document.getElementById("revenda-usuario").value,
+    creditos: parseInt(document.getElementById("revenda-creditos").value) || 0,
+    status: "Ativo"
+  };
+
+  listaRevendedores.push(novo);
+  localStorage.setItem("w3br_revendedores", JSON.stringify(listaRevendedores));
+  
+  renderizarTabelaRevendas();
+  document.getElementById("form-criar-revenda").reset();
+  alert("🚀 Novo revendedor/cliente cadastrado com sucesso!");
+}
+
+function excluirRevenda(id) {
+  if (confirm("Deseja realmente excluir este cadastro?")) {
+    listaRevendedores = listaRevendedores.filter(r => r.id !== id);
+    localStorage.setItem("w3br_revendedores", JSON.stringify(listaRevendedores));
+    renderizarTabelaRevendas();
+  }
+}
 
 </script>
 

@@ -5,11 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Central de Painéis Premium</title>
+<title>Central de Painéis Premium - JSTECH</title>
 
 <link rel="stylesheet" href="style.css">
 <style>
-  /* Estilos Exclusivos e Sofisticados para a Aba Cliente Final e Automatização por PIX QR Code */
+  /* Estilos Exclusivos e Sofisticados para Abas, Xcloud TV Estilo Oficial e Automatização por PIX QR Code */
   @keyframes flutuar {
     0% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-10px) rotate(2deg); }
@@ -215,11 +215,12 @@
     <h1>🚀 JSTECH - Central de Painéis</h1>
   </div>
 
-  <!-- Menu Completo com TODAS as Abas Pedidas -->
+  <!-- Menu Completo com a nova aba Xcloud TV exatamente como solicitado -->
   <div class="abas-navegacao" style="margin: 15px 0; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
     <button onclick="mudarAba('oficiais')" id="btn-oficiais" class="aba-btn ativo" style="padding: 8px 14px; cursor: pointer;">Painéis Oficiais</button>
     <button onclick="mudarAba('testes')" id="btn-testes" class="aba-btn" style="padding: 8px 14px; cursor: pointer; opacity: 0.6;">Painéis de Teste</button>
     <button onclick="mudarAba('parceiros')" id="btn-parceiros" class="aba-btn" style="padding: 8px 14px; cursor: pointer; opacity: 0.6;">Apps Parceiros</button>
+    <button onclick="mudarAba('xcloud')" id="btn-xcloud" class="aba-btn" style="padding: 8px 14px; cursor: pointer; opacity: 0.6; background: linear-gradient(45deg, #00b894, #55efc4); color: #000; font-weight: bold; border-radius: 6px;">⚡ Xcloud TV</button>
     <button onclick="mudarAba('cliente-final')" id="btn-cliente-final" class="aba-btn" style="padding: 8px 14px; cursor: pointer; opacity: 0.6; background: linear-gradient(45deg, #ff4757, #ff6b81); color: #fff; font-weight: bold; border-radius: 6px;">✨ Área Cliente Final</button>
     <button onclick="mudarAba('revenda')" id="btn-revenda" class="aba-btn" style="padding: 8px 14px; cursor: pointer; opacity: 0.6;">Planos Revenda</button>
     <button onclick="mudarAba('ativacoes')" id="btn-ativacoes" class="aba-btn" style="padding: 8px 14px; cursor: pointer; opacity: 0.6;">Ativações de Aplicativos</button>
@@ -242,6 +243,202 @@
 
   <!-- Área para Renderização das Grids (Painéis, Apps e Ativações) -->
   <div id="painels" class="grid"></div>
+
+  <!-- NOVA ABA: XCLOUD TV (Cópia exata e fiel do design oficial fornecido nas capturas) -->
+  <div id="secao-xcloud" style="display: none; max-width: 1100px; margin: 0 auto; padding: 15px; color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    
+    <!-- Hero Section Xcloud TV -->
+    <div style="text-align: center; padding: 40px 20px; background: radial-gradient(circle at center, rgba(15,25,35,0.8) 0%, rgba(10,10,15,0.95) 100%); border-radius: 20px; border: 1px solid rgba(0,184,148,0.2); margin-bottom: 40px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+      <div style="display: inline-block; background: rgba(0,184,148,0.1); color: #55efc4; padding: 6px 16px; border-radius: 20px; font-size: 0.85em; font-weight: bold; border: 1px solid rgba(0,184,148,0.3); margin-bottom: 20px;">
+        ⚡ Ativação assim que enviar o comprovante.
+      </div>
+      <h2 style="font-size: 3em; font-weight: 800; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px;">
+        Xcloud Entretenimento <br>em <span style="color: #00b894;">outro nível</span>
+      </h2>
+      <p style="font-size: 1.15em; color: #b2bec3; max-width: 700px; margin: 0 auto 35px auto; line-height: 1.6;">
+        Assista filmes, séries, canais ao vivo e muito mais com qualidade, estabilidade e praticidade.
+      </p>
+
+      <!-- 4 Cards Resumo do Topo -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; text-align: left; margin-top: 30px;">
+        <div style="background: rgba(25,30,40,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px;">
+          <h4 style="color: #fff; font-size: 1.4em; margin: 0 0 5px 0;">+20.000</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0;">conteúdos no catálogo</p>
+        </div>
+        <div style="background: rgba(25,30,40,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px;">
+          <h4 style="color: #fff; font-size: 1.4em; margin: 0 0 5px 0;">HD / FHD / 4K</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0;">qualidade de vídeo</p>
+        </div>
+        <div style="background: rgba(25,30,40,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px;">
+          <h4 style="color: #fff; font-size: 1.4em; margin: 0 0 5px 0;">Suporte</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0;">atendimento especializado</p>
+        </div>
+        <div style="background: rgba(25,30,40,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px;">
+          <h4 style="color: #fff; font-size: 1.4em; margin: 0 0 5px 0;">1 dispositivo</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0;">conectado neste valor</p>
+          <span style="font-size: 0.75em; color: #00b894; display: block; margin-top: 4px;">Mais telas ao mesmo tempo ou não: valores à parte — <b>consulte os planos.</b></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Por que Escolher -->
+    <div style="text-align: center; margin-bottom: 50px;">
+      <p style="color: #00b894; font-size: 0.85em; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px;">Por que escolher a Xcloud TV?</p>
+      <h3 style="font-size: 2.2em; font-weight: 800; margin-bottom: 30px;">Muito <span style="color: #00b894;">mais que uma plataforma</span></h3>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left;">
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px;">
+          <div style="color: #00b894; font-size: 1.5em; margin-bottom: 12px;">⚡</div>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Ativação rápida</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0; line-height: 1.5;">Receba seu acesso e comece a assistir em poucos minutos.</p>
+        </div>
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px;">
+          <div style="color: #00b894; font-size: 1.5em; margin-bottom: 12px;">📈</div>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Estabilidade</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0; line-height: 1.5;">Servidores de alta performance para uma experiência sem travamentos.</p>
+        </div>
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px;">
+          <div style="color: #00b894; font-size: 1.5em; margin-bottom: 12px;">💻</div>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Qualidade premium</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0; line-height: 1.5;">Imagens em HD, Full HD e até 4K para você aproveitar o melhor.</p>
+        </div>
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px;">
+          <div style="color: #00b894; font-size: 1.5em; margin-bottom: 12px;">🎧</div>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Suporte</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0; line-height: 1.5;">Atendimento humanizado todos os dias das 10 as 20 horas para cliente ativos ou novas ativações.</p>
+        </div>
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px;">
+          <div style="color: #00b894; font-size: 1.5em; margin-bottom: 12px;">➕</div>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.1em;">Sem fidelidade</h4>
+          <p style="color: #b2bec3; font-size: 0.9em; margin: 0; line-height: 1.5;">Planos flexíveis e sem burocracia. Você tem o controle.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Como Funciona -->
+    <div style="text-align: center; margin-bottom: 50px;">
+      <p style="color: #00b894; font-size: 0.85em; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px;">Como funciona</p>
+      <h3 style="font-size: 2.2em; font-weight: 800; margin-bottom: 30px;">Assista em 3 passos simples</h3>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; text-align: left;">
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px; position: relative;">
+          <span style="display: inline-block; width: 28px; height: 28px; background: #fff; color: #000; border-radius: 50%; text-align: center; line-height: 28px; font-weight: bold; font-size: 0.9em; margin-bottom: 15px;">1</span>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.2em;">Escolha seu plano</h4>
+          <p style="color: #b2bec3; font-size: 0.95em; margin: 0; line-height: 1.5;">Selecione o plano ideal para você.</p>
+        </div>
+        <div style="background: rgba(20,25,35,0.8); border: 2px solid #00b894; border-radius: 14px; padding: 25px; position: relative;">
+          <span style="display: inline-block; width: 28px; height: 28px; background: #00b894; color: #000; border-radius: 50%; text-align: center; line-height: 28px; font-weight: bold; font-size: 0.9em; margin-bottom: 15px;">2</span>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.2em;">Receba seu acesso</h4>
+          <p style="color: #b2bec3; font-size: 0.95em; margin: 0; line-height: 1.5;">Enviaremos seus dados rapidamente.</p>
+        </div>
+        <div style="background: rgba(20,25,35,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 25px; position: relative;">
+          <span style="display: inline-block; width: 28px; height: 28px; background: #fff; color: #000; border-radius: 50%; text-align: center; line-height: 28px; font-weight: bold; font-size: 0.9em; margin-bottom: 15px;">3</span>
+          <h4 style="margin: 0 0 10px 0; font-size: 1.2em;">Aproveite</h4>
+          <p style="color: #b2bec3; font-size: 0.95em; margin: 0; line-height: 1.5;">Acesse a plataforma com seus dados e aproveite o melhor conteúdo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planos Xcloud TV com PIX Automático -->
+    <div style="text-align: center; margin-bottom: 40px;">
+      <p style="color: #00b894; font-size: 0.85em; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px;">Planos que cabem no seu bolso</p>
+      <h3 style="font-size: 2.2em; font-weight: 800; margin-bottom: 15px;">Escolha o plano ideal para você</h3>
+      <p style="color: #b2bec3; font-size: 1em; max-width: 600px; margin: 0 auto 30px auto;">Selecione quantas telas independente de usar ou não de forma simultâneas você precisa escolher e depois escolha o período do plano.</p>
+
+      <!-- Grid de Períodos de Planos Xcloud (1 Dispositivo) -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; justify-content: center;">
+        
+        <!-- 30 Dias -->
+        <div class="card-plano-vip">
+          <h4 style="margin: 0 0 5px 0; color: #fff; font-size: 1.3em;">30 dias</h4>
+          <p style="font-size: 0.85em; color: #b2bec3; margin: 0 0 15px 0;">Ideal para começar</p>
+          <p style="font-size: 2.2em; font-weight: bold; margin: 15px 0; color: #fff;">R$ 25<span style="font-size: 0.4em; opacity: 0.7;">,00</span></p>
+          <div class="badge-vantagem">✓ Acesso completo</div>
+          <div class="badge-vantagem">✓ Canais ao vivo</div>
+          <div class="badge-vantagem">✓ Filmes e séries</div>
+          <div class="badge-vantagem">✓ Suporte</div>
+          <div class="badge-vantagem">✓ 1 dispositivo</div>
+          <button onclick="abrirModalPix('Xcloud TV - 30 Dias (1 Tela)', 'R$ 25,00')" style="display: block; width: 100%; background: #222; color: #fff; padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-weight: bold; margin-top: 20px; cursor: pointer; transition: background 0.2s;">Assinar agora</button>
+        </div>
+
+        <!-- 90 Dias -->
+        <div class="card-plano-vip">
+          <h4 style="margin: 0 0 5px 0; color: #fff; font-size: 1.3em;">90 dias</h4>
+          <p style="font-size: 0.85em; color: #b2bec3; margin: 0 0 15px 0;">Mais tempo, mais economia</p>
+          <p style="font-size: 2.2em; font-weight: bold; margin: 15px 0; color: #fff;">R$ 65<span style="font-size: 0.4em; opacity: 0.7;">,00</span></p>
+          <div class="badge-vantagem">✓ Acesso completo</div>
+          <div class="badge-vantagem">✓ Canais ao vivo</div>
+          <div class="badge-vantagem">✓ Filmes e séries</div>
+          <div class="badge-vantagem">✓ Suporte</div>
+          <div class="badge-vantagem">✓ 1 dispositivo</div>
+          <button onclick="abrirModalPix('Xcloud TV - 90 Dias (1 Tela)', 'R$ 65,00')" style="display: block; width: 100%; background: #222; color: #fff; padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-weight: bold; margin-top: 20px; cursor: pointer; transition: background 0.2s;">Assinar agora</button>
+        </div>
+
+        <!-- 180 Dias (Mais Escolhido) -->
+        <div class="card-plano-vip destaque">
+          <div style="position: absolute; top: 12px; right: -35px; background: #00b894; color: #000; font-size: 0.65em; font-weight: bold; padding: 4px 30px; transform: rotate(45deg);">MAIS ESCOLHIDO</div>
+          <h4 style="margin: 0 0 5px 0; color: #fff; font-size: 1.3em;">180 dias</h4>
+          <p style="font-size: 0.85em; color: #b2bec3; margin: 0 0 15px 0;">O equilíbrio perfeito</p>
+          <p style="font-size: 2.2em; font-weight: bold; margin: 15px 0; color: #fff;">R$ 120<span style="font-size: 0.4em; opacity: 0.7;">,00</span></p>
+          <div class="badge-vantagem">✓ Acesso completo</div>
+          <div class="badge-vantagem">✓ Canais ao vivo</div>
+          <div class="badge-vantagem">✓ Filmes e séries</div>
+          <div class="badge-vantagem">✓ Suporte</div>
+          <div class="badge-vantagem">✓ 1 dispositivo</div>
+          <button onclick="abrirModalPix('Xcloud TV - 180 Dias (1 Tela)', 'R$ 120,00')" style="display: block; width: 100%; background: #00b894; color: #000; padding: 12px; border: none; border-radius: 8px; font-weight: bold; margin-top: 20px; cursor: pointer; transition: opacity 0.2s;">Assinar agora</button>
+        </div>
+
+        <!-- 1 Ano -->
+        <div class="card-plano-vip">
+          <h4 style="margin: 0 0 5px 0; color: #fff; font-size: 1.3em;">1 ano</h4>
+          <p style="font-size: 0.85em; color: #b2bec3; margin: 0 0 15px 0;">Máxima economia</p>
+          <p style="font-size: 2.2em; font-weight: bold; margin: 15px 0; color: #fff;">R$ 190<span style="font-size: 0.4em; opacity: 0.7;">,00</span></p>
+          <div class="badge-vantagem">✓ Acesso completo</div>
+          <div class="badge-vantagem">✓ Canais ao vivo</div>
+          <div class="badge-vantagem">✓ Filmes e séries</div>
+          <div class="badge-vantagem">✓ Suporte</div>
+          <div class="badge-vantagem">✓ 1 dispositivo</div>
+          <button onclick="abrirModalPix('Xcloud TV - 1 Ano (1 Tela)', 'R$ 190,00')" style="display: block; width: 100%; background: #222; color: #fff; padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; font-weight: bold; margin-top: 20px; cursor: pointer; transition: background 0.2s;">Assinar agora</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Compatibilidade Dispositivos -->
+    <div style="text-align: center; background: rgba(20,25,35,0.6); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 30px; margin-bottom: 40px;">
+      <p style="color: #00b894; font-size: 0.85em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Compatível com Smart TV Samsung, LG, Roku, computador e iOS</p>
+      
+      <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 20px;">
+        <div style="text-align: center;">
+          <div style="font-size: 1.8em;">📺</div>
+          <p style="font-weight: bold; margin: 5px 0 2px 0; font-size: 0.9em;">Smart TV Samsung</p>
+          <span style="font-size: 0.75em; color: #b2bec3;">TVs Samsung com app na loja</span>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 1.8em;">🖥️</div>
+          <p style="font-weight: bold; margin: 5px 0 2px 0; font-size: 0.9em;">Smart TV LG</p>
+          <span style="font-size: 0.75em; color: #b2bec3;">webOS com app disponível</span>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 1.8em;">🕹️</div>
+          <p style="font-weight: bold; margin: 5px 0 2px 0; font-size: 0.9em;">Roku</p>
+          <span style="font-size: 0.75em; color: #b2bec3;">Streamers e TVs Roku</span>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 1.8em;">💻</div>
+          <p style="font-weight: bold; margin: 5px 0 2px 0; font-size: 0.9em;">Computador</p>
+          <span style="font-size: 0.75em; color: #b2bec3;">Windows e macOS</span>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 1.8em;">📱</div>
+          <p style="font-weight: bold; margin: 5px 0 2px 0; font-size: 0.9em;">iOS</p>
+          <span style="font-size: 0.75em; color: #b2bec3;">iPhone e iPad</span>
+        </div>
+      </div>
+      <p style="font-size: 0.8em; color: #ff7675; margin: 0; font-weight: bold;">⚠️ ANTES DE COMPRAR, VERIFIQUE SE O APP XCLOUD ESTÁ DISPONÍVEL NA LOJA DO SEU DISPOSITIVO. NÃO FUNCIONA EM ANDROID, TV BOX OU FIRE STICK.</p>
+    </div>
+
+  </div>
 
   <!-- Área Exclusiva para a Aba 'Cliente Final' com Pagamento Automatizado via QR Code PIX -->
   <div id="secao-cliente-final" style="display: none; max-width: 1100px; margin: 0 auto; padding: 15px;">
@@ -465,7 +662,7 @@
 
     <div style="text-align: center; margin-top: 25px;">
       <p style="font-size: 0.95em; opacity: 0.8; margin-bottom: 12px; font-weight: bold;">⚠️ CHAMAR NO PV SOMENTE QUEM TIVER REAL INTERESSE</p>
-      <a href="https://wa.me/5527997314781?text=Olá Jstech,+tenho+interesse+nos+planos+de+revenda+pelo+site+da+JSTECH!" target="_blank" style="display: inline-block; background: #25D366; color: #fff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em;">
+      <a href="https://wa.me/5527997314781?text=Olá,+tenho+interesse+nos+planos+de+revenda+pelo+site+da+JSTECH!" target="_blank" style="display: inline-block; background: #25D366; color: #fff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em;">
         💬 Adquirir Plano no WhatsApp
       </a>
     </div>
@@ -490,8 +687,8 @@
 
     <!-- CHAVE PIX DO USUÁRIO -->
     <div style="background: rgba(255,255,255,0.08); padding: 10px; border-radius: 8px; margin-bottom: 15px; text-align: center;">
-      <p style="margin: 0 0 5px 0; font-size: 0.85em; opacity: 0.8;">Chave PIX (Aleatoria):</p>
-      <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: #ffdd59; letter-spacing: 0.5px;">ac52ae78-c804-49bb-9fab-7d1f8986e217</p>
+      <p style="margin: 0 0 5px 0; font-size: 0.85em; opacity: 0.8;">Chave PIX (Telefone):</p>
+      <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: #ffdd59; letter-spacing: 0.5px;">27997314781</p>
     </div>
     
     <p style="font-size: 0.85em; opacity: 0.8; margin: 0 0 20px 0; line-height: 1.4;">
@@ -609,6 +806,7 @@ const total = document.getElementById("total");
 const tituloSecao = document.getElementById("titulo-Secao");
 const secaoRevenda = document.getElementById("secao-revenda");
 const secaoClienteFinal = document.getElementById("secao-cliente-final");
+const secaoXcloud = document.getElementById("secao-xcloud");
 const containerFlutuantesLateral = document.getElementById("container-flutuantes-lateral");
 const inputPesquisa = document.getElementById("pesquisa");
 
@@ -701,11 +899,12 @@ inputPesquisa.value = "";
 document.getElementById('btn-oficiais').style.opacity = tipo === 'oficiais' ? '1' : '0.6';
 document.getElementById('btn-testes').style.opacity = tipo === 'testes' ? '1' : '0.6';
 document.getElementById('btn-parceiros').style.opacity = tipo === 'parceiros' ? '1' : '0.6';
+document.getElementById('btn-xcloud').style.opacity = tipo === 'xcloud' ? '1' : '0.6';
 document.getElementById('btn-cliente-final').style.opacity = tipo === 'cliente-final' ? '1' : '0.6';
 document.getElementById('btn-revenda').style.opacity = tipo === 'revenda' ? '1' : '0.6';
 document.getElementById('btn-ativacoes').style.opacity = tipo === 'ativacoes' ? '1' : '0.6';
 
-if(tipo === 'cliente-final') {
+if(tipo === 'cliente-final' || tipo === 'xcloud') {
   containerFlutuantesLateral.style.display = "flex";
 } else {
   containerFlutuantesLateral.style.display = "none";
@@ -714,6 +913,7 @@ if(tipo === 'cliente-final') {
 if(tipo === 'revenda') {
   area.style.display = "none";
   secaoClienteFinal.style.display = "none";
+  secaoXcloud.style.display = "none";
   secaoRevenda.style.display = "block";
   inputPesquisa.style.display = "none"; 
   tituloSecao.textContent = "Tabela de Preços e Créditos Revenda";
@@ -721,14 +921,24 @@ if(tipo === 'revenda') {
 } else if(tipo === 'cliente-final') {
   area.style.display = "none";
   secaoRevenda.style.display = "none";
+  secaoXcloud.style.display = "none";
   secaoClienteFinal.style.display = "block";
   inputPesquisa.style.display = "none";
   tituloSecao.textContent = "Planos de Assinatura - JSTECH";
+  total.textContent = "";
+} else if(tipo === 'xcloud') {
+  area.style.display = "none";
+  secaoRevenda.style.display = "none";
+  secaoClienteFinal.style.display = "none";
+  secaoXcloud.style.display = "block";
+  inputPesquisa.style.display = "none";
+  tituloSecao.textContent = "Xcloud TV - Área Oficial de Assinaturas";
   total.textContent = "";
 } else {
   area.style.display = "grid";
   secaoRevenda.style.display = "none";
   secaoClienteFinal.style.display = "none";
+  secaoXcloud.style.display = "none";
   inputPesquisa.style.display = "inline-block";
 
   if(tipo === 'oficiais'){

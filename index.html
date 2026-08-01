@@ -87,207 +87,420 @@
 </style>
 </head>
 <body>
-<header class="top"><div class="head"><div class="brand"><span class="mark">JS</span><span><b>JSTECH, Central Premium</b><small>Painéis, apps, assinaturas e revenda</small></span></div><nav class="tabs"><button class="tab active" data-view="official">Painéis Oficiais</button><button class="tab" data-view="test">Painéis de Teste</button><button class="tab" data-view="apps">Apps Parceiros</button><button class="tab" data-view="xcloud">⚡ XCloud TV</button><button class="tab blessed" data-view="blessed">✨ Blessed Play</button><button class="tab" data-view="cliente">✨ Área Cliente Final</button><button class="tab" data-view="revenda">Planos Revenda</button><button class="tab" data-view="ativacoes">Ativações</button></nav></div></header>
+<header class="top">
+  <div class="head">
+    <div class="brand">
+      <span class="mark">JS</span>
+      <span><b>JSTECH, Central Premium</b><small>Painéis, apps, assinaturas e revenda</small></span>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-view="official">Painéis Oficiais</button>
+      <button class="tab" data-view="test">Painéis de Teste</button>
+      <button class="tab" data-view="apps">Apps Parceiros</button>
+      <button class="tab" data-view="xcloud">⚡ XCloud TV</button>
+      <button class="tab blessed" data-view="blessed">✨ Blessed Play</button>
+      <button class="tab" data-view="cliente">✨ Área Cliente Final</button>
+      <button class="tab" data-view="revenda">Planos Revenda</button>
+      <button class="tab" data-view="ativacoes">Ativações</button>
+      <button class="tab" data-view="csw3br">CS w3br</button>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section id="official" class="view active"><div class="wrap"><div class="eyebrow">Acesso autorizado</div><h1 class="title">Painéis oficiais</h1><p class="intro">Painéis com acesso oficial para gerenciamento de clientes e créditos.</p><div class="toolbar"><span class="count"><strong id="officialCount">0</strong> painéis disponíveis</span><input id="officialSearch" class="search" placeholder="🔍 Pesquisar painel..."></div><div id="officialGrid" class="grid"></div></div></section>
-<section id="test" class="view"><div class="wrap"><div class="eyebrow">Validação de acesso</div><h1 class="title">Painéis de teste</h1><p class="intro">Clique no botão para gerar painel teste com 1 crédito diretamente.</p><div class="toolbar"><span class="count"><strong id="testCount">0</strong> painéis disponíveis</span><input id="testSearch" class="search" placeholder="🔍 Pesquisar painel de teste..."></div><div id="testGrid" class="grid"></div></div></section>
-<section id="apps" class="view"><div class="wrap"><div class="eyebrow">Ecossistema JSTECH</div><h1 class="title">Apps Parceiros</h1><p class="intro">Logos e compatibilidade dos aplicativos parceiros.</p><div id="appGrid" class="grid"></div></div></section>
-<section id="xcloud" class="view brand-page"><div class="brand-hero"><div class="brand-grid"><div><div class="brand-id"><img src="https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png" alt="Logo XCloud TV"><span>XCLOUD TV</span></div><div class="eyebrow">Ativação rápida</div><h1>Xcloud entretenimento em <span>outro nível</span></h1><p>Filmes, séries, canais ao vivo, HD, Full HD e 4K.</p></div><div class="preview"><div class="preview-head"><strong>XCLOUD TV</strong><span style="color:var(--mint);font-size:11px">ATIVAÇÃO RÁPIDA</span></div><div class="preview-grid"><div class="preview-item"><b>HD · FHD · 4K</b><span>Qualidade premium</span></div><div class="preview-item"><b>Ao vivo</b><span>Canais e catálogo</span></div><div class="preview-item"><b>Suporte</b><span>Atendimento especializado</span></div><div class="preview-item"><b>1 a 4 telas</b><span>Escolha seu plano</span></div></div></div></div></div><div class="brand-section"><h2>Muito <span>mais que uma plataforma</span></h2><div class="benefits"><article class="benefit"><i>⚡</i><h3>Ativação rápida</h3><p>Receba seu acesso em poucos minutos.</p></article><article class="benefit"><i>↗</i><h3>Estabilidade</h3><p>Servidores de alta performance.</p></article><article class="benefit"><i>▣</i><h3>Qualidade premium</h3><p>HD, Full HD e até 4K.</p></article><article class="benefit"><i>◉</i><h3>Suporte</h3><p>Atendimento todos os dias.</p></article></div></div><div class="brand-section"><h2>Planos <span>XCloud TV</span></h2><div id="xcloudPlans" class="offers"></div></div><footer class="brand-footer">XCLOUD TV, uma experiência JSTECH Premium</footer></section>
-<section id="blessed" class="view brand-page"><div class="brand-hero"><div class="brand-grid"><div><div class="brand-id"><img src="https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png" alt="Logo Blessed Play"><span>BLESSED PLAY</span></div><div class="eyebrow">Área oficial Blessed Play</div><h1>Blessed entretenimento em <span>outro nível</span></h1><p>A mesma estrutura da XCloud, com identidade Blessed Play, qualidade, estabilidade e suporte.</p></div><div class="preview"><div class="preview-head"><strong>BLESSED PLAY</strong><span style="color:var(--mint);font-size:11px">ATIVAÇÃO RÁPIDA</span></div><div class="preview-grid"><div class="preview-item"><b>HD · FHD · 4K</b><span>Qualidade premium</span></div><div class="preview-item"><b>Ao vivo</b><span>Canais e catálogo</span></div><div class="preview-item"><b>Suporte</b><span>Atendimento especializado</span></div><div class="preview-item"><b>1 a 4 telas</b><span>Escolha seu plano</span></div></div></div></div></div><div class="brand-section"><h2>Por que escolher o <span>Blessed Play?</span></h2><div class="benefits"><article class="benefit"><i>⚡</i><h3>Ativação rápida</h3><p>Receba seu acesso em poucos minutos.</p></article><article class="benefit"><i>↗</i><h3>Estabilidade</h3><p>Servidores de alta performance.</p></article><article class="benefit"><i>▣</i><h3>Qualidade premium</h3><p>HD, Full HD e até 4K.</p></article><article class="benefit"><i>◉</i><h3>Suporte</h3><p>Atendimento todos os dias.</p></article></div></div><div class="brand-section"><h2>Planos <span>Blessed Play</span></h2><div id="blessedPlans" class="offers"></div></div><footer class="brand-footer">BLESSED PLAY, uma experiência JSTECH Premium</footer></section>
-<section id="cliente" class="view"><div class="wrap"><div class="eyebrow">Planos de assinatura</div><h1 class="title">Área Cliente Final</h1><div class="hero"><h2>🎬 A maior experiência em streaming</h2><p>Conteúdos, canais ao vivo, filmes, séries, HD, Full HD e 4K com suporte premium.</p></div><h2 class="section-title">💎 Planos com PIX automático</h2><div id="customerOffers" class="offers"></div></div></section>
-<section id="revenda" class="view"><div class="wrap"><div class="eyebrow">Parceria JSTECH</div><h1 class="title">Planos de Revenda</h1><p class="intro">Créditos, mensalistas, painéis ilimitados, Umbrella Corps e Loop-Shark + Loop Cine 4K.</p><h2 class="section-title">🎟️ Preço de créditos</h2><div id="creditOffers" class="offers"></div><h2 class="section-title">🎟️ Preço mensalista</h2><div id="monthlyOffers" class="offers"></div><h2 class="section-title">🎟️ Ilimitado mensalista ♾️</h2><div id="unlimitedOffers" class="offers"></div><div class="hero"><h2>Umbrella Corps ☢️</h2><p>Banners e divulgação, suporte humanizado, servidor estável e aplicativos parceiros.</p></div><div class="hero"><h2>Loop-Shark + Loop Cine 4K 🎬🔥</h2><p>2 servidores premium, 1 P2P exclusivo, aplicativos parceiros, grupo de suporte, filmes, séries, animes, canais e conteúdo HD, Full HD e 4K atualizado diariamente.</p></div></div></section>
-<section id="ativacoes" class="view"><div class="wrap"><div class="eyebrow">Licenças e aplicativos</div><h1 class="title">Ativações</h1><p class="intro">Acesse o sistema de ativação de aplicativos.</p><div id="activationGrid" class="grid"></div></div></section>
+  <section id="official" class="view active"><div class="wrap"><div class="eyebrow">Acesso autorizado</div><h1 class="title">Painéis oficiais</h1><p class="intro">Mantive esta área igual, com os painéis e as logos reais que você enviou.</p><div class="toolbar"><span class="count"><strong id="officialCount">0</strong> painéis disponíveis</span><input id="officialSearch" class="search" placeholder="🔍 Pesquisar painel..."></div><div id="officialGrid" class="grid"></div></div></section>
+  <section id="test" class="view"><div class="wrap"><div class="eyebrow">Validação de acesso</div><h1 class="title">Painéis de teste</h1><p class="intro">Mantive esta área igual, com os mesmos painéis, logos e ações de teste.</p><div class="toolbar"><span class="count"><strong id="testCount">0</strong> painéis disponíveis</span><input id="testSearch" class="search" placeholder="🔍 Pesquisar painel de teste..."></div><div id="testGrid" class="grid"></div></div></section>
+  <section id="apps" class="view"><div class="wrap"><div class="eyebrow">Ecossistema JSTECH</div><h1 class="title">Apps Parceiros</h1><p class="intro">Recoloquei as logos dos aplicativos parceiros nesta aba.</p><div id="appGrid" class="grid"></div></div></section>
+  <section id="xcloud" class="view brand-page"><div class="brand-hero"><div class="brand-grid"><div><div class="brand-id"><img src="https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png" alt="Logo XCloud TV"><span>XCLOUD TV</span></div><div class="eyebrow">Ativação rápida</div><h1>Xcloud entretenimento em <span>outro nível</span></h1><p>Filmes, séries, canais ao vivo, HD, Full HD e 4K.</p></div><div class="preview"><div class="preview-head"><strong>XCLOUD TV</strong><span style="color:var(--mint);font-size:11px">ATIVAÇÃO RÁPIDA</span></div><div class="preview-grid"><div class="preview-item"><b>HD · FHD · 4K</b><span>Qualidade premium</span></div><div class="preview-item"><b>Ao vivo</b><span>Canais e catálogo</span></div><div class="preview-item"><b>Suporte</b><span>Atendimento especializado</span></div><div class="preview-item"><b>1 a 4 telas</b><span>Escolha seu plano</span></div></div></div></div></div><div class="brand-section"><h2>Muito <span>mais que uma plataforma</span></h2><div class="benefits"><article class="benefit"><i>⚡</i><h3>Ativação rápida</h3><p>Receba seu acesso em poucos minutos.</p></article><article class="benefit"><i>↗</i><h3>Estabilidade</h3><p>Servidores de alta performance.</p></article><article class="benefit"><i>▣</i><h3>Qualidade premium</h3><p>HD, Full HD e até 4K.</p></article><article class="benefit"><i>◉</i><h3>Suporte</h3><p>Atendimento todos os dias.</p></article></div></div><div class="brand-section"><h2>Planos <span>XCloud TV</span></h2><div id="xcloudPlans" class="offers"></div></div><footer class="brand-footer">XCLOUD TV, uma experiência JSTECH Premium</footer></section>
+  <section id="blessed" class="view brand-page"><div class="brand-hero"><div class="brand-grid"><div><div class="brand-id"><img src="https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png" alt="Logo Blessed Play"><span>BLESSED PLAY</span></div><div class="eyebrow">Área oficial Blessed Play</div><h1>Blessed entretenimento em <span>outro nível</span></h1><p>A mesma estrutura da XCloud, com identidade Blessed Play, qualidade, estabilidade e suporte.</p></div><div class="preview"><div class="preview-head"><strong>BLESSED PLAY</strong><span style="color:var(--mint);font-size:11px">ATIVAÇÃO RÁPIDA</span></div><div class="preview-grid"><div class="preview-item"><b>HD · FHD · 4K</b><span>Qualidade premium</span></div><div class="preview-item"><b>Ao vivo</b><span>Canais e catálogo</span></div><div class="preview-item"><b>Suporte</b><span>Atendimento especializado</span></div><div class="preview-item"><b>1 a 4 telas</b><span>Escolha seu plano</span></div></div></div></div></div><div class="brand-section"><h2>Por que escolher o <span>Blessed Play?</span></h2><div class="benefits"><article class="benefit"><i>⚡</i><h3>Ativação rápida</h3><p>Receba seu acesso em poucos minutos.</p></article><article class="benefit"><i>↗</i><h3>Estabilidade</h3><p>Servidores de alta performance.</p></article><article class="benefit"><i>▣</i><h3>Qualidade premium</h3><p>HD, Full HD e até 4K.</p></article><article class="benefit"><i>◉</i><h3>Suporte</h3><p>Atendimento todos os dias.</p></article></div></div><div class="brand-section"><h2>Planos <span>Blessed Play</span></h2><div id="blessedPlans" class="offers"></div></div><footer class="brand-footer">BLESSED PLAY, uma experiência JSTECH Premium</footer></section>
+  <section id="cliente" class="view"><div class="wrap"><div class="eyebrow">Planos de assinatura</div><h1 class="title">Área Cliente Final</h1><div class="hero"><h2>🎬 A maior experiência em streaming</h2><p>Conteúdos, canais ao vivo, filmes, séries, HD, Full HD e 4K com suporte premium.</p></div><h2 class="section-title">💎 Planos com PIX automático</h2><div id="customerOffers" class="offers"></div></div></section>
+  <section id="revenda" class="view"><div class="wrap"><div class="eyebrow">Parceria JSTECH</div><h1 class="title">Planos de Revenda</h1><p class="intro">Créditos, mensalistas, painéis ilimitados, Umbrella Corps e Loop-Shark + Loop Cine 4K.</p><h2 class="section-title">🎟️ Preço de créditos</h2><div id="creditOffers" class="offers"></div><h2 class="section-title">🎟️ Preço mensalista</h2><div id="monthlyOffers" class="offers"></div><h2 class="section-title">🎟️ Ilimitado mensalista ♾️</h2><div id="unlimitedOffers" class="offers"></div><div class="hero"><h2>Umbrella Corps ☢️</h2><p>Banners e divulgação, suporte humanizado, servidor estável e aplicativos parceiros.</p></div><div class="hero"><h2>Loop-Shark + Loop Cine 4K 🎬🔥</h2><p>2 servidores premium, 1 P2P exclusivo, aplicativos parceiros, grupo de suporte, filmes, séries, animes, canais e conteúdo HD, Full HD e 4K atualizado diariamente.</p></div></div></section>
+  <section id="ativacoes" class="view"><div class="wrap"><div class="eyebrow">Licenças e aplicativos</div><h1 class="title">Ativações</h1><p class="intro">Acesse o sistema de ativação de aplicativos.</p><div id="activationGrid" class="grid"></div></div></section>
+
+  <!-- NOVA OPÇÃO: CS w3br -->
+  <section id="csw3br" class="view">
+    <div class="wrap">
+      <div style="display:flex; justify-content:center; gap:8px; flex-wrap:wrap; margin-bottom:28px;">
+        <button class="tab active" onclick="switchCsSub('inicio', event)">Início</button>
+        <button class="tab" onclick="switchCsSub('planos', event)">Planos</button>
+        <button class="tab" onclick="switchCsSub('teste', event)">Teste</button>
+        <button class="tab" onclick="switchCsSub('revendedor', event)">Seja um revendedor</button>
+        <button class="tab" onclick="switchCsSub('linhacsp', event)">Linha CSP</button>
+        <button class="tab" onclick="switchCsSub('criarservidor', event)">Criar servidor CS</button>
+      </div>
+
+      <!-- Sub-aba: Início -->
+      <div id="cs-inicio" class="cs-subview" style="display:block;">
+        <div class="hero" style="text-align:center;">
+          <h2 style="color:var(--mint); margin-bottom:10px;">MUITA ALEGRIA E LAZER<br>PARA A FAMÍLIA TODA!</h2>
+          <p style="color:var(--text); font-weight:700; margin-bottom:20px;">+ DE 380 CANAIS DE FILMES | SÉRIES | NOVELAS | ADULTOS (+18) | ESPORTES | DESENHOS | SHOWS</p>
+        </div>
+        <div class="hero">
+          <h2>PLANOS QUE CABEM NO SEU BOLSO!</h2>
+          <p>Para aqueles que desejam uma programação completa, disponibilizamos o serviço de venda de CS CLARO SAT e CS CABO NET, com mais de 380 canais. Nossa opção de plano anual é a que oferece maior economia em comparação aos planos mensal e semestral. Com um custo diário de menos de 20 centavos, nosso plano anual é muito mais econômico do que um simples cafezinho! Além disso, com nossa equipe de suporte técnico sempre pronta para ajudar, você não precisa se preocupar com possíveis problemas técnicos. Adquira agora mesmo nosso plano anual e aproveite uma programação completa por um preço acessível!</p>
+        </div>
+        <h2 class="section-title">PLANOS CS CLARO E CS NET CABO</h2>
+        <div class="offers">
+          <article class="offer">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">MAIS VENDIDO</span>
+            <h3>MENSAL</h3>
+            <div class="price">R$14,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">SEM DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Mensal%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+          <article class="offer">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">ECONÔMICO</span>
+            <h3>SEMESTRAL</h3>
+            <div class="price">R$70,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">17% DE DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Semestral%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+          <article class="offer featured">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">MAIS ECONÔMICO</span>
+            <h3>ANUAL</h3>
+            <div class="price">R$110,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">30% DE DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Anual%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+        </div>
+
+        <div class="hero" style="margin-top:40px;">
+          <h2>FAÇA UM TESTE GRATUITO POR 24 HORAS</h2>
+          <p>Com o objetivo de assegurar a excelência em nossos serviços, proporcionamos aos nossos clientes a possibilidade de requisitar um período de teste de 24 horas. Durante esse prazo, você será capaz de comprovar a qualidade do sinal, sua estabilidade e a ampla variedade de canais disponíveis, antes de escolher o seu plano ideal.</p>
+        </div>
+        <div class="offers" style="max-width:400px; margin:0 auto;">
+          <article class="offer">
+            <span style="font-size:11px; color:var(--teal); font-weight:900;">CUSTO ZERO</span>
+            <h3>24 HORAS DE ACESSO</h3>
+            <div class="price">R$0,00</div>
+            <div class="feature">Claro Sat / Cabo Net</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20gerar%20um%20teste%20gratuito%20de%2024h%20CS%20w3br" target="_blank" style="background:var(--teal); border-color:var(--teal); color:#061615;"><span>ADQUIRIR TESTE AUTOMÁTICO</span><span>↗</span></a>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20teste%20por%20whatsapp%20CS%20w3br" target="_blank" style="margin-top:8px;"><span>ADQUIRIR TESTE POR WHATSAPP</span><span>↗</span></a>
+          </article>
+        </div>
+
+        <div class="hero" style="margin-top:40px; text-align:center;">
+          <h2>Seja um revendedor CS w3br e comece a ganhar dinheiro hoje mesmo!</h2>
+          <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20ser%20revendedor%20CS%20w3br" target="_blank" style="max-width:250px; margin:20px auto 0 auto; justify-content:center;"><span>Saiba mais</span><span>↗</span></a>
+        </div>
+
+        <div style="text-align:center; margin-top:40px; color:var(--muted); font-size:14px;">
+          <p>Você ainda está com alguma dúvida?<br>Encaminhe um e-mail para nós!</p>
+        </div>
+      </div>
+
+      <!-- Sub-aba: Planos -->
+      <div id="cs-planos" class="cs-subview" style="display:none;">
+        <div class="hero" style="text-align:center;">
+          <h2 style="color:var(--mint); margin-bottom:10px;">MUITA ALEGRIA E LAZER<br>PARA A FAMÍLIA TODA!</h2>
+          <p style="color:var(--text); font-weight:700; margin-bottom:20px;">+ DE 380 CANAIS DE FILMES | SÉRIES | NOVELAS | ADULTOS (+18) | ESPORTES | DESENHOS | SHOWS</p>
+        </div>
+        <div class="hero">
+          <h2>PLANOS QUE CABEM NO SEU BOLSO!</h2>
+          <p>Para aqueles que desejam uma programação completa, disponibilizamos o serviço de venda de CS CLARO SAT e CS CABO NET, com mais de 380 canais. Nossa opção de plano anual é a que oferece maior economia em comparação aos planos mensal e semestral. Com um custo diário de menos de 20 centavos, nosso plano anual é muito mais econômico do que um simples cafezinho! Além disso, com nossa equipe de suporte técnico sempre pronta para ajudar, você não precisa se preocupar com possíveis problemas técnicos. Adquira agora mesmo nosso plano anual e aproveite uma programação completa por um preço acessível!</p>
+        </div>
+        <h2 class="section-title">PLANOS CS CLARO E CS NET CABO</h2>
+        <div class="offers">
+          <article class="offer">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">MAIS VENDIDO</span>
+            <h3>MENSAL</h3>
+            <div class="price">R$14,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">SEM DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Mensal%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+          <article class="offer">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">ECONÔMICO</span>
+            <h3>SEMESTRAL</h3>
+            <div class="price">R$70,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">17% DE DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Semestral%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+          <article class="offer featured">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">MAIS ECONÔMICO</span>
+            <h3>ANUAL</h3>
+            <div class="price">R$110,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">30% DE DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Anual%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+        </div>
+
+        <div class="hero" style="margin-top:40px;">
+          <h2>FAÇA UM TESTE GRATUITO POR 24 HORAS</h2>
+          <p>Com o objetivo de assegurar a excelência em nossos serviços, proporcionamos aos nossos clientes a possibilidade de requisitar um período de teste de 24 horas. Durante esse prazo, você será capaz de comprovar a qualidade do sinal, sua estabilidade e a ampla variedade de canais disponíveis, antes de escolher o seu plano ideal.</p>
+        </div>
+        <div class="offers" style="max-width:400px; margin:0 auto;">
+          <article class="offer">
+            <span style="font-size:11px; color:var(--teal); font-weight:900;">CUSTO ZERO</span>
+            <h3>24 HORAS DE ACESSO</h3>
+            <div class="price">R$0,00</div>
+            <div class="feature">Claro Sat / Cabo Net</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20gerar%20um%20teste%20gratuito%20de%2024h%20CS%20w3br" target="_blank" style="background:var(--teal); border-color:var(--teal); color:#061615;"><span>ADQUIRIR TESTE AUTOMÁTICO</span><span>↗</span></a>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20teste%20por%20whatsapp%20CS%20w3br" target="_blank" style="margin-top:8px;"><span>ADQUIRIR TESTE POR WHATSAPP</span><span>↗</span></a>
+          </article>
+        </div>
+
+        <div class="hero" style="margin-top:40px; text-align:center;">
+          <h2>Seja um revendedor CS w3br e comece a ganhar dinheiro hoje mesmo!</h2>
+          <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20ser%20revendedor%20CS%20w3br" target="_blank" style="max-width:250px; margin:20px auto 0 auto; justify-content:center;"><span>Saiba mais</span><span>↗</span></a>
+        </div>
+
+        <div style="text-align:center; margin-top:40px; color:var(--muted); font-size:14px;">
+          <p>Você ainda está com alguma dúvida?<br>Encaminhe um e-mail para nós!</p>
+        </div>
+      </div>
+
+      <!-- Sub-aba: Teste -->
+      <div id="cs-teste" class="cs-subview" style="display:none;">
+        <div class="hero" style="text-align:center;">
+          <h2 style="color:var(--mint); margin-bottom:10px;">MUITA ALEGRIA E LAZER<br>PARA A FAMÍLIA TODA!</h2>
+          <p style="color:var(--text); font-weight:700; margin-bottom:20px;">+ DE 380 CANAIS DE FILMES | SÉRIES | NOVELAS | ADULTOS (+18) | ESPORTES | DESENHOS | SHOWS</p>
+        </div>
+        <div class="hero">
+          <h2>PLANOS QUE CABEM NO SEU BOLSO!</h2>
+          <p>Para aqueles que desejam uma programação completa, disponibilizamos o serviço de venda de CS CLARO SAT e CS CABO NET, com mais de 380 canais. Nossa opção de plano anual é a que oferece maior economia em comparação aos planos mensal e semestral. Com um custo diário de menos de 20 centavos, nosso plano anual é muito mais econômico do que um simples cafezinho! Além disso, com nossa equipe de suporte técnico sempre pronta para ajudar, você não precisa se preocupar com possíveis problemas técnicos. Adquira agora mesmo nosso plano anual e aproveite uma programação completa por um preço acessível!</p>
+        </div>
+        <h2 class="section-title">PLANOS CS CLARO E CS NET CABO</h2>
+        <div class="offers">
+          <article class="offer">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">MAIS VENDIDO</span>
+            <h3>MENSAL</h3>
+            <div class="price">R$14,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">SEM DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Mensal%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+          <article class="offer">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">ECONÔMICO</span>
+            <h3>SEMESTRAL</h3>
+            <div class="price">R$70,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">17% DE DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Semestral%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+          <article class="offer featured">
+            <span style="font-size:11px; color:var(--mint); font-weight:900;">MAIS ECONÔMICO</span>
+            <h3>ANUAL</h3>
+            <div class="price">R$110,00</div>
+            <div class="feature">Claro Sat ou Net Cabo</div>
+            <div class="feature">30% DE DESCONTO</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20o%20plano%20Anual%20CS%20w3br" target="_blank"><span>ADQUIRIR</span><span>↗</span></a>
+          </article>
+        </div>
+
+        <div class="hero" style="margin-top:40px;">
+          <h2>FAÇA UM TESTE GRATUITO POR 24 HORAS</h2>
+          <p>Com o objetivo de assegurar a excelência em nossos serviços, proporcionamos aos nossos clientes a possibilidade de requisitar um período de teste de 24 horas. Durante esse prazo, você será capaz de comprovar a qualidade do sinal, sua estabilidade e a ampla variedade de canais disponíveis, antes de escolher o seu plano ideal.</p>
+        </div>
+        <div class="offers" style="max-width:400px; margin:0 auto;">
+          <article class="offer">
+            <span style="font-size:11px; color:var(--teal); font-weight:900;">CUSTO ZERO</span>
+            <h3>24 HORAS DE ACESSO</h3>
+            <div class="price">R$0,00</div>
+            <div class="feature">Claro Sat / Cabo Net</div>
+            <div class="feature">Suporte especializado</div>
+            <div class="feature">+ 380 canais</div>
+            <div class="feature">Canais em HD</div>
+            <div class="feature">Servidor dedicado e mais estável do mercado</div>
+            <div class="feature">99,9% de up time</div>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20gerar%20um%20teste%20gratuito%20de%2024h%20CS%20w3br" target="_blank" style="background:var(--teal); border-color:var(--teal); color:#061615;"><span>ADQUIRIR TESTE AUTOMÁTICO</span><span>↗</span></a>
+            <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20teste%20por%20whatsapp%20CS%20w3br" target="_blank" style="margin-top:8px;"><span>ADQUIRIR TESTE POR WHATSAPP</span><span>↗</span></a>
+          </article>
+        </div>
+
+        <div class="hero" style="margin-top:40px; text-align:center;">
+          <h2>Seja um revendedor CS w3br e comece a ganhar dinheiro hoje mesmo!</h2>
+          <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20ser%20revendedor%20CS%20w3br" target="_blank" style="max-width:250px; margin:20px auto 0 auto; justify-content:center;"><span>Saiba mais</span><span>↗</span></a>
+        </div>
+
+        <div style="text-align:center; margin-top:40px; color:var(--muted); font-size:14px;">
+          <p>Você ainda está com alguma dúvida?<br>Encaminhe um e-mail para nós!</p>
+        </div>
+      </div>
+
+      <!-- Sub-aba: Seja um revendedor -->
+      <div id="cs-revendedor" class="cs-subview" style="display:none;">
+        <div class="hero">
+          <h2>REVENDA CS CLARO E CS NET CABO</h2>
+          <p><strong>Seja bem-vindo ao sistema de parcerias e revendas CS w3br!</strong><br>
+          Se você quer aumentar o seu faturamento mensal revendendo logins CS CLARO HD e CS NET HD com qualidade, não perca essa oportunidade que estamos oferecendo a você! Nossos parceiros em revendas de CS têm um preço justo e competitivo para obter lucros reais. Você só vai se preocupar em cadastrar, manter os seus clientes de CS e receber seu lucro.</p>
+        </div>
+        <div class="hero">
+          <h2>Características da Revenda CS</h2>
+          <p>
+            • Montamos painel ADM e servidores próprios.<br>
+            • Preço especial.<br>
+            • Venha para o servidor mais estável do Brasil.<br>
+            • O melhor suporte 24hrs para revendas.<br>
+            • Oferecemos Revenda de excelente qualidade e bom preço para que você obtenha Lucros grandes.<br>
+            • Você só se preocupara em cadastrar e manter os seus clientes e receber.<br>
+            • Nós cuidamos do servidor e o bom funcionamento do mesmo.<br>
+            • Contato personalizado e direto com a Equipe CS w3br.<br><br>
+            <strong>Atenção:</strong> Se tornando um de nossos revendedores você passa a ter contato direto com a nossa equipe. Realmente cuidamos de nossos parceiros. No Painel de Revendas Satélite oferecemos URLs personalizadas, portas de Acesso entre outras comodidades.<br>
+            Temos um sistema único incentivando e valorizando nossa revendas das formas mais variadas.<br>
+            Os valores são bons para revendas com boa quantidade de Logins.<br><br>
+            <strong>Algumas opções da revenda CS:</strong><br>
+            - Opção de Cadastrar cliente<br>
+            - Opção de Excluir cliente<br>
+            - Opção de Editar cliente.<br>
+            - Opção de Criar testes.<br>
+            Dentre muitas outras funções que o painel lhe oferece.
+          </p>
+        </div>
+        <div class="hero" style="text-align:center;">
+          <h2>ENTRE EM CONTATO ABAIXO</h2>
+          <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20revender%20CS%20w3br" target="_blank" style="max-width:250px; margin:20px auto 0 auto; justify-content:center;"><span>QUERO REVENDER CS</span><span>↗</span></a>
+        </div>
+        <div style="text-align:center; margin-top:40px; color:var(--muted); font-size:14px;">
+          <p>Você ainda está com alguma dúvida?<br>Encaminhe um e-mail para nós!</p>
+        </div>
+      </div>
+
+      <!-- Sub-aba: Linha CSP -->
+      <div id="cs-linhacsp" class="cs-subview" style="display:none;">
+        <div class="hero">
+          <h2>Linha CSP Claro sat e cabo NET</h2>
+          <p><strong>Linha CSP, linha OSCAM e configuração CSP.</strong><br><br>
+          Contamos com o que há de melhor se tratando de linha CSP, Cards diretos da OSCAM, excelente Time e Uptime de 99.9%.<br>
+          Tudo o que você precisa para seu montar o seu servidor! Se você sempre procura oferecer o melhor serviço para seus clientes, então você veio ao lugar certo! Linhas Oscam para sua CSP. Trabalhamos com linha NET CABO e linha CLARO SAT, todas direto de OSCAM para cloud, cada linha tem capacidade para 50 clientes conectados simultaneamente. Oferecemos suporte diferenciado, montamos seu servidor de CS totalmente funcional e atualizado. Linhas com time baixíssimo garantindo qualidade na entrega ao cliente final e menos dor de cabeça para você.</p>
+        </div>
+        <div class="hero">
+          <h2>Características da CSP w3br</h2>
+          <p>
+            • MELHOR UPTIME DO MERCADO<br>
+            • SERVIDORES NO BRASIL<br>
+            • MELHOR LATÊNCIA<br>
+            • SISTEMA OSCAM<br>
+            • TIME DAS LINHAS BAIXOS<br>
+            • SEM TRAVAS<br>
+            • SUPORTE TÉCNICO 24 HORAS
+          </p>
+        </div>
+        <div class="hero" style="text-align:center;">
+          <h2>ENTRE</h2>
+          <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20adquirir%20uma%20ou%20mais%20linhas%20CSP%20w3br" target="_blank" style="max-width:300px; margin:20px auto 0 auto; justify-content:center;"><span>QUERO ADQUIRIR UMA OU MAIS LINHAS CSP</span><span>↗</span></a>
+        </div>
+        <div style="text-align:center; margin-top:40px; color:var(--muted); font-size:14px;">
+          <p>Você ainda está com alguma dúvida?<br>Encaminhe um e-mail para nós!</p>
+        </div>
+      </div>
+
+      <!-- Sub-aba: Criar servidor CS -->
+      <div id="cs-criarservidor" class="cs-subview" style="display:none;">
+        <div class="hero">
+          <h2>Criar servidor CS Claro sat e cabo NET</h2>
+          <p>Projetamos servidores de CS personalizados para atender às suas necessidades de transmissão, desde a configuração inicial até a manutenção contínua. Com uma equipe dedicada e altamente experiente, garantimos a entrega de um servidor confiável, escalável e de alta qualidade. Não importa qual seja o seu objetivo – seja para transmissão ao vivo, armazenamento de vídeos ou distribuição de conteúdo -, temos a solução ideal para você! Entre em contato conosco agora mesmo para começar a criar o servidor de CS que melhor se adapta ao seu negócio!</p>
+        </div>
+        <div class="hero" style="text-align:center;">
+          <h2>ENTRE EM CONTATO ABAIXO</h2>
+          <a class="action" href="https://wa.me/5527997314781?text=Olá,%20quero%20ter%20meu%20próprio%20servidor%20CS%20w3br" target="_blank" style="max-width:300px; margin:20px auto 0 auto; justify-content:center;"><span>QUERO TER MEU PRÓPRIO SERVIDOR CS</span><span>↗</span></a>
+        </div>
+        <div style="text-align:center; margin-top:40px; color:var(--muted); font-size:14px;">
+          <p>Você ainda está com alguma dúvida?<br>Encaminhe um e-mail para nós!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<dialog id="pixModal" class="modal"><div class="modal-in"><div><div class="eyebrow">Pagamento PIX</div><h2 id="pixTitle">Plano selecionado</h2></div><button id="closePix" class="close">&times;</button><div class="qr"><iframe src="https://rare-amber-tqgqar5b.edgeone.dev/" title="QR Code PIX"></iframe></div><div class="pix-key">Chave PIX, telefone: 27997314781</div><p>Escaneie o QR Code ou use a chave no aplicativo do banco.</p><a id="sendPix" class="action" target="_blank" href="#"><span>✅ Já paguei, enviar comprovante</span><span>↗</span></a></div></dialog>
+
+<dialog id="pixModal" class="modal"><div class="modal-in"><div><div class="eyebrow">Pagamento PIX</div><h2 id="pixTitle">Plano selecionado</h2></div><button id="closePix" class="close">×</button><div class="qr"><iframe src="https://rare-amber-tqgqar5b.edgeone.dev/" title="QR Code PIX"></iframe></div><div class="pix-key">Chave PIX, telefone: 27997314781</div><p>Escaneie o QR Code ou use a chave no aplicativo do banco.</p><a id="sendPix" class="action" target="_blank" href="#"><span>✅ Já paguei, enviar comprovante</span><span>↗</span></a></div></dialog>
+
 <script>
-// Painéis Oficiais: [nome, logo, descrição, url]
 const panels=[
-['TopZ TV','https://topztv.sigma.vin/api/settings/logo/zKA7xQNM?v=c6409f64','Portal principal para gerenciamento de clientes e créditos.','https://topztv.sigma.vin/#/sign-in'],
-['Prod TV','https://prodtv.sigma.st/api/settings/logo/q9DozyGw?v=8774d36a','Portal principal para gerenciamento de clientes e créditos.','https://prodtv.sigma.st/#/sign-in'],
-['Painel Black BR','https://painelblackbr.com/api/settings/logo/8YEb8L97?v=478e93c0','Portal principal para gerenciamento de clientes e créditos.','https://painelblackbr.com/#/sign-in'],
-['Fenix Streaming','https://fenixstreaming.sigma.vin/api/settings/logo/kv3xYPMg?v=8d7d4037','Portal principal para gerenciamento de clientes e créditos.','https://fenixstreaming.sigma.vin/#/sign-in'],
-['Onix Play','logos/onix.png','Portal principal para gerenciamento de clientes e créditos.','https://onixplay.top/#/sign-in'],
-['Servidor Play','https://servidorplay.sigmab.pro/api/settings/logo/A7zyn1kW?v=bd525071','Portal principal para gerenciamento de clientes e créditos.','https://servidorplay.sigmab.pro/#/sign-in?redirect=/customers'],
-['A2 Play','https://a2play.sigmab.pro/api/settings/logo/2ErOkr5e?v=d324a012','Portal principal para gerenciamento de clientes e créditos.','https://a2play.sigmab.pro/#/sign-in?timeOut=true'],
-['VIP Sigma','https://vip.sigma.vin/api/settings/logo/PzNz4rQx?v=376efd96','Portal principal para gerenciamento de clientes e créditos.','https://vip.sigma.vin/#/sign-in'],
-['One','https://i.supaimg.com/1d605871-6cdf-44e3-b893-b928780a556b.png','Portal principal para gerenciamento de clientes e créditos.','https://one.srvi.top/'],
-['ET Player','https://etplayer.smartsignus.com/uploads/logo_login_tenant_27_1778303859.png','Portal principal para gerenciamento de clientes e créditos.','https://etplayer.smartsignus.com/auth/login.php'],
-['Super STV','https://superstv.sigma.vin/api/settings/logo/bDlLnqOP?v=3fd8f42b','Portal principal para gerenciamento de clientes e créditos.','https://superstv.sigma.vin/#/sign-in'],
-['Lunna BR','https://lunnabr.site/api/settings/logo/8NLmMLMB?v=91ddbdf6','Portal principal para gerenciamento de clientes e créditos.','https://lunnabr.site/#/sign-in'],
-['FS Play','https://i.postimg.cc/m2B7PkmV/logo-original.png','Portal principal para gerenciamento de clientes e créditos.','https://fsplay.fpanel.top/'],
-['Pro Black','https://problack.sigma.st/api/settings/logo/g4ydkKbW?v=e9521a83','Portal principal para gerenciamento de clientes e créditos.','https://problack.sigma.st/#/sign-in?redirect=/dashboard'],
-['Play Max','https://playmax.sigmab.pro/api/settings/logo/DOLoygWV?v=e390fe32','Portal principal para gerenciamento de clientes e créditos.','https://playmax.sigmab.pro/#/sign-in'],
-['Conect Play','https://conectplay.sigma.vin/api/settings/logo/DVM5eM6g?v=9b65443b','Portal principal para gerenciamento de clientes e créditos.','https://conectplay.sigma.vin/#/sign-in'],
-['CineHub BR','https://cinehub-br.sigma.st/api/settings/logo/Om2eJ5p6?v=25856ffc','Portal principal para gerenciamento de clientes e créditos.','https://cinehub-br.sigma.st/#/sign-in?redirect=/dashboard?showNotice=1'],
-['Prime Lux','https://primelux.sigma.st/api/settings/logo/MB61Bd5G?v=fec61295','Portal principal para gerenciamento de clientes e créditos.','https://primelux.sigma.st/#/dashboard'],
-['Sport Play','https://sportplay.sigma.vin/api/settings/logo/EpLOb6VQ?v=f797ae7b','Portal principal para gerenciamento de clientes e créditos.','https://sportplay.sigma.vin/#/sign-in'],
-['Kronos Server','logos/kronos.png','Portal principal para gerenciamento de clientes e créditos.','https://kronosserver.ryzen.fun/login'],
-['Premium Server','https://premiumserver.sigma.vin/api/settings/logo/NP5bGYVa?v=f058b7b3','Portal principal para gerenciamento de clientes e créditos.','https://premiumserver.sigma.vin/#/dashboard'],
-['Alpha Master','https://alphamaster.sigma.st/api/settings/logo/ygGAvMXY?v=d49b5299','Portal principal para gerenciamento de clientes e créditos.','https://alphamaster.sigma.st/#/sign-in'],
-['Entre','https://entre.p2vip.xyz/api/settings/logo/lXjpZLeY?v=04b48c72','Portal principal para gerenciamento de clientes e créditos.','https://entre.p2vip.xyz/#/sign-in'],
-['Painel CineHub','https://painelcinehub.top/api/settings/logo/9pVEJGZN?v=74d71843','Portal principal para gerenciamento de clientes e créditos.','https://painelcinehub.top/#/sign-in'],
-['Fox Play','logos/fox.png','Portal principal para gerenciamento de clientes e créditos.','https://foxplay.sigma.vin/#/sign-in'],
-['All Box','https://allboxpaineladm.blog/api/settings/logo/PLQganEg?v=d788e2ae','Portal principal para gerenciamento de clientes e créditos.','https://allboxpaineladm.blog/#/sign-in?redirect=/dashboard'],
-['Odin Super','https://odinsuper1x00.top/api/settings/logo/9JEAD24b?v=2292681f','Portal principal para gerenciamento de clientes e créditos.','https://odinsuper1x00.top/#/dashboard'],
-['Vizion Net','https://vizion-net.sigmab.pro/api/settings/logo/2kNvZNMV?v=230ba850','Portal principal para gerenciamento de clientes e créditos.','https://vizion-net.sigmab.pro/#/sign-in'],
-['P2 Live','https://p2live.sigmab.pro/api/settings/logo/5jDBvDpB?v=495cf937','Portal principal para gerenciamento de clientes e créditos.','https://p2live.sigmab.pro/#/sign-in?redirect=/dashboard'],
-['Cineflix','https://cineflix.3xt.fun/api/settings/logo/lGoWqxe5?v=2cc81225','Portal principal para gerenciamento de clientes e créditos.','https://cineflix.3xt.fun/#/sign-in?redirect=/dashboard'],
-['Lider IPTV','https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d','Portal principal para gerenciamento de clientes e créditos.','https://lideriptv.sigma.st/#/sign-in'],
-['Painel W3BR Top','logos/w3br.png','Portal principal para gerenciamento de clientes e créditos.','https://painelw3brtop.sytes.net/']
+  ['TopZ TV','https://topztv.sigma.vin/api/settings/logo/zKA7xQNM?v=c6409f64','https://topztv.sigma.vin/#/rs/0m1E8eVWlE/241KEN9Dmx'],
+  ['Prod TV','https://prodtv.sigma.st/api/settings/logo/q9DozyGw?v=8774d36','https://prodtv.sigma.st/#/sign-in'],
+  ['Painel Black BR','https://painelblackbr.com/api/settings/logo/8YEb8L97?v=478e93c0','https://painelblackbr.com/#/rs/241KARvDmx/MeWeBYa1nN'],
+  ['Fenix Streaming','https://fenixstreaming.sigma.vin/api/settings/logo/kv3xYPMg?v=8d7d4037','https://fenixstreaming.sigma.vin/#/rs/dqLkwBpLAE/ANKWPjqLPR'],
+  ['Onix Play','logos/onix.png','https://onixplay.top/#/sign-in'],
+  ['Servidor Play','https://servidorplay.sigmab.pro/api/settings/logo/A7zyn1kW?v=bd525071','https://servidorplay.sigmab.pro/#/sign-in?redirect=/customers'],
+  ['A2 Play','https://a2play.sigmab.pro/api/settings/logo/2ErOkr5e?v=d324a012','https://painel.a2play.site/#/rs/NKWP2weLPR/o231q79D4q'],
+  ['VIP Sigma','https://vip.sigma.vin/api/settings/logo/PzNz4rQx?v=376efd96','https://vip.sigma.vin/#/rs/xl1jrVz1Mj/we6WnZwWK8'],
+  ['One','https://i.supaimg.com/1d605871-6cdf-44e3-b893-b928780a556b.png','https://one.srvi.top/'],
+  ['ET Player','https://etplayer.smartsignus.com/uploads/logo_login_tenant_27_1778303859.png','https://etplayer.smartsignus.com/auth/nova_revenda.php?ref=edb6aa67fa090e2601e965dbbbe957c4&indicador=Juninho45'],
+  ['Super STV','https://superstv.sigma.vin/api/settings/logo/bDlLnqOP?v=3fd8f42b','https://superstv.sigma.vin/#/rs/lKWOKa3Wzo/o231qgKD4q'],
+  ['Lunna BR','https://lunnabr.site/api/settings/logo/8NLmMLMB?v=91ddbdf6','https://lunnabr.site/#/rs/YB1wyp0Dvm/241KEkODmx'],
+  ['FS Play','https://i.postimg.cc/m2B7PkmV/logo-original.png','https://fsplay.fpanel.top/'],
+  ['Pro Black','https://problack.sigma.st/api/settings/logo/g4ydkKbW?v=e9521a83','https://problack.sigma.st/#/sign-in?redirect=/dashboard'],
+  ['Play Max','https://playmax.sigmab.pro/api/settings/logo/DOLoygWV?v=e390fe32','https://playmax.sigmab.pro/#/rs/YgD9PRNLr6/ayb1Bba1PR'],
+  ['Conect Play','https://conectplay.sigma.vin/api/settings/logo/DVM5eM6g?v=9b65443b','https://painelconectplay.com/#/rs/YAWRNmXWjl/kaL4ky51gr'],
+  ['CineHub BR','https://cinehub-br.sigma.st/api/settings/logo/Om2eJ5p6?v=25856ffc','https://painelcnhbr.site/#/rs/yJDzOBJWge/64vLbbRLgG'],
+  ['Prime Lux','https://primelux.sigma.st/api/settings/logo/MB61Bd5G?v=fec61295','https://painelprimelux.com/#/rs/0VDVa9zLK3/rdqLk70LAE'],
+  ['Sport Play','https://sportplay.sigma.vin/api/settings/logo/EpLOb6VQ?v=f797ae7b','https://abroz.space/#/rs/4vLb24MLgG/K4Wr8pGLeN'],
+  ['Kronos Server','logos/kronos.png','https://kronosserver.ryzen.fun/rs/b31pne07/c997b603ffa946879d4d457e05cebce8'],
+  ['Premium Server','https://premiumserver.sigma.vin/api/settings/logo/NP5bGYVa?v=f058b7b3','https://premiumserver.sbs/#/rs/RvWGmA7Le3/lze15rKL5K'],
+  ['Alpha Master','https://alphamaster.sigma.st/api/settings/logo/ygGAvMXY?v=d49b5299','https://alphamaster.sigma.st/#/rs/VdWX73pD3q/YAWR240Wjl'],
+  ['Entre','https://entre.p2vip.xyz/api/settings/logo/lXjpZLeY?v=04b48c72','https://entre.p2vip.xyz/#/rs/ze15wQBD5K/RXDgEao1ex'],
+  ['Painel CineHub','https://painelcinehub.top/api/settings/logo/9pVEJGZN?v=74d71843','https://painelcinehub.top/#/rs/231qZgNL4q/pKDaZlbWRA'],
+  ['Fox Play','logos/fox.png','https://foxplay.sigma.vin/#/rs/yb1BZje1PR/EMeWelGDnN'],
+  ['All Box','https://allboxpaineladm.blog/api/settings/logo/PLQganEg?v=d788e2ae','https://allboxpaineladm.blog/#/rs/kaL42w5Wgr/KjLMPvx104'],
+  ['Odin Super','https://odinsuper1x00.top/api/settings/logo/9JEAD24b?v=2292681f','https://odinsuper1x00.top/#/rs/oQ1Y3G6DON/VrW8zJwLKa'],
+  ['Vizion Net','https://vizion-net.sigmab.pro/api/settings/logo/2kNvZNMV?v=230ba850','https://vizion-net.sigmab.pro/#/rs/NKWPK55DPR/Ar0WZR8Wa7'],
+  ['P2 Live','https://p2live.sigmab.pro/api/settings/logo/5jDBvDpB?v=495cf937','https://p2live.sigmab.pro/#/rs/en12qyMWPE/lze154oW5K'],
+  ['Cineflix','https://cineflix.3xt.fun/api/settings/logo/lGoWqxe5?v=2cc81225','https://cineflix.3xt.fun/#/rs/RXDgQzY1ex/K4Wr49YLeN'],
+  ['Lider IPTV','https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d','https://lideriptv.sigma.st/#/rs/YB1wd9bLvm/ze15qR515K']
 ];
-
-// Painéis de Teste: [nome, logo, descrição, url_teste] - NÃO MEXER
-const tests=[
-['TopZ TV','https://topztv.sigma.vin/api/settings/logo/zKA7xQNM?v=c6409f64','Gere 1 crédito de teste para validação.','https://topztv.sigma.vin/#/rs/0m1E8eVWlE/241KEN9Dmx'],
-['Sport Play','https://sportplay.sigma.vin/api/settings/logo/EpLOb6VQ?v=f797ae7b','Gere 1 crédito de teste para validação.','https://abroz.space/#/rs/4vLb24MLgG/K4Wr8pGLeN'],
-['Painel Black BR','https://painelblackbr.com/api/settings/logo/8YEb8L97?v=478e93c0','Gere 1 crédito de teste para validação.','https://painelblackbr.com/#/rs/241KARvDmx/MeWeBYa1nN'],
-['Fenix Streaming','https://fenixstreaming.sigma.vin/api/settings/logo/kv3xYPMg?v=8d7d4037','Gere 1 crédito de teste para validação.','https://fenixstreaming.sigma.vin/#/rs/dqLkwBpLAE/ANKWPjqLPR'],
-['A2 Play','https://a2play.sigmab.pro/api/settings/logo/2ErOkr5e?v=d324a012','Gere 1 crédito de teste para validação.','https://painel.a2play.site/#/rs/NKWP2weLPR/o231q79D4q'],
-['VIP Sigma','https://vip.sigma.vin/api/settings/logo/PzNz4rQx?v=376efd96','Gere 1 crédito de teste para validação.','https://vip.sigma.vin/#/rs/xl1jrVz1Mj/we6WnZwWK8'],
-['ET Player','https://etplayer.smartsignus.com/uploads/logo_login_tenant_27_1778303859.png','Gere 1 crédito de teste para validação.','https://etplayer.smartsignus.com/auth/nova_revenda.php?ref=edb6aa67fa090e2601e965dbbbe957c4&indicador=Juninho45'],
-['Super STV','https://superstv.sigma.vin/api/settings/logo/bDlLnqOP?v=3fd8f42b','Gere 1 crédito de teste para validação.','https://superstv.sigma.vin/#/rs/lKWOKa3Wzo/o231qgKD4q'],
-['Lunna BR','https://lunnabr.site/api/settings/logo/8NLmMLMB?v=91ddbdf6','Gere 1 crédito de teste para validação.','https://lunnabr.site/#/rs/YB1wyp0Dvm/241KEkODmx'],
-['Fox Play','logos/fox.png','Gere 1 crédito de teste para validação.','https://foxplay.sigma.vin/#/rs/yb1BZje1PR/EMeWelGDnN'],
-['Play Max','https://playmax.sigmab.pro/api/settings/logo/DOLoygWV?v=e390fe32','Gere 1 crédito de teste para validação.','https://playmax.sigmab.pro/#/rs/YgD9PRNLr6/ayb1Bba1PR'],
-['Conect Play','https://conectplay.sigma.vin/api/settings/logo/DVM5eM6g?v=9b65443b','Gere 1 crédito de teste para validação.','https://painelconectplay.com/#/rs/YAWRNmXWjl/kaL4ky51gr'],
-['CineHub BR','https://cinehub-br.sigma.st/api/settings/logo/Om2eJ5p6?v=25856ffc','Gere 1 crédito de teste para validação.','https://painelcnhbr.site/#/rs/yJDzOBJWge/64vLbbRLgG'],
-['Prime Lux','https://primelux.sigma.st/api/settings/logo/MB61Bd5G?v=fec61295','Gere 1 crédito de teste para validação.','https://painelprimelux.com/#/rs/0VDVa9zLK3/rdqLk70LAE'],
-['Kronos Server','logos/kronos.png','Gere 1 crédito de teste para validação.','https://kronosserver.ryzen.fun/rs/b31pne07/c997b603ffa946879d4d457e05cebce8'],
-['Premium Server','https://premiumserver.sigma.vin/api/settings/logo/NP5bGYVa?v=f058b7b3','Gere 1 crédito de teste para validação.','https://premiumserver.sbs/#/rs/RvWGmA7Le3/lze15rKL5K'],
-['Alpha Master','https://alphamaster.sigma.st/api/settings/logo/ygGAvMXY?v=d49b5299','Gere 1 crédito de teste para validação.','https://alphamaster.sigma.st/#/rs/VdWX73pD3q/YAWR240Wjl'],
-['Entre','https://entre.p2vip.xyz/api/settings/logo/lXjpZLeY?v=04b48c72','Gere 1 crédito de teste para validação.','https://entre.p2vip.xyz/#/rs/ze15wQBD5K/RXDgEao1ex'],
-['Painel CineHub','https://painelcinehub.top/api/settings/logo/9pVEJGZN?v=74d71843','Gere 1 crédito de teste para validação.','https://painelcinehub.top/#/rs/231qZgNL4q/pKDaZlbWRA'],
-['All Box','https://allboxpaineladm.blog/api/settings/logo/PLQganEg?v=d788e2ae','Gere 1 crédito de teste para validação.','https://allboxpaineladm.blog/#/rs/kaL42w5Wgr/KjLMPvx104'],
-['Odin Super','https://odinsuper1x00.top/api/settings/logo/9JEAD24b?v=2292681f','Gere 1 crédito de teste para validação.','https://odinsuper1x00.top/#/rs/oQ1Y3G6DON/VrW8zJwLKa'],
-['Vizion Net','https://vizion-net.sigmab.pro/api/settings/logo/2kNvZNMV?v=230ba850','Gere 1 crédito de teste para validação.','https://vizion-net.sigmab.pro/#/rs/NKWPK55DPR/Ar0WZR8Wa7'],
-['P2 Live','https://p2live.sigmab.pro/api/settings/logo/5jDBvDpB?v=495cf937','Gere 1 crédito de teste para validação.','https://p2live.sigmab.pro/#/rs/en12qyMWPE/lze154oW5K'],
-['Cineflix','https://cineflix.3xt.fun/api/settings/logo/lGoWqxe5?v=2cc81225','Gere 1 crédito de teste para validação.','https://cineflix.3xt.fun/#/rs/RXDgQzY1ex/K4Wr49YLeN'],
-['Lider IPTV','https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d','Gere 1 crédito de teste para validação.','https://lideriptv.sigma.st/#/rs/YB1wd9bLvm/ze15qR515K']
-];
-
-// Apps Parceiros: [nome, logo, plataforma]
-const apps=[
-['MAX PLAYER','logos/maxplayer.png','Android / Fire Stick'],
-['UNITV','logos/unitv.png','Android'],
-['UNI REVENDA','logos/unirevenda.png','Android / Painel'],
-['GPC PRO','logos/gpcpro.png','Android / Painel'],
-['HOME PLAYER XTREAM','logos/homeplayerxtream.png','Android'],
-['APP ZINK','logos/zink.png','Android'],
-['HOME PLAYER','logos/homeplayer.png','Android'],
-['TOP TV','logos/toptv.png','Android'],
-['XCLOUD TV','https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png','Android / Smart TV'],
-['BLESSED PLAY','https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png','Android / Smart TV'],
-['LOTUS','logos/lotus.png','Android / Smart TV'],
-['HDPLAY','logos/hdplay.png','Android / Smart TV'],
-['XCIPTV','logos/xciptv.png','Android / Fire Stick'],
-['S.A PLAYER','logos/saplayer.png','Android / Smart TV'],
-['AKS PLAY','logos/aksplay.png','Android / Fire Stick'],
-['ALPHA MASTER PLAY','logos/alphamasterplay.png','Android / Fire Stick'],
-['LAZER PLAY','logos/lazerplay.png','Multiplataforma'],
-['FUN PLAY','logos/funplay.png','Multiplataforma'],
-['SMARTCPP','logos/smartcpp.png','Multiplataforma'],
-['ASSIST+ OFICIAL','logos/assistplus.png','LG, Roku, Android, Fire Stick'],
-['PLAYSIM','logos/playsim.png','LG, Roku, Samsung, Android'],
-['MAGIC PLAYER','logos/magicplayer.png','Roku'],
-['VIZZION PLAY','logos/vizzion.png','Multiplataforma'],
-['BOX PLAYER','logos/boxplayer.png','Multiplataforma'],
-['JJ PLAYER','logos/jjplayer.png','Android, Smart TV'],
-['DUO TV','logos/duotv.png','Android, Smart TV'],
-['MULT BOX','logos/multbox.png','Android, TV Box'],
-['SYNC21 PLAYER','logos/sync21.png','Multiplataforma'],
-['UP PLAY','logos/upplay.png','Multiplataforma'],
-['MAX21','logos/max21.png','Multiplataforma'],
-['ZUXO PLAYER','logos/zuxo.png','Multiplataforma'],
-['BRASIL IPTV','logos/brasiliptv.png','Multiplataforma'],
-['FLEX PLAY','logos/flexplay.png','Multiplataforma'],
-['GALAX PLAY','logos/galaxplay.png','Samsung'],
-['BOX PRIME','logos/boxprime.png','Roku'],
-['DUPLEX MAX','logos/duplexmax.png','Roku'],
-['POWER PLAY','logos/powerplay.png','Multiplataforma'],
-['EPIC PLAY','logos/epicplay.png','Multiplataforma'],
-['SUPER PLAY','logos/superplay.png','Multiplataforma']
-];
-
-var esc=function(s){return String(s).replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]})};
-function fallback(n){var i=n.split(/\s+/).slice(0,2).map(function(x){return x[0]}).join('').toUpperCase();return'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160"><rect width="240" height="160" rx="28" fill="#203b47"/><text x="120" y="88" text-anchor="middle" font-family="Arial" font-size="36" font-weight="800" fill="#9af7c0">'+i+'</text></svg>')}
-
-function render(list,id,count,type){
-  var box=document.getElementById(id);
-  if(count) document.getElementById(count).textContent=list.length;
-  box.innerHTML='';
-  list.forEach(function(x){
-    var n=x[0], l=x[1], m=x[2], u=x[3];
-    var c=document.createElement('article');
-    c.className='card '+(type==='test'?'test ':'')+(type==='app'?'app':'');
-
-    var statusText = type==='test'?'TESTE DISPONÍVEL':type==='app'?'APP PARCEIRO':type==='act'?'SISTEMA DE ATIVAÇÃO':'ACESSO OFICIAL';
-    var btnText = type==='test'?'Gerar painel teste com 1 crédito':type==='app'?'Consultar no WhatsApp':type==='act'?'Acessar sistema':'Abrir painel';
-    var href = u || 'https://wa.me/5527997314781';
-    var descText = m || 'Portal principal para gerenciamento de clientes e créditos.';
-    var extraHtml = type==='app'?'<div class="extra">Logo, compatibilidade e acesso para consulta.</div>':'';
-
-    c.innerHTML='<div class="topline"><div class="logo"><img src="'+esc(l)+'" alt="Logo '+esc(n)+'"></div><span class="status">'+statusText+'</span></div><h3>'+esc(n)+'</h3><div class="desc">'+esc(descText)+'</div>'+extraHtml+'<a class="action" href="'+esc(href)+'" target="_blank"><span>'+btnText+'</span><span>↗</span></a>';
-    box.appendChild(c);
-    c.querySelector('img').onerror=function(){this.src=fallback(n)};
-  });
-}
-
-var filter=function(a,q){q=q.toLowerCase();return q?a.filter(function(x){return x[0].toLowerCase().includes(q)}):a};
-
-render(panels,'officialGrid','officialCount','official');
-render(tests,'testGrid','testCount','test');
-render(apps,'appGrid',null,'app');
-render([['Painel de Ativação','logos/ativacao.png','Ative licenças rapidamente','https://ativacaodeaplicativos.com/?ref=cmn36pjfx0i8on7yr3ouq2dck']],'activationGrid',null,'act');
-
-document.getElementById('officialSearch').oninput=function(e){render(filter(panels,e.target.value),'officialGrid','officialCount','official')};
-document.getElementById('testSearch').oninput=function(e){render(filter(tests,e.target.value),'testGrid','testCount','test')};
-
-document.querySelectorAll('[data-view]').forEach(function(b){
-  b.onclick=function(){
-    document.querySelectorAll('.view').forEach(function(v){v.classList.remove('active')});
-    document.getElementById(b.dataset.view).classList.add('active');
-    document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t===b)});
-    scrollTo(0,0);
-  }
-});
-
-function plans(id,name){
-  var box=document.getElementById(id);
-  [['30 dias','R$ 25,00'],['90 dias','R$ 65,00'],['180 dias','R$ 120,00'],['1 ano','R$ 190,00']].forEach(function(p,i){
-    var c=document.createElement('article');
-    c.className='offer '+(i===2?'featured':'');
-    c.innerHTML='<h3>'+p[0]+'</h3><div class="price">'+p[1]+'</div><div class="feature">Acesso completo</div><div class="feature">Canais ao vivo</div><div class="feature">Filmes e séries</div><button class="action" data-pix="'+name+', '+p[0]+'|'+p[1]+'">Assinar com PIX</button>';
-    box.appendChild(c);
-  });
-}
-plans('xcloudPlans','XCloud TV');
-plans('blessedPlans','Blessed Play');
-
-function offers(id,data){
-  var box=document.getElementById(id);
-  data.forEach(function(x){
-    var c=document.createElement('article');
-    c.className='offer';
-    c.innerHTML='<h3>'+x[0]+'</h3><div class="price">'+x[1]+'</div><div class="feature">'+x[2]+'</div>';
-    box.appendChild(c);
-  });
-}
-offers('creditOffers',[['🎟️ 10 a 49 créditos','R$ 5,00','Valor por crédito'],['🎟️ 50 a 99 créditos','R$ 4,00','Valor por crédito'],['🎟️ 100 a 199 créditos','R$ 3,00','Valor por crédito'],['🎟️ 200 a 499 créditos','R$ 2,00','Valor por crédito'],['🎟️ 500 a 1.000 créditos','R$ 1,50','Melhor custo por crédito']]);
-offers('monthlyOffers',[['🎟️ 50 créditos','R$ 50,00','Pacote mensalista'],['🎟️ 100 créditos','R$ 80,00','Pacote mensalista'],['🎟️ 200 créditos','R$ 100,00','Pacote mensalista'],['🎟️ 500 créditos','R$ 120,00','Pacote mensalista'],['🎟️ 1.000 créditos','R$ 140,00','Maior volume mensalista']]);
-offers('unlimitedOffers',[['♾️ PAINEL ADMIN','R$ 300,00','Painel administrador ilimitado'],['♾️ PAINEL ULTRA','R$ 200,00','Painel ultra ilimitado']]);
-offers('customerOffers',[['🚀 PLANO MENSAL','R$ 35,00','Acesso total por 30 dias'],['🔥 PLANO 6 MESES','R$ 90,00','Economia incrível'],['👑 PLANO ANUAL','R$ 200,00','Melhor custo-benefício'],['⭐ PLANO VITALÍCIO','R$ 799,00','Acesso para sempre']]);
-
-var modal=document.getElementById('pixModal');
-document.addEventListener('click',function(e){
-  var b=e.target.closest('[data-pix]');
-  if(!b) return;
-  var parts=b.dataset.pix.split('|');
-  var n=parts[0], v=parts[1];
-  document.getElementById('pixTitle').textContent=n+' , '+v;
-  document.getElementById('sendPix').href='https://wa.me/5527997314781?text='+encodeURIComponent('Olá JSTECH, acabei de realizar o pagamento via PIX de '+n+' ('+v+'). Segue o meu comprovante!');
-  modal.showModal();
-});
-document.getElementById('closePix').onclick=function(){modal.close()};
+const apps=[['MAX PLAYER','logos/maxplayer.png','Android / Fire Stick'],['UNITV','logos/unitv.png','Android'],['UNI REVENDA','logos/unirevenda.png','Android / Painel'],['GPC PRO','logos/gpcpro.png','Android / Painel'],['HOME PLAYER XTREAM','logos/homeplayerxtream.png','Android'],['APP ZINK','logos/zink.png','Android'],['HOME PLAYER','logos/homeplayer.png','Android'],['TOP TV','logos/toptv.png','Android'],['XCLOUD TV','https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png','Android / Smart TV'],['BLESSED PLAY','https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png','Android / Smart TV'],['LOTUS','logos/lotus.png','Android / Smart TV'],['HDPLAY','logos/hdplay.png','Android / Smart TV'],['XCIPTV','logos/xciptv.png','Android / Fire Stick'],['S.A PLAYER','logos/saplayer.png','Android / Smart TV'],['AKS PLAY','logos/aksplay.png','Android / Fire Stick'],['ALPHA MASTER PLAY','logos/alphamasterplay.png','Android / Fire Stick'],['LAZER PLAY','logos/lazerplay.png','Multiplataforma'],['FUN PLAY','logos/funplay.png','Multiplataforma'],['SMARTCPP','logos/smartcpp.png','Multiplataforma'],['ASSIST+ OFICIAL','logos/assistplus.png','LG, Roku, Android, Fire Stick'],['PLAYSIM','logos/playsim.png','LG, Roku, Samsung, Android'],['MAGIC PLAYER','logos/magicplayer.png','Roku'],['VIZZION PLAY','logos/vizzion.png','Multiplataforma'],['BOX PLAYER','logos/boxplayer.png','Multiplataforma'],['JJ PLAYER','logos/jjplayer.png','Android, Smart TV'],['DUO TV','logos/duotv.png','Android, Smart TV'],['MULT BOX','logos/multbox.png','Android, TV Box'],['SYNC21 PLAYER','logos/sync21.png','Multiplataforma'],['UP PLAY','logos/upplay.png','Multiplataforma'],['MAX21','logos/max21.png','Multiplataforma'],['ZUXO PLAYER','logos/zuxo.png','Multiplataforma'],['BRASIL IPTV','logos/brasiliptv.png','Multiplataforma'],['FLEX PLAY','logos/flexplay.png','Multiplataforma'],['GALAX PLAY','logos/galaxplay.png','Samsung'],['BOX PRIME','logos/boxprime.png','Roku'],['DUPLEX MAX','logos/duplexmax.png','Roku'],['POWER PLAY','logos/powerplay.png','Multiplataforma'],['EPIC PLAY','logos/epicplay.png','Multiplataforma'],['SUPER PLAY','logos/superplay.png','Multiplataforma']];
+const tests=panels.map(x=>x.slice());const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));function fallback(n){const i=n.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();return'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160"><rect width="240" height="160" rx="28" fill="#203b47"/><text x="120" y="88" text-anchor="middle" font-family="Arial" font-size="36" font-weight="800" fill="#9af7c0">${i}</text></svg>`)}function render(list,id,count,type){const box=document.getElementById(id);if(count)document.getElementById(count).textContent=list.length;box.innerHTML='';list.forEach(x=>{const[n,l,m,u]=x,c=document.createElement('article');c.className='card '+(type==='test'?'test ':'')+(type==='app'?'app':'');c.innerHTML=`<div class="topline"><div class="logo"><img src="${esc(l)}" alt="Logo ${esc(n)}"></div><span class="status">${type==='test'?'TESTE DISPONÍVEL':type==='app'?'APP PARCEIRO':type==='act'?'SISTEMA DE ATIVAÇÃO':'ACESSO OFICIAL'}</span></div><h3>${esc(n)}</h3><div class="desc">${esc(m||'Portal principal para gerenciamento de clientes e créditos.')}</div>${type==='app'?'<div class="extra">Logo, compatibilidade e acesso para consulta.</div>':''}<a class="action" href="${esc(u||'https://wa.me/5527997314781')}" target="_blank"><span>${type==='test'?'Gerar painel teste com 1 crédito':type==='app'?'Consultar no WhatsApp':type==='act'?'Acessar sistema':'Abrir painel'}</span><span>↗</span></a>`;box.appendChild(c);c.querySelector('img').onerror=()=>c.querySelector('img').src=fallback(n)})}const filter=(a,q)=>{q=q.toLowerCase();return q?a.filter(x=>x[0].toLowerCase().includes(q)):a};render(panels,'officialGrid','officialCount','official');render(tests,'testGrid','testCount','test');render(apps,'appGrid',null,'app');render([['Painel de Ativação','logos/ativacao.png','Ative licenças rapidamente','https://ativacaodeaplicativos.com/?ref=cmn36pjfx0i8on7yr3ouq2dck']],'activationGrid',null,'act');officialSearch.oninput=e=>render(filter(panels,e.target.value),'officialGrid','officialCount','official');testSearch.oninput=e=>render(filter(tests,e.target.value),'testGrid','testCount','test');document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(b.dataset.view).classList.add('active');document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t===b));scrollTo(0,0)});function switchCsSub(subId, event) {document.querySelectorAll('.cs-subview').forEach(el => el.style.display = 'none');document.getElementById('cs-' + subId).style.display = 'block';event.target.parentElement.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));event.target.classList.add('active');scrollTo(0,0);}function plans(id,name){const box=document.getElementById(id);[['30 dias','R$ 25,00'],['90 dias','R$ 65,00'],['180 dias','R$ 120,00'],['1 ano','R$ 190,00']].forEach((p,i)=>{const c=document.createElement('article');c.className='offer '+(i===2?'featured':'');c.innerHTML=`<h3>${p[0]}</h3><div class="price">${p[1]}</div><div class="feature">Acesso completo</div><div class="feature">Canais ao vivo</div><div class="feature">Filmes e séries</div><button class="action" data-pix="${name}, ${p[0]}|${p[1]}">Assinar com PIX</button>`;box.appendChild(c)})}plans('xcloudPlans','XCloud TV');plans('blessedPlans','Blessed Play');function offers(id,data){const box=document.getElementById(id);data.forEach(x=>{const c=document.createElement('article');c.className='offer';c.innerHTML=`<h3>${x[0]}</h3><div class="price">${x[1]}</div><div class="feature">${x[2]}</div>`;box.appendChild(c)})}offers('creditOffers',[['🎟️ 10 a 49 créditos','R$ 5,00','Valor por crédito'],['🎟️ 50 a 99 créditos','R$ 4,00','Valor por crédito'],['🎟️ 100 a 199 créditos','R$ 3,00','Valor por crédito'],['🎟️ 200 a 499 créditos','R$ 2,00','Valor por crédito'],['🎟️ 500 a 1.000 créditos','R$ 1,50','Melhor custo por crédito']]);offers('monthlyOffers',[['🎟️ 50 créditos','R$ 50,00','Pacote mensalista'],['🎟️ 100 créditos','R$ 80,00','Pacote mensalista'],['🎟️ 200 créditos','R$ 100,00','Pacote mensalista'],['🎟️ 500 créditos','R$ 120,00','Pacote mensalista'],['🎟️ 1.000 créditos','R$ 140,00','Maior volume mensalista']]);offers('unlimitedOffers',[['♾️ PAINEL ADMIN','R$ 300,00','Painel administrador ilimitado'],['♾️ PAINEL ULTRA','R$ 200,00','Painel ultra ilimitado']]);offers('customerOffers',[['🚀 PLANO MENSAL','R$ 35,00','Acesso total por 30 dias'],['🔥 PLANO 6 MESES','R$ 90,00','Economia incrível'],['👑 PLANO ANUAL','R$ 200,00','Melhor custo-benefício'],['⭐ PLANO VITALÍCIO','R$ 799,00','Acesso para sempre']]);const modal=document.getElementById('pixModal');document.addEventListener('click',e=>{const b=e.target.closest('[data-pix]');if(!b)return;const[n,v]=b.dataset.pix.split('|');pixTitle.textContent=n+' , '+v;sendPix.href='https://wa.me/5527997314781?text='+encodeURIComponent(`Olá JSTECH, acabei de realizar o pagamento via PIX de ${n} (${v}). Segue o meu comprovante!`);modal.showModal()});closePix.onclick=()=>modal.close();
 </script>
 </body>
 </html>

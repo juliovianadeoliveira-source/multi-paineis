@@ -36,6 +36,19 @@
   .design-ui-credit { display: none !important; }
 }
 
+
+  
+
+  .iptv-bg-video { position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; overflow:hidden; pointer-events:none; }
+  .iptv-bg-video video { position:absolute; top:50%; left:50%; width:177.777777vh; height:100vh; min-width:100vw; min-height:56.25vw; transform:translate(-50%,-50%); opacity:0.55; border:none; pointer-events:none; object-fit:cover; }
+  #cliente { position:relative; overflow:hidden; }
+  #cliente > .wrap { position:relative; z-index:2; }
+  #cliente .video-overlay { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,15,20,0.35) 0%, rgba(10,15,20,0.55) 100%); z-index:1; pointer-events:none; }
+  .cs-bg-video { position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; overflow:hidden; pointer-events:none; }
+  .cs-bg-video video { position:absolute; top:50%; left:50%; width:177.777777vh; height:100vh; min-width:100vw; min-height:56.25vw; transform:translate(-50%,-50%); opacity:0.5; border:none; pointer-events:none; object-fit:cover; }
+  #cs-inicio { position:relative; overflow:hidden; }
+  #cs-inicio > .cs-hero-inner { position:relative; z-index:2; }
+  #cs-inicio .video-overlay { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,15,20,0.3) 0%, rgba(10,15,20,0.6) 100%); z-index:1; pointer-events:none; }
 </style>
 <script>
 (function () {
@@ -83,21 +96,542 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>JSTECH, Central Premium Completa</title>
 <style>
-:root{--bg:#071018;--panel:#13232d;--panel2:#1c3440;--line:rgba(222,242,246,.14);--text:#f4f8f9;--muted:#9dafb7;--green:#32df7a;--mint:#77f2b0;--teal:#45d9d0;--gold:#ffb32e;--purple:#a66cff;--ease:cubic-bezier(.16,1,.3,1)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 84% 0,rgba(50,223,122,.16),transparent 32rem),var(--bg);color:var(--text);font:16px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button,input{font:inherit}button{cursor:pointer}.top{position:sticky;top:0;z-index:20;background:rgba(7,16,24,.95);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.head{max-width:1280px;margin:auto;padding:18px 24px 16px}.brand{display:flex;align-items:center;gap:12px}.mark{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,var(--green),var(--mint));color:#06140c;font-weight:950}.brand b{display:block;font-size:17px}.brand small{display:block;color:var(--muted);font-size:12px}.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}.tab{border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.035);color:var(--muted);padding:10px 13px;font-size:13px;font-weight:850;transition:.2s var(--ease)}.tab:hover{transform:translateY(-2px);color:var(--text);border-color:rgba(255,255,255,.28)}.tab.active{background:var(--green);border-color:var(--green);color:#06140c}.tab.blessed{color:#a4ffd0;border-color:rgba(119,242,176,.38);background:rgba(119,242,176,.08)}.view{display:none}.view.active{display:block}.wrap{max-width:1280px;margin:auto;padding:52px 24px 84px}.eyebrow{color:var(--mint);font-size:11px;font-weight:950;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.title{font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.06em;margin:0 0 13px}.intro{color:var(--muted);max-width:70ch;margin-bottom:30px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}.count{color:var(--muted);font-size:13px}.count strong{color:var(--text);font-size:19px;margin-right:5px}.search{width:min(380px,100%);height:47px;padding:0 15px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.045);color:var(--text);outline:0}.search:focus{border-color:rgba(50,223,122,.7);box-shadow:0 0 0 3px rgba(50,223,122,.13)}.grid,.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px}.card,.offer,.feature{border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#203b47,#111f28)}.card{display:flex;flex-direction:column;min-height:255px;padding:20px;transition:.28s var(--ease)}.card:hover,.offer:hover{transform:translateY(-6px);border-color:rgba(50,223,122,.5);box-shadow:0 24px 70px rgba(0,0,0,.34)}.topline{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.logo{width:70px;height:70px;border-radius:18px;overflow:hidden;background:#223b46;border:1px solid rgba(255,255,255,.14)}.logo img{width:100%;height:100%;object-fit:cover}.status{font-size:10px;font-weight:950;letter-spacing:.06em;color:var(--mint);border:1px solid rgba(50,223,122,.3);border-radius:999px;padding:6px 8px;background:rgba(50,223,122,.08);white-space:nowrap}.test .status,.app .status{color:#86ede6;border-color:rgba(69,217,208,.35);background:rgba(69,217,208,.08)}.card h3{font-size:17px;margin:18px 0 7px}.desc{font-size:12px;color:var(--muted);margin-bottom:15px}.extra{font-size:11px;color:#d6e0e4;line-height:1.6;background:rgba(0,0,0,.18);border-radius:10px;padding:9px 10px;margin-bottom:15px}.action{margin-top:auto;display:flex;align-items:center;justify-content:space-between;min-height:46px;padding:0 14px;border-radius:11px;text-decoration:none;background:var(--green);border:1px solid var(--green);color:#06140c;font-size:13px;font-weight:950}.test .action{background:var(--teal);border-color:var(--teal);color:#061615}.app .action{background:#36c4c2;border-color:#36c4c2;color:#061615}.empty{grid-column:1/-1;padding:46px;border:1px dashed var(--line);border-radius:16px;text-align:center;color:var(--muted)}.hero{padding:38px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 90% 0,rgba(166,108,255,.17),transparent 26rem),linear-gradient(145deg,#1b3340,#111c26);margin-bottom:30px}.hero h2{font-size:clamp(30px,5vw,55px);line-height:1;letter-spacing:-.06em}.hero p{color:var(--muted);max-width:78ch}.section-title{text-align:center;font-size:clamp(25px,4vw,34px);margin:42px 0 22px}.offer{display:flex;flex-direction:column;min-height:245px;padding:23px;position:relative;overflow:hidden}.offer h3{font-size:18px;margin:0 0 4px}.price{font-size:31px;font-weight:950;color:var(--green);margin:15px 0}.feature{border:0;background:rgba(255,255,255,.055);padding:8px 10px;border-radius:9px;color:#d0dade;font-size:13px;margin-top:7px}.offer .action{margin-top:auto;justify-content:center}.brand-page{background:#071117}.brand-hero{padding:72px 24px 62px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 78% 8%,rgba(69,217,208,.2),transparent 28rem),radial-gradient(circle at 12% 88%,rgba(166,108,255,.17),transparent 30rem)}.brand-grid{max-width:1190px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}.brand-id{display:flex;align-items:center;gap:12px;margin-bottom:22px;color:var(--mint);font-weight:950}.brand-id img{width:190px;height:56px;object-fit:contain;border-radius:9px}.brand-hero h1{font-size:clamp(44px,6vw,74px);line-height:.97;letter-spacing:-.07em}.brand-hero h1 span{color:var(--mint)}.brand-hero p{font-size:18px;color:var(--muted)}.preview{border:1px solid var(--line);border-radius:21px;padding:25px;background:linear-gradient(150deg,#1d3440,#101a22)}.preview-head{display:flex;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid var(--line)}.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.preview-item{padding:16px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.04)}.preview-item b{display:block;font-size:18px}.preview-item span{color:var(--muted);font-size:12px}.brand-section{max-width:1190px;margin:auto;padding:60px 24px;border-bottom:1px solid var(--line)}.brand-section h2{text-align:center;font-size:clamp(29px,4vw,43px);letter-spacing:-.05em;margin-bottom:30px}.brand-section h2 span{color:var(--mint)}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.benefit{padding:22px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.04)}.benefit i{font-style:normal;font-size:24px;color:var(--mint)}.benefit h3{font-size:16px;margin:12px 0 7px}.benefit p{font-size:13px;color:var(--muted);margin:0}.brand-footer{text-align:center;color:var(--muted);font-size:12px;padding:40px}.modal{width:min(430px,calc(100% - 30px));border:1px solid rgba(50,223,122,.65);border-radius:19px;background:#14232c;color:var(--text);padding:0}.modal::backdrop{background:rgba(0,0,0,.76)}.modal-in{padding:27px}.close{border:0;background:none;color:var(--muted);font-size:28px}.qr{width:max-content;background:#edf9f6;border-radius:13px;padding:13px;margin:18px auto}.qr iframe{width:220px;height:220px;border:0;display:block}.pix-key{padding:14px;background:rgba(255,255,255,.06);border-radius:10px;color:#ffd47d;text-align:center;font-weight:950}.modal p{color:var(--muted);font-size:13px}@media(max-width:950px){.brand-grid{grid-template-columns:1fr}.benefits{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.head,.wrap{padding-left:16px;padding-right:16px}.tabs{display:grid;grid-template-columns:repeat(2,1fr)}.tab{width:100%}.toolbar{align-items:stretch}.search{width:100%}.grid,.offers,.benefits{grid-template-columns:1fr}.brand-hero,.brand-section{padding-left:16px;padding-right:16px}.brand-hero h1{font-size:45px}.preview-grid{grid-template-columns:1fr}}
+:root{--bg:#071018;--panel:#13232d;--panel2:#1c3440;--line:rgba(222,242,246,.14);--text:#f4f8f9;--muted:#9dafb7;--green:#32df7a;--mint:#77f2b0;--teal:#45d9d0;--gold:#ffb32e;--purple:#a66cff;--ease:cubic-bezier(.16,1,.3,1)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 84% 0,rgba(50,223,122,.16),transparent 32rem),var(--bg);color:var(--text);font:16px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button,input{font:inherit}button{cursor:pointer}.top{position:sticky;top:0;z-index:20;background:rgba(7,16,24,.95);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.head{max-width:1280px;margin:auto;padding:18px 24px 16px}.brand{display:flex;align-items:center;gap:12px}.mark{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,var(--green),var(--mint));color:#06140c;font-weight:950}.brand b{display:block;font-size:17px}.brand small{display:block;color:var(--muted);font-size:12px}.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}.tab{border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.035);color:var(--muted);padding:10px 13px;font-size:13px;font-weight:850;transition:.2s var(--ease)}.tab:hover{transform:translateY(-2px);color:var(--text);border-color:rgba(255,255,255,.28)}.tab.active{background:var(--green);border-color:var(--green);color:#06140c}.tab.blessed{color:#a4ffd0;border-color:rgba(119,242,176,.38);background:rgba(119,242,176,.08)}.view{display:none}.view.active{display:block}.wrap{max-width:1280px;margin:auto;padding:52px 24px 84px}.eyebrow{color:var(--mint);font-size:11px;font-weight:950;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.title{font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.06em;margin:0 0 13px}.intro{color:var(--muted);max-width:70ch;margin-bottom:30px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}.count{color:var(--muted);font-size:13px}.count strong{color:var(--text);font-size:19px;margin-right:5px}.search{width:min(380px,100%);height:47px;padding:0 15px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.045);color:var(--text);outline:0}.search:focus{border-color:rgba(50,223,122,.7);box-shadow:0 0 0 3px rgba(50,223,122,.13)}.grid,.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px}.card,.offer,.feature{border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#203b47,#111f28)}.card{display:flex;flex-direction:column;min-height:255px;padding:20px;transition:.28s var(--ease)}.card:hover,.offer:hover{transform:translateY(-6px);border-color:rgba(50,223,122,.5);box-shadow:0 24px 70px rgba(0,0,0,.34)}.topline{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.logo{width:70px;height:70px;border-radius:18px;overflow:hidden;background:#223b46;border:1px solid rgba(255,255,255,.14)}.logo img{width:100%;height:100%;object-fit:cover}.status{font-size:10px;font-weight:950;letter-spacing:.06em;color:var(--mint);border:1px solid rgba(50,223,122,.3);border-radius:999px;padding:6px 8px;background:rgba(50,223,122,.08);white-space:nowrap}.test .status,.app .status{color:#86ede6;border-color:rgba(69,217,208,.35);background:rgba(69,217,208,.08)}.card h3{font-size:17px;margin:18px 0 7px}.desc{font-size:12px;color:var(--muted);margin-bottom:15px}.extra{font-size:11px;color:#d6e0e4;line-height:1.6;background:rgba(0,0,0,.18);border-radius:10px;padding:9px 10px;margin-bottom:15px}.action{margin-top:auto;display:flex;align-items:center;justify-content:space-between;min-height:46px;padding:0 14px;border-radius:11px;text-decoration:none;background:var(--green);border:1px solid var(--green);color:#06140c;font-size:13px;font-weight:950}.test .action{background:var(--teal);border-color:var(--teal);color:#061615}.app .action{background:#36c4c2;border-color:#36c4c2;color:#061615}.empty{grid-column:1/-1;padding:46px;border:1px dashed var(--line);border-radius:16px;text-align:center;color:var(--muted)}.hero{padding:38px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 90% 0,rgba(166,108,255,.17),transparent 26rem),linear-gradient(145deg,#1b3340,#111c26);margin-bottom:30px}.hero h2{font-size:clamp(30px,5vw,55px);line-height:1;letter-spacing:-.06em}.hero p{color:var(--muted);max-width:78ch}.section-title{text-align:center;font-size:clamp(25px,4vw,34px);margin:42px 0 22px}.offer{display:flex;flex-direction:column;min-height:245px;padding:23px;position:relative;overflow:hidden}.offer h3{font-size:18px;margin:0 0 4px}.price{font-size:31px;font-weight:950;color:var(--green);margin:15px 0}.feature{border:0;background:rgba(255,255,255,.055);padding:8px 10px;border-radius:9px;color:#d0dade;font-size:13px;margin-top:7px}.offer .action{margin-top:auto;justify-content:center}.brand-page{background:#071117}.brand-hero{padding:72px 24px 62px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 78% 8%,rgba(69,217,208,.2),transparent 28rem),radial-gradient(circle at 12% 88%,rgba(166,108,255,.17),transparent 30rem)}.brand-grid{max-width:1190px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}.brand-id{display:flex;align-items:center;gap:12px;margin-bottom:22px;color:var(--mint);font-weight:950}.brand-id img{width:190px;height:56px;object-fit:contain;border-radius:9px}.brand-hero h1{font-size:clamp(44px,6vw,74px);line-height:.97;letter-spacing:-.07em}.brand-hero h1 span{color:var(--mint)}.brand-hero p{font-size:18px;color:var(--muted)}.preview{border:1px solid var(--line);border-radius:21px;padding:25px;background:linear-gradient(150deg,#1d3440,#101a22)}.preview-head{display:flex;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid var(--line)}.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.preview-item{padding:16px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.04)}.preview-item b{display:block;font-size:18px}.preview-item span{color:var(--muted);font-size:12px}.brand-section{max-width:1190px;margin:auto;padding:60px 24px;border-bottom:1px solid var(--line)}.brand-section h2{text-align:center;font-size:clamp(29px,4vw,43px);letter-spacing:-.05em;margin-bottom:30px}.brand-section h2 span{color:var(--mint)}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.benefit{padding:22px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.04)}.benefit i{font-style:normal;font-size:24px;color:var(--mint)}.benefit h3{font-size:16px;margin:12px 0 7px}.benefit p{font-size:13px;color:var(--muted);margin:0}.brand-footer{text-align:center;color:var(--muted);font-size:12px;padding:40px}.modal{width:min(430px,calc(100% - 30px));border:1px solid rgba(50,223,122,.65);border-radius:19px;background:#14232c;color:var(--text);padding:0}.modal::backdrop{background:rgba(0,0,0,.76)}.modal-in{padding:27px}.close{border:0;background:none;color:var(--muted);font-size:28px}.qr{width:max-content;background:#edf9f6;border-radius:13px;padding:13px;margin:18px auto}.qr iframe{width:220px;height:220px;border:0;display:block}.pix-key{padding:14px;background:rgba(255,255,255,.06);border-radius:10px;color:#ffd47d;text-align:center;font-weight:950}.modal p{color:var(--muted);font-size:13px}
+
+/* === Planos IPTV extras === */
+.iptv-badge{display:inline-block;font-size:10px;font-weight:950;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:var(--gold);color:#1a1200;margin-bottom:10px}
+.iptv-sub{color:var(--muted);font-size:13px;margin-top:4px}
+
+/* === CS Section custom styles === */
+.cs-nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px 0 28px}
+.cs-nav a{border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);color:var(--muted);padding:10px 14px;font-size:13px;font-weight:850;text-decoration:none;transition:.2s var(--ease)}
+.cs-nav a:hover{transform:translateY(-2px);color:var(--text);border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.08)}
+
+.cs-hero{border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 90% 0,rgba(166,108,255,.17),transparent 26rem),linear-gradient(145deg,#1b3340,#111c26);padding:38px;margin-bottom:30px}
+.cs-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.cs-hero-title{font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.04em;margin:0 0 14px;color:#fff}
+.cs-hero-subtitle{color:var(--muted);font-size:16px;max-width:60ch;margin:0 0 22px}
+.cs-hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.cs-hero-video{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#0a121a;aspect-ratio:16/9}
+.cs-hero-video iframe{width:100%;height:100%;display:block;border:0}
+
+.cs-btn{display:inline-flex;align-items:center;gap:8px;border-radius:11px;padding:12px 18px;font-size:13px;font-weight:950;text-decoration:none;transition:.2s var(--ease)}
+.cs-btn-primary{background:var(--green);border:1px solid var(--green);color:#06140c}
+.cs-btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(50,223,122,.3)}
+.cs-btn-secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}
+.cs-btn-secondary:hover{border-color:rgba(255,255,255,.28);transform:translateY(-2px)}
+
+.cs-section{margin:48px 0 36px}
+.cs-section-title{text-align:center;font-size:clamp(25px,4vw,34px);letter-spacing:-.04em;margin:0 0 8px}
+.cs-section-subtitle{text-align:center;color:var(--muted);font-size:14px;margin:0 0 28px}
+
+.cs-plan-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:26px;flex-wrap:wrap}
+.cs-tab-btn{border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.04);color:var(--muted);padding:10px 18px;font-size:13px;font-weight:850;cursor:pointer;transition:.2s var(--ease)}
+.cs-tab-btn.active{background:var(--green);border-color:var(--green);color:#06140c}
+.cs-tab-btn:hover:not(.active){color:var(--text);border-color:rgba(255,255,255,.28)}
+
+.cs-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px;align-items:start}
+.cs-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#203b47,#111f28);display:flex;flex-direction:column;min-height:245px;transition:.28s var(--ease);position:relative;overflow:hidden}
+.cs-card:hover{transform:translateY(-6px);border-color:rgba(50,223,122,.5);box-shadow:0 24px 70px rgba(0,0,0,.34)}
+.cs-card-header{padding:18px 20px 0;font-size:18px;font-weight:800;text-align:center;color:#fff}
+.cs-card-body{padding:14px 20px 18px;flex:1}
+.cs-card-price{font-size:28px;font-weight:950;color:var(--green);text-align:center}
+.cs-card-price strong{font-size:36px}
+.cs-card-period{text-align:center;color:var(--muted);font-size:12px;margin-bottom:14px}
+.cs-card-list{list-style:none;padding:0;margin:0;font-size:13px;color:#d0dade}
+.cs-card-list li{padding:5px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.cs-card-list li:last-child{border-bottom:0}
+.cs-card-btn{display:flex;align-items:center;justify-content:center;min-height:46px;padding:0 14px;border-radius:0 0 16px 16px;text-decoration:none;background:var(--green);border:1px solid var(--green);border-top:0;color:#06140c;font-size:13px;font-weight:950;transition:.2s var(--ease)}
+.cs-card-btn:hover{filter:brightness(1.1)}
+.cs-card-badge{position:absolute;top:0;right:0;background:var(--gold);color:#1a1200;font-size:10px;font-weight:950;padding:6px 12px;border-radius:0 0 0 12px;letter-spacing:.06em}
+.cs-card-popular{border-color:rgba(50,223,122,.5);box-shadow:0 0 0 1px rgba(50,223,122,.2)}
+
+.cs-teste-box,.cs-revenda-box,.cs-csp-box,.cs-criar-box{border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#1b3340,#111c26);padding:28px;max-width:800px;margin:auto}
+.cs-teste-box h3,.cs-revenda-box h3{font-size:20px;margin:0 0 10px}
+.cs-teste-box p,.cs-revenda-box p,.cs-csp-box p,.cs-criar-box p{color:var(--muted);font-size:14px;margin:6px 0}
+.cs-revenda-box ul{list-style:none;padding:0;margin:12px 0;font-size:14px;color:#d0dade}
+.cs-revenda-box ul li{padding:5px 0}
+
+.cs-footer{border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#1b3340,#111c26);padding:28px;margin-top:36px}
+.cs-footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.cs-footer-col h4{font-size:14px;font-weight:950;margin:0 0 10px;color:var(--mint)}
+.cs-footer-col p{font-size:13px;color:var(--muted);margin:0 0 10px}
+.cs-footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin:4px 0;transition:.2s}
+.cs-footer-col a:hover{color:var(--green)}
+.cs-form{display:flex;flex-direction:column;gap:10px}
+.cs-form input,.cs-form textarea{border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.045);color:var(--text);padding:10px 12px;font-size:13px;outline:0}
+.cs-form input:focus,.cs-form textarea:focus{border-color:rgba(50,223,122,.7);box-shadow:0 0 0 3px rgba(50,223,122,.13)}
+.cs-form button{border:0;justify-content:center}
+.cs-footer-copy{text-align:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+
+@media (max-width: 860px){
+  .cs-hero-inner{grid-template-columns:1fr}
+  .cs-hero-video{aspect-ratio:16/9}
+  .cs-cards{grid-template-columns:1fr}
+}
+
+
+.iptv-highlight{border-color:rgba(50,223,122,.55);box-shadow:0 0 0 1px rgba(50,223,122,.25),0 18px 55px rgba(0,0,0,.35)}
+.iptv-save{color:var(--mint);font-size:12px;font-weight:950;margin-top:6px}
+.iptv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:stretch}
+.iptv-cta{padding:28px;border:1px solid var(--line);border-radius:20px;background:radial-gradient(circle at 12% 0,rgba(50,223,122,.12),transparent 20rem),linear-gradient(145deg,#1b3340,#111c26);margin:30px 0;text-align:center}
+.iptv-cta h3{font-size:clamp(22px,3vw,30px);margin:0 0 8px}
+.iptv-cta p{color:var(--muted);max-width:70ch;margin:0 auto 18px}
+.faq{display:grid;gap:10px;max-width:900px;margin:auto}
+.faq details{border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.04);padding:14px 16px}
+.faq summary{font-weight:850;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:20px;color:var(--mint)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--muted);font-size:13px;margin:10px 0 0}
+.iptv-check{display:flex;align-items:center;gap:10px;font-size:13px;color:#d0dade;margin:6px 0}
+.iptv-check::before{content:"✓";display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:999px;background:rgba(50,223,122,.18);color:var(--mint);font-size:11px;font-weight:950}
+
+@media(max-width:950px){.brand-grid{grid-template-columns:1fr}.benefits{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.head,.wrap{padding-left:16px;padding-right:16px}.tabs{display:grid;grid-template-columns:repeat(2,1fr)}.tab{width:100%}.toolbar{align-items:stretch}.search{width:100%}.grid,.offers,.benefits,.iptv-grid{grid-template-columns:1fr}.brand-hero,.brand-section{padding-left:16px;padding-right:16px}.brand-hero h1{font-size:45px}.preview-grid{grid-template-columns:1fr}}
+.app-extras{margin-top:10px;margin-bottom:14px;display:flex;flex-direction:column;gap:5px}.app-info{font-size:11px;color:#c8dde4;background:rgba(0,0,0,.18);border-radius:8px;padding:6px 10px;line-height:1.5}.app-info b{color:var(--mint);font-weight:750;margin-right:4px}
+.cs-nav{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}.cs-nav a{color:#c8dde4;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:8px 14px;font-size:12px;text-decoration:none;transition:.2s}.cs-nav a:hover{background:rgba(255,255,255,.12);color:var(--mint)}
 </style>
 </head>
 <body>
-<header class="top"><div class="head"><div class="brand"><span class="mark">JS</span><span><b>JSTECH, Central Premium</b><small>Painéis, apps, assinaturas e revenda</small></span></div><nav class="tabs"><button class="tab active" data-view="official">Painéis Oficiais</button><button class="tab" data-view="test">Painéis de Teste</button><button class="tab" data-view="apps">Apps Parceiros</button><button class="tab" data-view="xcloud">⚡ XCloud TV</button><button class="tab blessed" data-view="blessed">✨ Blessed Play</button><button class="tab" data-view="cliente">✨ Área Cliente Final</button><button class="tab" data-view="revenda">Planos Revenda</button><button class="tab" data-view="ativacoes">Ativações</button></nav></div></header>
+<header class="top"><div class="head"><div class="brand"><span class="mark">JS</span><span><b>JSTECH, Central Premium</b><small>Painéis, apps, assinaturas e revenda</small></span></div><nav class="tabs"><button class="tab active" data-view="official">Painéis Oficiais</button><button class="tab" data-view="test">Painéis de Teste</button><button class="tab" data-view="apps">Apps Parceiros</button><button class="tab" data-view="xcloud">⚡ XCloud TV</button><button class="tab blessed" data-view="blessed">✨ Blessed Play</button><button class="tab" data-view="cliente">📺 Planos IPTV</button><button class="tab" data-view="revenda">Planos Revenda</button><button class="tab" data-view="cs">Painel CS</button><button class="tab" data-view="ativacoes">Ativações</button></nav></div></header>
 <main>
 <section id="official" class="view active"><div class="wrap"><div class="eyebrow">Acesso autorizado</div><h1 class="title">Painéis oficiais</h1><p class="intro">Painéis com acesso oficial para gerenciamento de clientes e créditos.</p><div class="toolbar"><span class="count"><strong id="officialCount">0</strong> painéis disponíveis</span><input id="officialSearch" class="search" placeholder="🔍 Pesquisar painel..."></div><div id="officialGrid" class="grid"></div></div></section>
 <section id="test" class="view"><div class="wrap"><div class="eyebrow">Validação de acesso</div><h1 class="title">Painéis de teste</h1><p class="intro">Clique no botão para gerar painel teste com 1 crédito diretamente.</p><div class="toolbar"><span class="count"><strong id="testCount">0</strong> painéis disponíveis</span><input id="testSearch" class="search" placeholder="🔍 Pesquisar painel de teste..."></div><div id="testGrid" class="grid"></div></div></section>
-<section id="apps" class="view"><div class="wrap"><div class="eyebrow">Ecossistema JSTECH</div><h1 class="title">Apps Parceiros</h1><p class="intro">Logos e compatibilidade dos aplicativos parceiros.</p><div id="appGrid" class="grid"></div></div></section>
+<section id="apps" class="view"><div class="wrap"><div class="eyebrow">Ecossistema JSTECH</div><h1 class="title">Apps Parceiros</h1><p class="intro">Apps parceiros com compatibilidade, códigos de download e URLs diretas. Credenciais via WhatsApp.</p><div id="appGrid" class="grid"></div></div></section>
 <section id="xcloud" class="view brand-page"><div class="brand-hero"><div class="brand-grid"><div><div class="brand-id"><img src="https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png" alt="Logo XCloud TV"><span>XCLOUD TV</span></div><div class="eyebrow">Ativação rápida</div><h1>Xcloud entretenimento em <span>outro nível</span></h1><p>Filmes, séries, canais ao vivo, HD, Full HD e 4K.</p></div><div class="preview"><div class="preview-head"><strong>XCLOUD TV</strong><span style="color:var(--mint);font-size:11px">ATIVAÇÃO RÁPIDA</span></div><div class="preview-grid"><div class="preview-item"><b>HD · FHD · 4K</b><span>Qualidade premium</span></div><div class="preview-item"><b>Ao vivo</b><span>Canais e catálogo</span></div><div class="preview-item"><b>Suporte</b><span>Atendimento especializado</span></div><div class="preview-item"><b>1 a 4 telas</b><span>Escolha seu plano</span></div></div></div></div></div><div class="brand-section"><h2>Muito <span>mais que uma plataforma</span></h2><div class="benefits"><article class="benefit"><i>⚡</i><h3>Ativação rápida</h3><p>Receba seu acesso em poucos minutos.</p></article><article class="benefit"><i>↗</i><h3>Estabilidade</h3><p>Servidores de alta performance.</p></article><article class="benefit"><i>▣</i><h3>Qualidade premium</h3><p>HD, Full HD e até 4K.</p></article><article class="benefit"><i>◉</i><h3>Suporte</h3><p>Atendimento todos os dias.</p></article></div></div><div class="brand-section"><h2>Planos <span>XCloud TV</span></h2><div id="xcloudPlans" class="offers"></div></div><footer class="brand-footer">XCLOUD TV, uma experiência JSTECH Premium</footer></section>
 <section id="blessed" class="view brand-page"><div class="brand-hero"><div class="brand-grid"><div><div class="brand-id"><img src="https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png" alt="Logo Blessed Play"><span>BLESSED PLAY</span></div><div class="eyebrow">Área oficial Blessed Play</div><h1>Blessed entretenimento em <span>outro nível</span></h1><p>A mesma estrutura da XCloud, com identidade Blessed Play, qualidade, estabilidade e suporte.</p></div><div class="preview"><div class="preview-head"><strong>BLESSED PLAY</strong><span style="color:var(--mint);font-size:11px">ATIVAÇÃO RÁPIDA</span></div><div class="preview-grid"><div class="preview-item"><b>HD · FHD · 4K</b><span>Qualidade premium</span></div><div class="preview-item"><b>Ao vivo</b><span>Canais e catálogo</span></div><div class="preview-item"><b>Suporte</b><span>Atendimento especializado</span></div><div class="preview-item"><b>1 a 4 telas</b><span>Escolha seu plano</span></div></div></div></div></div><div class="brand-section"><h2>Por que escolher o <span>Blessed Play?</span></h2><div class="benefits"><article class="benefit"><i>⚡</i><h3>Ativação rápida</h3><p>Receba seu acesso em poucos minutos.</p></article><article class="benefit"><i>↗</i><h3>Estabilidade</h3><p>Servidores de alta performance.</p></article><article class="benefit"><i>▣</i><h3>Qualidade premium</h3><p>HD, Full HD e até 4K.</p></article><article class="benefit"><i>◉</i><h3>Suporte</h3><p>Atendimento todos os dias.</p></article></div></div><div class="brand-section"><h2>Planos <span>Blessed Play</span></h2><div id="blessedPlans" class="offers"></div></div><footer class="brand-footer">BLESSED PLAY, uma experiência JSTECH Premium</footer></section>
-<section id="cliente" class="view"><div class="wrap"><div class="eyebrow">Planos de assinatura</div><h1 class="title">Área Cliente Final</h1><div class="hero"><h2>🎬 A maior experiência em streaming</h2><p>Conteúdos, canais ao vivo, filmes, séries, HD, Full HD e 4K com suporte premium.</p></div><h2 class="section-title">💎 Planos com PIX automático</h2><div id="customerOffers" class="offers"></div></div></section>
-<section id="revenda" class="view"><div class="wrap"><div class="eyebrow">Parceria JSTECH</div><h1 class="title">Planos de Revenda</h1><p class="intro">Créditos, mensalistas, painéis ilimitados, Umbrella Corps e Loop-Shark + Loop Cine 4K.</p><h2 class="section-title">🎟️ Preço de créditos</h2><div id="creditOffers" class="offers"></div><h2 class="section-title">🎟️ Preço mensalista</h2><div id="monthlyOffers" class="offers"></div><h2 class="section-title">🎟️ Ilimitado mensalista ♾️</h2><div id="unlimitedOffers" class="offers"></div><div class="hero"><h2>Umbrella Corps ☢️</h2><p>Banners e divulgação, suporte humanizado, servidor estável e aplicativos parceiros.</p></div><div class="hero"><h2>Loop-Shark + Loop Cine 4K 🎬🔥</h2><p>2 servidores premium, 1 P2P exclusivo, aplicativos parceiros, grupo de suporte, filmes, séries, animes, canais e conteúdo HD, Full HD e 4K atualizado diariamente.</p></div></div></section>
-<section id="ativacoes" class="view"><div class="wrap"><div class="eyebrow">Licenças e aplicativos</div><h1 class="title">Ativações</h1><p class="intro">Acesse o sistema de ativação de aplicativos.</p><div id="activationGrid" class="grid"></div></div></section>
+
+<section id="cliente" class="view">
+  <div class="iptv-bg-video"><video src="video_iptv.mp4" autoplay muted loop playsinline preload="auto"></video></div>
+  <div class="video-overlay"></div>
+  <div class="wrap">
+    <div class="eyebrow">Planos de IPTV</div>
+    <h1 class="title">Planos IPTV</h1>
+    <p class="intro">A partir de <strong style="color:var(--green)">R$ 35,00/mês</strong>. +120 mil canais, filmes, séries e futebol em 4K sem travar. Teste grátis antes de assinar.</p>
+
+    <div class="hero">
+      <h2>📺 A maior experiência em streaming</h2>
+      <p>Conteúdos, canais ao vivo, filmes, séries, HD, Full HD e 4K com suporte premium. Compare mensal, trimestral e anual e ative em 2 minutos.</p>
+    </div>
+
+    <h2 class="section-title">💎 Planos com PIX automático</h2>
+    <div class="iptv-grid" id="customerOffers">
+
+      <article class="offer">
+        <h3>Mensal</h3>
+        <div class="price">R$ 35,00<span style="font-size:14px;color:var(--muted);font-weight:500">/mês</span></div>
+        <div class="iptv-sub">Cobrança a cada 30 dias</div>
+        <div class="iptv-check">+120 mil canais e conteúdos</div>
+        <div class="iptv-check">Qualidade 4K / FHD</div>
+        <div class="iptv-check">1 tela simultânea</div>
+        <div class="iptv-check">Suporte no WhatsApp</div>
+        <button class="action" data-pix="IPTV Mensal|R$ 35,00"><span>Assinar mensal</span><span>↗</span></button>
+      </article>
+
+      <article class="offer iptv-highlight">
+        <div class="iptv-badge">Mais vendido</div>
+        <h3>Trimestral</h3>
+        <div class="price">R$ 79,90<span style="font-size:14px;color:var(--muted);font-weight:500">/3 meses</span></div>
+        <div class="iptv-sub">≈ R$ 26,63 por mês</div>
+        <div class="iptv-save">Economia de 20%</div>
+        <div class="iptv-check">Tudo do plano mensal</div>
+        <div class="iptv-check">2 telas simultâneas</div>
+        <div class="iptv-check">Prioridade no suporte</div>
+        <button class="action" data-pix="IPTV Trimestral|R$ 79,90"><span>Assinar trimestral</span><span>↗</span></button>
+      </article>
+
+      <article class="offer">
+        <h3>Anual</h3>
+        <div class="price">R$ 200,00<span style="font-size:14px;color:var(--muted);font-weight:500">/ano</span></div>
+        <div class="iptv-sub">≈ R$ 16,67 por mês</div>
+        <div class="iptv-save">Maior economia do ano</div>
+        <div class="iptv-check">Tudo do trimestral</div>
+        <div class="iptv-check">3 telas simultâneas</div>
+        <div class="iptv-check">Suporte VIP</div>
+        <button class="action" data-pix="IPTV Anual|R$ 200,00"><span>Assinar anual</span><span>↗</span></button>
+      </article>
+
+      <article class="offer" style="border-color:rgba(255,179,46,.45);box-shadow:0 0 0 1px rgba(255,179,46,.2),0 18px 55px rgba(0,0,0,.35)">
+        <div class="iptv-badge" style="background:linear-gradient(135deg,var(--gold),#ff8c00);color:#1a0f00">⭐ Vitalício</div>
+        <h3>Vitalício</h3>
+        <div class="price">R$ 799,00<span style="font-size:14px;color:var(--muted);font-weight:500">/único</span></div>
+        <div class="iptv-sub">Acesso para sempre</div>
+        <div class="iptv-save" style="color:var(--gold)">Pague uma vez, use a vida toda</div>
+        <div class="iptv-check">Tudo do plano anual</div>
+        <div class="iptv-check">5 telas simultâneas</div>
+        <div class="iptv-check">Suporte VIP Vitalício</div>
+        <div class="iptv-check">Atualizações gratuitas</div>
+        <button class="action" style="background:linear-gradient(135deg,var(--gold),#ff8c00);border-color:var(--gold);color:#1a0f00" data-pix="IPTV Vitalício|R$ 799,00"><span>Assinar vitalício</span><span>↗</span></button>
+      </article>
+
+    </div>
+
+    <h2 class="section-title">✅ Incluso em todos os planos</h2>
+    <div class="benefits">
+      <article class="benefit"><i>📡</i><h3>+120 mil títulos</h3><p>Canais ao vivo, filmes lançamentos e séries on demand.</p></article>
+      <article class="benefit"><i>🎬</i><h3>Qualidade 4K</h3><p>Imagem em 4K, Full HD e HD com buffer anti-travamento.</p></article>
+      <article class="benefit"><i>📱</i><h3>Todos os aparelhos</h3><p>Smart TV, celular, TV Box, Fire Stick e PC.</p></article>
+      <article class="benefit"><i>💬</i><h3>Suporte 24h</h3><p>Atendimento humano no WhatsApp todos os dias.</p></article>
+    </div>
+
+    <div class="iptv-cta">
+      <h3>Não sabe qual plano escolher?</h3>
+      <p>Faça o teste IPTV grátis, conheça a qualidade e depois escolha o plano ideal sem pressa.</p>
+      <a class="action" href="https://wa.me/5527997314781?text=Olá! Quero fazer o teste IPTV grátis de 6h." target="_blank" style="display:inline-flex;gap:10px"><span>▶ Quero meu teste IPTV grátis</span><span>↗</span></a>
+    </div>
+
+    <h2 class="section-title">❓ Dúvidas frequentes</h2>
+    <div class="faq">
+      <details><summary>Qual o plano de IPTV mais barato?</summary><p>O plano mais barato por mês é o anual, que sai por R$ 16,67/mês (R$ 200,00 no ano). Se prefere começar sem compromisso de longo prazo, o plano mensal custa R$ 35,00. Para quem quer pagar apenas uma vez, o plano vitalício custa R$ 799,00.</p></details>
+      <details><summary>Os planos de IPTV têm fidelidade?</summary><p>Não. Nenhum plano tem fidelidade ou multa. Você renova quando quiser e pode mudar de plano a qualquer momento falando com o suporte.</p></details>
+      <details><summary>Como pago o plano de IPTV?</summary><p>O pagamento é feito via Pix, de forma rápida e segura. Após a confirmação, o acesso é liberado na hora.</p></details>
+      <details><summary>Posso testar antes de assinar um plano?</summary><p>Sim. Você pode fazer um teste IPTV grátis de 6 horas antes de assinar qualquer plano, sem cartão de crédito.</p></details>
+      <details><summary>Quantas telas cada plano permite?</summary><p>O plano mensal permite 1 tela, o trimestral 2 telas, o anual 3 telas e o vitalício 5 telas simultâneas com o mesmo login.</p></details>
+    </div>
+
+    <p style="text-align:center;color:var(--muted);font-size:12px;margin-top:50px">© 2026 6rracs IPTV via JSTECH Premium — Todos os direitos reservados.</p>
+  </div>
+</section>
+
+<section id="revenda" class="view"><div class="wrap"><div class="eyebrow">Parceria JSTECH</div><h1 class="title">Planos de Revenda</h1><p class="intro">Torne-se um revendedor JSTECH e monte seu próprio negócio de IPTV. Você compra créditos ou pacotes mensalistas e revende com a sua própria marca. Sem mensalidade obrigatória, sem fidelidade.</p>
+
+    <div class="hero"><h2>🚀 Como funciona a revenda?</h2><p>Você compra créditos ou pacotes mensalistas e usa nossos painéis para criar contas para seus clientes. Cada crédito vale 1 mês de acesso. Quanto mais créditos comprar, menor o preço por unidade. O mensalista funciona como um pacote fixo: você paga uma vez por mês e recebe X créditos para distribuir.</p></div>
+
+    <h2 class="section-title">💳 Preço de Créditos Avulsos</h2>
+    <p style="text-align:center;color:var(--muted);margin:-12px auto 22px;max-width:70ch">Compre créditos conforme sua demanda. 1 crédito = 1 mês de acesso para 1 cliente. Valide seu cliente a cada 30 dias.</p>
+    <div id="creditOffers" class="offers"></div>
+
+    <h2 class="section-title">📦 Pacotes Mensalistas</h2>
+    <p style="text-align:center;color:var(--muted);margin:-12px auto 22px;max-width:70ch">Pacotes fixos mensais com melhor custo-benefício. Ideal para quem já tem base de clientes e quer previsibilidade de gastos.</p>
+    <div id="monthlyOffers" class="offers"></div>
+
+    <h2 class="section-title">♾️ Painéis Ilimitados</h2>
+    <p style="text-align:center;color:var(--muted);margin:-12px auto 22px;max-width:70ch">Painéis administrativos com criação ilimitada de contas. Você paga uma mensalidade fixa e cria quantos clientes quiser.</p>
+    <div id="unlimitedOffers" class="offers"></div>
+
+    <h2 class="section-title">✅ O que você recebe como revendedor</h2>
+    <div class="benefits">
+      <article class="benefit"><i>🎛️</i><h3>Painel de Gerenciamento</h3><p>Crie, edite, renove e bloqueie contas dos seus clientes em tempo real.</p></article>
+      <article class="benefit"><i>💰</i><h3>Lucro Garantido</h3><p>Você define o preço de venda. Compre a R$ 1,50 e venda a R$ 25,00 — lucro de mais de 1.500%.</p></article>
+      <article class="benefit"><i>📱</i><h3>Apps Parceiros</h3><p>Acesso a todos os aplicativos parceiros JSTECH para oferecer aos seus clientes.</p></article>
+      <article class="benefit"><i>🤝</i><h3>Suporte Exclusivo</h3><p>Grupo de suporte no WhatsApp com a equipe JSTECH e outros revendedores.</p></article>
+      <article class="benefit"><i>📊</i><h3>Relatórios e Controle</h3><p>Acompanhe seus créditos, clientes ativos, renovações e faturamento no painel.</p></article>
+      <article class="benefit"><i>🏷️</i><h3>Marca Própria (White Label)</h3><p>Personalize o app com sua logo e cores. Seus clientes não sabem que é JSTECH.</p></article>
+    </div>
+
+    <div class="iptv-cta">
+      <h3>Quer começar a revender?</h3>
+      <p>Entre em contato pelo WhatsApp, tire suas dúvidas e receba seu acesso ao painel revenda em minutos.</p>
+      <a class="action" href="https://wa.me/5527997314781?text=Olá! Quero ser revendedor JSTECH. Pode me explicar os planos?" target="_blank" style="display:inline-flex;gap:10px"><span>💬 Quero ser revendedor</span><span>↗</span></a>
+    </div>
+
+    <div class="hero"><h2>Umbrella Corps ☢️</h2><p>Banners e divulgação, suporte humanizado, servidor estável e aplicativos parceiros.</p></div>
+    <div class="hero"><h2>Loop-Shark + Loop Cine 4K 🎬🔥</h2><p>2 servidores premium, 1 P2P exclusivo, aplicativos parceiros, grupo de suporte, filmes, séries, animes, canais e conteúdo HD, Full HD e 4K atualizado diariamente.</p></div>
+
+    <h2 class="section-title">❓ Dúvidas de revenda</h2>
+    <div class="faq">
+      <details><summary>O que é 1 crédito?</summary><p>1 crédito equivale a 1 mês de acesso IPTV para 1 cliente. Você compra os créditos e distribui conforme vende. Quando um cliente pagar, você gasta 1 crédito no painel para liberar 30 dias de acesso.</p></details>
+      <details><summary>Qual a diferença entre crédito avulso e mensalista?</summary><p>Crédito avulso você compra quando quiser, sem compromisso. Mensalista é um pacote fixo que você compra todo mês com melhor preço por crédito, ideal para quem tem base de clientes constante.</p></details>
+      <details><summary>Posso ter meu próprio app?</summary><p>Sim! Oferecemos white label (marca própria) para revendedores. Seu app com sua logo, suas cores e seu nome. Seus clientes nunca sabem que é JSTECH.</p></details>
+      <details><summary>Tem suporte para revendedores?</summary><p>Sim. Revendedores têm acesso a um grupo exclusivo no WhatsApp com suporte técnico, materiais de divulgação e troca de experiências com outros revendedores.</p></details>
+      <details><summary>Quanto eu posso lucrar?</summary><p>Você compra créditos a partir de R$ 1,50 e revende por R$ 25-35. No plano ilimitado, você paga R$ 200-300/mês e pode criar quantas contas quiser, lucrando 100% sobre cada venda.</p></details>
+    </div>
+
+    <p style="text-align:center;color:var(--muted);font-size:12px;margin-top:50px">© 2026 JSTECH Revenda — Todos os direitos reservados.</p>
+  </div></section>
+<section id="cs" class="view"><div class="wrap">
+  <div class="eyebrow">Central de Serviço</div>
+  <h1 class="title">Painel CS</h1>
+  <p class="intro">Acesse o painel de atendimento e controle de chamados.</p>
+  <nav class="cs-nav">
+    <a href="#cs-inicio">Início</a>
+    <a href="#cs-planos">Planos</a>
+    <a href="#cs-teste">Teste</a>
+    <a href="#cs-revenda">Seja um revendedor</a>
+    <a href="#cs-csp">Linha CSP</a>
+    <a href="#cs-criar">Criar servidor CS</a>
+  </nav>
+
+  <!-- Barra de pesquisa e grid compatível -->
+  <div class="toolbar">
+    <span class="count"><strong id="csCount">0</strong> painéis CS disponíveis</span>
+    <input id="csSearch" class="search" placeholder="🔍 Pesquisar painel CS...">
+  </div>
+  <div id="csGrid" class="grid" style="margin-bottom:30px;"></div>
+
+  <!-- Hero / Início -->
+  <div id="cs-inicio" class="cs-hero">
+    <div class="cs-bg-video"><video src="video_cs.mp4" autoplay muted loop playsinline preload="auto"></video></div>
+    <div class="video-overlay"></div>
+    <div class="cs-hero-inner">
+      <div class="cs-hero-text">
+        <h2 class="cs-hero-title">MUITA ALEGRIA E LAZER PARA A FAMÍLIA TODA!</h2>
+        <p class="cs-hero-subtitle">Transforme sua experiência de entretenimento com a W3BR. Oferecemos o melhor em conteúdo digital com a qualidade que você merece.</p>
+        <div class="cs-hero-actions">
+          <a class="cs-btn cs-btn-primary" href="#cs-planos">Conhecer planos</a>
+          <a class="cs-btn cs-btn-secondary" href="#cs-teste">Teste grátis 24h</a>
+        </div>
+      </div>
+      <div class="cs-hero-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/MoH2iOtmcIU?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" style="border-radius:12px;box-shadow:0 0 30px rgba(0,255,136,0.15);border:none;" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <!-- Planos -->
+  <div id="cs-planos" class="cs-section">
+    <h2 class="cs-section-title">Escolha o seu plano</h2>
+    <p class="cs-section-subtitle">Os melhores planos de CS para você e sua família.</p>
+    <div class="cs-plan-tabs">
+      <button class="cs-tab-btn active" onclick="switchCsPlan('claro',this)">CS CLARO</button>
+      <button class="cs-tab-btn" onclick="switchCsPlan('net',this)">CS NET CABO</button>
+    </div>
+    <div id="cs-plan-claro" class="cs-plan-content active">
+      <div class="cs-cards">
+        <div class="cs-card">
+          <div class="cs-card-header">Mensal</div>
+          <div class="cs-card-body">
+            <div class="cs-card-price">R$ <strong>14</strong>,00</div>
+            <div class="cs-card-period">/ mês</div>
+            <ul class="cs-card-list">
+              <li>✅ +380 canais HD</li>
+              <li>✅ Filmes e séries</li>
+              <li>✅ Canais adultos</li>
+              <li>✅ Suporte 24h</li>
+              <li>✅ 1 tela simultânea</li>
+            </ul>
+          </div>
+          <a class="cs-card-btn" href="https://painelw3brtop.sytes.net/" target="_blank">Assinar agora</a>
+        </div>
+        <div class="cs-card cs-card-popular">
+          <div class="cs-card-badge">MAIS POPULAR</div>
+          <div class="cs-card-header">Semestral</div>
+          <div class="cs-card-body">
+            <div class="cs-card-price">R$ <strong>70</strong>,00</div>
+            <div class="cs-card-period">/ 6 meses</div>
+            <ul class="cs-card-list">
+              <li>✅ +380 canais HD</li>
+              <li>✅ Filmes e séries</li>
+              <li>✅ Canais adultos</li>
+              <li>✅ Suporte 24h</li>
+              <li>✅ 1 tela simultânea</li>
+              <li>✅ Economia de R$ 14</li>
+            </ul>
+          </div>
+          <a class="cs-card-btn" href="https://painelw3brtop.sytes.net/" target="_blank">Assinar agora</a>
+        </div>
+        <div class="cs-card">
+          <div class="cs-card-header">Anual</div>
+          <div class="cs-card-body">
+            <div class="cs-card-price">R$ <strong>110</strong>,00</div>
+            <div class="cs-card-period">/ 12 meses</div>
+            <ul class="cs-card-list">
+              <li>✅ +380 canais HD</li>
+              <li>✅ Filmes e séries</li>
+              <li>✅ Canais adultos</li>
+              <li>✅ Suporte 24h</li>
+              <li>✅ 1 tela simultânea</li>
+              <li>✅ Economia de R$ 58</li>
+            </ul>
+          </div>
+          <a class="cs-card-btn" href="https://painelw3brtop.sytes.net/" target="_blank">Assinar agora</a>
+        </div>
+      </div>
+    </div>
+    <div id="cs-plan-net" class="cs-plan-content" style="display:none">
+      <div class="cs-cards">
+        <div class="cs-card">
+          <div class="cs-card-header">Mensal</div>
+          <div class="cs-card-body">
+            <div class="cs-card-price">R$ <strong>14</strong>,00</div>
+            <div class="cs-card-period">/ mês</div>
+            <ul class="cs-card-list">
+              <li>✅ +380 canais HD</li>
+              <li>✅ Filmes e séries</li>
+              <li>✅ Canais adultos</li>
+              <li>✅ Suporte 24h</li>
+              <li>✅ 1 tela simultânea</li>
+            </ul>
+          </div>
+          <a class="cs-card-btn" href="https://painelw3brtop.sytes.net/" target="_blank">Assinar agora</a>
+        </div>
+        <div class="cs-card cs-card-popular">
+          <div class="cs-card-badge">MAIS POPULAR</div>
+          <div class="cs-card-header">Semestral</div>
+          <div class="cs-card-body">
+            <div class="cs-card-price">R$ <strong>70</strong>,00</div>
+            <div class="cs-card-period">/ 6 meses</div>
+            <ul class="cs-card-list">
+              <li>✅ +380 canais HD</li>
+              <li>✅ Filmes e séries</li>
+              <li>✅ Canais adultos</li>
+              <li>✅ Suporte 24h</li>
+              <li>✅ 1 tela simultânea</li>
+              <li>✅ Economia de R$ 14</li>
+            </ul>
+          </div>
+          <a class="cs-card-btn" href="https://painelw3brtop.sytes.net/" target="_blank">Assinar agora</a>
+        </div>
+        <div class="cs-card">
+          <div class="cs-card-header">Anual</div>
+          <div class="cs-card-body">
+            <div class="cs-card-price">R$ <strong>110</strong>,00</div>
+            <div class="cs-card-period">/ 12 meses</div>
+            <ul class="cs-card-list">
+              <li>✅ +380 canais HD</li>
+              <li>✅ Filmes e séries</li>
+              <li>✅ Canais adultos</li>
+              <li>✅ Suporte 24h</li>
+              <li>✅ 1 tela simultânea</li>
+              <li>✅ Economia de R$ 58</li>
+            </ul>
+          </div>
+          <a class="cs-card-btn" href="https://painelw3brtop.sytes.net/" target="_blank">Assinar agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teste -->
+  <div id="cs-teste" class="cs-section">
+    <h2 class="cs-section-title">Teste grátis 24h</h2>
+    <p class="cs-section-subtitle">Experimente nosso serviço sem compromisso.</p>
+    <div class="cs-teste-box">
+      <div class="cs-teste-text">
+        <h3>Quer testar antes de comprar?</h3>
+        <p>Oferecemos um teste gratuito de 24 horas para você conhecer a qualidade da W3BR.</p>
+        <p>É rápido, simples e sem compromisso.</p>
+        <a class="cs-btn cs-btn-primary" href="https://wa.me/5527997314781?text=Olá!+Gostaria+de+solicitar+um+teste+grátis+de+24h+da+W3BR" target="_blank">Solicitar teste agora</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Revenda -->
+  <div id="cs-revenda" class="cs-section">
+    <h2 class="cs-section-title">Seja um revendedor</h2>
+    <p class="cs-section-subtitle">Monte sua própria renda extra com a W3BR.</p>
+    <div class="cs-revenda-box">
+      <div class="cs-revenda-text">
+        <h3>Venda CS e lucre!</h3>
+        <p>Seja um revendedor oficial W3BR e tenha acesso a:</p>
+        <ul>
+          <li>✅ Painel de revenda completo</li>
+          <li>✅ Créditos com preço especial</li>
+          <li>✅ Suporte exclusivo</li>
+          <li>✅ Materiais de divulgação</li>
+        </ul>
+        <a class="cs-btn cs-btn-primary" href="https://wa.me/5527997314781?text=Olá!+Tenho+interesse+em+ser+revendedor+W3BR" target="_blank">Quero ser revendedor</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linha CSP -->
+  <div id="cs-csp" class="cs-section">
+    <h2 class="cs-section-title">Linha CSP</h2>
+    <p class="cs-section-subtitle">Servidores CSP para sua operação.</p>
+    <div class="cs-csp-box">
+      <p>Entre em contato para mais informações sobre nossa linha CSP.</p>
+      <a class="cs-btn cs-btn-primary" href="https://wa.me/5527997314781?text=Olá!+Gostaria+de+informações+sobre+a+linha+CSP+da+W3BR" target="_blank">Falar no WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Criar servidor CS -->
+  <div id="cs-criar" class="cs-section">
+    <h2 class="cs-section-title">Criar servidor CS</h2>
+    <p class="cs-section-subtitle">Tenha seu próprio servidor de CS.</p>
+    <div class="cs-criar-box">
+      <p>Quer montar seu próprio servidor CS? Fale conosco e vamos te ajudar.</p>
+      <a class="cs-btn cs-btn-primary" href="https://wa.me/5527997314781?text=Olá!+Quero+criar+meu+próprio+servidor+CS" target="_blank">Quero criar servidor</a>
+    </div>
+  </div>
+
+  <!-- Contato / Footer -->
+  <div class="cs-footer">
+    <div class="cs-footer-grid">
+      <div class="cs-footer-col">
+        <h4>W3BR</h4>
+        <p>O melhor em CS CLARO e CS NET CABO. Transforme sua experiência de entretenimento.</p>
+      </div>
+      <div class="cs-footer-col">
+        <h4>Links</h4>
+        <a href="#cs-planos">Planos</a>
+        <a href="#cs-teste">Teste grátis</a>
+        <a href="#cs-revenda">Revenda</a>
+      </div>
+      <div class="cs-footer-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5527997314781" target="_blank">WhatsApp</a>
+        <a href="https://painelw3brtop.sytes.net/" target="_blank">Painel W3BR</a>
+      </div>
+      <div class="cs-footer-col">
+        <h4>Formulário de contato</h4>
+        <form class="cs-form" action="https://wa.me/5527997314781" target="_blank" method="get" onsubmit="this.action='https://wa.me/5527997314781?text='+encodeURIComponent('Nome: '+this.nome.value+'\nE-mail: '+this.email.value+'\nMensagem: '+this.mensagem.value); return true;">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <textarea name="mensagem" placeholder="Sua mensagem" rows="3" required></textarea>
+          <button type="submit" class="cs-btn cs-btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="cs-footer-copy">
+      <p>© W3BR - Todos os direitos reservados.</p>
+    </div>
+  </div>
+</div></section><section id="ativacoes" class="view"><div class="wrap"><div class="eyebrow">Licenças e aplicativos</div><h1 class="title">Ativações</h1><p class="intro">Acesse o sistema de ativação de aplicativos.</p><div id="activationGrid" class="grid"></div></div></section>
 </main>
+
+<section id="sobre-videos" style="border-top:1px solid var(--line);padding:60px 24px;background:radial-gradient(circle at 10% 10%,rgba(50,223,122,.12),transparent 40rem),radial-gradient(circle at 90% 90%,rgba(166,108,255,.12),transparent 40rem),var(--bg)">
+  <div class="wrap" style="max-width:980px;margin:auto;padding:0">
+    <div class="eyebrow" style="text-align:center">Experiência visual</div>
+    <h2 class="title" style="text-align:center;font-size:clamp(28px,4vw,42px);margin-bottom:30px">Como funciona o streaming</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-bottom:30px">
+      <article class="card" style="padding:24px;text-align:center">
+        <div style="font-size:32px;margin-bottom:12px">🎬</div>
+        <h3>Vídeos processados</h3>
+        <p class="desc" style="text-align:center">Criamos vídeos locais otimizados para as seções Planos IPTV e CS. Sem iframes, sem delays, sem interface do YouTube.</p>
+      </article>
+      <article class="card" style="padding:24px;text-align:center">
+        <div style="font-size:32px;margin-bottom:12px">🔁</div>
+        <h3>Loop infinito</h3>
+        <p class="desc" style="text-align:center">Reprodução automática em loop, sem necessidade de cliques. O vídeo toca sozinho para sempre enquanto você navega.</p>
+      </article>
+      <article class="card" style="padding:24px;text-align:center">
+        <div style="font-size:32px;margin-bottom:12px">🎨</div>
+        <h3>Texto sobreposto</h3>
+        <p class="desc" style="text-align:center">Adicionamos texto diretamente sobre o vídeo: "MUITA ALEGRIA E LAZER PARA A FAMILIA TODA!" e a lista de canais.</p>
+      </article>
+    </div>
+    <div style="border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#1b3340,#111c26);padding:28px">
+      <h3 style="margin-top:0;color:var(--mint)">✅ O que foi feito nos vídeos</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div style="background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:16px">
+          <div style="font-size:13px;font-weight:950;color:var(--green);margin-bottom:6px">VIDEO_IPTV.MP4</div>
+          <div style="font-size:13px;color:#d0dade;line-height:1.7">
+            • Cortado o final — removido o texto "SOLICITE UM TESTE"<br>
+            • Texto adicionado na frente:<br>
+            <span style="color:white">"MUITA ALEGRIA E LAZER"</span><br>
+            <span style="color:var(--green)">"PARA A FAMILIA TODA!"</span><br>
+            <span style="color:var(--gold)">"+ DE 380 CANAIS DE"</span><br>
+            <span style="color:white">"FILMES  SERIES  NOVELAS"</span><br>
+            <span style="color:white">"ADULTOS (+18)  ESPORTES"</span><br>
+            <span style="color:white">"DESENHOS  SHOWS"</span><br>
+            • Fundo escuro semi-transparente para legibilidade
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:16px">
+          <div style="font-size:13px;font-weight:950;color:var(--green);margin-bottom:6px">VIDEO_CS.MP4</div>
+          <div style="font-size:13px;color:#d0dade;line-height:1.7">
+            • Mesmo vídeo processado para a seção CS<br>
+            • Loop infinito, autoplay, mudo<br>
+            • Sem interface externa — reprodução nativa<br>
+            • Texto integrado diretamente no vídeo<br>
+            • Overlay escuro no site garante legibilidade do conteúdo
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <dialog id="pixModal" class="modal"><div class="modal-in"><div><div class="eyebrow">Pagamento PIX</div><h2 id="pixTitle">Plano selecionado</h2></div><button id="closePix" class="close">&times;</button><div class="qr"><iframe src="https://rare-amber-tqgqar5b.edgeone.dev/" title="QR Code PIX"></iframe></div><div class="pix-key">Chave PIX, telefone: 27997314781</div><p>Escaneie o QR Code ou use a chave no aplicativo do banco.</p><a id="sendPix" class="action" target="_blank" href="#"><span>✅ Já paguei, enviar comprovante</span><span>↗</span></a></div></dialog>
 <script>
 // Painéis Oficiais: [nome, logo, descrição, url]
@@ -136,7 +670,7 @@ const panels=[
 ['Painel W3BR Top','logos/w3br.png','Portal principal para gerenciamento de clientes e créditos.','https://painelw3brtop.sytes.net/']
 ];
 
-// Painéis de Teste: [nome, logo, descrição, url_teste] - NÃO MEXER
+// Painéis de Teste: [nome, logo, descrição, url_teste]
 const tests=[
 ['TopZ TV','https://topztv.sigma.vin/api/settings/logo/zKA7xQNM?v=c6409f64','Gere 1 crédito de teste para validação.','https://topztv.sigma.vin/#/rs/0m1E8eVWlE/241KEN9Dmx'],
 ['Sport Play','https://sportplay.sigma.vin/api/settings/logo/EpLOb6VQ?v=f797ae7b','Gere 1 crédito de teste para validação.','https://abroz.space/#/rs/4vLb24MLgG/K4Wr8pGLeN'],
@@ -165,55 +699,83 @@ const tests=[
 ['Lider IPTV','https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d','Gere 1 crédito de teste para validação.','https://lideriptv.sigma.st/#/rs/YB1wd9bLvm/ze15qR515K']
 ];
 
+// Painéis CS: [nome, logo, descrição, url]
+const csPanels=[
+  ['W3BR Painel CS','logos/w3br.png','Painel oficial de gerenciamento de CS e chamados.','https://painelw3brtop.sytes.net/']
+];
+
 // Apps Parceiros: [nome, logo, plataforma]
-const apps=[
-['MAX PLAYER','logos/maxplayer.png','Android / Fire Stick'],
-['UNITV','logos/unitv.png','Android'],
-['UNI REVENDA','logos/unirevenda.png','Android / Painel'],
-['GPC PRO','logos/gpcpro.png','Android / Painel'],
-['HOME PLAYER XTREAM','logos/homeplayerxtream.png','Android'],
-['APP ZINK','logos/zink.png','Android'],
-['HOME PLAYER','logos/homeplayer.png','Android'],
-['TOP TV','logos/toptv.png','Android'],
-['XCLOUD TV','https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png','Android / Smart TV'],
-['BLESSED PLAY','https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png','Android / Smart TV'],
-['LOTUS','logos/lotus.png','Android / Smart TV'],
-['HDPLAY','logos/hdplay.png','Android / Smart TV'],
-['XCIPTV','logos/xciptv.png','Android / Fire Stick'],
-['S.A PLAYER','logos/saplayer.png','Android / Smart TV'],
-['AKS PLAY','logos/aksplay.png','Android / Fire Stick'],
-['ALPHA MASTER PLAY','logos/alphamasterplay.png','Android / Fire Stick'],
-['LAZER PLAY','logos/lazerplay.png','Multiplataforma'],
-['FUN PLAY','logos/funplay.png','Multiplataforma'],
-['SMARTCPP','logos/smartcpp.png','Multiplataforma'],
-['ASSIST+ OFICIAL','logos/assistplus.png','LG, Roku, Android, Fire Stick'],
-['PLAYSIM','logos/playsim.png','LG, Roku, Samsung, Android'],
-['MAGIC PLAYER','logos/magicplayer.png','Roku'],
-['VIZZION PLAY','logos/vizzion.png','Multiplataforma'],
-['BOX PLAYER','logos/boxplayer.png','Multiplataforma'],
-['JJ PLAYER','logos/jjplayer.png','Android, Smart TV'],
-['DUO TV','logos/duotv.png','Android, Smart TV'],
-['MULT BOX','logos/multbox.png','Android, TV Box'],
-['SYNC21 PLAYER','logos/sync21.png','Multiplataforma'],
-['UP PLAY','logos/upplay.png','Multiplataforma'],
-['MAX21','logos/max21.png','Multiplataforma'],
-['ZUXO PLAYER','logos/zuxo.png','Multiplataforma'],
-['BRASIL IPTV','logos/brasiliptv.png','Multiplataforma'],
-['FLEX PLAY','logos/flexplay.png','Multiplataforma'],
-['GALAX PLAY','logos/galaxplay.png','Samsung'],
-['BOX PRIME','logos/boxprime.png','Roku'],
-['DUPLEX MAX','logos/duplexmax.png','Roku'],
-['POWER PLAY','logos/powerplay.png','Multiplataforma'],
-['EPIC PLAY','logos/epicplay.png','Multiplataforma'],
-['SUPER PLAY','logos/superplay.png','Multiplataforma']
+const appsParceiros=[
+  {nome:"MAX PLAYER (App Próprio)",logo:"logos/maxplayer.png",sis:"Android / Fire Stick",downloader:"1890184",url:"http://aftv.news/1890184"},
+  {nome:"UNITV (Android)",logo:"logos/unitv.png",sis:"Android",downloader:"8090976",url:"http://aftv.news/8090976",user:"369496943",pass:"811852429"},
+  {nome:"UNI REVENDA",logo:"logos/unirevenda.png",sis:"Android / Painel",ntdown:"2116714",user:"369496943",pass:"811852429"},
+  {nome:"GPC PRO",logo:"logos/gpcpro.png",sis:"Android / Painel",ntdown:"2116714",user:"369496943",pass:"811852429"},
+  {nome:"HOME PLAYER XTREAM",logo:"logos/homeplayerxtream.png",sis:"Android",ntdown:"63334",downloader:"6245886",url:"http://aftv.news/6245886"},
+  {nome:"APP ZINK",logo:"logos/zink.png",sis:"Android",ntdown:"68618",downloader:"1650495",url:"http://aftv.news/1650495"},
+  {nome:"HOME PLAYER",logo:"logos/homeplayer.png",sis:"Android",ntdown:"28558",downloader:"8845054",url:"http://aftv.news/8845054"},
+  {nome:"TOP TV",logo:"logos/toptv.png",sis:"Android",ntdown:"4710019",downloader:"4710019",url:"http://aftv.news/4710019"},
+  {nome:"XCLOUD TV",logo:"https://xcloudtv.app/wp-content/uploads/2026/06/logo-2001.png",sis:"Android / Smart TV", url:"https://xcloudtv.app/"},
+  {nome:"LOTUS",logo:"logos/lotus.png",sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
+  {nome:"HDPLAY",logo:"logos/hdplay.png",sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
+  {nome:"XCIPTV",logo:"logos/xciptv.png",sis:"Android / Fire Stick", url:"https://wa.me/5527997314781"},
+  {nome:"S.A PLAYER",logo:"logos/saplayer.png",sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
+  {nome:"AKS PLAY",logo:"logos/aksplay.png",sis:"Android / Fire Stick",downloader:"4804956",url:"http://aftv.news/4804956"},
+  {nome:"ALPHA MASTER PLAY",logo:"logos/alphamasterplay.png",sis:"Android / Fire Stick",downloader:"1707253",url:"http://aftv.news/1707253"},
+  {nome:"ALPHA MASTER (FIRE STICK)",logo:"logos/alphamasterfs.png",sis:"Fire Stick",user:"212984917",pass:"265091925", url:"https://wa.me/5527997314781"},
+  {nome:"LAZER PLAY",logo:"logos/lazerplay.png",sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"FUN PLAY",logo:"logos/funplay.png",sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"SMARTCPP",logo:"logos/smartcpp.png",sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"BLASSED PLAYER",logo:"https://panel.blessedplayer.top/static/media/blessed-player-logo.065ddf29881d3ffdfe0c.png",sis:"Smart TV / Android", url:"https://panel.blessedplayer.top/"},
+  {nome:"ASSIST+ OFICIAL",logo:"logos/assistplus.png",sis:"LG, Roku, Android, Fire Stick", url:"https://wa.me/5527997314781"},
+  {nome:"PLAYSIM",logo:"logos/playsim.png",sis:"LG, Roku, Samsung, Android", url:"https://wa.me/5527997314781"},
+  {nome:"MAGIC PLAYER",logo:"logos/magicplayer.png",sis:"Roku", url:"https://wa.me/5527997314781"},
+  {nome:"VIZZION PLAY",logo:"logos/vizzion.png",sis:"LG, Roku, Samsung, iPhone, Windows, Android", url:"https://wa.me/5527997314781"},
+  {nome:"BOX PLAYER",logo:"logos/boxplayer.png",sis:"LG, Roku, Fire TV", url:"https://wa.me/5527997314781"},
+  {nome:"JJ PLAYER",logo:"logos/jjplayer.png",sis:"Android, Smart TV", url:"https://wa.me/5527997314781"},
+  {nome:"DUO TV",logo:"logos/duotv.png",sis:"Android, Smart TV", url:"https://wa.me/5527997314781"},
+  {nome:"MULT BOX",logo:"logos/multbox.png",sis:"Android, TV Box", url:"https://wa.me/5527997314781"},
+  {nome:"SYNC21 PLAYER",logo:"logos/sync21.png",sis:"Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"UP PLAY",logo:"logos/upplay.png",sis:"Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"MAX21",logo:"logos/max21.png",sis:"Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"ZUXO PLAYER",logo:"logos/zuxo.png",sis:"LG, Roku, iPhone, Android, Xbox", url:"https://wa.me/5527997314781"},
+  {nome:"BRASIL IPTV",logo:"logos/brasiliptv.png",sis:"LG, Roku, Samsung, Android", url:"https://wa.me/5527997314781"},
+  {nome:"FLEX PLAY",logo:"logos/flexplay.png",sis:"LG, Roku, Samsung", url:"https://wa.me/5527997314781"},
+  {nome:"GALAX PLAY",logo:"logos/galaxplay.png",sis:"Samsung", url:"https://wa.me/5527997314781"},
+  {nome:"BOX PRIME",logo:"logos/boxprime.png",sis:"Roku", url:"https://wa.me/5527997314781"},
+  {nome:"DUPLEX MAX",logo:"logos/duplexmax.png",sis:"Roku", url:"https://wa.me/5527997314781"},
+  {nome:"POWER PLAY",logo:"logos/powerplay.png",sis:"Roku, LG, Samsung, Android", url:"https://wa.me/5527997314781"},
+  {nome:"EPIC PLAY",logo:"logos/epicplay.png",sis:"Roku, LG, Samsung, Android", url:"https://wa.me/5527997314781"},
+  {nome:"SUPER PLAY",logo:"logos/superplay.png",sis:"Multiplataforma", url:"https://wa.me/5527997314781"}
 ];
 
 var esc=function(s){return String(s).replace(/[&<>"']/g,function(m){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]})};
 function fallback(n){var i=n.split(/\s+/).slice(0,2).map(function(x){return x[0]}).join('').toUpperCase();return'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160"><rect width="240" height="160" rx="28" fill="#203b47"/><text x="120" y="88" text-anchor="middle" font-family="Arial" font-size="36" font-weight="800" fill="#9af7c0">'+i+'</text></svg>')}
 
+function renderApps(list,id){
+  var box=document.getElementById(id);
+  box.innerHTML='';
+  list.forEach(function(x){
+    var n=x.nome, l=x.logo, s=x.sis||'';
+    var c=document.createElement('article');
+    c.className='card app';
+    var extra='';
+    if(x.downloader) extra+='<div class="app-info"><b>Downloader:</b> '+esc(x.downloader)+'</div>';
+    if(x.ntdown) extra+='<div class="app-info"><b>NT Down:</b> '+esc(x.ntdown)+'</div>';
+    if(x.url) extra+='<div class="app-info"><b>URL:</b> <a href="'+esc(x.url)+'" target="_blank" style="color:var(--mint)">'+esc(x.url)+'</a></div>';
+    var btnLink = x.url || 'https://wa.me/5527997314781';
+    var btnText = x.url?'Baixar app':'Consultar no WhatsApp';
+    c.innerHTML='<div class="topline"><div class="logo"><img src="'+esc(l)+'" alt="Logo '+esc(n)+'"></div><span class="status">APP PARCEIRO</span></div><h3>'+esc(n)+'</h3><div class="desc">'+esc(s)+'</div>'+(extra?'<div class="app-extras">'+extra+'</div>':'')+'<a class="action" href="'+esc(btnLink)+'" target="_blank"><span>'+btnText+'</span><span>↗</span></a>';
+    box.appendChild(c);
+    c.querySelector('img').onerror=function(){this.src=fallback(n)};
+  });
+}
+
 function render(list,id,count,type){
   var box=document.getElementById(id);
-  if(count) document.getElementById(count).textContent=list.length;
+  if(count) {
+    var countEl = document.getElementById(count);
+    if(countEl) countEl.textContent=list.length;
+  }
   box.innerHTML='';
   list.forEach(function(x){
     var n=x[0], l=x[1], m=x[2], u=x[3];
@@ -236,11 +798,18 @@ var filter=function(a,q){q=q.toLowerCase();return q?a.filter(function(x){return 
 
 render(panels,'officialGrid','officialCount','official');
 render(tests,'testGrid','testCount','test');
-render(apps,'appGrid',null,'app');
+renderApps(appsParceiros,'appGrid');
+render(csPanels,'csGrid','csCount','official');
 render([['Painel de Ativação','logos/ativacao.png','Ative licenças rapidamente','https://ativacaodeaplicativos.com/?ref=cmn36pjfx0i8on7yr3ouq2dck']],'activationGrid',null,'act');
 
-document.getElementById('officialSearch').oninput=function(e){render(filter(panels,e.target.value),'officialGrid','officialCount','official')};
-document.getElementById('testSearch').oninput=function(e){render(filter(tests,e.target.value),'testGrid','testCount','test')};
+var offSearch = document.getElementById('officialSearch');
+if(offSearch) offSearch.oninput=function(e){render(filter(panels,e.target.value),'officialGrid','officialCount','official')};
+
+var testSearch = document.getElementById('testSearch');
+if(testSearch) testSearch.oninput=function(e){render(filter(tests,e.target.value),'testGrid','testCount','test')};
+
+var csSearch = document.getElementById('csSearch');
+if(csSearch) csSearch.oninput=function(e){render(filter(csPanels,e.target.value),'csGrid','csCount','official')};
 
 document.querySelectorAll('[data-view]').forEach(function(b){
   b.onclick=function(){
@@ -263,19 +832,22 @@ function plans(id,name){
 plans('xcloudPlans','XCloud TV');
 plans('blessedPlans','Blessed Play');
 
-function offers(id,data){
+function offers(id,data,features){
   var box=document.getElementById(id);
   data.forEach(function(x){
     var c=document.createElement('article');
     c.className='offer';
-    c.innerHTML='<h3>'+x[0]+'</h3><div class="price">'+x[1]+'</div><div class="feature">'+x[2]+'</div>';
+    var feats='';
+    if(features) features.forEach(function(f){ feats+='<div class="iptv-check">'+f+'</div>'; });
+    var btn='';
+    if(x[3]) btn='<button class="action" data-pix="'+x[3]+'|'+x[1]+'"><span>Comprar agora</span><span>↗</span></button>';
+    c.innerHTML='<h3>'+x[0]+'</h3><div class="price">'+x[1]+'</div><div class="feature">'+x[2]+'</div>'+feats+btn;
     box.appendChild(c);
   });
 }
-offers('creditOffers',[['🎟️ 10 a 49 créditos','R$ 5,00','Valor por crédito'],['🎟️ 50 a 99 créditos','R$ 4,00','Valor por crédito'],['🎟️ 100 a 199 créditos','R$ 3,00','Valor por crédito'],['🎟️ 200 a 499 créditos','R$ 2,00','Valor por crédito'],['🎟️ 500 a 1.000 créditos','R$ 1,50','Melhor custo por crédito']]);
-offers('monthlyOffers',[['🎟️ 50 créditos','R$ 50,00','Pacote mensalista'],['🎟️ 100 créditos','R$ 80,00','Pacote mensalista'],['🎟️ 200 créditos','R$ 100,00','Pacote mensalista'],['🎟️ 500 créditos','R$ 120,00','Pacote mensalista'],['🎟️ 1.000 créditos','R$ 140,00','Maior volume mensalista']]);
-offers('unlimitedOffers',[['♾️ PAINEL ADMIN','R$ 300,00','Painel administrador ilimitado'],['♾️ PAINEL ULTRA','R$ 200,00','Painel ultra ilimitado']]);
-offers('customerOffers',[['🚀 PLANO MENSAL','R$ 35,00','Acesso total por 30 dias'],['🔥 PLANO 6 MESES','R$ 90,00','Economia incrível'],['👑 PLANO ANUAL','R$ 200,00','Melhor custo-benefício'],['⭐ PLANO VITALÍCIO','R$ 799,00','Acesso para sempre']]);
+offers('creditOffers',[['🎟️ 10 a 49 créditos','R$ 5,00','Valor por crédito','Crédito 10-49'],['🎟️ 50 a 99 créditos','R$ 4,00','Valor por crédito','Crédito 50-99'],['🎟️ 100 a 199 créditos','R$ 3,00','Valor por crédito','Crédito 100-199'],['🎟️ 200 a 499 créditos','R$ 2,00','Valor por crédito','Crédito 200-499'],['🎟️ 500 a 1.000 créditos','R$ 1,50','Melhor custo por crédito','Crédito 500-1000']],['1 crédito = 1 mês de acesso','Sem validade dos créditos','Renova quando quiser','Acesso ao painel revenda','Suporte no WhatsApp']);
+offers('monthlyOffers',[['🎟️ 50 créditos','R$ 50,00','Pacote mensalista','Mensalista 50'],['🎟️ 100 créditos','R$ 80,00','Pacote mensalista','Mensalista 100'],['🎟️ 200 créditos','R$ 100,00','Pacote mensalista','Mensalista 200'],['🎟️ 500 créditos','R$ 120,00','Pacote mensalista','Mensalista 500'],['🎟️ 1.000 créditos','R$ 140,00','Maior volume mensalista','Mensalista 1000']],['Créditos renovados todo mês','Melhor custo por crédito','Acesso ao painel revenda','Suporte no WhatsApp','Ideal para bases fixas']);
+offers('unlimitedOffers',[['♾️ PAINEL ADMIN','R$ 300,00','Painel administrador ilimitado','Painel Admin Ilimitado'],['♾️ PAINEL ULTRA','R$ 200,00','Painel ultra ilimitado','Painel Ultra Ilimitado']],['Contas ilimitadas','Crie quantos clientes quiser','Lucro 100% sobre vendas','Suporte VIP','White label disponível']);
 
 var modal=document.getElementById('pixModal');
 document.addEventListener('click',function(e){
@@ -287,7 +859,16 @@ document.addEventListener('click',function(e){
   document.getElementById('sendPix').href='https://wa.me/5527997314781?text='+encodeURIComponent('Olá JSTECH, acabei de realizar o pagamento via PIX de '+n+' ('+v+'). Segue o meu comprovante!');
   modal.showModal();
 });
-document.getElementById('closePix').onclick=function(){modal.close()};
+var closePix = document.getElementById('closePix');
+if(closePix) closePix.onclick=function(){modal.close()};
+
+function switchCsPlan(plan,btn){
+  document.querySelectorAll('.cs-tab-btn').forEach(function(b){b.classList.remove('active')});
+  if(btn){btn.classList.add('active');}
+  document.querySelectorAll('.cs-plan-content').forEach(function(p){p.style.display='none';p.classList.remove('active')});
+  var el=document.getElementById('cs-plan-'+plan);
+  if(el){el.style.display='';el.classList.add('active')}
+}
 </script>
 </body>
 </html>

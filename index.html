@@ -620,7 +620,7 @@ const panels=[
 
 // Painéis de Teste: [nome, logo, descrição, url_teste]
 const tests=[
-[https://abroz.space/api/settings/logo/q9DozyGw?v=8774d36a','Gere 1 crédito de teste para validação.','https://abroz.space/#/rs/4vLb24MLgG/dqLkBzV1AE'],
+['Abroz TV','https://abroz.space/api/settings/logo/q9DozyGw?v=8774d36a','Gere 1 crédito de teste para validação.','https://abroz.space/#/rs/4vLb24MLgG/dqLkBzV1AE'],
 ['TopZ TV','https://topztv.sigma.vin/api/settings/logo/zKA7xQNM?v=c6409f64','Gere 1 crédito de teste para validação.','https://topztv.sigma.vin/#/rs/0m1E8eVWlE/241KEN9Dmx'],
 ['Sport Play','https://sportplay.sigma.vin/api/settings/logo/EpLOb6VQ?v=f797ae7b','Gere 1 crédito de teste para validação.','https://abroz.space/#/rs/4vLb24MLgG/K4Wr8pGLeN'],
 ['Painel Black BR','https://painelblackbr.com/api/settings/logo/8YEb8L97?v=478e93c0','Gere 1 crédito de teste para validação.','https://painelblackbr.com/#/rs/241KARvDmx/MeWeBYa1nN'],
@@ -746,6 +746,21 @@ render(tests,'testGrid','testCount','test');
 renderApps(appsParceiros,'appGrid');
 render(csPanels,'csGrid','csCount','official');
 render([['Painel de Ativação','logos/ativacao.png','Ative licenças rapidamente','https://ativacaodeaplicativos.com/?ref=cmn36pjfx0i8on7yr3ouq2dck']],'activationGrid',null,'act');
+
+// Inicialização segura: nunca zerar os painéis por causa de erro em uma lista.
+function atualizarPaineis(){
+  try {
+    if(!Array.isArray(panels)) throw new Error('Lista de painéis inválida');
+    if(!Array.isArray(tests)) throw new Error('Lista de testes inválida');
+    render(panels,'officialGrid','officialCount','official');
+    render(tests,'testGrid','testCount','test');
+    render(csPanels,'csGrid','csCount','official');
+    return {ok:true, oficiais:panels.length, testes:tests.length};
+  } catch(e) {
+    console.error('Erro ao atualizar painéis:',e);
+    return {ok:false, erro:e.message};
+  }
+}
 
 var offSearch = document.getElementById('officialSearch');
 if(offSearch) offSearch.oninput=function(e){render(filter(panels,e.target.value),'officialGrid','officialCount','official')};

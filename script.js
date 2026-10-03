@@ -40,6 +40,7 @@ const paineisOficiais = [
   { nome:"Vizion Net", logo:"logos/vizion.png", url:"https://vizion-net.sigmab.pro/" },
   { nome:"P2 Live", logo:"logos/p2live.png", url:"https://p2live.sigmab.pro/" },
   { nome:"Cineflix", logo:"logos/cineflix.png", url:"https://cineflix.3xt.fun/" },
+  { nome:"MegaFlix", logo:"logos/megaflix.png", url:"https://megaflix.sigma.vin/" },
   { nome:"Lider IPTV", logo:"logos/lider.png", url:"https://lideriptv.sigma.st/" },
   { nome:"Painel W3 BR", logo:"logos/w3br.png", url:"https://painelw3brtop.sytes.net/" }
 ];

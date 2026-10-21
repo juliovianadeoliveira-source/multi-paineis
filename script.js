@@ -42,7 +42,8 @@ const paineisOficiais = [
   { nome:"Cineflix", logo:"logos/cineflix.png", url:"https://cineflix.3xt.fun/" },
   { nome:"MegaFlix", logo:"logos/megaflix.png", url:"https://megaflix.sigma.vin/" },
   { nome:"Lider IPTV", logo:"logos/lider.png", url:"https://lideriptv.sigma.st/" },
-  { nome:"Painel W3 BR", logo:"logos/w3br.png", url:"https://painelw3brtop.sytes.net/" }
+  { nome:"Painel W3 BR", logo:"logos/w3br.png", url:"https://painelw3brtop.sytes.net/" },
+  { nome:"Centurion Play", logo:"https://centurion-play.sigma.vin/api/settings/logo/G2QX4Qwe?v=7f144be3", url:"https://centurion-play.sigma.vin" }
 ];
 
 const paineisTestes = paineisOficiais.map(p => ({ ...p, urlTeste: p.url }));

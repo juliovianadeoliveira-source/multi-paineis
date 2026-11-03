@@ -629,24 +629,24 @@ const tests=[
 
 // Apps Parceiros: [nome, logo, plataforma]
 const appsParceiros=[
-  {nome:"MAX PLAYER (App Próprio)",logo:"logos/maxplayer.png",sis:"Android / Fire Stick",downloader:"1890184",url:"http://aftv.news/1890184"},
+  {nome:"MAX PLAYER (App Próprio)",logo:"logos/maxplayer.svg",logoPersonalizada:true,sis:"Android / Fire Stick",downloader:"1890184",url:"http://aftv.news/1890184"},
   {nome:"UNITV (Android)",logo:"logos/unitv.png",sis:"Android",downloader:"8090976",url:"http://aftv.news/8090976",user:"369496943",pass:"811852429"},
   {nome:"UNI REVENDA",logo:"logos/unirevenda.png",sis:"Android / Painel",ntdown:"2116714",user:"369496943",pass:"811852429"},
   {nome:"GPC PRO",logo:"logos/gpcpro.png",sis:"Android / Painel",ntdown:"2116714",user:"369496943",pass:"811852429"},
-  {nome:"HOME PLAYER XTREAM",logo:"logos/homeplayerxtream.png",sis:"Android",ntdown:"63334",downloader:"6245886",url:"http://aftv.news/6245886"},
+  {nome:"HOME PLAYER XTREAM",logo:"logos/homeplayerxtream.svg",logoPersonalizada:true,sis:"Android",ntdown:"63334",downloader:"6245886",url:"http://aftv.news/6245886"},
   {nome:"APP ZINK",logo:"logos/zink.png",sis:"Android",ntdown:"68618",downloader:"1650495",url:"http://aftv.news/1650495"},
   {nome:"HOME PLAYER",logo:"logos/homeplayer.png",sis:"Android",ntdown:"28558",downloader:"8845054",url:"http://aftv.news/8845054"},
-  {nome:"TOP TV",logo:"logos/toptv.png",sis:"Android",ntdown:"4710019",downloader:"4710019",url:"http://aftv.news/4710019"},
+  {nome:"TOP TV",logo:"logos/toptv.svg",logoPersonalizada:true,sis:"Android",ntdown:"4710019",downloader:"4710019",url:"http://aftv.news/4710019"},
 {nome:"LOTUS",logo:"logos/lotus.png",sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
-  {nome:"HDPLAY",logo:"logos/hdplay.png",sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
+  {nome:"HDPLAY",logo:"logos/hdplay.svg",logoPersonalizada:true,sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
   {nome:"XCIPTV",logo:"logos/xciptv.png",sis:"Android / Fire Stick", url:"https://wa.me/5527997314781"},
   {nome:"S.A PLAYER",logo:"logos/saplayer.png",sis:"Android / Smart TV", url:"https://wa.me/5527997314781"},
   {nome:"AKS PLAY",logo:"logos/aksplay.png",sis:"Android / Fire Stick",downloader:"4804956",url:"http://aftv.news/4804956"},
-  {nome:"ALPHA MASTER PLAY",logo:"logos/alphamasterplay.png",sis:"Android / Fire Stick",downloader:"1707253",url:"http://aftv.news/1707253"},
-  {nome:"ALPHA MASTER (FIRE STICK)",logo:"logos/alphamasterfs.png",sis:"Fire Stick",user:"212984917",pass:"265091925", url:"https://wa.me/5527997314781"},
+  {nome:"ALPHA MASTER PLAY",logo:"logos/alphamasterplay.svg",logoPersonalizada:true,sis:"Android / Fire Stick",downloader:"1707253",url:"http://aftv.news/1707253"},
+  {nome:"ALPHA MASTER (FIRE STICK)",logo:"logos/alphamasterfs.svg",logoPersonalizada:true,sis:"Fire Stick",user:"212984917",pass:"265091925", url:"https://wa.me/5527997314781"},
   {nome:"LAZER PLAY",logo:"logos/lazerplay.png",sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
   {nome:"FUN PLAY",logo:"logos/funplay.png",sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
-  {nome:"SMARTCPP",logo:"logos/smartcpp.png",sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
+  {nome:"SMARTCPP",logo:"logos/smartcpp.svg",logoPersonalizada:true,sis:"Provedor / Multiplataforma", url:"https://wa.me/5527997314781"},
 {nome:"ASSIST+ OFICIAL",logo:"logos/assistplus.png",sis:"LG, Roku, Android, Fire Stick", url:"https://wa.me/5527997314781"},
   {nome:"PLAYSIM",logo:"logos/playsim.png",sis:"LG, Roku, Samsung, Android", url:"https://wa.me/5527997314781"},
   {nome:"MAGIC PLAYER",logo:"logos/magicplayer.png",sis:"Roku", url:"https://wa.me/5527997314781"},
@@ -661,7 +661,7 @@ const appsParceiros=[
   {nome:"ZUXO PLAYER",logo:"logos/zuxo.png",sis:"LG, Roku, iPhone, Android, Xbox", url:"https://wa.me/5527997314781"},
   {nome:"BRASIL IPTV",logo:"logos/brasiliptv.png",sis:"LG, Roku, Samsung, Android", url:"https://wa.me/5527997314781"},
   {nome:"FLEX PLAY",logo:"logos/flexplay.png",sis:"LG, Roku, Samsung", url:"https://wa.me/5527997314781"},
-  {nome:"GALAX PLAY",logo:"logos/galaxplay.png",sis:"Samsung", url:"https://wa.me/5527997314781"},
+  {nome:"GALAX PLAY",logo:"logos/galaxplay.svg",logoPersonalizada:true,sis:"Samsung", url:"https://wa.me/5527997314781"},
   {nome:"BOX PRIME",logo:"logos/boxprime.png",sis:"Roku", url:"https://wa.me/5527997314781"},
   {nome:"DUPLEX MAX",logo:"logos/duplexmax.png",sis:"Roku", url:"https://wa.me/5527997314781"},
   {nome:"POWER PLAY",logo:"logos/powerplay.png",sis:"Roku, LG, Samsung, Android", url:"https://wa.me/5527997314781"},
@@ -683,7 +683,8 @@ function renderApps(list,id){
     var btnText = x.url?'Baixar app':'Consultar no WhatsApp';
     c.innerHTML='<div class="topline"><div class="logo"><img src="'+esc(l)+'" alt="Logo '+esc(n)+'"></div><span class="status">APP PARCEIRO</span></div><h3>'+esc(n)+'</h3><div class="desc">'+esc(s)+'</div><a class="action" href="'+esc(btnLink)+'" target="_blank"><span>'+btnText+'</span><span>↗</span></a>';
     box.appendChild(c);
-    c.querySelector('img').onerror=function(){this.src=fallback(n)};
+    if(x.logoPersonalizada) c.querySelector('img').alt='Identificação de '+n+' (logo oficial não confirmada)';
+    c.querySelector('img').onerror=function(){this.onerror=null;this.src=fallback(n)};
   });
 }
 

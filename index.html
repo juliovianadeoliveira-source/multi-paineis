@@ -364,7 +364,7 @@
           <a class="cs-btn cs-btn-secondary" href="#cs-teste">Teste grátis 24h</a>
         </div>
       </div>
-      <div class="cs-hero-video"><video src="video_cs.mp4" autoplay muted loop playsinline preload="auto" controls aria-label="Vídeo de apresentação dos planos CS"></video></div>
+      <div class="cs-hero-video"><video src="video_cs.mp4" autoplay muted loop playsinline preload="auto" controlslist="nodownload noremoteplayback" disablepictureinpicture disableremoteplayback oncontextmenu="return false" draggable="false" aria-label="Vídeo de apresentação dos planos CS"></video></div>
     </div>
   </div>
 
@@ -745,15 +745,27 @@ document.querySelectorAll('[data-view]').forEach(function(b){
     document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t===b)});
     document.querySelectorAll('.view video').forEach(function(video){
       if(video.closest('.view').id===b.dataset.view){
-        video.muted=true;
+        video.muted=!video.matches('.cs-hero-video video');
         var playback=video.play();
-        if(playback) playback.catch(function(){ video.controls=true; });
+        if(playback) playback.catch(function(){
+          video.muted=true;
+          var retry=video.play();
+          if(retry) retry.catch(function(){});
+        });
       } else { video.pause(); }
     });
     scrollTo(0,0);
   }
 });
 
+
+document.querySelectorAll('.cs-hero-video video').forEach(function(video){
+  video.addEventListener('click',function(){
+    video.muted=false;
+    var playback=video.play();
+    if(playback) playback.catch(function(){});
+  });
+});
 
 function offers(id,data,features){
   var box=document.getElementById(id);

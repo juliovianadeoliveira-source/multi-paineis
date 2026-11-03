@@ -194,7 +194,7 @@
 </style>
 </head>
 <body>
-<header class="top"><div class="head"><div class="brand"><span class="mark">JS</span><span><b>JSTECH, Central Premium</b><small>Painéis, apps, assinaturas e revenda</small></span></div><nav class="tabs"><button class="tab active" data-view="official">Painéis Oficiais</button><button class="tab" data-view="test">Painéis de Teste</button><button class="tab" data-view="apps">Apps Parceiros</button><button class="tab" data-view="cliente">📺 Planos IPTV</button><button class="tab" data-view="revenda">Planos Revenda</button><button class="tab" data-view="cs">Painel CS</button><button class="tab" data-view="ativacoes">Ativações</button></nav></div></header>
+<header class="top"><div class="head"><div class="brand"><span class="mark">JS</span><span><b>JSTECH, Central Premium</b><small>Painéis, apps, assinaturas e revenda</small></span></div><nav class="tabs"><button class="tab active" data-view="official">Painéis Oficiais</button><button class="tab" data-view="test">Painéis de Teste</button><button class="tab" data-view="apps">Apps Parceiros</button><button class="tab" data-view="cliente">📺 Planos IPTV</button><button class="tab" data-view="revenda">Planos Revenda</button><button class="tab" data-view="cs">Planos CS</button><button class="tab" data-view="ativacoes">Ativações</button></nav></div></header>
 <main>
 <section id="official" class="view active"><div class="wrap"><div class="eyebrow">Acesso autorizado</div><h1 class="title">Painéis oficiais</h1><p class="intro">Painéis com acesso oficial para gerenciamento de clientes e créditos.</p><div class="toolbar"><span class="count"><strong id="officialCount">0</strong> painéis disponíveis</span><input id="officialSearch" class="search" placeholder="🔍 Pesquisar painel..."></div><div id="officialGrid" class="grid"></div></div></section>
 <section id="test" class="view"><div class="wrap"><div class="eyebrow">Validação de acesso</div><h1 class="title">Painéis de teste</h1><p class="intro">Clique no botão para gerar painel teste com 1 crédito diretamente.</p><div class="toolbar"><span class="count"><strong id="testCount">0</strong> painéis disponíveis</span><input id="testSearch" class="search" placeholder="🔍 Pesquisar painel de teste..."></div><div id="testGrid" class="grid"></div></div></section>
@@ -339,8 +339,8 @@
   </div></section>
 <section id="cs" class="view"><div class="wrap">
   <div class="eyebrow">Central de Serviço</div>
-  <h1 class="title">Painel CS</h1>
-  <p class="intro">Acesse o painel de atendimento e controle de chamados.</p>
+  <h1 class="title">Planos CS</h1>
+  <p class="intro">Confira os planos de CS Claro e CS NET Cabo.</p>
   <nav class="cs-nav">
     <a href="#cs-inicio">Início</a>
     <a href="#cs-planos">Planos</a>
@@ -350,12 +350,6 @@
     <a href="#cs-criar">Criar servidor CS</a>
   </nav>
 
-  <!-- Barra de pesquisa e grid compatível -->
-  <div class="toolbar">
-    <span class="count"><strong id="csCount">0</strong> painéis CS disponíveis</span>
-    <input id="csSearch" class="search" placeholder="🔍 Pesquisar painel CS...">
-  </div>
-  <div id="csGrid" class="grid" style="margin-bottom:30px;"></div>
 
   <!-- Hero / Início -->
   <div id="cs-inicio" class="cs-hero">
@@ -557,7 +551,6 @@
       <div class="cs-footer-col">
         <h4>Contato</h4>
         <a href="https://wa.me/5527997314781" target="_blank">WhatsApp</a>
-        <a href="https://painelw3brtop.sytes.net/" target="_blank">Painel W3BR</a>
       </div>
       <div class="cs-footer-col">
         <h4>Formulário de contato</h4>
@@ -604,7 +597,6 @@ const panels=[
 ['Cineflix','https://cineflix.3xt.fun/api/settings/logo/lGoWqxe5?v=2cc81225','Portal principal para gerenciamento de clientes e créditos.','https://cineflix.3xt.fun/#/sign-in?redirect=/dashboard'],
 ['MegaFlix','https://megaflix.sigma.vin/api/settings/logo/a3Kb9WzN?v=6bcbed50','Portal principal para gerenciamento de clientes e créditos.','https://megaflix.sigma.vin/'],
 ['Lider IPTV','https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d','Portal principal para gerenciamento de clientes e créditos.','https://lideriptv.sigma.st/#/sign-in'],
-['Painel W3BR Top','logos/w3br.png','Portal principal para gerenciamento de clientes e créditos.','https://painelw3brtop.sytes.net/'],
 ['InfraX','https://infrax.sigma.vin/api/settings/logo/PEK6Pxd6?v=6c155a1d','Portal principal para gerenciamento de clientes e créditos.','https://infrax.sigma.vin/#/sign-in?redirect=/dashboard'],
 ['Centurion Play','https://centurion-play.sigma.vin/api/settings/logo/G2QX4Qwe?v=7f144be3','Painel Centurion Play para gerenciamento de clientes e créditos.','https://centurion-play.sigma.vin'],
 ];
@@ -633,10 +625,6 @@ const tests=[
 ['Lider IPTV','https://lideriptv.sigma.st/api/settings/logo/AV9rN9Gl?v=2cb8779d','Gere 1 crédito de teste para validação.','https://lideriptv.sigma.st/#/rs/YB1wd9bLvm/ze15qR515K']
 ];
 
-// Painéis CS: [nome, logo, descrição, url]
-const csPanels=[
-  ['W3BR Painel CS','logos/w3br.png','Painel oficial de gerenciamento de CS e chamados.','https://painelw3brtop.sytes.net/']
-];
 
 // Apps Parceiros: [nome, logo, plataforma]
 const appsParceiros=[
@@ -727,7 +715,6 @@ var filter=function(a,q){q=q.toLowerCase();return q?a.filter(function(x){return 
 render(panels,'officialGrid','officialCount','official');
 render(tests,'testGrid','testCount','test');
 renderApps(appsParceiros,'appGrid');
-render(csPanels,'csGrid','csCount','official');
 render([['Painel de Ativação','logos/ativacao.png','Ative licenças rapidamente','https://ativacaodeaplicativos.com/?ref=cmn36pjfx0i8on7yr3ouq2dck']],'activationGrid',null,'act');
 
 // Inicialização segura: nunca zerar os painéis por causa de erro em uma lista.
@@ -737,7 +724,6 @@ function atualizarPaineis(){
     if(!Array.isArray(tests)) throw new Error('Lista de testes inválida');
     render(panels,'officialGrid','officialCount','official');
     render(tests,'testGrid','testCount','test');
-    render(csPanels,'csGrid','csCount','official');
     return {ok:true, oficiais:panels.length, testes:tests.length};
   } catch(e) {
     console.error('Erro ao atualizar painéis:',e);
@@ -751,8 +737,6 @@ if(offSearch) offSearch.oninput=function(e){render(filter(panels,e.target.value)
 var testSearch = document.getElementById('testSearch');
 if(testSearch) testSearch.oninput=function(e){render(filter(tests,e.target.value),'testGrid','testCount','test')};
 
-var csSearch = document.getElementById('csSearch');
-if(csSearch) csSearch.oninput=function(e){render(filter(csPanels,e.target.value),'csGrid','csCount','official')};
 
 document.querySelectorAll('[data-view]').forEach(function(b){
   b.onclick=function(){

@@ -364,7 +364,7 @@
           <a class="cs-btn cs-btn-secondary" href="#cs-teste">Teste grátis 24h</a>
         </div>
       </div>
-      <div class="cs-hero-video"><video src="video_cs.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo de apresentação dos planos CS"></video></div>
+      <div class="cs-hero-video"><video src="video_cs.mp4" autoplay muted loop playsinline preload="auto" controls aria-label="Vídeo de apresentação dos planos CS"></video></div>
     </div>
   </div>
 
@@ -743,6 +743,13 @@ document.querySelectorAll('[data-view]').forEach(function(b){
     document.querySelectorAll('.view').forEach(function(v){v.classList.remove('active')});
     document.getElementById(b.dataset.view).classList.add('active');
     document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t===b)});
+    document.querySelectorAll('.view video').forEach(function(video){
+      if(video.closest('.view').id===b.dataset.view){
+        video.muted=true;
+        var playback=video.play();
+        if(playback) playback.catch(function(){ video.controls=true; });
+      } else { video.pause(); }
+    });
     scrollTo(0,0);
   }
 });

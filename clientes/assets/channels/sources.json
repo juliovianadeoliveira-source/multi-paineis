@@ -1,0 +1,4877 @@
+{
+  "metadata_source": "https://github.com/iptv-org/database",
+  "channel_source": "https://iptv-org.github.io/api/channels.json",
+  "logo_source": "https://iptv-org.github.io/api/logos.json",
+  "selection": "Active non-adult channels based in Brazil or with a Brazil broadcast feed. One logo per channel. No streaming URLs. Two original brand logos retained from the user site.",
+  "logos": [
+    {
+      "channel": "jstech-globo",
+      "name": "Globo",
+      "url": "https://multi-paineis.sytes.net/clientes/assets/globo.svg",
+      "note": "Retained from the six existing logos on the user site."
+    },
+    {
+      "channel": "jstech-sbt",
+      "name": "SBT",
+      "url": "https://multi-paineis.sytes.net/clientes/assets/sbt.svg",
+      "note": "Retained from the six existing logos on the user site."
+    },
+    {
+      "channel": "TVCultura.br",
+      "name": "TV Cultura",
+      "url": "https://i.ibb.co/nm0jXMM/cultura-3x.png"
+    },
+    {
+      "channel": "ESPN.br",
+      "name": "ESPN",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png"
+    },
+    {
+      "channel": "DiscoveryChannelLatinAmerica.us",
+      "name": "Discovery Channel Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png"
+    },
+    {
+      "channel": "RecordNews.br",
+      "name": "Record News",
+      "url": "https://i.imgur.com/HZDRG0K.png"
+    },
+    {
+      "channel": "Record.br",
+      "name": "Record",
+      "url": "https://i.imgur.com/sz9gTTr.png"
+    },
+    {
+      "channel": "Band.br",
+      "name": "Band",
+      "url": "https://i.imgur.com/1r5T6Pw.png"
+    },
+    {
+      "channel": "RedeTV.br",
+      "name": "Rede TV!",
+      "url": "https://i.imgur.com/ZJgD38F.png"
+    },
+    {
+      "channel": "TVBrasil.br",
+      "name": "TV Brasil",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png"
+    },
+    {
+      "channel": "GloboNews.br",
+      "name": "GloboNews",
+      "url": "https://i.imgur.com/3yZyaCm.png"
+    },
+    {
+      "channel": "CNNBrasil.br",
+      "name": "CNN Brasil",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/CNN_Brasil.svg/960px-CNN_Brasil.svg.png"
+    },
+    {
+      "channel": "JovemPanNews.br",
+      "name": "Jovem Pan News",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/960px-Jovem_Pan_logo_2018.svg.png"
+    },
+    {
+      "channel": "SporTV.br",
+      "name": "SporTV",
+      "url": "https://i.postimg.cc/gr9x3z71/Spor-TV-2021.png"
+    },
+    {
+      "channel": "SporTV2.br",
+      "name": "SporTV 2",
+      "url": "https://i.imgur.com/pBiUnb2.png"
+    },
+    {
+      "channel": "SporTV3.br",
+      "name": "SporTV 3",
+      "url": "https://i.imgur.com/mWOR8pi.png"
+    },
+    {
+      "channel": "ESPN3.br",
+      "name": "ESPN 3",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png"
+    },
+    {
+      "channel": "ESPN4.br",
+      "name": "ESPN 4",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/960px-ESPN_4_logo.svg.png"
+    },
+    {
+      "channel": "Combate.br",
+      "name": "Combate",
+      "url": "https://i.imgur.com/ZPYK5jr.png"
+    },
+    {
+      "channel": "HBOPop.br",
+      "name": "HBO Pop",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png"
+    },
+    {
+      "channel": "HBO.br",
+      "name": "HBO",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png"
+    },
+    {
+      "channel": "HBO2.br",
+      "name": "HBO 2",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png"
+    },
+    {
+      "channel": "HBOFamily.br",
+      "name": "HBO Family",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png"
+    },
+    {
+      "channel": "HBOPlus.br",
+      "name": "HBO+",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Logohboplus2019.svg/960px-Logohboplus2019.svg.png"
+    },
+    {
+      "channel": "HBOMundi.br",
+      "name": "HBO Mundi",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png"
+    },
+    {
+      "channel": "HBOSignature.br",
+      "name": "HBO Signature",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/HBO_Signature.svg/960px-HBO_Signature.svg.png"
+    },
+    {
+      "channel": "HBOXtreme.br",
+      "name": "HBO Xtreme",
+      "url": "https://www.vertvcable.com/wp-content/uploads/2022/02/hboextreme.jpg"
+    },
+    {
+      "channel": "TelecinePremium.br",
+      "name": "Telecine Premium",
+      "url": "https://i.imgur.com/uVFgIr8.png"
+    },
+    {
+      "channel": "TelecinePipoca.br",
+      "name": "Telecine Pipoca",
+      "url": "https://i.imgur.com/hW9JYXr.png"
+    },
+    {
+      "channel": "TelecineAction.br",
+      "name": "Telecine Action",
+      "url": "https://i.imgur.com/BHYWG0h.png"
+    },
+    {
+      "channel": "TelecineFun.br",
+      "name": "Telecine Fun",
+      "url": "https://i.imgur.com/MO2Ynki.png"
+    },
+    {
+      "channel": "TelecineTouch.br",
+      "name": "Telecine Touch",
+      "url": "https://i.imgur.com/Nky0hRo.png"
+    },
+    {
+      "channel": "TelecineCult.br",
+      "name": "Telecine Cult",
+      "url": "https://i.imgur.com/6GuHXnr.png"
+    },
+    {
+      "channel": "AXN.br",
+      "name": "AXN",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png"
+    },
+    {
+      "channel": "SonyChannel.br",
+      "name": "Sony Channel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/960px-Sony_Channel_Logo.png"
+    },
+    {
+      "channel": "GNT.br",
+      "name": "GNT",
+      "url": "https://i.imgur.com/XymcvMy.png"
+    },
+    {
+      "channel": "Multishow.br",
+      "name": "Multishow",
+      "url": "https://i.imgur.com/bqVg8nT.png"
+    },
+    {
+      "channel": "GloboplayNovelas.br",
+      "name": "Globoplay Novelas",
+      "url": "https://i.ibb.co/m5TBCDL2/Globoplay-Novelas-1.png"
+    },
+    {
+      "channel": "DiscoveryKidsLatinAmerica.us",
+      "name": "Discovery Kids Latin America",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png"
+    },
+    {
+      "channel": "CartoonNetworkLatinAmerica.us",
+      "name": "Cartoon Network Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png"
+    },
+    {
+      "channel": "PlusMaisUm.br",
+      "name": "+MaisUm",
+      "url": "https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png"
+    },
+    {
+      "channel": "PlusSBTNovelas.br",
+      "name": "+SBT Novelas",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/6/60/%2BSBT_2024.svg/960px-%2BSBT_2024.svg.png"
+    },
+    {
+      "channel": "1001Noites.br",
+      "name": "1001 Noites",
+      "url": "https://i.imgur.com/dWA9y2J.png"
+    },
+    {
+      "channel": "AvidamodernadeRocko.us",
+      "name": "A vida moderna de Rocko",
+      "url": "https://i.imgur.com/RvApdck.png"
+    },
+    {
+      "channel": "AELatinAmerica.us",
+      "name": "A&E Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png"
+    },
+    {
+      "channel": "AdessoTV.br",
+      "name": "Adesso TV",
+      "url": "https://i.imgur.com/KgetM8j.png"
+    },
+    {
+      "channel": "AdrenalinaPuraTV.us",
+      "name": "Adrenalina Pura TV",
+      "url": "https://i.imgur.com/Pvid2iH.png"
+    },
+    {
+      "channel": "AdultSwimLatinAmerica.us",
+      "name": "Adult Swim Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png"
+    },
+    {
+      "channel": "AgroBrasilTV.br",
+      "name": "AgroBrasil TV",
+      "url": "https://i.imgur.com/aNkP7Zd.png"
+    },
+    {
+      "channel": "AgroCanal.br",
+      "name": "AgroCanal",
+      "url": "https://i.imgur.com/5XyopHf.png"
+    },
+    {
+      "channel": "AgroMais.br",
+      "name": "AgroMais",
+      "url": "https://i.imgur.com/sFcOZeo.png"
+    },
+    {
+      "channel": "AishTV.br",
+      "name": "Aish TV",
+      "url": "https://i.imgur.com/QChh8Xs.png"
+    },
+    {
+      "channel": "AllSports.br",
+      "name": "All Sports",
+      "url": "https://i.imgur.com/wULpnYR.png"
+    },
+    {
+      "channel": "AllegroWebTV.br",
+      "name": "Allegro WebTV",
+      "url": "https://i.imgur.com/7iSmccE.png"
+    },
+    {
+      "channel": "AlphaChannel.br",
+      "name": "Alpha Channel",
+      "url": "https://i.imgur.com/c1QqslA.png"
+    },
+    {
+      "channel": "AmazonSat.br",
+      "name": "Amazon Sat",
+      "url": "https://i.imgur.com/7rjCS5i.png"
+    },
+    {
+      "channel": "AMCLatinAmerica.us",
+      "name": "AMC Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png"
+    },
+    {
+      "channel": "AngelTV.in",
+      "name": "Angel TV",
+      "url": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Angel-TV-hd-transparent.png"
+    },
+    {
+      "channel": "AnimalPlanet.br",
+      "name": "Animal Planet",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png"
+    },
+    {
+      "channel": "AnimeTV.br",
+      "name": "Anime TV",
+      "url": "https://i.imgur.com/CFSSTID.png"
+    },
+    {
+      "channel": "Animestation.br",
+      "name": "Animestation",
+      "url": "https://i.imgur.com/sqARtaR.png"
+    },
+    {
+      "channel": "ArarunaTV.br",
+      "name": "Araruna TV",
+      "url": "https://i.imgur.com/jl39ula.png"
+    },
+    {
+      "channel": "AratuOn.br",
+      "name": "Aratu On",
+      "url": "https://i.imgur.com/Ht4jCab.png"
+    },
+    {
+      "channel": "ArcadeCloud.us",
+      "name": "Arcade Cloud",
+      "url": "https://i.imgur.com/fjGdXhP.png"
+    },
+    {
+      "channel": "Arte1.br",
+      "name": "Arte 1",
+      "url": "https://i.imgur.com/Ivnk7A6.png"
+    },
+    {
+      "channel": "AsAventurasdeJackieChan.us",
+      "name": "As Aventuras de Jackie Chan",
+      "url": "https://i.imgur.com/2ppMq1g.png"
+    },
+    {
+      "channel": "AsPistasdeBlue.us",
+      "name": "As Pistas de Blue",
+      "url": "https://i.imgur.com/0xuwIJB.png"
+    },
+    {
+      "channel": "AsTartarugasNinja.us",
+      "name": "As Tartarugas Ninja",
+      "url": "https://images.pluto.tv/channels/63dd5c904e83e700088fb68a/colorLogoPNG_1768926936698.png"
+    },
+    {
+      "channel": "AscameTV.br",
+      "name": "Ascame TV",
+      "url": "https://i.imgur.com/LFY5pjU.png"
+    },
+    {
+      "channel": "AssembleiaLegislativaTV.br",
+      "name": "Assembleia Legislativa TV",
+      "url": "https://i.imgur.com/0qco3YQ.png"
+    },
+    {
+      "channel": "AugeTV.br",
+      "name": "Auge TV",
+      "url": "https://m.media-amazon.com/images/I/81UMY8nlXHL._SL500_.png"
+    },
+    {
+      "channel": "AulaParana.br",
+      "name": "Aula Parana",
+      "url": "https://i.imgur.com/7Gm9Xo5.png"
+    },
+    {
+      "channel": "AutoTV.br",
+      "name": "Auto TV",
+      "url": "https://i.imgur.com/FRnE50u.png"
+    },
+    {
+      "channel": "AvatarAlendadeAang.us",
+      "name": "Avatar: A lenda de Aang",
+      "url": "https://images.pluto.tv/channels/6759eeb1bd523200083b4f29/colorLogoPNG.png"
+    },
+    {
+      "channel": "AWTV.br",
+      "name": "AWTV",
+      "url": "https://i.imgur.com/2tdMyef.png"
+    },
+    {
+      "channel": "BabyFirst.us",
+      "name": "BabyFirst",
+      "url": "https://static.wikia.nocookie.net/babyfirsttv/images/5/56/BabyFirst_Logo_2019.png/revision/latest?cb=20260612182539"
+    },
+    {
+      "channel": "BabyTV.uk",
+      "name": "BabyTV",
+      "url": "https://i.imgur.com/4BDJ5FT.png"
+    },
+    {
+      "channel": "BandAlternativo.br",
+      "name": "Band Alternativo",
+      "url": "https://i.imgur.com/Xi0H1MR.png"
+    },
+    {
+      "channel": "BandRS.br",
+      "name": "Band RS",
+      "url": "https://i.imgur.com/qgYBM8k.png"
+    },
+    {
+      "channel": "BandSaoPaulo.br",
+      "name": "Band Sao Paulo",
+      "url": "https://i.imgur.com/roCodnj.png"
+    },
+    {
+      "channel": "BandSPInterior.br",
+      "name": "Band SP Interior",
+      "url": "https://i.imgur.com/7tcslXc.png"
+    },
+    {
+      "channel": "BandSports.br",
+      "name": "Band Sports",
+      "url": "https://i.imgur.com/EuPvzJe.png"
+    },
+    {
+      "channel": "BETPlutoTV.us",
+      "name": "BET Pluto TV",
+      "url": "https://i.imgur.com/Kq9WKZg.png"
+    },
+    {
+      "channel": "BMCNews.br",
+      "name": "BM&C News",
+      "url": "https://i.imgur.com/pOUY2Uz.png"
+    },
+    {
+      "channel": "BMTV.br",
+      "name": "BMTV",
+      "url": "https://i.imgur.com/bJ0ODh6.png"
+    },
+    {
+      "channel": "BoaVontadeTV.br",
+      "name": "Boa Vontade TV",
+      "url": "https://i.imgur.com/Ms5tSgu.png"
+    },
+    {
+      "channel": "BoasNovas.br",
+      "name": "Boas Novas",
+      "url": "https://i.imgur.com/ZqhizdP.png"
+    },
+    {
+      "channel": "BoasNovasBelem.br",
+      "name": "Boas Novas Belem",
+      "url": "https://i.imgur.com/6aCkXl2.png"
+    },
+    {
+      "channel": "BobEsponjaCalcaQuadrada.us",
+      "name": "Bob Esponja Calca Quadrada",
+      "url": "https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG.png"
+    },
+    {
+      "channel": "BoxKidsTV.br",
+      "name": "Box Kids TV",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Boxkidstv.png"
+    },
+    {
+      "channel": "BR8TV.br",
+      "name": "BR8 TV",
+      "url": "https://i.ibb.co/1QZv2q1/Br8-fb-graph.png"
+    },
+    {
+      "channel": "BraziTV.us",
+      "name": "Brazi TV",
+      "url": "https://i.imgur.com/khjFgXI.png"
+    },
+    {
+      "channel": "CaboFrioTV.br",
+      "name": "Cabo Frio TV",
+      "url": "https://i.imgur.com/mPi6Wp3.png"
+    },
+    {
+      "channel": "Canal25Jundiai.br",
+      "name": "Canal 25 Jundiai",
+      "url": "https://i.imgur.com/7igGMwH.png"
+    },
+    {
+      "channel": "Canal29.br",
+      "name": "Canal 29",
+      "url": "https://i.imgur.com/ZgiCiuv.png"
+    },
+    {
+      "channel": "Canal38.br",
+      "name": "Canal 38",
+      "url": "https://i.imgur.com/co7TCWC.png"
+    },
+    {
+      "channel": "CanaldaJuventudeCrista.br",
+      "name": "Canal da Juventude Crista",
+      "url": "https://i.imgur.com/OtEV6Z9.png"
+    },
+    {
+      "channel": "CanaldoBoi.br",
+      "name": "Canal do Boi",
+      "url": "https://i.imgur.com/pVM5MhS.png"
+    },
+    {
+      "channel": "CanaldoCliente.br",
+      "name": "Canal do Cliente",
+      "url": "https://i.imgur.com/l0EtJMu.png"
+    },
+    {
+      "channel": "CanaldoCriador.br",
+      "name": "Canal do Criador",
+      "url": "https://i.imgur.com/k29So6X.png"
+    },
+    {
+      "channel": "CanaldoInter.br",
+      "name": "Canal do Inter",
+      "url": "https://i.imgur.com/TQFWEIS.png"
+    },
+    {
+      "channel": "CanalEducacao.br",
+      "name": "Canal Educacao",
+      "url": "https://i.imgur.com/OOB7nrS.png"
+    },
+    {
+      "channel": "CanalFDR.br",
+      "name": "Canal FDR",
+      "url": "https://i.imgur.com/7SE4CkE.png"
+    },
+    {
+      "channel": "CanalFutura.br",
+      "name": "Canal Futura",
+      "url": "https://i.imgur.com/LgynEBC.png"
+    },
+    {
+      "channel": "CanalGov.br",
+      "name": "Canal Gov",
+      "url": "https://i.imgur.com/rHPY0Yv.png"
+    },
+    {
+      "channel": "CanalLibras.br",
+      "name": "Canal Libras",
+      "url": "https://i.imgur.com/LnWWKzP.png"
+    },
+    {
+      "channel": "CanalMetropolitanodeNoticias.br",
+      "name": "Canal Metropolitano de Noticias",
+      "url": "https://i.imgur.com/G0x4xqa.png"
+    },
+    {
+      "channel": "CanalOff.br",
+      "name": "Canal Off",
+      "url": "https://i.imgur.com/1biaLgJ.png"
+    },
+    {
+      "channel": "CanalRicos.br",
+      "name": "Canal Ricos",
+      "url": "https://i.imgur.com/hs2YVJ3.png"
+    },
+    {
+      "channel": "CanalRural.br",
+      "name": "Canal Rural",
+      "url": "https://i.imgur.com/w9R9IIX.png"
+    },
+    {
+      "channel": "CanalSaude.br",
+      "name": "Canal Saude",
+      "url": "https://i.imgur.com/ht4tUOc.png"
+    },
+    {
+      "channel": "CanalSete.br",
+      "name": "Canal Sete",
+      "url": "https://i.imgur.com/0cq0BPp.png"
+    },
+    {
+      "channel": "CanalTVRio.br",
+      "name": "Canal TV Rio",
+      "url": "https://i.imgur.com/jBRE3BK.png"
+    },
+    {
+      "channel": "CanalViva.br",
+      "name": "Canal Viva",
+      "url": "https://i.imgur.com/uNHu40M.png"
+    },
+    {
+      "channel": "CartoonNetworkLive.br",
+      "name": "Cartoon Network Live",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cartoon_Network_HD_logo.svg/960px-Cartoon_Network_HD_logo.svg.png"
+    },
+    {
+      "channel": "CartoonNetworkLive2.br",
+      "name": "Cartoon Network Live 2",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cartoon_Network_HD_logo.svg/960px-Cartoon_Network_HD_logo.svg.png"
+    },
+    {
+      "channel": "CartoonNetworkLiveLatinAmerica.br",
+      "name": "Cartoon Network Live Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cartoon_Network_HD_logo.svg/960px-Cartoon_Network_HD_logo.svg.png"
+    },
+    {
+      "channel": "CartoonNetworkLiveLatinAmerica2.br",
+      "name": "Cartoon Network Live Latin America 2",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cartoon_Network_HD_logo.svg/960px-Cartoon_Network_HD_logo.svg.png"
+    },
+    {
+      "channel": "CartoonitoLatinAmerica.us",
+      "name": "Cartoonito Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/960px-Cartoonito_-_Logo_2021.svg.png"
+    },
+    {
+      "channel": "CartoonitoLive.br",
+      "name": "Cartoonito Live",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/960px-Cartoonito_-_Logo_2021.svg.png"
+    },
+    {
+      "channel": "CartoonitoLiveLatinAmerica.br",
+      "name": "Cartoonito Live Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/960px-Cartoonito_-_Logo_2021.svg.png"
+    },
+    {
+      "channel": "CatveFM.br",
+      "name": "Catve FM",
+      "url": "https://i.imgur.com/w89yw36.png"
+    },
+    {
+      "channel": "CatveMasterTV.br",
+      "name": "Catve Master TV",
+      "url": "https://i.imgur.com/4m7Iazm.png"
+    },
+    {
+      "channel": "Catve2.br",
+      "name": "Catve2",
+      "url": "https://i.imgur.com/qiVfsfB.png"
+    },
+    {
+      "channel": "CazeTV.br",
+      "name": "CazeTV",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Caz%C3%A9TV_logo.svg/1280px-Caz%C3%A9TV_logo.svg.png"
+    },
+    {
+      "channel": "CBNRio.br",
+      "name": "CBN Rio",
+      "url": "https://i.ibb.co/dkCfz7B/l7d-Eil-R-400x400.jpg"
+    },
+    {
+      "channel": "CBNSP.br",
+      "name": "CBN SP",
+      "url": "https://i.ibb.co/MgPD8sF/5d2ceea1b6df0.png"
+    },
+    {
+      "channel": "CentralTV.br",
+      "name": "Central TV",
+      "url": "https://i.imgur.com/22jXTu4.png"
+    },
+    {
+      "channel": "ChefTV.br",
+      "name": "Chef TV",
+      "url": "https://i.imgur.com/UYksTee.png"
+    },
+    {
+      "channel": "ChromaTV.br",
+      "name": "Chroma TV",
+      "url": "https://i.imgur.com/SnaIMgj.png"
+    },
+    {
+      "channel": "CineTerror.us",
+      "name": "Cine Terror",
+      "url": "https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png"
+    },
+    {
+      "channel": "CineBrasilTV.br",
+      "name": "CineBrasil TV",
+      "url": "https://i.imgur.com/n4qPuHG.png"
+    },
+    {
+      "channel": "Cinecanal.us",
+      "name": "Cinecanal",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png"
+    },
+    {
+      "channel": "Cinemax.br",
+      "name": "Cinemax",
+      "url": "https://i.imgur.com/cZWoJWD.png"
+    },
+    {
+      "channel": "CinturaoVerde.br",
+      "name": "Cinturao Verde",
+      "url": "https://eswqkrogupaisirwcsys.supabase.co/storage/v1/object/public/mbc-media/canais/1775688612576-u0628igjimf.png"
+    },
+    {
+      "channel": "ClassiqueTV.br",
+      "name": "Classique TV",
+      "url": "https://i.imgur.com/rHxcraT.png"
+    },
+    {
+      "channel": "ClassiqueTV2.br",
+      "name": "Classique TV 2",
+      "url": "https://i.imgur.com/FvUHbQm.png"
+    },
+    {
+      "channel": "ClassiqueTVWestern.br",
+      "name": "Classique TV Western",
+      "url": "https://i.imgur.com/rHxcraT.png"
+    },
+    {
+      "channel": "Climatempo.br",
+      "name": "Climatempo",
+      "url": "https://i.imgur.com/gEdF9A9.png"
+    },
+    {
+      "channel": "ClubinhoFun.br",
+      "name": "Clubinho Fun",
+      "url": "https://i.imgur.com/YTKd8qL.png"
+    },
+    {
+      "channel": "COMBrasil.br",
+      "name": "COM Brasil",
+      "url": "https://i.imgur.com/GrjGwKM.png"
+    },
+    {
+      "channel": "ComedyCentralBrasil.br",
+      "name": "Comedy Central Brasil",
+      "url": "https://comcastadvertising.com/wp-content/uploads/2021/10/Comedy-Central-White.png"
+    },
+    {
+      "channel": "ComedyCentralLatinAmerica.us",
+      "name": "Comedy Central Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png"
+    },
+    {
+      "channel": "ComedyCentralPlutoTV.us",
+      "name": "Comedy Central Pluto TV",
+      "url": "https://images.pluto.tv/channels/5f357e91b18f0b00073583d2/colorLogoPNG.png"
+    },
+    {
+      "channel": "ComedyCentralSouthPark.us",
+      "name": "Comedy Central South Park",
+      "url": "https://images.pluto.tv/channels/609ae66b359b270007869ff1/colorLogoPNG_1733160636316.png"
+    },
+    {
+      "channel": "ConectaMaisTV.br",
+      "name": "Conecta Mais TV",
+      "url": "https://i.imgur.com/qHwTWlz.png"
+    },
+    {
+      "channel": "ConecTVBrasil.br",
+      "name": "ConecTV Brasil",
+      "url": "https://i.imgur.com/XN6jjMR.png"
+    },
+    {
+      "channel": "ConexaoTV.br",
+      "name": "Conexao TV",
+      "url": "https://i.imgur.com/CJ9SPsZ.png"
+    },
+    {
+      "channel": "CostaVerdeTV.br",
+      "name": "Costa Verde TV",
+      "url": "https://i.imgur.com/GJnPDHu.png"
+    },
+    {
+      "channel": "CreuCatTV.br",
+      "name": "Creu Cat TV",
+      "url": "https://files.catbox.moe/l0yh6k.png"
+    },
+    {
+      "channel": "CSIMiami.us",
+      "name": "CSI: Miami",
+      "url": "https://images.pluto.tv/channels/63eb9c5351f5d000085e8d7e/colorLogoPNG.png"
+    },
+    {
+      "channel": "CulturaPara.br",
+      "name": "Cultura Para",
+      "url": "https://i.imgur.com/5jPEI5c.png"
+    },
+    {
+      "channel": "Curta.br",
+      "name": "Curta!",
+      "url": "https://i.imgur.com/Rwrh0zU.png"
+    },
+    {
+      "channel": "CWBTV.br",
+      "name": "CWB TV",
+      "url": "https://i.imgur.com/S0ISpmU.png"
+    },
+    {
+      "channel": "DPAFast.br",
+      "name": "D.P.A. Fast",
+      "url": "https://i.ibb.co/5h1L2v6C/2023-4047-dpa-fast-logo-canais.png"
+    },
+    {
+      "channel": "DamasioEducacional1.br",
+      "name": "Damasio Educacional 1",
+      "url": "https://i.imgur.com/wkXtUKV.png"
+    },
+    {
+      "channel": "DamasioEducacional10.br",
+      "name": "Damasio Educacional 10",
+      "url": "https://i.imgur.com/XqY3MwX.png"
+    },
+    {
+      "channel": "DemaisTV.br",
+      "name": "Demais TV",
+      "url": "https://i.imgur.com/Md3xibE.png"
+    },
+    {
+      "channel": "DespertarTV.br",
+      "name": "Despertar TV",
+      "url": "https://res.cloudinary.com/dpkehkbpv/image/upload/v1721839192/logo/mixtv/despertar_tv_ieb2l3.png"
+    },
+    {
+      "channel": "DetetivesMedicos.us",
+      "name": "Detetives Medicos",
+      "url": "https://images.pluto.tv/channels/638df93ae2f2a3000737c168/colorLogoPNG.png"
+    },
+    {
+      "channel": "DiaTV.br",
+      "name": "DiaTV",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/DiaTV_2024.png"
+    },
+    {
+      "channel": "DiffrentStrokesArnold.us",
+      "name": "Diff'rent Strokes Arnold",
+      "url": "https://i.imgur.com/jkmouY3.png"
+    },
+    {
+      "channel": "DiscoveryHomeHealthLatinAmerica.mx",
+      "name": "Discovery Home & Health Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png"
+    },
+    {
+      "channel": "DiscoveryKidsLive.br",
+      "name": "Discovery Kids Live",
+      "url": "https://i.imgur.com/C0VEHXU.png"
+    },
+    {
+      "channel": "DiscoveryScienceLatinAmerica.us",
+      "name": "Discovery Science Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Discovery_science_new_logo_2017.png/960px-Discovery_science_new_logo_2017.png"
+    },
+    {
+      "channel": "DiscoveryTheater.br",
+      "name": "Discovery Theater",
+      "url": "https://i.imgur.com/T07gvEb.png"
+    },
+    {
+      "channel": "DiscoveryTurboLatinAmerica.us",
+      "name": "Discovery Turbo Latin America",
+      "url": "https://i.imgur.com/1pQPxu3.png"
+    },
+    {
+      "channel": "DiscoveryWorld.us",
+      "name": "Discovery World",
+      "url": "https://i.imgur.com/yNFmUkE.png"
+    },
+    {
+      "channel": "DisneyChannel.br",
+      "name": "Disney Channel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Disney_channel_2019.png/960px-Disney_channel_2019.png"
+    },
+    {
+      "channel": "DTComSat1.br",
+      "name": "DTCom Sat 1",
+      "url": "https://i.imgur.com/MVEO84c.png"
+    },
+    {
+      "channel": "DTComSat2.br",
+      "name": "DTCom Sat 2",
+      "url": "https://i.imgur.com/TpTwaCu.png"
+    },
+    {
+      "channel": "DunasTV.br",
+      "name": "Dunas TV",
+      "url": "https://i.imgur.com/0Qe20y5.png"
+    },
+    {
+      "channel": "ELatinAmerica.us",
+      "name": "E! Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png"
+    },
+    {
+      "channel": "ElementalChannel.br",
+      "name": "Elemental Channel",
+      "url": "https://i.imgur.com/8upyApg.png"
+    },
+    {
+      "channel": "ElyTV.br",
+      "name": "ElyTV",
+      "url": "https://i.imgur.com/1eHNe91.png"
+    },
+    {
+      "channel": "EPTVCampinaseregiao.br",
+      "name": "EPTV Campinas e regiao",
+      "url": "https://i.imgur.com/6XWRnNX.png"
+    },
+    {
+      "channel": "EPTVCentral.br",
+      "name": "EPTV Central",
+      "url": "https://i.imgur.com/7cXoJDO.png"
+    },
+    {
+      "channel": "EPTVSuldeMinas.br",
+      "name": "EPTV Sul de Minas",
+      "url": "https://i.imgur.com/fdJCLXo.png"
+    },
+    {
+      "channel": "ESPNExtra.br",
+      "name": "ESPN Extra",
+      "url": "https://i.imgur.com/L7feQkn.png"
+    },
+    {
+      "channel": "Estudeemcasa.br",
+      "name": "Estude em casa",
+      "url": "https://i.imgur.com/BPRAffK.png"
+    },
+    {
+      "channel": "EUTV.br",
+      "name": "EUTV",
+      "url": "https://i.imgur.com/8PxpamC.png"
+    },
+    {
+      "channel": "FailArmy.us",
+      "name": "FailArmy",
+      "url": "https://i.imgur.com/VIpQJxL.png"
+    },
+    {
+      "channel": "FalaLitoral.br",
+      "name": "Fala Litoral",
+      "url": "https://i.imgur.com/NF6PL8O.png"
+    },
+    {
+      "channel": "FashionTV.br",
+      "name": "FashionTV",
+      "url": "https://i.imgur.com/cZWKyuM.png"
+    },
+    {
+      "channel": "FIFAPlus.uk",
+      "name": "FIFA+",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png"
+    },
+    {
+      "channel": "FilmArts.ar",
+      "name": "Film & Arts",
+      "url": "https://i.imgur.com/ukdmEKD.png"
+    },
+    {
+      "channel": "FilmesSuspense.us",
+      "name": "Filmes Suspense",
+      "url": "https://images.pluto.tv/channels/5f171d3442a0500007362f22/colorLogoPNG.png"
+    },
+    {
+      "channel": "FonteTV.br",
+      "name": "Fonte TV",
+      "url": "https://i.imgur.com/7q2BmNc.png"
+    },
+    {
+      "channel": "FoodNetworkLatinAmerica.us",
+      "name": "Food Network Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/960px-Food_Network_New_Logo.png"
+    },
+    {
+      "channel": "ForaTedioTV.br",
+      "name": "Fora Tedio TV",
+      "url": "https://i.imgur.com/R9ul4T1.png"
+    },
+    {
+      "channel": "FoxBoxWeb.br",
+      "name": "Fox Box Web",
+      "url": "https://i.ibb.co/3yNbP9hg/Captura-de-tela-2026-05-07-183916-removebg-preview.png"
+    },
+    {
+      "channel": "FUELTV.pt",
+      "name": "FUEL TV",
+      "url": "https://i.imgur.com/I8mviBy.png"
+    },
+    {
+      "channel": "Futura.br",
+      "name": "Futura",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Canal_Futura.png/960px-Canal_Futura.png"
+    },
+    {
+      "channel": "FXLatinAmerica.us",
+      "name": "FX Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png"
+    },
+    {
+      "channel": "GazetaFM941.br",
+      "name": "Gazeta FM 94.1",
+      "url": "https://play-lh.googleusercontent.com/DdyaclD5wuqPe5jROtQEHG7pnl7evtBCYJ-GNt7Fo-swW_k94ZBqTDWoW5a7SYWzu9o2=w240-h480-rw"
+    },
+    {
+      "channel": "geTV.br",
+      "name": "ge TV",
+      "url": "https://i.ibb.co/WGXHDnF/logo-ge-fast.png"
+    },
+    {
+      "channel": "Geekdot.br",
+      "name": "Geekdot",
+      "url": "https://i.imgur.com/jML1u4O.png"
+    },
+    {
+      "channel": "GhostTV.br",
+      "name": "Ghost TV",
+      "url": "https://i.imgur.com/ZVO8GVI.png"
+    },
+    {
+      "channel": "GiroTVNews.br",
+      "name": "Giro TV News",
+      "url": "https://i.imgur.com/mc4sFiK.png"
+    },
+    {
+      "channel": "Gloob.br",
+      "name": "Gloob",
+      "url": "https://i.imgur.com/N1BUULh.png"
+    },
+    {
+      "channel": "GloobWeb.br",
+      "name": "Gloob Web",
+      "url": "https://i.ibb.co/wrQZXZ01/C-pia-de-Blue-Modern-Simple-Logo.png"
+    },
+    {
+      "channel": "Gloobinho.br",
+      "name": "Gloobinho",
+      "url": "https://i.imgur.com/UWkHErt.png"
+    },
+    {
+      "channel": "GospelCartoon.br",
+      "name": "Gospel Cartoon",
+      "url": "https://i.imgur.com/yxjPno5.png"
+    },
+    {
+      "channel": "GospelMovieTV.br",
+      "name": "Gospel Movie TV",
+      "url": "https://i.imgur.com/cQN3nWt.png"
+    },
+    {
+      "channel": "GuiadeCanais.br",
+      "name": "Guia de Canais",
+      "url": "https://i.imgur.com/wOIbW9I.png"
+    },
+    {
+      "channel": "HelloTV.br",
+      "name": "Hello! TV",
+      "url": "https://i.imgur.com/MY8BQ3q.png"
+    },
+    {
+      "channel": "HGTVLatinAmerica.us",
+      "name": "HGTV Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HGTV_US_Logo_2015.svg/960px-HGTV_US_Logo_2015.svg.png"
+    },
+    {
+      "channel": "History.br",
+      "name": "History",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png"
+    },
+    {
+      "channel": "History2LatinAmerica.us",
+      "name": "History 2 Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/History2_logo_%282022%29.svg/500px-History2_logo_%282022%29.svg.png"
+    },
+    {
+      "channel": "iCarly.us",
+      "name": "iCarly",
+      "url": "https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png"
+    },
+    {
+      "channel": "IdealTV.br",
+      "name": "Ideal TV",
+      "url": "https://i.imgur.com/djoI9vz.png"
+    },
+    {
+      "channel": "IgrejaCristaMaranata.br",
+      "name": "Igreja Crista Maranata",
+      "url": "https://i.imgur.com/kxYZcx7.png"
+    },
+    {
+      "channel": "IgrejaInternacionaldaGracadeDeus.br",
+      "name": "Igreja Internacional da Graca de Deus",
+      "url": "https://i.imgur.com/4ukAkzD.png"
+    },
+    {
+      "channel": "IMPDTV.br",
+      "name": "IMPD TV",
+      "url": "https://i.imgur.com/23m7LHH.png"
+    },
+    {
+      "channel": "IMPDTVAfrica.br",
+      "name": "IMPD TV Africa",
+      "url": "https://i.imgur.com/SSuV6GB.png"
+    },
+    {
+      "channel": "IMPDTVWorldwide.br",
+      "name": "IMPD TV Worldwide",
+      "url": "https://i.imgur.com/9dW3AUQ.png"
+    },
+    {
+      "channel": "ImperialTV.br",
+      "name": "Imperial TV",
+      "url": "https://i.imgur.com/Bj0OqOc.png"
+    },
+    {
+      "channel": "InterTVAltoLitoral.br",
+      "name": "InterTV Alto Litoral",
+      "url": "https://i.imgur.com/sLWYMEt.png"
+    },
+    {
+      "channel": "InterTVCabugi.br",
+      "name": "InterTV Cabugi",
+      "url": "https://i.imgur.com/LP1tlVV.png"
+    },
+    {
+      "channel": "InterTVCostaBranca.br",
+      "name": "InterTV Costa Branca",
+      "url": "https://i.imgur.com/Y9wpinC.png"
+    },
+    {
+      "channel": "InterTVGrandeMinas.br",
+      "name": "InterTV Grande Minas",
+      "url": "https://i.imgur.com/Z8Osi1Z.png"
+    },
+    {
+      "channel": "InterTVSerraPlusMar.br",
+      "name": "InterTV Serra+Mar",
+      "url": "https://i.imgur.com/KnikgBV.png"
+    },
+    {
+      "channel": "InterTVValesdeMinasGerais.br",
+      "name": "InterTV Vales de Minas Gerais",
+      "url": "https://i.imgur.com/yTfXcmW.png"
+    },
+    {
+      "channel": "InvestigationDiscovery.br",
+      "name": "Investigation Discovery",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png"
+    },
+    {
+      "channel": "ISTV.br",
+      "name": "ISTV",
+      "url": "https://i.imgur.com/RUKVrOH.png"
+    },
+    {
+      "channel": "ITVBrazil.br",
+      "name": "ITV Brazil",
+      "url": "https://i.imgur.com/35SLBz0.png"
+    },
+    {
+      "channel": "J3NEWSTV.br",
+      "name": "J3NEWS TV",
+      "url": "https://i.imgur.com/lezIQyL.png"
+    },
+    {
+      "channel": "JeannieeumGenio.br",
+      "name": "Jeannie e um Genio",
+      "url": "https://i.imgur.com/E5mfnP7.png"
+    },
+    {
+      "channel": "JockeyClubdeSaoPaulo.br",
+      "name": "Jockey Club de Sao Paulo",
+      "url": "https://i.imgur.com/HkuWqbn.png"
+    },
+    {
+      "channel": "JornadanasEstrelasANovaGeracao.us",
+      "name": "Jornada nas Estrelas: A Nova Geracao",
+      "url": "https://images.pluto.tv/channels/69162ad79505d0f3b1ebf07d/colorLogoPNG_1766066212478.png"
+    },
+    {
+      "channel": "JornadanasEstrelasDeepSpaceNine.us",
+      "name": "Jornada nas Estrelas: Deep Space Nine",
+      "url": "https://images.pluto.tv/channels/69162af591700f4c4c135c95/colorLogoPNG_1766066526851.png"
+    },
+    {
+      "channel": "JornadanasEstrelasVoyager.us",
+      "name": "Jornada nas Estrelas: Voyager",
+      "url": "https://images.pluto.tv/channels/69162b1ef189e235142b17ab/colorLogoPNG_1766150123044.png"
+    },
+    {
+      "channel": "JovemPanPlutoTV.us",
+      "name": "Jovem Pan Pluto TV",
+      "url": "https://i.imgur.com/9Is1yhZ.png"
+    },
+    {
+      "channel": "JPNews.br",
+      "name": "JP News",
+      "url": "https://i.imgur.com/AYO1U1u.png"
+    },
+    {
+      "channel": "KenanKel.us",
+      "name": "Kenan & Kel",
+      "url": "https://images.pluto.tv/channels/5ffcc5130fd98c0007f2e216/colorLogoPNG.png"
+    },
+    {
+      "channel": "KpopTVPlay.br",
+      "name": "KpopTV Play",
+      "url": "https://i.imgur.com/Tf0vweF.png"
+    },
+    {
+      "channel": "KuriakosKids.pt",
+      "name": "Kuriakos Kids",
+      "url": "https://i.imgur.com/SRX6EPY.png"
+    },
+    {
+      "channel": "Lke.br",
+      "name": "L!ke",
+      "url": "https://i.imgur.com/chHsCzB.png"
+    },
+    {
+      "channel": "LaOtraCaradelAlma.us",
+      "name": "La Otra Cara del Alma",
+      "url": "https://i.imgur.com/vb1ahXs.png"
+    },
+    {
+      "channel": "LamoreRockShowWebTV.br",
+      "name": "Lamore Rock Show WebTV",
+      "url": "https://www.lamorerockshowwebtv.com.br/wp-content/uploads/2024/11/logo_rockshow.avif"
+    },
+    {
+      "channel": "LavrasCETV.br",
+      "name": "Lavras CE TV",
+      "url": "https://i.imgur.com/y0LSin2.png"
+    },
+    {
+      "channel": "LiderTV.br",
+      "name": "Lider TV",
+      "url": "https://i0.wp.com/lidertv.com.br/wp-content/uploads/2024/11/cropped-cropped-LOGO-LIDER-EM-BAIXA.png?fit=512%2C228&ssl=1"
+    },
+    {
+      "channel": "LifetimeLatinAmerica.us",
+      "name": "Lifetime Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png"
+    },
+    {
+      "channel": "Loupe.br",
+      "name": "Loupe",
+      "url": "https://i.imgur.com/T6tsw0O.png"
+    },
+    {
+      "channel": "MacGyver.us",
+      "name": "MacGyver",
+      "url": "https://images.pluto.tv/channels/63eb9dc84e83e70008abea92/colorLogoPNG.png"
+    },
+    {
+      "channel": "MaisnaTela.br",
+      "name": "Mais na Tela",
+      "url": "https://i.imgur.com/9MtbKve.png"
+    },
+    {
+      "channel": "MasterShowTV.br",
+      "name": "Master Show TV",
+      "url": "https://i.imgur.com/haXHFCT.png"
+    },
+    {
+      "channel": "MasterChef.us",
+      "name": "MasterChef",
+      "url": "https://i.imgur.com/lOuySbz.png"
+    },
+    {
+      "channel": "MBCBrasilTV.br",
+      "name": "MBC Brasil TV",
+      "url": "https://eswqkrogupaisirwcsys.supabase.co/storage/v1/object/public/mbc-media/canais/1775702325773-d10vtu076za.png"
+    },
+    {
+      "channel": "MCMTop.fr",
+      "name": "MCM Top",
+      "url": "https://i.imgur.com/EVtWQLd.png"
+    },
+    {
+      "channel": "MedalhaoPersa.br",
+      "name": "Medalhao Persa",
+      "url": "https://i.imgur.com/lGFTdSS.png"
+    },
+    {
+      "channel": "Megapix.br",
+      "name": "Megapix",
+      "url": "https://i.imgur.com/qTYv5jt.png"
+    },
+    {
+      "channel": "MiranteNews.br",
+      "name": "Mirante News",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlZsU7RO0CW_K26uBc0oylslaONHeMXumdw&s"
+    },
+    {
+      "channel": "MKKWebTV.br",
+      "name": "MKK Web TV",
+      "url": "https://i.imgur.com/A8Yhtid.png"
+    },
+    {
+      "channel": "MovieSphere.us",
+      "name": "MovieSphere",
+      "url": "https://i.imgur.com/0sfk3yp.png"
+    },
+    {
+      "channel": "MTV.br",
+      "name": "MTV",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png"
+    },
+    {
+      "channel": "MTVAreyoutheOne.us",
+      "name": "MTV Are you the One?",
+      "url": "https://images.pluto.tv/channels/5f6108d8cc331900075e98e4/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVBiggestPop.us",
+      "name": "MTV Biggest Pop",
+      "url": "https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVCatfish.us",
+      "name": "MTV Catfish",
+      "url": "https://images.pluto.tv/channels/64f8a2a23a0d700008a6ed7b/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVClassic.us",
+      "name": "MTV Classic",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MTV_Classic_US.svg/960px-MTV_Classic_US.svg.png"
+    },
+    {
+      "channel": "MTVComoEx.us",
+      "name": "MTV Com o Ex",
+      "url": "https://images.pluto.tv/channels/61a528267e1b8b0007357920/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVDating.us",
+      "name": "MTV Dating",
+      "url": "https://images.pluto.tv/channels/6851bb3426beced4f2f67ee6/colorLogoPNG_1750686926779.png"
+    },
+    {
+      "channel": "MTVDrag.us",
+      "name": "MTV Drag",
+      "url": "https://images.pluto.tv/channels/645111f1d8436e00081bb2bd/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVJovenseMaes.us",
+      "name": "MTV Jovens e Maes",
+      "url": "https://images.pluto.tv/channels/620fdc7d8a36fc000710e3ba/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVJustTattooofUs.us",
+      "name": "MTV Just Tattoo of Us",
+      "url": "https://images.pluto.tv/channels/63988b61c8d285000798a22a/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVPlutoTV.us",
+      "name": "MTV Pluto TV",
+      "url": "https://images.pluto.tv/channels/5f1212fb81e85c00077ae9ef/colorLogoPNG_1759263027326.png"
+    },
+    {
+      "channel": "MTVReality.us",
+      "name": "MTV Reality",
+      "url": "https://images.pluto.tv/channels/6493f4f566e485000853d640/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVRidiculousness.us",
+      "name": "MTV Ridiculousness",
+      "url": "https://images.pluto.tv/channels/68641eb4852dfe78698c3390/colorLogoPNG_1751392300412.png"
+    },
+    {
+      "channel": "MTVRocks.us",
+      "name": "MTV Rocks",
+      "url": "https://images.pluto.tv/channels/66a01e07d2d50d0008100d6a/colorLogoPNG.png"
+    },
+    {
+      "channel": "MTVShore.us",
+      "name": "MTV Shore",
+      "url": "https://images.pluto.tv/channels/625463563b8ddc0007134aeb/colorLogoPNG.png"
+    },
+    {
+      "channel": "MusicBoxBrazil.br",
+      "name": "Music Box Brazil",
+      "url": "https://i.imgur.com/CDPCF2X.png"
+    },
+    {
+      "channel": "MyTimeMovieNetwork.br",
+      "name": "MyTime Movie Network",
+      "url": "https://i.imgur.com/aiGQtzI.png"
+    },
+    {
+      "channel": "NSports.br",
+      "name": "N Sports",
+      "url": "https://i.imgur.com/7QnJojr.png"
+    },
+    {
+      "channel": "Naruto.us",
+      "name": "Naruto",
+      "url": "https://i.imgur.com/M8X3Kvc.png"
+    },
+    {
+      "channel": "NarutoShippuden.us",
+      "name": "Naruto Shippuden",
+      "url": "https://images.pluto.tv/channels/64c92fea3c3344000869e8a9/colorLogoPNG.png"
+    },
+    {
+      "channel": "NationalGeographicWild.br",
+      "name": "National Geographic Wild",
+      "url": "https://i.imgur.com/C0stYcu.png"
+    },
+    {
+      "channel": "NatureTV.br",
+      "name": "Nature TV",
+      "url": "https://i.imgur.com/g7pLORX.png"
+    },
+    {
+      "channel": "NatureTime.ca",
+      "name": "NatureTime",
+      "url": "https://i.imgur.com/72JmyjM.png"
+    },
+    {
+      "channel": "NCIS.us",
+      "name": "NCIS",
+      "url": "https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png"
+    },
+    {
+      "channel": "NDTVRecordTVCriciuma.br",
+      "name": "NDTV Record TV Criciuma",
+      "url": "https://i.imgur.com/wskp11q.png"
+    },
+    {
+      "channel": "NickClassico.us",
+      "name": "Nick Classico",
+      "url": "https://i.imgur.com/Crip6wT.png"
+    },
+    {
+      "channel": "NickJrClub.us",
+      "name": "Nick Jr. Club",
+      "url": "https://images.pluto.tv/channels/5f121460b73ac6000719fbaf/colorLogoPNG_1748348856602.png"
+    },
+    {
+      "channel": "NickTeen.us",
+      "name": "Nick Teen",
+      "url": "https://i.imgur.com/vEqN90z.png"
+    },
+    {
+      "channel": "NickelodeonClassico.us",
+      "name": "Nickelodeon Classico",
+      "url": "https://images.pluto.tv/channels/5f12151794c1800007a8ae63/colorLogoPNG_1750157164414.png"
+    },
+    {
+      "channel": "NickelodeonTeen.us",
+      "name": "Nickelodeon Teen",
+      "url": "https://images.pluto.tv/channels/60f5fabf0721880007cd50e3/colorLogoPNG_1767888207915.png"
+    },
+    {
+      "channel": "NickelodeonToons.us",
+      "name": "Nickelodeon Toons",
+      "url": "https://images.pluto.tv/channels/645951c0e94c38000802d2cb/colorLogoPNG_1767888119852.png"
+    },
+    {
+      "channel": "NickToonsBrasil.br",
+      "name": "NickToons Brasil",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Nicktoons_logo_%282023%29.svg/330px-Nicktoons_logo_%282023%29.svg.png"
+    },
+    {
+      "channel": "NovaEraTV.br",
+      "name": "Nova Era TV",
+      "url": "https://i.imgur.com/IK3F9Uq.png"
+    },
+    {
+      "channel": "NovaTVAgrotour.br",
+      "name": "Nova TV Agrotour",
+      "url": "https://i.imgur.com/cgN2hfm.png"
+    },
+    {
+      "channel": "NSCTV.br",
+      "name": "NSC TV",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/NSC_TV_logo.png"
+    },
+    {
+      "channel": "NSCTVBlumenau.br",
+      "name": "NSC TV Blumenau",
+      "url": "https://i.imgur.com/AebFETD.png"
+    },
+    {
+      "channel": "NSCTVCentroOeste.br",
+      "name": "NSC TV Centro-Oeste",
+      "url": "https://i.imgur.com/dLGpoVz.png"
+    },
+    {
+      "channel": "NSCTVChapeco.br",
+      "name": "NSC TV Chapeco",
+      "url": "https://i.imgur.com/InuwvjC.png"
+    },
+    {
+      "channel": "NSCTVCriciuma.br",
+      "name": "NSC TV Criciuma",
+      "url": "https://i.imgur.com/gp3UISe.png"
+    },
+    {
+      "channel": "NSCTVFlorianopolis.br",
+      "name": "NSC TV Florianopolis",
+      "url": "https://i.imgur.com/0DtNyF1.png"
+    },
+    {
+      "channel": "NSCTVJoinville.br",
+      "name": "NSC TV Joinville",
+      "url": "https://i.imgur.com/G66BZyd.png"
+    },
+    {
+      "channel": "NTV.br",
+      "name": "NTV",
+      "url": "https://i.imgur.com/n79nkVC.png"
+    },
+    {
+      "channel": "Numbers.us",
+      "name": "Numbers",
+      "url": "https://images.pluto.tv/channels/67f960c5441853fe50e7afc1/colorLogoPNG_1747430170532.png"
+    },
+    {
+      "channel": "OCaminhoAntigo.br",
+      "name": "O Caminho Antigo",
+      "url": "https://i.imgur.com/knUFbk9.png"
+    },
+    {
+      "channel": "ODiaTV.br",
+      "name": "O Dia TV",
+      "url": "https://i.imgur.com/1LUbAVP.png"
+    },
+    {
+      "channel": "OEncantadordeCaes.us",
+      "name": "O Encantador de Caes",
+      "url": "https://i.imgur.com/sQn6vvh.png"
+    },
+    {
+      "channel": "OReinoInfantil.us",
+      "name": "O Reino Infantil",
+      "url": "https://i.imgur.com/qoVxc13.png"
+    },
+    {
+      "channel": "OESCTV.br",
+      "name": "OESC TV",
+      "url": "https://i.imgur.com/vnukY7x.png"
+    },
+    {
+      "channel": "OggyeasBaratasTontas.us",
+      "name": "Oggy e as Baratas Tontas",
+      "url": "https://images.pluto.tv/channels/63221bafdc6e110007b50270/colorLogoPNG.png"
+    },
+    {
+      "channel": "OiFilmes.br",
+      "name": "Oi Filmes",
+      "url": "https://i.imgur.com/ypUhjBD.png"
+    },
+    {
+      "channel": "OnePiece.us",
+      "name": "One Piece",
+      "url": "https://i.imgur.com/XsvbAWR.png"
+    },
+    {
+      "channel": "OpiniaoPlayTV.br",
+      "name": "Opiniao Play TV",
+      "url": "https://i.imgur.com/67jQYZ5.png"
+    },
+    {
+      "channel": "ParamountPlusApresenta.br",
+      "name": "Paramount+ Apresenta",
+      "url": "https://i.imgur.com/XrJw9eQ.png"
+    },
+    {
+      "channel": "PeruChannel.br",
+      "name": "Peru Channel",
+      "url": "https://i.imgur.com/01KEiEp.png"
+    },
+    {
+      "channel": "PFC.br",
+      "name": "PFC",
+      "url": "https://i.imgur.com/zgxPcrc.png"
+    },
+    {
+      "channel": "PFCInternacional.br",
+      "name": "PFC Internacional",
+      "url": "https://i.imgur.com/VniZc15.png"
+    },
+    {
+      "channel": "PlayTV.br",
+      "name": "Play TV",
+      "url": "https://i.imgur.com/Ikrj3lk.png"
+    },
+    {
+      "channel": "PlenaTV.br",
+      "name": "Plena TV",
+      "url": "https://i.imgur.com/lH4RT7b.png"
+    },
+    {
+      "channel": "PlutoTVAdrenalinaFreezone.us",
+      "name": "Pluto TV Adrenalina Freezone",
+      "url": "https://i.imgur.com/QE6xHoR.png"
+    },
+    {
+      "channel": "PlutoTVAliens.us",
+      "name": "Pluto TV Aliens",
+      "url": "https://images.pluto.tv/channels/6806d65e84f24b70109485fa/colorLogoPNG_1746817107468.png"
+    },
+    {
+      "channel": "PlutoTVAnimais.us",
+      "name": "Pluto TV Animais",
+      "url": "https://images.pluto.tv/channels/6474aa984cfc2c0008883a92/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVAnime.us",
+      "name": "Pluto TV Anime",
+      "url": "https://images.pluto.tv/channels/5f12136385bccc00070142ed/colorLogoPNG_1777595293242.png"
+    },
+    {
+      "channel": "PlutoTVAnimeAcao.us",
+      "name": "Pluto TV Anime Acao",
+      "url": "https://images.pluto.tv/channels/604b79c558393100078faeef/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVBangBang.us",
+      "name": "Pluto TV Bang Bang",
+      "url": "https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVCanalUOL.us",
+      "name": "Pluto TV Canal UOL",
+      "url": "https://images.pluto.tv/channels/64b9370b409629000802d32b/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVCineClassicos.us",
+      "name": "Pluto TV Cine Classicos",
+      "url": "https://images.pluto.tv/channels/5fa1612a669ba0000702017b/colorLogoPNG_1733440556804.png"
+    },
+    {
+      "channel": "PlutoTVCineComedia.us",
+      "name": "Pluto TV Cine Comedia",
+      "url": "https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png"
+    },
+    {
+      "channel": "PlutoTVCineComediaRomantica.us",
+      "name": "Pluto TV Cine Comedia Romantica",
+      "url": "https://images.pluto.tv/channels/62545ed3dab4380007582f7c/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVCineCrime.us",
+      "name": "Pluto TV Cine Crime",
+      "url": "https://images.pluto.tv/channels/6479ff764f5ba5000878dfe2/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVCineDrama.us",
+      "name": "Pluto TV Cine Drama",
+      "url": "https://images.pluto.tv/channels/5f1210d14ae1f80007bafb1d/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVCineFamilia.us",
+      "name": "Pluto TV Cine Familia",
+      "url": "https://i.imgur.com/r9UhBfV.png"
+    },
+    {
+      "channel": "PlutoTVCineInspiracao.us",
+      "name": "Pluto TV Cine Inspiracao",
+      "url": "https://images.pluto.tv/channels/5fa991b1f09e020007e78626/colorLogoPNG_1748874366972.png"
+    },
+    {
+      "channel": "PlutoTVCineRomance.us",
+      "name": "Pluto TV Cine Romance",
+      "url": "https://images.pluto.tv/channels/5f171f988ab9780007fa95ea/colorLogoPNG_1771344977802.png"
+    },
+    {
+      "channel": "PlutoTVCineSucessos.us",
+      "name": "Pluto TV Cine Sucessos",
+      "url": "https://images.pluto.tv/channels/5f120e94a5714d00074576a1/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVComedia.us",
+      "name": "Pluto TV Comedia",
+      "url": "https://i.imgur.com/cdZMjYr.png"
+    },
+    {
+      "channel": "PlutoTVCozinha.us",
+      "name": "Pluto TV Cozinha",
+      "url": "https://images.pluto.tv/channels/5f1ef23020a5ac0007e5e8ea/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVCuriosidade.us",
+      "name": "Pluto TV Curiosidade",
+      "url": "https://images.pluto.tv/channels/6474aadc8e3c0a0008b98493/colorLogoPNG_1732044385150.png"
+    },
+    {
+      "channel": "PlutoTVDesenhosClassicos.us",
+      "name": "Pluto TV Desenhos Classicos",
+      "url": "https://images.pluto.tv/channels/655e5c4d2c46f3000877a54b/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVFiccaoCientifica.us",
+      "name": "Pluto TV Ficcao Cientifica",
+      "url": "https://images.pluto.tv/channels/5fa15ad6367e170007cdd098/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVFilmesAcao.us",
+      "name": "Pluto TV Filmes Acao",
+      "url": "https://images.pluto.tv/channels/5f120f41b7d403000783a6d6/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVFilmesAventura.us",
+      "name": "Pluto TV Filmes Aventura",
+      "url": "https://images.pluto.tv/channels/66c79a4262e5510008ff68a5/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVFilmesdeLuta.us",
+      "name": "Pluto TV Filmes de Luta",
+      "url": "https://images.pluto.tv/channels/6806d62369aec5b19cd628c0/colorLogoPNG_1746817781806.png"
+    },
+    {
+      "channel": "PlutoTVFilmesNacionais.us",
+      "name": "Pluto TV Filmes Nacionais",
+      "url": "https://images.pluto.tv/channels/5f5a545d0dbf7f0007c09408/colorLogoPNG_1732044719987.png"
+    },
+    {
+      "channel": "PlutoTVGamingporUbisoft.us",
+      "name": "Pluto TV Gaming por Ubisoft",
+      "url": "https://images.pluto.tv/channels/64c815e8a1c6130008fef928/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVHistoria.us",
+      "name": "Pluto TV Historia",
+      "url": "https://images.pluto.tv/channels/5f1ef1a8cec6be00072a7ac9/colorLogoPNG_1754405659295.png"
+    },
+    {
+      "channel": "PlutoTVInvestigacao.us",
+      "name": "Pluto TV Investigacao",
+      "url": "https://images.pluto.tv/channels/5f32cf37c9ff2b00082adbc8/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVJunior.us",
+      "name": "Pluto TV Junior",
+      "url": "https://images.pluto.tv/channels/5f12141b146d760007934ea7/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVKaraokeporStingray.us",
+      "name": "Pluto TV Karaoke por Stingray",
+      "url": "https://images.pluto.tv/channels/5f85cf621d6d2200079f1de0/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVKFOOD.us",
+      "name": "Pluto TV KFOOD",
+      "url": "https://images.pluto.tv/channels/633ee9ba83c08f00076b60a6/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVKids.us",
+      "name": "Pluto TV Kids",
+      "url": "https://images.pluto.tv/channels/5f1214a637c6fd00079c652f/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVKidsClub.us",
+      "name": "Pluto TV Kids Club",
+      "url": "https://images.pluto.tv/channels/66c8cae7fed35b0008580ec0/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVMinhaObsessaoFavorita.us",
+      "name": "Pluto TV Minha Obsessao Favorita",
+      "url": "https://images.pluto.tv/channels/61843f5e491af10007f7eefa/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVMisterios.us",
+      "name": "Pluto TV Misterios",
+      "url": "https://images.pluto.tv/channels/5fac52f142044f00078e2a51/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVNatureza.us",
+      "name": "Pluto TV Natureza",
+      "url": "https://images.pluto.tv/channels/5f1213ba0ecebc00070e170f/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVNegocioFechado.us",
+      "name": "Pluto TV Negocio Fechado",
+      "url": "https://images.pluto.tv/channels/64ad7394798def00087b2bfe/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVNetmovies.us",
+      "name": "Pluto TV Netmovies",
+      "url": "https://images.pluto.tv/channels/663b9de4f999220008230fa8/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVNovelas.us",
+      "name": "Pluto TV Novelas",
+      "url": "https://images.pluto.tv/channels/5f512365abe1f50007d3ff56/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVPaisagensporStingray.us",
+      "name": "Pluto TV Paisagens por Stingray",
+      "url": "https://images.pluto.tv/channels/604a8dedbca75b0007b1c753/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVPolicial.us",
+      "name": "Pluto TV Policial",
+      "url": "https://images.pluto.tv/channels/678fdf9e3de7c8cf948e8824/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVRecordNews.us",
+      "name": "Pluto TV Record News",
+      "url": "https://images.pluto.tv/channels/6102e04e9ab1db0007a980a1/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVRetro.us",
+      "name": "Pluto TV Retro",
+      "url": "https://images.pluto.tv/channels/5f1212ad1728050007a523b8/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVSeriesAcao.us",
+      "name": "Pluto TV Series Acao",
+      "url": "https://images.pluto.tv/channels/6474ab1da51cb80008bfb5f4/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVSeriesComedia.us",
+      "name": "Pluto TV Series Comedia",
+      "url": "https://images.pluto.tv/channels/655e5bc94261ca000810cb17/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVSeriesCriminais.us",
+      "name": "Pluto TV Series Criminais",
+      "url": "https://images.pluto.tv/channels/6474ab5cdc7a760008745008/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVSeriesDrama.us",
+      "name": "Pluto TV Series Drama",
+      "url": "https://images.pluto.tv/channels/65f060d84e01740008d7421f/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVSeriesNovelescas.us",
+      "name": "Pluto TV Series Novelescas",
+      "url": "https://images.pluto.tv/channels/691627e4a29a6123e400b3e0/colorLogoPNG_1764878235665.png"
+    },
+    {
+      "channel": "PlutoTVSeriesSciFi.us",
+      "name": "Pluto TV Series Sci-Fi",
+      "url": "https://images.pluto.tv/channels/63d2ba2f60bc8f0008981a0e/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVShowsporStingray.us",
+      "name": "Pluto TV Shows por Stingray",
+      "url": "https://images.pluto.tv/channels/604b91e0692f770007d9f33f/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVTerrorTrash.us",
+      "name": "Pluto TV Terror Trash",
+      "url": "https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVTurbo.us",
+      "name": "Pluto TV Turbo",
+      "url": "https://images.pluto.tv/channels/6014761dfb91870008ea6463/colorLogoPNG.png"
+    },
+    {
+      "channel": "PlutoTVViagens.us",
+      "name": "Pluto TV Viagens",
+      "url": "https://images.pluto.tv/channels/5f32d432d612e50007e56133/colorLogoPNG_1769016717502.png"
+    },
+    {
+      "channel": "PlutoTVVidaReal.us",
+      "name": "Pluto TV Vida Real",
+      "url": "https://images.pluto.tv/channels/5f32d4d9ec194100070c7449/colorLogoPNG_1732044921019.png"
+    },
+    {
+      "channel": "Polishop.br",
+      "name": "Polishop",
+      "url": "https://i.imgur.com/gnfxeio.png"
+    },
+    {
+      "channel": "Polishop2.br",
+      "name": "Polishop 2",
+      "url": "https://i.imgur.com/HFDhW9S.png"
+    },
+    {
+      "channel": "PortadosFundos.us",
+      "name": "Porta dos Fundos",
+      "url": "https://i.imgur.com/ssmTx7a.png"
+    },
+    {
+      "channel": "PortalCultura.br",
+      "name": "Portal Cultura",
+      "url": "https://i.imgur.com/s0kIlmM.png"
+    },
+    {
+      "channel": "PremiereClubes.br",
+      "name": "Premiere Clubes",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC2.br",
+      "name": "Premiere FC 2",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC24h.br",
+      "name": "Premiere FC 24h",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC3.br",
+      "name": "Premiere FC 3",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC4.br",
+      "name": "Premiere FC 4",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC5.br",
+      "name": "Premiere FC 5",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC6.br",
+      "name": "Premiere FC 6",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC7.br",
+      "name": "Premiere FC 7",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC8.br",
+      "name": "Premiere FC 8",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PremiereFC9.br",
+      "name": "Premiere FC 9",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Premiere_(2017)_logo.png/960px-Premiere_(2017)_logo.png"
+    },
+    {
+      "channel": "PrimeBoxBrazil.br",
+      "name": "Prime Box Brazil",
+      "url": "https://i.imgur.com/BMqSDNn.png"
+    },
+    {
+      "channel": "PrimerTV.br",
+      "name": "Primer TV",
+      "url": "https://i.imgur.com/PMptSP3.png"
+    },
+    {
+      "channel": "ProntosocorroHistoriasDeEmergencia.us",
+      "name": "Pronto-socorro: Historias De Emergencia",
+      "url": "https://i.imgur.com/0PkyJ3U.png"
+    },
+    {
+      "channel": "PUCTVGoias.br",
+      "name": "PUC TV Goias",
+      "url": "https://i.imgur.com/P888e3i.png"
+    },
+    {
+      "channel": "RacerBrasil.br",
+      "name": "Racer Brasil",
+      "url": "https://i.imgur.com/4eaKYJu.png"
+    },
+    {
+      "channel": "RBATV.br",
+      "name": "RBATV",
+      "url": "https://i.imgur.com/ZWFxlU1.png"
+    },
+    {
+      "channel": "RBITV.br",
+      "name": "RBI TV",
+      "url": "https://i.imgur.com/T1wU2HU.png"
+    },
+    {
+      "channel": "RBSTVCaxiasdoSul.br",
+      "name": "RBS TV Caxias do Sul",
+      "url": "https://i.imgur.com/sT5iv5g.png"
+    },
+    {
+      "channel": "RBSTVPelotas.br",
+      "name": "RBS TV Pelotas",
+      "url": "https://i.imgur.com/f8iktPt.png"
+    },
+    {
+      "channel": "RBSTVPortoAlegre.br",
+      "name": "RBS TV Porto Alegre",
+      "url": "https://i.imgur.com/912IgbT.png"
+    },
+    {
+      "channel": "RBSTVRS.br",
+      "name": "RBS TV RS",
+      "url": "https://i.imgur.com/bPJgtCg.png"
+    },
+    {
+      "channel": "RBSTVSantaMaria.br",
+      "name": "RBS TV Santa Maria",
+      "url": "https://i.imgur.com/Dcu6Nd7.png"
+    },
+    {
+      "channel": "RBTV.br",
+      "name": "RBTV",
+      "url": "https://i.imgur.com/m7JDxXJ.png"
+    },
+    {
+      "channel": "RCTVBrasil.br",
+      "name": "RCTV Brasil",
+      "url": "https://eswqkrogupaisirwcsys.supabase.co/storage/v1/object/public/mbc-media/canais/1776378749826-jef0fj1ekwq.png"
+    },
+    {
+      "channel": "RDCTV.br",
+      "name": "RDC TV",
+      "url": "https://i.imgur.com/vMpiSwG.png"
+    },
+    {
+      "channel": "RDTV.br",
+      "name": "RDTV",
+      "url": "https://i.imgur.com/7ng6acg.png"
+    },
+    {
+      "channel": "ReceitasFast.br",
+      "name": "Receitas Fast",
+      "url": "https://i.imgur.com/hhopxq8.png"
+    },
+    {
+      "channel": "RecordInteriorRJ.br",
+      "name": "Record Interior RJ",
+      "url": "https://i.imgur.com/5ae2rQr.png"
+    },
+    {
+      "channel": "RecordRS.br",
+      "name": "Record RS",
+      "url": "https://i.imgur.com/JLQWoNc.png"
+    },
+    {
+      "channel": "RecordTVAmericas.br",
+      "name": "RecordTV Americas",
+      "url": "https://i.imgur.com/T2myIAG.png"
+    },
+    {
+      "channel": "RecordTVBelem.br",
+      "name": "RecordTV Belem",
+      "url": "https://i.imgur.com/gEEiN10.png"
+    },
+    {
+      "channel": "RecordTVBrasilia.br",
+      "name": "RecordTV Brasilia",
+      "url": "https://i.imgur.com/PZMas8Y.png"
+    },
+    {
+      "channel": "RecordTVCabralia.br",
+      "name": "RecordTV Cabralia",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/25/RecordCabralia.jpg/500px-RecordCabralia.jpg"
+    },
+    {
+      "channel": "RecordTVGoias.br",
+      "name": "RecordTV Goias",
+      "url": "https://i.imgur.com/Fdoax1M.png"
+    },
+    {
+      "channel": "RecordTVInteriorSP.br",
+      "name": "RecordTV Interior SP",
+      "url": "https://i.imgur.com/VcHy0fu.png"
+    },
+    {
+      "channel": "RecordTVItapoan.br",
+      "name": "RecordTV Itapoan",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/13/Logotipo_da_RecordTV_Itapoan.png/500px-Logotipo_da_RecordTV_Itapoan.png"
+    },
+    {
+      "channel": "RecordTVLitoraleVale.br",
+      "name": "RecordTV Litoral e Vale",
+      "url": "https://i.imgur.com/8xH18bB.png"
+    },
+    {
+      "channel": "RecordTVManaus.br",
+      "name": "RecordTV Manaus",
+      "url": "https://i.imgur.com/zb58Mel.png"
+    },
+    {
+      "channel": "RecordTVMinas.br",
+      "name": "RecordTV Minas",
+      "url": "https://i.imgur.com/6HT6QMV.png"
+    },
+    {
+      "channel": "RecordTVPaulista.br",
+      "name": "RecordTV Paulista",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/20/Logotipo_da_RecordTV_Paulista.png/500px-Logotipo_da_RecordTV_Paulista.png"
+    },
+    {
+      "channel": "RecordTVRio.br",
+      "name": "RecordTV Rio",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/ce/Logotipo_da_RecordTV_Rio.png/500px-Logotipo_da_RecordTV_Rio.png"
+    },
+    {
+      "channel": "RecordTVRioPreto.br",
+      "name": "RecordTV Rio Preto",
+      "url": "https://i.imgur.com/ByTPYIF.png"
+    },
+    {
+      "channel": "RecordTVSaoPaulo.br",
+      "name": "RecordTV Sao Paulo",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/10/Logotipo_da_Record.png/960px-Logotipo_da_Record.png"
+    },
+    {
+      "channel": "RedBullTV.at",
+      "name": "Red Bull TV",
+      "url": "https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png"
+    },
+    {
+      "channel": "Rede21.br",
+      "name": "Rede 21",
+      "url": "https://i.imgur.com/ZddcZww.png"
+    },
+    {
+      "channel": "RedeAmazonica.br",
+      "name": "Rede Amazonica",
+      "url": "https://i.imgur.com/EjGPuLp.png"
+    },
+    {
+      "channel": "RedeAmazonicaAriquemes.br",
+      "name": "Rede Amazonica Ariquemes",
+      "url": "https://i.imgur.com/AYMXUBj.png"
+    },
+    {
+      "channel": "RedeAmazonicaJiParana.br",
+      "name": "Rede Amazonica Ji-Parana",
+      "url": "https://i.imgur.com/8Ci6kGj.png"
+    },
+    {
+      "channel": "RedeAmazonicaManaus.br",
+      "name": "Rede Amazonica Manaus",
+      "url": "https://i.imgur.com/gQlABHP.png"
+    },
+    {
+      "channel": "RedeAmerica.br",
+      "name": "Rede America",
+      "url": "https://i.imgur.com/eSZYnNX.png"
+    },
+    {
+      "channel": "RedeBrasil.br",
+      "name": "Rede Brasil",
+      "url": "https://i.imgur.com/TXJKwzZ.png"
+    },
+    {
+      "channel": "RedeBrasildeComunicacao.br",
+      "name": "Rede Brasil de Comunicacao",
+      "url": "https://i.imgur.com/iiJufN2.png"
+    },
+    {
+      "channel": "RedeCaxias.br",
+      "name": "Rede Caxias",
+      "url": "https://i.imgur.com/zqiOQJ1.png"
+    },
+    {
+      "channel": "RedeClube.br",
+      "name": "Rede Clube",
+      "url": "https://i.imgur.com/YTCFxJw.png"
+    },
+    {
+      "channel": "RedeCNTBelem.br",
+      "name": "Rede CNT Belem",
+      "url": "https://i.imgur.com/T7qn7uu.png"
+    },
+    {
+      "channel": "RedeCNTCuiaba.br",
+      "name": "Rede CNT Cuiaba",
+      "url": "https://i.imgur.com/B8e1Uyx.png"
+    },
+    {
+      "channel": "RedeCNTCuritiba.br",
+      "name": "Rede CNT Curitiba",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTLondrina.br",
+      "name": "Rede CNT Londrina",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTManaus.br",
+      "name": "Rede CNT Manaus",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTPortoAlegre.br",
+      "name": "Rede CNT Porto Alegre",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTRioBranco.br",
+      "name": "Rede CNT Rio Branco",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTRiodeJaneiro.br",
+      "name": "Rede CNT Rio de Janeiro",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTSalvador.br",
+      "name": "Rede CNT Salvador",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeCNTSaoPaulo.br",
+      "name": "Rede CNT Sao Paulo",
+      "url": "https://i.imgur.com/jcasAmw.png"
+    },
+    {
+      "channel": "RedeFamilia.br",
+      "name": "Rede Familia",
+      "url": "https://i.imgur.com/7KVFCrQ.png"
+    },
+    {
+      "channel": "RedeGenesis.br",
+      "name": "Rede Genesis",
+      "url": "https://i.imgur.com/OIkpWMl.png"
+    },
+    {
+      "channel": "RedeGlobo.br",
+      "name": "Rede Globo",
+      "url": "https://i.imgur.com/O02TF2r.png"
+    },
+    {
+      "channel": "RedeGospel.br",
+      "name": "Rede Gospel",
+      "url": "https://i.imgur.com/mttSwgO.png"
+    },
+    {
+      "channel": "RedeInternacionaldeTV.br",
+      "name": "Rede Internacional de TV",
+      "url": "https://i.imgur.com/i2psU4x.png"
+    },
+    {
+      "channel": "RedeMais.br",
+      "name": "Rede Mais",
+      "url": "https://i.imgur.com/JSiZG2B.png"
+    },
+    {
+      "channel": "RedeMaoAmiga.br",
+      "name": "Rede Mao Amiga",
+      "url": "https://i.imgur.com/cqD6DNY.png"
+    },
+    {
+      "channel": "RedeMassa.br",
+      "name": "Rede Massa",
+      "url": "https://i.imgur.com/yFRqXIx.png"
+    },
+    {
+      "channel": "RedeMeioNorte.br",
+      "name": "Rede Meio Norte",
+      "url": "https://i.imgur.com/KVdTi0M.png"
+    },
+    {
+      "channel": "RedeMetropole.br",
+      "name": "Rede Metropole",
+      "url": "https://i.imgur.com/qJx9Zvd.png"
+    },
+    {
+      "channel": "RedeMinas.br",
+      "name": "Rede Minas",
+      "url": "https://i.imgur.com/MtQWAHv.png"
+    },
+    {
+      "channel": "RedeMundoTV.br",
+      "name": "Rede Mundo TV",
+      "url": "https://i.imgur.com/2dsnTGd.png"
+    },
+    {
+      "channel": "RedeNGT.br",
+      "name": "Rede NGT",
+      "url": "https://i.imgur.com/ZFN1R4B.png"
+    },
+    {
+      "channel": "RedePremiumTV.br",
+      "name": "Rede Premium TV",
+      "url": "https://i.imgur.com/jMHaHAR.png"
+    },
+    {
+      "channel": "RedeQDM.br",
+      "name": "Rede QDM",
+      "url": "https://i.imgur.com/Lxqb2cU.png"
+    },
+    {
+      "channel": "RedeRC.br",
+      "name": "Rede RC",
+      "url": "https://i.imgur.com/y9dqo3f.png"
+    },
+    {
+      "channel": "RedeSeculo21Educa.br",
+      "name": "Rede Seculo 21 Educa",
+      "url": "https://i.imgur.com/j2tkUyy.png"
+    },
+    {
+      "channel": "RedeSPTV.br",
+      "name": "Rede SPTV",
+      "url": "https://i.imgur.com/kh3LGAP.png"
+    },
+    {
+      "channel": "RedeSul.br",
+      "name": "Rede Sul",
+      "url": "https://i.imgur.com/eUM67rj.png"
+    },
+    {
+      "channel": "RedeSuper.br",
+      "name": "Rede Super",
+      "url": "https://i.imgur.com/X75qTEm.png"
+    },
+    {
+      "channel": "RedeTVAlternativo.br",
+      "name": "Rede TV! Alternativo",
+      "url": "https://i.imgur.com/0uVAcAJ.png"
+    },
+    {
+      "channel": "RedeTVES.br",
+      "name": "Rede TV! ES",
+      "url": "https://i.imgur.com/k7vO9Bk.png"
+    },
+    {
+      "channel": "RedeTVMais.br",
+      "name": "Rede TV! Mais",
+      "url": "https://i.ibb.co/F0Tm2WP/2103f4c07b851d64b4c96955765a9a95.png"
+    },
+    {
+      "channel": "RedeTVNacional.br",
+      "name": "Rede TV! Nacional",
+      "url": "https://i.imgur.com/0MQP5Ek.png"
+    },
+    {
+      "channel": "RedeTVRondonia.br",
+      "name": "Rede TV! Rondonia",
+      "url": "https://i.imgur.com/eQ0UhYw.png"
+    },
+    {
+      "channel": "RedeUTV.br",
+      "name": "Rede UTV",
+      "url": "https://i.imgur.com/Usw2e9d.png"
+    },
+    {
+      "channel": "RedeVida.br",
+      "name": "Rede Vida",
+      "url": "https://i.imgur.com/mP1qfp2.png"
+    },
+    {
+      "channel": "RedeVidaEducacao.br",
+      "name": "Rede Vida Educacao",
+      "url": "https://i.imgur.com/LAVxE4T.png"
+    },
+    {
+      "channel": "RedeVidaEducacao2.br",
+      "name": "Rede Vida Educacao 2",
+      "url": "https://i.imgur.com/pzmVqlA.png"
+    },
+    {
+      "channel": "RedeWebTV.br",
+      "name": "Rede Web TV",
+      "url": "https://i.imgur.com/C1wZa7x.png"
+    },
+    {
+      "channel": "RedeTVParana.br",
+      "name": "RedeTV! Parana",
+      "url": "https://i.imgur.com/D8R0Af4.png"
+    },
+    {
+      "channel": "RedeTVTocantins.br",
+      "name": "RedeTV! Tocantins",
+      "url": "https://i.imgur.com/SEe2ki7.png"
+    },
+    {
+      "channel": "ResidenciaSaude.br",
+      "name": "Residencia Saude",
+      "url": "https://i.imgur.com/PVMqN50.png"
+    },
+    {
+      "channel": "RetroCartoon.br",
+      "name": "Retro Cartoon",
+      "url": "https://i.imgur.com/hIlEfhl.png"
+    },
+    {
+      "channel": "RevryBrasil.us",
+      "name": "Revry Brasil",
+      "url": "https://images.samsung.com/is/image/samsung/assets/br/tvs/smart-tv/channel-list/Revry_Brasil_476x476circle.png?$ORIGIN_PNG$"
+    },
+    {
+      "channel": "RioTVCamara.br",
+      "name": "Rio TV Camara",
+      "url": "https://i.imgur.com/smSp1f7.jpg"
+    },
+    {
+      "channel": "RITNoticias.br",
+      "name": "RIT Noticias",
+      "url": "https://i.imgur.com/fiTaCSx.png"
+    },
+    {
+      "channel": "RITTV.br",
+      "name": "RIT TV",
+      "url": "https://i.imgur.com/Unjs1wi.png"
+    },
+    {
+      "channel": "RPCTV.br",
+      "name": "RPC TV",
+      "url": "https://i.imgur.com/Qb5Wfsi.png"
+    },
+    {
+      "channel": "RPCTVCuritiba.br",
+      "name": "RPC TV Curitiba",
+      "url": "https://i.imgur.com/qdVFjKz.png"
+    },
+    {
+      "channel": "RPCTVFozdoIguacu.br",
+      "name": "RPC TV Foz do Iguacu",
+      "url": "https://i.imgur.com/pBJOLAj.png"
+    },
+    {
+      "channel": "RPCTVMaringa.br",
+      "name": "RPC TV Maringa",
+      "url": "https://i.imgur.com/cY67xOU.png"
+    },
+    {
+      "channel": "RPCTVParanavai.br",
+      "name": "RPC TV Paranavai",
+      "url": "https://i.imgur.com/dVJAWOS.png"
+    },
+    {
+      "channel": "RPCTVPontaGrossa.br",
+      "name": "RPC TV Ponta Grossa",
+      "url": "https://i.imgur.com/lqWkJSu.png"
+    },
+    {
+      "channel": "SantaCeciliaTV.br",
+      "name": "Santa Cecilia TV",
+      "url": "https://i.imgur.com/KxYsq1d.png"
+    },
+    {
+      "channel": "SBTCuiaba.br",
+      "name": "SBT Cuiaba",
+      "url": "https://i.imgur.com/EZJWQ3i.png"
+    },
+    {
+      "channel": "SBTInterior.br",
+      "name": "SBT Interior",
+      "url": "https://i.imgur.com/IkZfa4j.png"
+    },
+    {
+      "channel": "SBTInternacionalAmerica.br",
+      "name": "SBT Internacional America",
+      "url": "https://i.imgur.com/ECPs1ev.png"
+    },
+    {
+      "channel": "SBTKids.br",
+      "name": "SBT Kids",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/1/19/SBTKids2026.png"
+    },
+    {
+      "channel": "SBTMS.br",
+      "name": "SBT MS",
+      "url": "https://i.imgur.com/VGcNcO8.png"
+    },
+    {
+      "channel": "SBTNacional.br",
+      "name": "SBT Nacional",
+      "url": "https://i.imgur.com/tc1ALuu.png"
+    },
+    {
+      "channel": "SBTNovaMutum.br",
+      "name": "SBT Nova Mutum",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/d/d0/Logotipo_do_SBT_Nova_Mutum.png"
+    },
+    {
+      "channel": "SBTPara.br",
+      "name": "SBT Para",
+      "url": "https://i.imgur.com/iV1Ib7L.png"
+    },
+    {
+      "channel": "SBTRio.br",
+      "name": "SBT Rio",
+      "url": "https://i.imgur.com/WLSauIE.png"
+    },
+    {
+      "channel": "SBTRioGrande.br",
+      "name": "SBT Rio Grande",
+      "url": "https://i.imgur.com/it5aFKM.png"
+    },
+    {
+      "channel": "SBTRondonopolis.br",
+      "name": "SBT Rondonopolis",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/d/d5/Logotipo_do_SBT_Rondon%C3%B3polis.png"
+    },
+    {
+      "channel": "SBTSinop.br",
+      "name": "SBT Sinop",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/8/8b/Logotipo_do_SBT_Sinop.png"
+    },
+    {
+      "channel": "SertaoTV.br",
+      "name": "Sertao TV",
+      "url": "https://i.imgur.com/b5xOCsC.png"
+    },
+    {
+      "channel": "SESCTV.br",
+      "name": "SESC TV",
+      "url": "https://i.imgur.com/Mu8O6CV.png"
+    },
+    {
+      "channel": "Shoptime.br",
+      "name": "Shoptime",
+      "url": "https://i.imgur.com/wcsIaWu.png"
+    },
+    {
+      "channel": "ShowdaFe.br",
+      "name": "Show da Fe",
+      "url": "https://i.imgur.com/JNsiGoq.png"
+    },
+    {
+      "channel": "ShowdoMilhao.br",
+      "name": "Show do Milhao",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/b/b2/Show_do_Milh%C3%A3o_Logo_2024.webp"
+    },
+    {
+      "channel": "SICTV.br",
+      "name": "SIC TV",
+      "url": "https://i.imgur.com/mHxQyB2.png"
+    },
+    {
+      "channel": "SmithsonianChannel.br",
+      "name": "Smithsonian Channel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png"
+    },
+    {
+      "channel": "SmithsonianChannelPlutoTV.us",
+      "name": "Smithsonian Channel Pluto TV",
+      "url": "https://images.pluto.tv/channels/6298bd10d88ef000073f16b7/colorLogoPNG.png"
+    },
+    {
+      "channel": "SonyMovies.br",
+      "name": "Sony Movies",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png"
+    },
+    {
+      "channel": "SOSEspiritual.br",
+      "name": "SOS Espiritual",
+      "url": "https://i.imgur.com/lGQ7hDD.png"
+    },
+    {
+      "channel": "SOUTV.br",
+      "name": "SOU TV",
+      "url": "https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png"
+    },
+    {
+      "channel": "SouthParkColecaoCartman.us",
+      "name": "South Park: Colecao Cartman",
+      "url": "https://images.pluto.tv/channels/65df71008b24c80008f04281/colorLogoPNG.png"
+    },
+    {
+      "channel": "SouthParkColecaoKenny.us",
+      "name": "South Park: Colecao Kenny",
+      "url": "https://images.pluto.tv/channels/65df704366eec8000898e32f/colorLogoPNG.png"
+    },
+    {
+      "channel": "SouthParkColecaoKyle.us",
+      "name": "South Park: Colecao Kyle",
+      "url": "https://images.pluto.tv/channels/65df713dec9fda0008b7a81d/colorLogoPNG.png"
+    },
+    {
+      "channel": "SouthParkColecaoStan.us",
+      "name": "South Park: Colecao Stan",
+      "url": "https://images.pluto.tv/channels/65df70b0f7f0af0008c3b316/colorLogoPNG.png"
+    },
+    {
+      "channel": "Space.ar",
+      "name": "Space",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/960px-SpaceLogo.svg.png"
+    },
+    {
+      "channel": "SporTV2Alternativo.br",
+      "name": "SporTV 2 Alternativo",
+      "url": "https://i.imgur.com/aoMlRgP.png"
+    },
+    {
+      "channel": "SporTVAlternativo.br",
+      "name": "SporTV Alternativo",
+      "url": "https://i.imgur.com/8M5dLEb.png"
+    },
+    {
+      "channel": "SRTVPB.br",
+      "name": "SRTV PB",
+      "url": "https://i.imgur.com/72Htk9P.png"
+    },
+    {
+      "channel": "StarChannel.br",
+      "name": "Star Channel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png"
+    },
+    {
+      "channel": "StarLifeLatinAmerica.us",
+      "name": "Star Life Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Star_Life_2021.svg/960px-Star_Life_2021.svg.png"
+    },
+    {
+      "channel": "StarTrek.us",
+      "name": "Star Trek",
+      "url": "https://images.pluto.tv/channels/5efbd39f8c4ce900075d7698/colorLogoPNG.png"
+    },
+    {
+      "channel": "StudioUniversalLatinAmerica.us",
+      "name": "Studio Universal Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png"
+    },
+    {
+      "channel": "STZTV.br",
+      "name": "STZ TV",
+      "url": "https://i.imgur.com/SeF2I7q.png"
+    },
+    {
+      "channel": "SuperflixTV.br",
+      "name": "Superflix TV",
+      "url": "https://i.imgur.com/lvUbMen.png"
+    },
+    {
+      "channel": "TabelaConmebolTV.br",
+      "name": "Tabela Conmebol TV",
+      "url": "https://i.imgur.com/z6KF6sT.png"
+    },
+    {
+      "channel": "TastemadeBrasil.us",
+      "name": "Tastemade Brasil",
+      "url": "https://i.imgur.com/FPy4zF4.png"
+    },
+    {
+      "channel": "TCM10HD.br",
+      "name": "TCM 10 HD",
+      "url": "https://i.imgur.com/aMuMVvB.png"
+    },
+    {
+      "channel": "TCMLatinAmerica.us",
+      "name": "TCM Latin America",
+      "url": "https://i.imgur.com/QpDkrmT.png"
+    },
+    {
+      "channel": "TelaBrasilTV.br",
+      "name": "Tela Brasil TV",
+      "url": "https://i.imgur.com/fbhjltq.png"
+    },
+    {
+      "channel": "TelaViva.br",
+      "name": "Tela Viva",
+      "url": "https://i.imgur.com/vcNo9Vj.png"
+    },
+    {
+      "channel": "TELE6.bo",
+      "name": "TELE 6",
+      "url": "https://i.imgur.com/p7tt72X.png"
+    },
+    {
+      "channel": "TereTV.br",
+      "name": "Tere TV",
+      "url": "https://i.imgur.com/vk7q5Gk.png"
+    },
+    {
+      "channel": "TerraViva.br",
+      "name": "Terra Viva",
+      "url": "https://i.imgur.com/wnYsE3O.png"
+    },
+    {
+      "channel": "ThePetCollective.us",
+      "name": "The Pet Collective",
+      "url": "https://i.imgur.com/yH7n2dF.png"
+    },
+    {
+      "channel": "TimesBrasil.br",
+      "name": "Times Brasil",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Times_Brasil_CNBC_logo_2025.svg/960px-Times_Brasil_CNBC_logo_2025.svg.png"
+    },
+    {
+      "channel": "TLCLatinAmerica.us",
+      "name": "TLC Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png"
+    },
+    {
+      "channel": "TLNNetwork.mx",
+      "name": "TLN Network",
+      "url": "https://i.imgur.com/NSnPG4O.png"
+    },
+    {
+      "channel": "TNTLatinAmerica.us",
+      "name": "TNT Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png"
+    },
+    {
+      "channel": "TNTNovelas.us",
+      "name": "TNT Novelas",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png"
+    },
+    {
+      "channel": "TNTSeriesLatinAmerica.us",
+      "name": "TNT Series Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/TNT_Series_2025.svg/1920px-TNT_Series_2025.svg.png"
+    },
+    {
+      "channel": "TNTSports.br",
+      "name": "TNT Sports",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/960px-TNT_Sports_2021_logo.svg.png"
+    },
+    {
+      "channel": "TNTSports2.br",
+      "name": "TNT Sports 2",
+      "url": "https://i.imgur.com/E6pLvOV.png"
+    },
+    {
+      "channel": "TNTSports3.br",
+      "name": "TNT Sports 3",
+      "url": "https://i.imgur.com/LFSMbpN.png"
+    },
+    {
+      "channel": "TNTSports4.br",
+      "name": "TNT Sports 4",
+      "url": "https://i.imgur.com/Am70nWY.png"
+    },
+    {
+      "channel": "TNTSports5.br",
+      "name": "TNT Sports 5",
+      "url": "https://i.imgur.com/XA3zxEE.png"
+    },
+    {
+      "channel": "Tokusato.us",
+      "name": "Tokusato",
+      "url": "https://i.imgur.com/tWpjXtl.png"
+    },
+    {
+      "channel": "Tooncast.us",
+      "name": "Tooncast",
+      "url": "https://i.imgur.com/3yXRbQy.png"
+    },
+    {
+      "channel": "TraceBrazuca.fr",
+      "name": "Trace Brazuca",
+      "url": "https://i.imgur.com/DFBocPu.png"
+    },
+    {
+      "channel": "TravelBoxBrazil.br",
+      "name": "Travel Box Brazil",
+      "url": "https://i.imgur.com/3tBJERH.png"
+    },
+    {
+      "channel": "TripBrasilChannel.br",
+      "name": "Trip Brasil Channel",
+      "url": "https://i.imgur.com/Aa7IbjR.png"
+    },
+    {
+      "channel": "TurmadaMonica.us",
+      "name": "Turma da Monica",
+      "url": "https://i.imgur.com/nrvPPrW.png"
+    },
+    {
+      "channel": "TV3Curitiba.br",
+      "name": "TV 3 Curitiba",
+      "url": "https://eswqkrogupaisirwcsys.supabase.co/storage/v1/object/public/mbc-media/canais/1776133208960-o2l2f7f02f.png"
+    },
+    {
+      "channel": "TVACritica.br",
+      "name": "TV A Critica",
+      "url": "https://i.imgur.com/j51rBro.png"
+    },
+    {
+      "channel": "TVAFolha.br",
+      "name": "TV A Folha",
+      "url": "https://i.imgur.com/I7XGMhj.png"
+    },
+    {
+      "channel": "TVAPlateia.br",
+      "name": "TV A Plateia",
+      "url": "https://i.imgur.com/pmimCFs.png"
+    },
+    {
+      "channel": "TVA7Plus.br",
+      "name": "TV A7 Plus",
+      "url": "https://i.imgur.com/qeo2oPM.png"
+    },
+    {
+      "channel": "TVAberta.br",
+      "name": "TV Aberta",
+      "url": "https://i.imgur.com/SCz53uO.png"
+    },
+    {
+      "channel": "TVAcre.br",
+      "name": "TV Acre",
+      "url": "https://i.imgur.com/fjzfgcr.png"
+    },
+    {
+      "channel": "TVAlagonet.br",
+      "name": "TV Alagonet",
+      "url": "https://i.imgur.com/Bpmqjmo.png"
+    },
+    {
+      "channel": "TVALBA.br",
+      "name": "TV ALBA",
+      "url": "https://www.al.ba.gov.br/images/shared/logo.png"
+    },
+    {
+      "channel": "TVAldeia.br",
+      "name": "TV Aldeia",
+      "url": "https://i.imgur.com/rsfnv4Z.png"
+    },
+    {
+      "channel": "TVALERJ.br",
+      "name": "TV ALERJ",
+      "url": "https://i.imgur.com/7e9t4CY.png"
+    },
+    {
+      "channel": "TVALESP.br",
+      "name": "TV ALESP",
+      "url": "https://i.imgur.com/snKVK5B.png"
+    },
+    {
+      "channel": "TVAliancaCatarinense.br",
+      "name": "TV Alianca Catarinense",
+      "url": "https://i.imgur.com/eqmOhtP.png"
+    },
+    {
+      "channel": "TVAllamanda.br",
+      "name": "TV Allamanda",
+      "url": "https://i.imgur.com/oamW46Y.png"
+    },
+    {
+      "channel": "TVALMG.br",
+      "name": "TV ALMG",
+      "url": "https://i.imgur.com/YOuCxKa.png"
+    },
+    {
+      "channel": "TVAlternativa.br",
+      "name": "TV Alternativa",
+      "url": "https://i.imgur.com/wM9xXhc.png"
+    },
+    {
+      "channel": "TVAlterosaCentroOeste.br",
+      "name": "TV Alterosa Centro-Oeste",
+      "url": "https://i.imgur.com/jGDNnKn.png"
+    },
+    {
+      "channel": "TVAlterosaInterior.br",
+      "name": "TV Alterosa Interior",
+      "url": "https://i.imgur.com/rbDDnFn.png"
+    },
+    {
+      "channel": "TVAlvorada.br",
+      "name": "TV Alvorada",
+      "url": "https://i.imgur.com/wzx7TsO.png"
+    },
+    {
+      "channel": "TVAmapa.br",
+      "name": "TV Amapa",
+      "url": "https://i.imgur.com/gw5BL3D.png"
+    },
+    {
+      "channel": "TVAnhangueraGoiania.br",
+      "name": "TV Anhanguera Goiania",
+      "url": "https://i.imgur.com/kSfg6Zb.png"
+    },
+    {
+      "channel": "TVAntena10.br",
+      "name": "TV Antena 10",
+      "url": "https://i.imgur.com/M4X95Uc.png"
+    },
+    {
+      "channel": "TVAparecida.br",
+      "name": "TV Aparecida",
+      "url": "https://i.imgur.com/kxrja0X.png"
+    },
+    {
+      "channel": "TVAracati.br",
+      "name": "TV Aracati",
+      "url": "https://i.imgur.com/0CZn8cC.png"
+    },
+    {
+      "channel": "TVArapuan.br",
+      "name": "TV Arapuan",
+      "url": "https://i.imgur.com/3395A2h.png"
+    },
+    {
+      "channel": "TVAratu.br",
+      "name": "TV Aratu",
+      "url": "https://i.imgur.com/LCETtuk.png"
+    },
+    {
+      "channel": "TVAsaBranca.br",
+      "name": "TV Asa Branca",
+      "url": "https://i.imgur.com/v7fXXOK.png"
+    },
+    {
+      "channel": "TVAssembleiaCeara.br",
+      "name": "TV Assembleia Ceara",
+      "url": "https://i.imgur.com/UPa1tjs.png"
+    },
+    {
+      "channel": "TVAssembleiaMatoGrosso.br",
+      "name": "TV Assembleia Mato Grosso",
+      "url": "https://i.imgur.com/BtkX8kg.png"
+    },
+    {
+      "channel": "TVAssembleiaMinasGerais.br",
+      "name": "TV Assembleia Minas Gerais",
+      "url": "https://i.imgur.com/Q1lo8SG.png"
+    },
+    {
+      "channel": "TVAssembleiaParana.br",
+      "name": "TV Assembleia Parana",
+      "url": "https://i.imgur.com/3jo4Wfd.png"
+    },
+    {
+      "channel": "TVAssembleiaPiaui.br",
+      "name": "TV Assembleia Piaui",
+      "url": "https://i.imgur.com/eMguSjM.png"
+    },
+    {
+      "channel": "TVAssembleiaRN.br",
+      "name": "TV Assembleia RN",
+      "url": "https://yt3.googleusercontent.com/ytc/AGIKgqOClirOgkUdn6sr0KXxp98HAAVFagI9NteXQvD6=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "channel": "TVAtalaia.br",
+      "name": "TV Atalaia",
+      "url": "https://i.imgur.com/9qp6rMK.png"
+    },
+    {
+      "channel": "TVBahia.br",
+      "name": "TV Bahia",
+      "url": "https://i.imgur.com/sJOrvHg.png"
+    },
+    {
+      "channel": "TVBarrigaVerde.br",
+      "name": "TV Barriga Verde",
+      "url": "https://i.imgur.com/nkcHHf2.png"
+    },
+    {
+      "channel": "TVBeltrao.br",
+      "name": "TV Beltrao",
+      "url": "https://i.imgur.com/JxsyXCD.png"
+    },
+    {
+      "channel": "TVBirigui.br",
+      "name": "TV Birigui",
+      "url": "https://i.imgur.com/z7VlNLR.png"
+    },
+    {
+      "channel": "TVBNO.br",
+      "name": "TV BNO",
+      "url": "https://i.imgur.com/ZvaW1Oz.png"
+    },
+    {
+      "channel": "TVBoqueirao.br",
+      "name": "TV Boqueirao",
+      "url": "https://i.imgur.com/1XrArrG.png"
+    },
+    {
+      "channel": "TVBrasilCentral.br",
+      "name": "TV Brasil Central",
+      "url": "https://i.imgur.com/VgjVlp3.png"
+    },
+    {
+      "channel": "TVBrasilInternacional.br",
+      "name": "TV Brasil Internacional",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/e/ee/TV_Brasil_Internacional_2023.png"
+    },
+    {
+      "channel": "TVBrasilOeste.br",
+      "name": "TV Brasil Oeste",
+      "url": "https://i.imgur.com/noqGfuy.png"
+    },
+    {
+      "channel": "TVBRICSPortuguese.br",
+      "name": "TV BRICS Portuguese",
+      "url": "https://i.imgur.com/vLpm8tN.png"
+    },
+    {
+      "channel": "TVBrusque.br",
+      "name": "TV Brusque",
+      "url": "https://i.imgur.com/J2EAZPS.png"
+    },
+    {
+      "channel": "TVCaboBranco.br",
+      "name": "TV Cabo Branco",
+      "url": "https://i.imgur.com/wcU9doO.png"
+    },
+    {
+      "channel": "TVCachoeira.br",
+      "name": "TV Cachoeira",
+      "url": "https://i.imgur.com/BxSjI7X.png"
+    },
+    {
+      "channel": "TVCamara.br",
+      "name": "TV Camara",
+      "url": "https://i.imgur.com/Sdou1Ab.png"
+    },
+    {
+      "channel": "TVCamara2.br",
+      "name": "TV Camara 2",
+      "url": "https://i.imgur.com/dHrUG1R.png"
+    },
+    {
+      "channel": "TVCamaraPortoAlegre.br",
+      "name": "TV Camara Porto Alegre",
+      "url": "https://i.imgur.com/jfQ7mPQ.jpg"
+    },
+    {
+      "channel": "TVCamaraSalvador.br",
+      "name": "TV Camara Salvador",
+      "url": "https://i.imgur.com/VEXEzSx.png"
+    },
+    {
+      "channel": "TVCancaoNova.br",
+      "name": "TV Cancao Nova",
+      "url": "https://i.imgur.com/OaM9hkH.png"
+    },
+    {
+      "channel": "TVCancaoNovaCachoeiraPaulista.br",
+      "name": "TV Cancao Nova Cachoeira Paulista",
+      "url": "https://i.imgur.com/wcRWSzc.png"
+    },
+    {
+      "channel": "TVCancaoNovaInternacional.br",
+      "name": "TV Cancao Nova Internacional",
+      "url": "https://i.imgur.com/t1TmO4J.png"
+    },
+    {
+      "channel": "TVCandides.br",
+      "name": "TV Candides",
+      "url": "https://i.imgur.com/evKq5ze.png"
+    },
+    {
+      "channel": "TVCapixaba.br",
+      "name": "TV Capixaba",
+      "url": "https://i.imgur.com/C20HehI.png"
+    },
+    {
+      "channel": "TVCaravelas.br",
+      "name": "TV Caravelas",
+      "url": "https://i.imgur.com/naVyW1Z.png"
+    },
+    {
+      "channel": "TVCarioca.br",
+      "name": "TV Carioca",
+      "url": "https://i.imgur.com/mVWydMw.png"
+    },
+    {
+      "channel": "TVCariocaInternacional.br",
+      "name": "TV Carioca Internacional",
+      "url": "https://directostv.teleame.com/wp-content/uploads/2017/11/TV-CARIOCA-.NET-ao-vivo-Online.png"
+    },
+    {
+      "channel": "TVCeara.br",
+      "name": "TV Ceara",
+      "url": "https://i.imgur.com/rvQucQg.png"
+    },
+    {
+      "channel": "TVCentroAmerica.br",
+      "name": "TV Centro America",
+      "url": "https://i.imgur.com/h7fSQrw.png"
+    },
+    {
+      "channel": "TVCentroAmericaCuiaba.br",
+      "name": "TV Centro America Cuiaba",
+      "url": "https://i.imgur.com/kRmHnnq.png"
+    },
+    {
+      "channel": "TVCentroAmericaRondonopolis.br",
+      "name": "TV Centro America Rondonopolis",
+      "url": "https://i.imgur.com/XzsefeY.png"
+    },
+    {
+      "channel": "TVCentroAmericaSinop.br",
+      "name": "TV Centro America Sinop",
+      "url": "https://i.imgur.com/9R8bXcw.png"
+    },
+    {
+      "channel": "TVCidadaAlagoas.br",
+      "name": "TV Cidada Alagoas",
+      "url": "https://i.imgur.com/m8J8zhr.png"
+    },
+    {
+      "channel": "TVCidadeCanal9.br",
+      "name": "TV Cidade Canal 9",
+      "url": "https://i.imgur.com/3AyMeWx.png"
+    },
+    {
+      "channel": "TVCidadedePetropolis.br",
+      "name": "TV Cidade de Petropolis",
+      "url": "https://i.imgur.com/xUs8gHV.png"
+    },
+    {
+      "channel": "TVCidadedeSaoPaulo.br",
+      "name": "TV Cidade de Sao Paulo",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/88/Logotipo_da_TV_Cidade_de_S%C3%A3o_Paulo.png/960px-Logotipo_da_TV_Cidade_de_S%C3%A3o_Paulo.png"
+    },
+    {
+      "channel": "TVCidadeFortaleza.br",
+      "name": "TV Cidade Fortaleza",
+      "url": "https://i.imgur.com/3t8Zj5u.png"
+    },
+    {
+      "channel": "TVCidadeLondrina.br",
+      "name": "TV Cidade Londrina",
+      "url": "https://i.imgur.com/Y7iiEuQ.png"
+    },
+    {
+      "channel": "TVCidadeOeste.br",
+      "name": "TV Cidade Oeste",
+      "url": "https://i.imgur.com/EmYaxEh.png"
+    },
+    {
+      "channel": "TVCidadeSaoLuiz.br",
+      "name": "TV Cidade Sao Luiz",
+      "url": "https://i.imgur.com/5XyqVYI.png"
+    },
+    {
+      "channel": "TVCidadeVerde.br",
+      "name": "TV Cidade Verde",
+      "url": "https://i.imgur.com/SysgBqZ.png"
+    },
+    {
+      "channel": "TVCidadeVerdeCuiaba.br",
+      "name": "TV Cidade Verde Cuiaba",
+      "url": "https://i.imgur.com/e67h04h.png"
+    },
+    {
+      "channel": "TVCidadeVerdePiaui.br",
+      "name": "TV Cidade Verde Piaui",
+      "url": "https://i.imgur.com/vjmpQnR.png"
+    },
+    {
+      "channel": "TVCinec.br",
+      "name": "TV Cinec",
+      "url": "https://i.imgur.com/Svm5pun.png"
+    },
+    {
+      "channel": "TVClube.br",
+      "name": "TV Clube",
+      "url": "https://i.imgur.com/CpXjcyE.png"
+    },
+    {
+      "channel": "TVCNAgitos.br",
+      "name": "TV CN Agitos",
+      "url": "https://i.imgur.com/5gvGC0P.png"
+    },
+    {
+      "channel": "TVCOMSantos.br",
+      "name": "TV COM Santos",
+      "url": "https://i.imgur.com/KX3fner.png"
+    },
+    {
+      "channel": "TVComunitaria.br",
+      "name": "TV Comunitaria",
+      "url": "https://i.imgur.com/uxefHY3.png"
+    },
+    {
+      "channel": "TVCordeiro.br",
+      "name": "TV Cordeiro",
+      "url": "https://i.imgur.com/wNULjux.png"
+    },
+    {
+      "channel": "TVCorreio.br",
+      "name": "TV Correio",
+      "url": "https://i.imgur.com/FSnGAaZ.png"
+    },
+    {
+      "channel": "TVCulturadoPara.br",
+      "name": "TV Cultura do Para",
+      "url": "https://i.imgur.com/CUDzNbG.png"
+    },
+    {
+      "channel": "TVCulturaPaulista.br",
+      "name": "TV Cultura Paulista",
+      "url": "https://i.imgur.com/m0o2z5F.png"
+    },
+    {
+      "channel": "TVCuruca.br",
+      "name": "TV Curuca",
+      "url": "https://i.imgur.com/JdCKNZ4.png"
+    },
+    {
+      "channel": "TVdasArtes.br",
+      "name": "TV das Artes",
+      "url": "https://i.imgur.com/fSWaiKt.png"
+    },
+    {
+      "channel": "TVDestak.br",
+      "name": "TV Destak",
+      "url": "https://i.imgur.com/YoCVrav.png"
+    },
+    {
+      "channel": "TVDiario.br",
+      "name": "TV Diario",
+      "url": "https://i.imgur.com/6ZNP8gs.png"
+    },
+    {
+      "channel": "TVDiarioMacapa.br",
+      "name": "TV Diario Macapa",
+      "url": "https://i.imgur.com/yAW2Z5j.jpg"
+    },
+    {
+      "channel": "TVDiarioMogidasCruzes.br",
+      "name": "TV Diario Mogi das Cruzes",
+      "url": "https://i.imgur.com/XQmWoSM.png"
+    },
+    {
+      "channel": "TVDifusoraLeste.br",
+      "name": "TV Difusora Leste",
+      "url": "https://i.imgur.com/hEd25Cr.png"
+    },
+    {
+      "channel": "TVDifusoraSaoLuis.br",
+      "name": "TV Difusora Sao Luis",
+      "url": "https://i.imgur.com/kQpZy8h.png"
+    },
+    {
+      "channel": "TVDifusoraSul.br",
+      "name": "TV Difusora Sul",
+      "url": "https://i.imgur.com/2pASDBC.png"
+    },
+    {
+      "channel": "TVDigitalBirigui.br",
+      "name": "TV Digital Birigui",
+      "url": "https://i.imgur.com/B5ZTMzY.png"
+    },
+    {
+      "channel": "TVDiversa.br",
+      "name": "TV Diversa",
+      "url": "https://i.imgur.com/b3hMu5h.png"
+    },
+    {
+      "channel": "TVdoPovo.br",
+      "name": "TV do Povo",
+      "url": "https://i.imgur.com/58EQ5qX.png"
+    },
+    {
+      "channel": "TVEducacao.br",
+      "name": "TV Educacao",
+      "url": "https://i.imgur.com/ynjTNl6.png"
+    },
+    {
+      "channel": "TVEducacaoMA.br",
+      "name": "TV Educacao MA",
+      "url": "https://i.imgur.com/SVto0oe.png"
+    },
+    {
+      "channel": "TVEducativaES.br",
+      "name": "TV Educativa ES",
+      "url": "https://i.imgur.com/Rw5kjde.png"
+    },
+    {
+      "channel": "TVEJABrasil.br",
+      "name": "TV EJA Brasil",
+      "url": "https://i.imgur.com/uhppN3s.png"
+    },
+    {
+      "channel": "TVEmTempo.br",
+      "name": "TV Em Tempo",
+      "url": "https://i.imgur.com/ByYTNPs.png"
+    },
+    {
+      "channel": "TVEmpire.br",
+      "name": "TV Empire",
+      "url": "https://i.imgur.com/tT1NVfV.png"
+    },
+    {
+      "channel": "TVEscola.br",
+      "name": "TV Escola",
+      "url": "https://i.imgur.com/OF6aGQj.png"
+    },
+    {
+      "channel": "TVEvangelizar.br",
+      "name": "TV Evangelizar",
+      "url": "https://i.imgur.com/IrYR7Kp.png"
+    },
+    {
+      "channel": "TVExecutiva.br",
+      "name": "TV Executiva",
+      "url": "https://i.imgur.com/7p115ef.png"
+    },
+    {
+      "channel": "TVFronteira.br",
+      "name": "TV Fronteira",
+      "url": "https://i.imgur.com/NtcoW6G.png"
+    },
+    {
+      "channel": "TVFuturo.br",
+      "name": "TV Futuro",
+      "url": "https://i.imgur.com/xonrNBf.png"
+    },
+    {
+      "channel": "TVGalegaBlumenau.br",
+      "name": "TV Galega Blumenau",
+      "url": "https://i.imgur.com/xwfxS9N.png"
+    },
+    {
+      "channel": "TVGazeta.br",
+      "name": "TV Gazeta",
+      "url": "https://i.imgur.com/0sksWse.png"
+    },
+    {
+      "channel": "TVGazetaAcre.br",
+      "name": "TV Gazeta Acre",
+      "url": "https://i.imgur.com/aUjv15g.png"
+    },
+    {
+      "channel": "TVGazetaAlagoas.br",
+      "name": "TV Gazeta Alagoas",
+      "url": "https://i.imgur.com/EK4CyZi.png"
+    },
+    {
+      "channel": "TVGazetaEspiritoSanto.br",
+      "name": "TV Gazeta Espirito Santo",
+      "url": "https://i.imgur.com/WF49es2.png"
+    },
+    {
+      "channel": "TVGerais.br",
+      "name": "TV Gerais",
+      "url": "https://i.imgur.com/6qs1obj.png"
+    },
+    {
+      "channel": "TVGideoes.br",
+      "name": "TV Gideoes",
+      "url": "https://i.imgur.com/dDomKND.png"
+    },
+    {
+      "channel": "TVGloboSaoPaulo.br",
+      "name": "TV Globo Sao Paulo",
+      "url": "https://i.imgur.com/OoSUg78.png"
+    },
+    {
+      "channel": "TVGoianiaBand.br",
+      "name": "TV Goiania Band",
+      "url": "https://i.imgur.com/6o62wCm.png"
+    },
+    {
+      "channel": "TVGramado.br",
+      "name": "TV Gramado",
+      "url": "https://i.imgur.com/5558bMI.png"
+    },
+    {
+      "channel": "TVGRANDENATALHDTVBRASIL.br",
+      "name": "TV GRANDE NATAL HDTV BRASIL",
+      "url": "https://i.imgur.com/MTuErdw.png"
+    },
+    {
+      "channel": "TVGrandeRio.br",
+      "name": "TV Grande Rio",
+      "url": "https://i.imgur.com/StIEnlp.png"
+    },
+    {
+      "channel": "TVGraoPara.br",
+      "name": "TV Grao Para",
+      "url": "https://i.imgur.com/1drg0E9.png"
+    },
+    {
+      "channel": "TVGuanandi.br",
+      "name": "TV Guanandi",
+      "url": "https://i.imgur.com/BOIsFYv.png"
+    },
+    {
+      "channel": "TVGuara.br",
+      "name": "TV Guara",
+      "url": "https://i.imgur.com/8PErNBT.png"
+    },
+    {
+      "channel": "TVGuarapari.br",
+      "name": "TV Guarapari",
+      "url": "https://i.imgur.com/eDNzwK0.png"
+    },
+    {
+      "channel": "TVHorizonte.br",
+      "name": "TV Horizonte",
+      "url": "https://i.imgur.com/scZDeg3.png"
+    },
+    {
+      "channel": "TVIbiapabana.br",
+      "name": "TV Ibiapabana",
+      "url": "https://i.imgur.com/4Qzsawz.png"
+    },
+    {
+      "channel": "TVIguacu.br",
+      "name": "TV Iguacu",
+      "url": "https://i.imgur.com/huQVmra.png"
+    },
+    {
+      "channel": "TVInes.br",
+      "name": "TV Ines",
+      "url": "https://i.imgur.com/XaKI8ps.png"
+    },
+    {
+      "channel": "TVInforBahia.br",
+      "name": "TV InforBahia",
+      "url": "https://i.imgur.com/KdNQfza.png"
+    },
+    {
+      "channel": "TVIntegracao.br",
+      "name": "TV Integracao",
+      "url": "https://i.imgur.com/dNOxNOo.png"
+    },
+    {
+      "channel": "TVIntegracaoAraxa.br",
+      "name": "TV Integracao Araxa",
+      "url": "https://i.imgur.com/dNOxNOo.png"
+    },
+    {
+      "channel": "TVIntegracaoItuiutaba.br",
+      "name": "TV Integracao Ituiutaba",
+      "url": "https://i.imgur.com/dNOxNOo.png"
+    },
+    {
+      "channel": "TVIntegracaoZonadaMata.br",
+      "name": "TV Integracao Zona da Mata",
+      "url": "https://i.imgur.com/dNOxNOo.png"
+    },
+    {
+      "channel": "TVInterativa.br",
+      "name": "TV Interativa",
+      "url": "https://i.imgur.com/cfGueoX.png"
+    },
+    {
+      "channel": "TVInterlagos.br",
+      "name": "TV Interlagos",
+      "url": "https://i.imgur.com/iuQVDpq.jpg"
+    },
+    {
+      "channel": "TVIracema.br",
+      "name": "TV Iracema",
+      "url": "https://i.imgur.com/IzdIiys.png"
+    },
+    {
+      "channel": "TVJSID.br",
+      "name": "TV J.SID",
+      "url": "https://i.imgur.com/yy8uBPW.png"
+    },
+    {
+      "channel": "TVJangadeiro.br",
+      "name": "TV Jangadeiro",
+      "url": "https://i.imgur.com/woBJeSn.png"
+    },
+    {
+      "channel": "TVJapi.br",
+      "name": "TV Japi",
+      "url": "https://i.imgur.com/dnmzIhF.png"
+    },
+    {
+      "channel": "TVJornalCaruaru.br",
+      "name": "TV Jornal Caruaru",
+      "url": "https://i.imgur.com/M8NilvY.png"
+    },
+    {
+      "channel": "TVJornaldoNordeste.br",
+      "name": "TV Jornal do Nordeste",
+      "url": "https://i.imgur.com/8JDixEE.png"
+    },
+    {
+      "channel": "TVJustica.br",
+      "name": "TV Justica",
+      "url": "https://i.imgur.com/rOQKiMO.png"
+    },
+    {
+      "channel": "TVLaVerdad.br",
+      "name": "TV La Verdad",
+      "url": "https://i.imgur.com/I3iMwnY.png"
+    },
+    {
+      "channel": "TVLatinasatBrasil.br",
+      "name": "TV Latinasat Brasil",
+      "url": "https://latinasat.com.br/logo.png"
+    },
+    {
+      "channel": "TVLeste.br",
+      "name": "TV Leste",
+      "url": "https://i.imgur.com/sqI1Ckw.png"
+    },
+    {
+      "channel": "TVLiberal.br",
+      "name": "TV Liberal",
+      "url": "https://cdn.mitvstatic.com/channels/globo_m.jpg"
+    },
+    {
+      "channel": "TVLiberdade.br",
+      "name": "TV Liberdade",
+      "url": "https://i.imgur.com/W6bHHqE.png"
+    },
+    {
+      "channel": "TVLifeAmerica.br",
+      "name": "TV Life America",
+      "url": "https://i.imgur.com/HZI0ilU.png"
+    },
+    {
+      "channel": "TVLitoralRN.br",
+      "name": "TV Litoral RN",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/TV_LITORAL_RN.jpg"
+    },
+    {
+      "channel": "TVMaanaim.br",
+      "name": "TV Maanaim",
+      "url": "https://i.imgur.com/PZhdHvf.png"
+    },
+    {
+      "channel": "TVMaceio.br",
+      "name": "TV Maceio",
+      "url": "https://i.imgur.com/zZ9LEOZ.png"
+    },
+    {
+      "channel": "TVMackenzie.br",
+      "name": "TV Mackenzie",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/TV_Mackenzie_logo.svg/960px-TV_Mackenzie_logo.svg.png"
+    },
+    {
+      "channel": "TVMaisBrasil.br",
+      "name": "TV Mais Brasil",
+      "url": "https://i.imgur.com/CUHZhGc.png"
+    },
+    {
+      "channel": "TVMaisMarica.br",
+      "name": "TV Mais Marica",
+      "url": "https://i.imgur.com/lgCRX7q.png"
+    },
+    {
+      "channel": "TVManaBrasil.pt",
+      "name": "TV Mana Brasil",
+      "url": "https://i.imgur.com/AFb712e.png"
+    },
+    {
+      "channel": "TVManchete.br",
+      "name": "TV Manchete",
+      "url": "https://i.imgur.com/Dmk7OsL.png"
+    },
+    {
+      "channel": "TVMar.br",
+      "name": "TV Mar",
+      "url": "https://i.imgur.com/mEZtRup.png"
+    },
+    {
+      "channel": "TVMarajoara.br",
+      "name": "TV Marajoara",
+      "url": "https://i.imgur.com/9d9vBN7.png"
+    },
+    {
+      "channel": "TVMAX.br",
+      "name": "TV MAX",
+      "url": "https://i.imgur.com/2Pg0baJ.png"
+    },
+    {
+      "channel": "TVMeio.br",
+      "name": "TV Meio",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/1/17/Logotipo_da_TV_Meio.png"
+    },
+    {
+      "channel": "TVMetropole.br",
+      "name": "TV Metropole",
+      "url": "https://i.imgur.com/bJyjLpg.png"
+    },
+    {
+      "channel": "TVMetropolitanaRio.br",
+      "name": "TV Metropolitana Rio",
+      "url": "https://i.imgur.com/y9J8YN2.png"
+    },
+    {
+      "channel": "TVMilagro.br",
+      "name": "TV Milagro",
+      "url": "https://i.imgur.com/q8AvY9E.png"
+    },
+    {
+      "channel": "TVMirante.br",
+      "name": "TV Mirante",
+      "url": "https://i.imgur.com/c9QOoLq.png"
+    },
+    {
+      "channel": "TVMiranteCocais.br",
+      "name": "TV Mirante Cocais",
+      "url": "https://i.imgur.com/rhZ5g8P.png"
+    },
+    {
+      "channel": "TVMiranteImperatriz.br",
+      "name": "TV Mirante Imperatriz",
+      "url": "https://i.imgur.com/l4fIfbu.png"
+    },
+    {
+      "channel": "TVModelo.br",
+      "name": "TV Modelo",
+      "url": "https://play-lh.googleusercontent.com/7kD2A0jUqWrVMxd_15RAPt9S0P9pxPMpNEc9dHOSl8Bi0DOMVlQHijXaL7ppUC5F46g"
+    },
+    {
+      "channel": "TVMon.br",
+      "name": "TV Mon",
+      "url": "https://i.imgur.com/Gjan8rl.png"
+    },
+    {
+      "channel": "TVMorenaCampoGrande.br",
+      "name": "TV Morena Campo Grande",
+      "url": "https://i.imgur.com/kXCu3AC.png"
+    },
+    {
+      "channel": "TVMorenaPontaPora.br",
+      "name": "TV Morena Ponta Pora",
+      "url": "https://i.imgur.com/AJ0xqPT.png"
+    },
+    {
+      "channel": "TVMundoMaior.br",
+      "name": "TV Mundo Maior",
+      "url": "https://i.imgur.com/aneHeMz.png"
+    },
+    {
+      "channel": "TVNaipi.br",
+      "name": "TV Naipi",
+      "url": "https://i.imgur.com/rQD3sfP.png"
+    },
+    {
+      "channel": "TVNatal.br",
+      "name": "TV Natal",
+      "url": "https://i.imgur.com/wqQmQml.png"
+    },
+    {
+      "channel": "TVNazare.br",
+      "name": "TV Nazare",
+      "url": "https://i.imgur.com/SWG38K9.png"
+    },
+    {
+      "channel": "TVNovaOnda.br",
+      "name": "TV Nova Onda",
+      "url": "https://i.imgur.com/iuPIOcI.png"
+    },
+    {
+      "channel": "TVNovaPlay.br",
+      "name": "TV Nova Play",
+      "url": "https://i.imgur.com/MhoHk6I.png"
+    },
+    {
+      "channel": "TVNovoTempo.br",
+      "name": "TV Novo Tempo",
+      "url": "https://i.imgur.com/cnTtf6I.png"
+    },
+    {
+      "channel": "TVOmindare.br",
+      "name": "TV Omindare",
+      "url": "https://i.imgur.com/naZZUIT.png"
+    },
+    {
+      "channel": "TVOsasco.br",
+      "name": "TV Osasco",
+      "url": "https://pbs.twimg.com/profile_images/494888941/Logo_400x400.jpg"
+    },
+    {
+      "channel": "TVOsorioNews.br",
+      "name": "TV Osorio News",
+      "url": "https://i.imgur.com/cmgM4nA.png"
+    },
+    {
+      "channel": "TVPadreCicero.br",
+      "name": "TV Padre Cicero",
+      "url": "https://i.imgur.com/Y7b29VG.png"
+    },
+    {
+      "channel": "TVPaiEterno.br",
+      "name": "TV Pai Eterno",
+      "url": "https://i.imgur.com/iuoXchN.png"
+    },
+    {
+      "channel": "TVPajucara.br",
+      "name": "TV Pajucara",
+      "url": "https://i.imgur.com/iYiGEBB.png"
+    },
+    {
+      "channel": "TVPampa.br",
+      "name": "TV Pampa",
+      "url": "https://i.imgur.com/Cnc1Mqo.png"
+    },
+    {
+      "channel": "TVPampaNorte.br",
+      "name": "TV Pampa Norte",
+      "url": "https://i.imgur.com/R7P5tcF.png"
+    },
+    {
+      "channel": "TVPantanal.br",
+      "name": "TV Pantanal",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Logotipo_TV_Pantanal.png"
+    },
+    {
+      "channel": "TVPantanalMS.br",
+      "name": "TV Pantanal MS",
+      "url": "https://i.imgur.com/0FOmktl.png"
+    },
+    {
+      "channel": "TVParaense.br",
+      "name": "TV Paraense",
+      "url": "https://duckduckgo.com/i/e408ea02.png"
+    },
+    {
+      "channel": "TVParanaTurismo.br",
+      "name": "TV Parana Turismo",
+      "url": "https://i.imgur.com/I6pKoBd.png"
+    },
+    {
+      "channel": "TVParanaiba.br",
+      "name": "TV Paranaiba",
+      "url": "https://i.imgur.com/TSJQhG1.png"
+    },
+    {
+      "channel": "TVPassoFundo.br",
+      "name": "TV Passo Fundo",
+      "url": "https://i.imgur.com/QFE6TiV.png"
+    },
+    {
+      "channel": "TVPE.br",
+      "name": "TV PE",
+      "url": "https://i.imgur.com/m8hgqdt.png"
+    },
+    {
+      "channel": "TVPlan.br",
+      "name": "TV Plan",
+      "url": "https://i.imgur.com/U1cYYuy.png"
+    },
+    {
+      "channel": "TVPlanaltoNorte.br",
+      "name": "TV Planalto Norte",
+      "url": "https://i.imgur.com/I7VwA4s.png"
+    },
+    {
+      "channel": "TVPocos.br",
+      "name": "TV Pocos",
+      "url": "https://i.imgur.com/UMPz1vl.png"
+    },
+    {
+      "channel": "TVPontadoSeixas.br",
+      "name": "TV Ponta do Seixas",
+      "url": "https://i.imgur.com/7QHFC24.png"
+    },
+    {
+      "channel": "TVPontaNegra.br",
+      "name": "TV Ponta Negra",
+      "url": "https://i.imgur.com/Ttl031F.png"
+    },
+    {
+      "channel": "TVPrecabura.br",
+      "name": "TV Precabura",
+      "url": "https://i.imgur.com/yI1nk3G.png"
+    },
+    {
+      "channel": "TVProfissao.br",
+      "name": "TV Profissao",
+      "url": "https://i.imgur.com/c33suOT.png"
+    },
+    {
+      "channel": "TVRaTimBum.br",
+      "name": "TV Ra Tim Bum",
+      "url": "https://i.imgur.com/JIQwz0w.png"
+    },
+    {
+      "channel": "TVReme.br",
+      "name": "TV Reme",
+      "url": "https://i.imgur.com/xnCWpIM.png"
+    },
+    {
+      "channel": "TVRioGrande.br",
+      "name": "TV Rio Grande",
+      "url": "https://i.imgur.com/nlDNDu3.png"
+    },
+    {
+      "channel": "TVRioPreto.br",
+      "name": "TV Rio Preto",
+      "url": "https://i.imgur.com/9EqSKLc.png"
+    },
+    {
+      "channel": "TVRioSul.br",
+      "name": "TV Rio Sul",
+      "url": "https://i.imgur.com/VA2MOK0.png"
+    },
+    {
+      "channel": "TVRondonia.br",
+      "name": "TV Rondonia",
+      "url": "https://i.imgur.com/56EhEkO.png"
+    },
+    {
+      "channel": "TVRoraima.br",
+      "name": "TV Roraima",
+      "url": "https://i.imgur.com/rTIIYPr.png"
+    },
+    {
+      "channel": "TVSagres.br",
+      "name": "TV Sagres",
+      "url": "https://i.imgur.com/9Obs5Jo.png"
+    },
+    {
+      "channel": "TVSandegi.br",
+      "name": "TV Sandegi",
+      "url": "https://i.imgur.com/vJ6ZQSG.png"
+    },
+    {
+      "channel": "TVSantaCruz.br",
+      "name": "TV Santa Cruz",
+      "url": "https://i.imgur.com/Jyw5BB2.png"
+    },
+    {
+      "channel": "TVSaoFrancisco.br",
+      "name": "TV Sao Francisco",
+      "url": "https://i.imgur.com/bTngyV2.png"
+    },
+    {
+      "channel": "TVSaoLuis.br",
+      "name": "TV Sao Luis",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/9/97/Logotipo_da_TV_S%C3%A3o_Lu%C3%ADs.png"
+    },
+    {
+      "channel": "TVSaoRaimundo.br",
+      "name": "TV Sao Raimundo",
+      "url": "https://i.imgur.com/f34CQIG.png"
+    },
+    {
+      "channel": "TVSenado.br",
+      "name": "TV Senado",
+      "url": "https://i.imgur.com/duy6waL.png"
+    },
+    {
+      "channel": "TVSergipe.br",
+      "name": "TV Sergipe",
+      "url": "https://i.imgur.com/Ut9qgoE.png"
+    },
+    {
+      "channel": "TVSeries.br",
+      "name": "TV Series",
+      "url": "https://i.imgur.com/Ff5mj0o.png"
+    },
+    {
+      "channel": "TVSerraDourada.br",
+      "name": "TV Serra Dourada",
+      "url": "https://i.imgur.com/NU741e5.png"
+    },
+    {
+      "channel": "TVSeteLagoas.br",
+      "name": "TV Sete Lagoas",
+      "url": "https://i.imgur.com/Na64Q2M.png"
+    },
+    {
+      "channel": "TVShowFortaleza.br",
+      "name": "TV Show Fortaleza",
+      "url": "https://static.wixstatic.com/media/9af6b8_e963e864c8fb40d3954f5c1c8cab1b40~mv2.png"
+    },
+    {
+      "channel": "TVSimCachoeiro.br",
+      "name": "TV Sim Cachoeiro",
+      "url": "https://i.imgur.com/t5oUK3C.png"
+    },
+    {
+      "channel": "TVSimColatina.br",
+      "name": "TV Sim Colatina",
+      "url": "https://i.imgur.com/t5oUK3C.png"
+    },
+    {
+      "channel": "TVSimSaoMateus.br",
+      "name": "TV Sim Sao Mateus",
+      "url": "https://i.imgur.com/t5oUK3C.png"
+    },
+    {
+      "channel": "TVSolComunidade.br",
+      "name": "TV Sol Comunidade",
+      "url": "https://i.imgur.com/5cGnb4r.png"
+    },
+    {
+      "channel": "TVSubae.br",
+      "name": "TV Subae",
+      "url": "https://i.imgur.com/2ksc02O.png"
+    },
+    {
+      "channel": "TVSucesso.br",
+      "name": "TV Sucesso",
+      "url": "https://i.imgur.com/3CuAIQ1.png"
+    },
+    {
+      "channel": "TVSudoeste.br",
+      "name": "TV Sudoeste",
+      "url": "https://i.imgur.com/uCS1BTC.png"
+    },
+    {
+      "channel": "TVSulBahia.br",
+      "name": "TV Sul Bahia",
+      "url": "https://i.imgur.com/qM6nMWm.png"
+    },
+    {
+      "channel": "TVSuldeMinas.br",
+      "name": "TV Sul de Minas",
+      "url": "https://i.imgur.com/hPh8cxK.png"
+    },
+    {
+      "channel": "TVTapajos.br",
+      "name": "TV Tapajos",
+      "url": "https://i.imgur.com/Dn9DtIf.png"
+    },
+    {
+      "channel": "TVTarobaCascavel.br",
+      "name": "TV Taroba Cascavel",
+      "url": "https://i.imgur.com/D3DZtki.png"
+    },
+    {
+      "channel": "TVTEMBauru.br",
+      "name": "TV TEM Bauru",
+      "url": "https://i.imgur.com/YRqHzlS.png"
+    },
+    {
+      "channel": "TVTEMItapetininga.br",
+      "name": "TV TEM Itapetininga",
+      "url": "https://i.imgur.com/9si55RI.png"
+    },
+    {
+      "channel": "TVTemplo.br",
+      "name": "TV Templo",
+      "url": "https://i.imgur.com/Pgo7xlx.png"
+    },
+    {
+      "channel": "TVTerceiroAnjo.br",
+      "name": "TV Terceiro Anjo",
+      "url": "https://i.imgur.com/PExKWNv.png"
+    },
+    {
+      "channel": "TVThathi.br",
+      "name": "TV Thathi",
+      "url": "https://i.imgur.com/w9yKTxE.png"
+    },
+    {
+      "channel": "TVThathiCampinas.br",
+      "name": "TV Thathi Campinas",
+      "url": "https://i.imgur.com/HNbMmrX.png"
+    },
+    {
+      "channel": "TVTibagi.br",
+      "name": "TV Tibagi",
+      "url": "https://i.imgur.com/70IZyX9.png"
+    },
+    {
+      "channel": "TVTribuna.br",
+      "name": "TV Tribuna",
+      "url": "https://i.imgur.com/ZUz7aRd.png"
+    },
+    {
+      "channel": "TVTribunaBand.br",
+      "name": "TV Tribuna Band",
+      "url": "https://i.imgur.com/ENX9HWH.png"
+    },
+    {
+      "channel": "TVTropical.br",
+      "name": "TV Tropical",
+      "url": "https://i.imgur.com/TD6ZJoa.png"
+    },
+    {
+      "channel": "TVTudoBH.br",
+      "name": "TV Tudo BH",
+      "url": "https://i.imgur.com/5SKSkUQ.png"
+    },
+    {
+      "channel": "TVTurfe.br",
+      "name": "TV Turfe",
+      "url": "https://i.imgur.com/x14uNWZ.png"
+    },
+    {
+      "channel": "TVUFG.br",
+      "name": "TV UFG",
+      "url": "https://i.imgur.com/Yp3dbJo.png"
+    },
+    {
+      "channel": "TVUFOP.br",
+      "name": "TV UFOP",
+      "url": "https://raw.githubusercontent.com/daniloroxette/tvufop/refs/heads/main/images/tvufop_logo.png"
+    },
+    {
+      "channel": "TVUniaoFortaleza.br",
+      "name": "TV Uniao Fortaleza",
+      "url": "https://i.imgur.com/Ec90iw0.png"
+    },
+    {
+      "channel": "TVUniSantos.br",
+      "name": "TV UniSantos",
+      "url": "https://i.imgur.com/7YRui41.png"
+    },
+    {
+      "channel": "TVUniversal.br",
+      "name": "TV Universal",
+      "url": "https://i.imgur.com/TIsk5zN.png"
+    },
+    {
+      "channel": "TVUniversitaria.br",
+      "name": "TV Universitaria",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/a/a7/Logotipo_da_TV_Universit%C3%A1ria_%28Recife%29.png"
+    },
+    {
+      "channel": "TVValedoUruara.br",
+      "name": "TV Vale do Uruara",
+      "url": "https://i.imgur.com/WgXsfIa.png"
+    },
+    {
+      "channel": "TVVanguardaSaoJosedosCampos.br",
+      "name": "TV Vanguarda Sao Jose dos Campos",
+      "url": "https://i.imgur.com/dGZw7pf.png"
+    },
+    {
+      "channel": "TVVanguardaTaubate.br",
+      "name": "TV Vanguarda Taubate",
+      "url": "https://i.imgur.com/rY0V9gc.png"
+    },
+    {
+      "channel": "TVVarezaGrande.br",
+      "name": "TV Vareza Grande",
+      "url": "https://upload.wikimedia.org/wikipedia/pt/c/ca/Logotipo_da_TV_V%C3%A1rzea_Grande.png"
+    },
+    {
+      "channel": "TVVerdade.br",
+      "name": "TV Verdade",
+      "url": "https://i.imgur.com/FMakyzR.png"
+    },
+    {
+      "channel": "TVVerdesCampos.br",
+      "name": "TV Verdes Campos",
+      "url": "https://i.imgur.com/Cf98Tts.png"
+    },
+    {
+      "channel": "TVVerdesCamposSat.br",
+      "name": "TV Verdes Campos Sat",
+      "url": "https://i.imgur.com/jW5ph72.png"
+    },
+    {
+      "channel": "TVVerdesMares.br",
+      "name": "TV Verdes Mares",
+      "url": "https://i.imgur.com/wwy9HBt.png"
+    },
+    {
+      "channel": "TVVerdesMaresCariri.br",
+      "name": "TV Verdes Mares Cariri",
+      "url": "https://i.imgur.com/2XpjTi7.png"
+    },
+    {
+      "channel": "TVVicosa.br",
+      "name": "TV Vicosa",
+      "url": "https://i.imgur.com/TZF55f9.png"
+    },
+    {
+      "channel": "TVVilaReal.br",
+      "name": "TV Vila Real",
+      "url": "https://i.imgur.com/Z1uWe7g.png"
+    },
+    {
+      "channel": "TVWalterAbrahao.br",
+      "name": "TV Walter Abrahao",
+      "url": "https://i.imgur.com/oyqayMN.png"
+    },
+    {
+      "channel": "TVWebCamocim.br",
+      "name": "TV Web Camocim",
+      "url": "https://i.imgur.com/dQN6xcT.png"
+    },
+    {
+      "channel": "TVWebParana.br",
+      "name": "TV Web Parana",
+      "url": "https://i.imgur.com/HRfKUzS.png"
+    },
+    {
+      "channel": "TVWest.br",
+      "name": "TV West",
+      "url": "https://i.imgur.com/kN7DJxM.png"
+    },
+    {
+      "channel": "TVWTJMINAS.br",
+      "name": "TV WTJMINAS",
+      "url": "https://i.imgur.com/e53513E.png"
+    },
+    {
+      "channel": "TVZoom.br",
+      "name": "TV Zoom",
+      "url": "https://i.imgur.com/jCGrjf5.png"
+    },
+    {
+      "channel": "TVPlusPet.br",
+      "name": "TV+Pet",
+      "url": "https://www.tvmaispet.com.br/images/tvpet-logo.png"
+    },
+    {
+      "channel": "TVAL.br",
+      "name": "TVAL",
+      "url": "https://i.imgur.com/lg94u75.png"
+    },
+    {
+      "channel": "TVBEJoinville.br",
+      "name": "TVBE Joinville",
+      "url": "https://i.imgur.com/zUpWcUN.png"
+    },
+    {
+      "channel": "TVCRio.br",
+      "name": "TVC-Rio",
+      "url": "https://i.imgur.com/WDiikWv.png"
+    },
+    {
+      "channel": "TVCI.br",
+      "name": "TVCI",
+      "url": "https://i.imgur.com/4GOgIrM.png"
+    },
+    {
+      "channel": "TVCOMMaceio.br",
+      "name": "TVCOM Maceio",
+      "url": "https://i.imgur.com/IE7IZzi.png"
+    },
+    {
+      "channel": "TVEBahia.br",
+      "name": "TVE Bahia",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/960px-TVE_Bahia_logo.svg.png"
+    },
+    {
+      "channel": "TVECultura.br",
+      "name": "TVE Cultura",
+      "url": "https://i.imgur.com/FpqoWcB.png"
+    },
+    {
+      "channel": "TVERS.br",
+      "name": "TVE RS",
+      "url": "https://i.imgur.com/MQ6lJpS.png"
+    },
+    {
+      "channel": "TVideoNews.br",
+      "name": "TVideoNews",
+      "url": "https://i.imgur.com/vstHOYx.png"
+    },
+    {
+      "channel": "TVitape.br",
+      "name": "TVitape",
+      "url": "https://i.imgur.com/XeqcwKe.png"
+    },
+    {
+      "channel": "TVLatinaSat.br",
+      "name": "TVLatinaSat",
+      "url": "https://latinasat.com.br/logo.png"
+    },
+    {
+      "channel": "TVMaster.br",
+      "name": "TVMaster",
+      "url": "https://i.imgur.com/fTgGvNJ.png"
+    },
+    {
+      "channel": "TVMaticComedy.br",
+      "name": "TVMatic Comedy",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVMaticCrafts.br",
+      "name": "TVMatic Crafts",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVMaticFacebook.br",
+      "name": "TVMatic Facebook",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVMaticFight.br",
+      "name": "TVMatic Fight",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVMaticFunny.br",
+      "name": "TVMatic Funny",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVMaticSport.br",
+      "name": "TVMatic Sport",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVMaticTikTok.br",
+      "name": "TVMatic TikTok",
+      "url": "https://i.imgur.com/l5PBcKN.png"
+    },
+    {
+      "channel": "TVNBrasil.br",
+      "name": "TVN Brasil",
+      "url": "https://i.imgur.com/XZS13xD.png"
+    },
+    {
+      "channel": "TVNBN.br",
+      "name": "TVNBN",
+      "url": "https://i.imgur.com/zoHBxn1.png"
+    },
+    {
+      "channel": "TVT.br",
+      "name": "TVT",
+      "url": "https://i.imgur.com/5dseJgw.png"
+    },
+    {
+      "channel": "TVunisat.br",
+      "name": "TVunisat",
+      "url": "https://i.imgur.com/x6rVrTt.png"
+    },
+    {
+      "channel": "UMATV.br",
+      "name": "UMA TV",
+      "url": "https://i.imgur.com/m0RVb79.png"
+    },
+    {
+      "channel": "UNBTV.br",
+      "name": "UNBTV",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Webysther_20160322_-_Logo_UnB_(sem_texto).svg/960px-Webysther_20160322_-_Logo_UnB_(sem_texto).svg.png"
+    },
+    {
+      "channel": "Uninter1.br",
+      "name": "Uninter 1",
+      "url": "https://i.imgur.com/MNCSx0a.png"
+    },
+    {
+      "channel": "Uninter2.br",
+      "name": "Uninter 2",
+      "url": "https://i.imgur.com/DJKNjbl.png"
+    },
+    {
+      "channel": "Unisa1.br",
+      "name": "Unisa 1",
+      "url": "https://i.imgur.com/dyfdLna.png"
+    },
+    {
+      "channel": "Unisa2.br",
+      "name": "Unisa 2",
+      "url": "https://i.imgur.com/qISgdAr.png"
+    },
+    {
+      "channel": "UniscTV.br",
+      "name": "Unisc TV",
+      "url": "https://i.imgur.com/yXujLnM.png"
+    },
+    {
+      "channel": "UnisulTV.br",
+      "name": "Unisul TV",
+      "url": "https://i.imgur.com/N0TvAFz.png"
+    },
+    {
+      "channel": "UniTVPortoAlegre.br",
+      "name": "UniTV Porto Alegre",
+      "url": "https://i.imgur.com/GmA5uuk.png"
+    },
+    {
+      "channel": "UniversalTVLatinAmerica.us",
+      "name": "Universal TV Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Universal_TV_logo.svg/960px-Universal_TV_logo.svg.png"
+    },
+    {
+      "channel": "UnivespTV.br",
+      "name": "Univesp TV",
+      "url": "https://i.imgur.com/vsfBEhJ.png"
+    },
+    {
+      "channel": "UPFTV.br",
+      "name": "UPFTV",
+      "url": "https://i.imgur.com/PCWS6wJ.png"
+    },
+    {
+      "channel": "UrbanDocs.br",
+      "name": "Urban Docs",
+      "url": "https://i.imgur.com/hOSHO1T.png"
+    },
+    {
+      "channel": "UrbanKids.br",
+      "name": "Urban Kids",
+      "url": "https://i.imgur.com/bDIeiIH.png"
+    },
+    {
+      "channel": "UrbanMovies.br",
+      "name": "Urban Movies",
+      "url": "https://i.imgur.com/wcjtSkq.png"
+    },
+    {
+      "channel": "UrbanRetro.br",
+      "name": "Urban Retro",
+      "url": "https://i.imgur.com/1uyv9vn.png"
+    },
+    {
+      "channel": "UrbanSeries.br",
+      "name": "Urban Series",
+      "url": "https://i.imgur.com/ZZOiT4x.png"
+    },
+    {
+      "channel": "UrbanTravel.br",
+      "name": "Urban Travel",
+      "url": "https://i.imgur.com/ST24ALh.png"
+    },
+    {
+      "channel": "UrbanTurbo.br",
+      "name": "Urban Turbo",
+      "url": "https://i.imgur.com/zsKzLhq.png"
+    },
+    {
+      "channel": "UrbanTV.br",
+      "name": "Urban TV",
+      "url": "https://i.imgur.com/RBcvj3Q.png"
+    },
+    {
+      "channel": "USANetworkLatinAmerica.us",
+      "name": "USA Network Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png"
+    },
+    {
+      "channel": "VEJAPlusTV.br",
+      "name": "VEJA+ TV",
+      "url": "https://i.imgur.com/n0pxHo4.png"
+    },
+    {
+      "channel": "ViaMorenoTV.br",
+      "name": "ViaMoreno TV",
+      "url": "https://www.viamorena.com/wp-content/uploads/2017/07/logo1.png"
+    },
+    {
+      "channel": "VirtualTV.br",
+      "name": "Virtual TV",
+      "url": "https://i.imgur.com/e1b0TTP.png"
+    },
+    {
+      "channel": "VRTChannel.br",
+      "name": "VRT Channel",
+      "url": "https://i.imgur.com/crszh3d.png"
+    },
+    {
+      "channel": "VTV.br",
+      "name": "VTV",
+      "url": "https://i.imgur.com/bATJ4zB.jpg"
+    },
+    {
+      "channel": "VV8TV.br",
+      "name": "VV8 TV",
+      "url": "https://i.imgur.com/TxHWAeD.png"
+    },
+    {
+      "channel": "WarnerChannel.us",
+      "name": "Warner Channel",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png"
+    },
+    {
+      "channel": "WeatherSpy.br",
+      "name": "WeatherSpy",
+      "url": "https://i.imgur.com/KIEKOt1.png"
+    },
+    {
+      "channel": "WebTVAguaBoa.br",
+      "name": "Web TV Agua Boa",
+      "url": "https://i.imgur.com/XrFoTDv.png"
+    },
+    {
+      "channel": "WebTVAlternativa.br",
+      "name": "Web TV Alternativa",
+      "url": "https://landingwebimg.s3.amazonaws.com/uploads/landing_page_business/logo/30003/image-upload1645141554.jpeg"
+    },
+    {
+      "channel": "WhamTV.br",
+      "name": "Wham TV",
+      "url": "https://i.imgur.com/MkLIi4d.png"
+    },
+    {
+      "channel": "WooHoo.br",
+      "name": "WooHoo",
+      "url": "https://i.imgur.com/me622pa.png"
+    },
+    {
+      "channel": "WTVBrasil.br",
+      "name": "WTV Brasil",
+      "url": "https://i.imgur.com/4T8z1Ni.png"
+    },
+    {
+      "channel": "Xsports.br",
+      "name": "Xsports",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Xsports_logo.png"
+    },
+    {
+      "channel": "XtremeTV.br",
+      "name": "Xtreme TV",
+      "url": "https://i.imgur.com/mF0rLRC.png"
+    },
+    {
+      "channel": "Yeeaah.br",
+      "name": "Yeeaah!",
+      "url": "https://i.imgur.com/R22OHnk.png"
+    },
+    {
+      "channel": "YesLife.br",
+      "name": "Yes Life",
+      "url": "https://i.imgur.com/sZHYWRm.png"
+    },
+    {
+      "channel": "Younger.us",
+      "name": "Younger",
+      "url": "https://i.imgur.com/CpfFyyo.png"
+    },
+    {
+      "channel": "ZNation.us",
+      "name": "Z Nation",
+      "url": "https://provider-static.plex.tv/epg/cms/production/63687b98-1b80-4b25-80b4-4de7fd243311/ZNation_Channel_Logo_White.png"
+    },
+    {
+      "channel": "CanalUOL.br",
+      "name": "Canal UOL",
+      "url": "https://conteudo.imguol.com.br/c/play/logo_canaluol_2024.svg"
+    },
+    {
+      "channel": "DisneyJrLatinAmerica.ar",
+      "name": "Disney Jr. Latin America",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg"
+    },
+    {
+      "channel": "DumDum.br",
+      "name": "DumDum",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg"
+    },
+    {
+      "channel": "FishTV.br",
+      "name": "Fish TV",
+      "url": "https://www.fishtv.com/public/site/images/logos/fishtv.svg"
+    },
+    {
+      "channel": "ModoViagem.br",
+      "name": "Modo Viagem",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Logotipo_do_Modo_Viagem.svg"
+    },
+    {
+      "channel": "SBTNews.br",
+      "name": "SBT News",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/SBT_News_2025.svg"
+    },
+    {
+      "channel": "TikTokRadioBrasil.br",
+      "name": "TikTok Radio Brasil",
+      "url": "https://static.wikia.nocookie.net/logopedia/images/f/f4/TikTok_Radio.svg"
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "AMCSeriesLatinAmerica.us",
+      "name": "AMC Series Latin America",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "BandAmazonas.br",
+      "name": "Band Amazonas",
+      "reason": "download"
+    },
+    {
+      "id": "BandBahia.br",
+      "name": "Band Bahia",
+      "reason": "download"
+    },
+    {
+      "id": "BandCeara.br",
+      "name": "Band Ceara",
+      "reason": "download"
+    },
+    {
+      "id": "BandCuritiba.br",
+      "name": "Band Curitiba",
+      "reason": "download"
+    },
+    {
+      "id": "BandInternacional.br",
+      "name": "Band Internacional",
+      "reason": "download"
+    },
+    {
+      "id": "BandMais.br",
+      "name": "Band Mais",
+      "reason": "download"
+    },
+    {
+      "id": "BandMinasGerais.br",
+      "name": "Band Minas Gerais",
+      "reason": "download"
+    },
+    {
+      "id": "BandNacional.br",
+      "name": "Band Nacional",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "BandRede.br",
+      "name": "Band Rede",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "BandRioInterior.br",
+      "name": "Band Rio Interior",
+      "reason": "download"
+    },
+    {
+      "id": "BandTriangulo.br",
+      "name": "Band Triangulo",
+      "reason": "download"
+    },
+    {
+      "id": "BandNews.br",
+      "name": "BandNews",
+      "reason": "download"
+    },
+    {
+      "id": "BDCTV.br",
+      "name": "BDC TV",
+      "reason": "download"
+    },
+    {
+      "id": "BemMaisTV.br",
+      "name": "Bem Mais TV",
+      "reason": "download"
+    },
+    {
+      "id": "BemMelhor.br",
+      "name": "Bem Melhor",
+      "reason": "download"
+    },
+    {
+      "id": "BemTV.br",
+      "name": "Bem TV",
+      "reason": "download"
+    },
+    {
+      "id": "BestBrasil.br",
+      "name": "Best Brasil",
+      "reason": "download"
+    },
+    {
+      "id": "BETBeingMaryJane.us",
+      "name": "BET Being Mary Jane",
+      "reason": "download"
+    },
+    {
+      "id": "BigBrotherBrazil.br",
+      "name": "Big Brother Brazil",
+      "reason": "download"
+    },
+    {
+      "id": "Bis.br",
+      "name": "Bis",
+      "reason": "download"
+    },
+    {
+      "id": "Blitstv.br",
+      "name": "Blitstv",
+      "reason": "download"
+    },
+    {
+      "id": "CanalSTART.br",
+      "name": "Canal START",
+      "reason": "download"
+    },
+    {
+      "id": "CINDIETV.br",
+      "name": "CINDIE TV",
+      "reason": "download"
+    },
+    {
+      "id": "CNNBrasilMoney.br",
+      "name": "CNN Brasil Money",
+      "reason": "download"
+    },
+    {
+      "id": "CulturaFast.br",
+      "name": "Cultura Fast",
+      "reason": "download"
+    },
+    {
+      "id": "DamasioEducacional11.br",
+      "name": "Damasio Educacional 11",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional12.br",
+      "name": "Damasio Educacional 12",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional13.br",
+      "name": "Damasio Educacional 13",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional2.br",
+      "name": "Damasio Educacional 2",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional3.br",
+      "name": "Damasio Educacional 3",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional4.br",
+      "name": "Damasio Educacional 4",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional5.br",
+      "name": "Damasio Educacional 5",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional6.br",
+      "name": "Damasio Educacional 6",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional7.br",
+      "name": "Damasio Educacional 7",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional8.br",
+      "name": "Damasio Educacional 8",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DamasioEducacional9.br",
+      "name": "Damasio Educacional 9",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "DiscoveryKidsLiveLatinAmerica.br",
+      "name": "Discovery Kids Live Latin America",
+      "reason": "OSError"
+    },
+    {
+      "id": "DreamWorksChannelLatinAmerica.us",
+      "name": "DreamWorks Channel Latin America",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "Entretendo.br",
+      "name": "Entretendo",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "EPTVRibeiraoPretoeregiao.br",
+      "name": "EPTV Ribeirao Preto e regiao",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "EPTVSaoCarloseAraraquara.br",
+      "name": "EPTV Sao Carlos e Araraquara",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "IntratecTV.br",
+      "name": "Intratec TV",
+      "reason": "UnidentifiedImageError"
+    },
+    {
+      "id": "JoiasVIP.br",
+      "name": "Joias VIP",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "LaboralTV.br",
+      "name": "Laboral TV",
+      "reason": "download"
+    },
+    {
+      "id": "MalhacaoFast.br",
+      "name": "Malhacao Fast",
+      "reason": "download"
+    },
+    {
+      "id": "NickOnline.br",
+      "name": "NickOnline",
+      "reason": "UnidentifiedImageError"
+    },
+    {
+      "id": "NickOnlineBobEsponja.br",
+      "name": "NickOnline Bob Esponja",
+      "reason": "UnidentifiedImageError"
+    },
+    {
+      "id": "NovoTempo.br",
+      "name": "Novo Tempo",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "NuevoTiempo.br",
+      "name": "Nuevo Tiempo",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "PetloversTV.br",
+      "name": "Petlovers TV",
+      "reason": "download"
+    },
+    {
+      "id": "PlenitudeTV.br",
+      "name": "Plenitude TV",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "PlutoTVEsportes.us",
+      "name": "Pluto TV Esportes",
+      "reason": "download"
+    },
+    {
+      "id": "Premiere10.br",
+      "name": "Premiere 10",
+      "reason": "download"
+    },
+    {
+      "id": "PremiereFC1.br",
+      "name": "Premiere FC 1",
+      "reason": "download"
+    },
+    {
+      "id": "RedeSeculo21.br",
+      "name": "Rede Seculo 21",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "RedeTVRede.br",
+      "name": "Rede TV! Rede",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "SeriesClassic.br",
+      "name": "Series Classic",
+      "reason": "download"
+    },
+    {
+      "id": "TVAdorar.br",
+      "name": "TV Adorar",
+      "reason": "download"
+    },
+    {
+      "id": "TVAlese.br",
+      "name": "TV Alese",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVAlterosaLeste.br",
+      "name": "TV Alterosa Leste",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVAlterosaZonadaMata.br",
+      "name": "TV Alterosa Zona da Mata",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVAltiora.br",
+      "name": "TV Altiora",
+      "reason": "download"
+    },
+    {
+      "id": "TVAssembleiaParaiba.br",
+      "name": "TV Assembleia Paraiba",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVCamaradeSaoPaulo.br",
+      "name": "TV Camara de Sao Paulo",
+      "reason": "download"
+    },
+    {
+      "id": "TVCancaoNovaRede.br",
+      "name": "TV Cancao Nova Rede",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVCancaoNovaRioGrandedoSul.br",
+      "name": "TV Cancao Nova Rio Grande do Sul",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVCapitalLucelia.br",
+      "name": "TV Capital Lucelia",
+      "reason": "UnidentifiedImageError"
+    },
+    {
+      "id": "TVDiariodoSertao.br",
+      "name": "TV Diario do Sertao",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVDifusao.br",
+      "name": "TV Difusao",
+      "reason": "download"
+    },
+    {
+      "id": "TVEncontrodasAguas.br",
+      "name": "TV Encontro das Aguas",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGazin.br",
+      "name": "TV Gazin",
+      "reason": "download"
+    },
+    {
+      "id": "TVGloboBrasilia.br",
+      "name": "TV Globo Brasilia",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboInternacionalAfrica.br",
+      "name": "TV Globo Internacional Africa",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboInternacionalAmericas.br",
+      "name": "TV Globo Internacional Americas",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboInternacionalAsia.br",
+      "name": "TV Globo Internacional Asia",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboInternacionalEuropa.br",
+      "name": "TV Globo Internacional Europa",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboMinas.br",
+      "name": "TV Globo Minas",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboNordeste.br",
+      "name": "TV Globo Nordeste",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVGloboRiodeJaneiro.br",
+      "name": "TV Globo Rio de Janeiro",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVImaculada.br",
+      "name": "TV Imaculada",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVMaisFamilia.br",
+      "name": "TV Mais Familia",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVPetropolis.br",
+      "name": "TV Petropolis",
+      "reason": "download"
+    },
+    {
+      "id": "TVShoptime.br",
+      "name": "TV Shoptime",
+      "reason": "download"
+    },
+    {
+      "id": "TVTarobaLondrina.br",
+      "name": "TV Taroba Londrina",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVTEMSaoJosedoRioPreto.br",
+      "name": "TV TEM Sao Jose do Rio Preto",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVTEMSorocaba.br",
+      "name": "TV TEM Sorocaba",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVUniaoNatal.br",
+      "name": "TV Uniao Natal",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "TVVitoria.br",
+      "name": "TV Vitoria",
+      "reason": "download"
+    },
+    {
+      "id": "Unisa3.br",
+      "name": "Unisa 3",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "Unisa4.br",
+      "name": "Unisa 4",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "Unisa5.br",
+      "name": "Unisa 5",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "Unisa6.br",
+      "name": "Unisa 6",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "Unisa7.br",
+      "name": "Unisa 7",
+      "reason": "logo não cadastrada"
+    },
+    {
+      "id": "VivaxTV.br",
+      "name": "Vivax TV",
+      "reason": "logo não cadastrada"
+    }
+  ]
+}

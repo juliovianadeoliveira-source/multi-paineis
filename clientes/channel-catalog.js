@@ -13,7 +13,7 @@
   const pageSize = 48;
   let channels = [];
   let category = 'Todos';
-  let limit = pageSize;
+  let limit = 6;
   let query = '';
   const categoryOrder = ['Todos', 'Abertos e variedades', 'Esportes', 'Filmes e séries', 'Notícias', 'Infantil', 'Documentários', 'Música', 'Cultura e educação', 'Religiosos', 'Públicos', 'Compras'];
 

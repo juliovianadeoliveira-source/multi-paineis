@@ -72,6 +72,12 @@ html{scroll-padding-top:105px}.nav-links .nav-cta{background:#193f2e;color:#fff;
 </main><footer class="container"><div class="footer"><span>© JSTECH · Clube de vantagens · Modelo demonstrativo</span><a href="https://wa.me/5527997314781" target="_blank" rel="noopener noreferrer">Falar com a JSTECH ↗</a></div></footer>
 <script>
 const $=id=>document.getElementById(id);
+const backgroundVideo=document.querySelector('.hero-bg');
+function startBackground(){if(!backgroundVideo)return;backgroundVideo.muted=true;const p=backgroundVideo.play();if(p)p.catch(()=>{});}
+startBackground();
+document.addEventListener('pointerdown',startBackground,{once:true});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)startBackground();});
+
 const offers={iptv:[['Mensal','35,00','por mês','Um mês de acesso',false],['Trimestral','79,90','por 3 meses','Pagamento por período',true],['Anual','200,00','por 12 meses','Pagamento por período',false]],cs:[['Mensal','15,00','por mês','CS Claro · 1 tela',false],['Semestral','70,00','por 6 meses','CS Claro · 1 tela',true],['Anual','110,00','por 12 meses','CS Claro · 1 tela',false]]};
 Object.entries(offers).forEach(([kind,plans])=>plans.forEach(([name,price,period,feature,featured])=>{const card=document.createElement('article');card.className='plan'+(featured?' featured':'');card.innerHTML=`<div class="plan-top"><strong>${name}</strong>${featured?'<span class="pill">EM DESTAQUE</span>':''}</div><div class="price"><small>R$</small> ${price}</div><p class="period">${period}</p><ul><li>${feature}</li><li>Consulte os aparelhos compatíveis</li><li>Atendimento pelo WhatsApp</li></ul><a class="btn ${featured?'primary':''}" target="_blank" rel="noopener noreferrer" href="https://wa.me/5527997314781?text=${encodeURIComponent('Olá JSTECH! Gostaria de saber sobre o plano '+(kind==='iptv'?'IPTV':'CS Claro')+' '+name+' de R$ '+price+'.')}">Consultar plano <span>↗</span></a>`;$('panel-'+kind).append(card)}));
 function chooseTab(kind){['iptv','cs'].forEach(k=>{$('tab-'+k).setAttribute('aria-selected',String(k===kind));$('tab-'+k).tabIndex=k===kind?0:-1;$('panel-'+k).hidden=k!==kind})}
